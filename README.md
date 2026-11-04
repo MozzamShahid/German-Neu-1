@@ -38,7 +38,7 @@ offline. The Next.js server builds each quiz at request time, so you deploy **on
 ## Local setup
 ```bash
 npm install
-cp .env.example .env.local      # fill in SUPABASE_SERVICE_ROLE_KEY
+cp .env.example .env.local      # fill in SUPABASE_SECRET_KEY
 npm run dev                     # http://localhost:3000
 ```
 To rebuild the vocabulary from the PDF (put the PDF in the project root):
@@ -49,14 +49,14 @@ npm run parse
 
 ## Supabase
 1. Open the SQL editor and run `supabase/schema.sql`.
-2. Copy **Project URL** and the **service_role** key (Project Settings → API) into the env vars.
+2. Copy **Project URL** and the **secret** key (Project Settings → API Keys, `sb_secret_...`) into the env vars.
    The key is used on the server only. RLS is on with no public policies.
 
 The app still runs without Supabase. Results just aren't saved.
 
 ## Deploy on Railway
 1. Railway → New Project → Deploy from GitHub repo → `MozzamShahid/German-Neu-1`
-2. Variables: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`
+2. Variables: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`
 3. Settings → Networking → Generate Domain
 
 `railway.json` already sets the build and start commands.

@@ -7,7 +7,8 @@ let client: SupabaseClient | null | undefined;
 export function getSupabase(): SupabaseClient | null {
   if (client !== undefined) return client;
   const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  // new-style secret key (sb_secret_...) or legacy service_role JWT
+  const key = process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
   client = url && key ? createClient(url, key, { auth: { persistSession: false } }) : null;
   return client;
 }
