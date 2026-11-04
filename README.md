@@ -59,4 +59,4 @@ The app still runs without Supabase. Results just aren't saved.
 2. Variables: `SUPABASE_URL`, `SUPABASE_SECRET_KEY`
 3. Settings → Networking → Generate Domain
 
-`railway.json` already sets the build and start commands.
+Railway auto-detects Next.js (`npm run build` / `npm start`).
