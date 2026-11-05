@@ -6,7 +6,7 @@ A learning-first German vocabulary + grammar quiz for Pakistani learners
 (German / English / Urdu). Owner: Mozzam Shahid (talks in Roman Urdu + English mix).
 
 - Live: https://german-neu-1-production.up.railway.app
-- Repo: https://github.com/MozzamShahid/German-Neu-1 (branch `main`; a push auto-deploys on Railway)
+- Repo: https://github.com/MozzamShahid/German-Neu-1 (branch `main`). A GitHub push did NOT trigger an auto-deploy on 2026-11-05, so deploy with `railway.cmd up --detach -s German-Neu-1` after pushing (or reconnect the GitHub source in the Railway dashboard).
 - Railway: project `delightful-manifestation`, service `German-Neu-1` (free plan allows only 1 project).
   The CLI is installed and logged in: `railway.cmd status`, `railway.cmd logs`, `railway.cmd variables`.
 - Supabase project `ykekhehwqwrwscfhhaoa`, table `public.quiz_attempts` (see `supabase/schema.sql`).
