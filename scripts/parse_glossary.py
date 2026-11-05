@@ -30,7 +30,7 @@ import unicodedata
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
-import pymupdf
+# pymupdf is imported lazily in extract_rows() so other scripts can reuse the helpers
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_PDF = ROOT / "NWn_A1_Glossar_Deutsch-Englisch.pdf"
@@ -131,6 +131,8 @@ class Row:
 
 
 def extract_rows(pdf_path: Path) -> list[Row]:
+    import pymupdf
+
     doc = pymupdf.open(pdf_path)
     rows: list[Row] = []
     chapter, chapter_title, section, topic = 0, "", "", ""
@@ -283,6 +285,7 @@ class Entry:
     article_rule: str | None = None
     compound_head: int | None = None
     family: list[int] = field(default_factory=list)
+    ur: str = ""  # Urdu meaning (lecture vocabulary, Kapitel 13)
 
 
 def parse_row(row: Row, idx: int) -> Entry | None:
