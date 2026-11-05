@@ -27,3 +27,10 @@ body {
   100% { transform: scale(1); opacity: 1; }
 }
 .pop { animation: pop 0.2s ease-out; }
+
+/* Urdu: Nastaliq, right-to-left, generous line height */
+.urdu {
+  font-family: var(--font-urdu), "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+  direction: rtl;
+  line-height: 2.3;
+}

@@ -102,7 +102,7 @@
 ],
 "why_en": "sie → ending -t: wohnen → wohnt",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: wohnen ← wohnt",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie wohnt in Lahore.",
@@ -184,7 +184,7 @@
 ],
 "why_en": "sie → ending -en: wohnen → wohnen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: wohnen ← wohnen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie wohnen in Lahore.",
@@ -346,7 +346,7 @@
 ],
 "why_en": "sie → ending -t: kommen → kommt",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: kommen ← kommt",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie kommt aus Pakistan.",
@@ -428,7 +428,7 @@
 ],
 "why_en": "sie → ending -en: kommen → kommen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: kommen ← kommen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie kommen aus Pakistan.",
@@ -590,7 +590,7 @@
 ],
 "why_en": "sie → ending -t: sprechen → spricht (sprechen changes its vowel: du sprichst, er spricht)",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: sprechen ← spricht",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie spricht Urdu und Englisch.",
@@ -673,7 +673,7 @@
 ],
 "why_en": "sie → ending -en: sprechen → sprechen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: sprechen ← sprechen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie sprechen Urdu und Englisch.",
@@ -837,7 +837,7 @@
 ],
 "why_en": "sie → ending -t: lernen → lernt",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: lernen ← lernt",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie lernt Deutsch.",
@@ -917,7 +917,7 @@
 ],
 "why_en": "sie → ending -en: lernen → lernen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: lernen ← lernen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie lernen Deutsch.",
@@ -1081,7 +1081,7 @@
 ],
 "why_en": "sie → ending -t: arbeiten → arbeitet",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: arbeiten ← arbeitet",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie arbeitet von Montag bis Freitag.",
@@ -1162,7 +1162,7 @@
 ],
 "why_en": "sie → ending -en: arbeiten → arbeiten",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: arbeiten ← arbeiten",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie arbeiten von Montag bis Freitag.",
@@ -1324,7 +1324,7 @@
 ],
 "why_en": "sie → ending -t: spielen → spielt",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: spielen ← spielt",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie spielt Cricket.",
@@ -1406,7 +1406,7 @@
 ],
 "why_en": "sie → ending -en: spielen → spielen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: spielen ← spielen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie spielen Cricket.",
@@ -1570,7 +1570,7 @@
 ],
 "why_en": "sie → ending -t: trinken → trinkt",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: trinken ← trinkt",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie trinkt Tee.",
@@ -1651,7 +1651,7 @@
 ],
 "why_en": "sie → ending -en: trinken → trinken",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: trinken ← trinken",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie trinken Tee.",
@@ -1817,7 +1817,7 @@
 ],
 "why_en": "sie → ending -t: fahren → fährt (fahren changes its vowel: du fährst, er fährt)",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: fahren ← fährt",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie fährt nach Islamabad.",
@@ -1899,7 +1899,7 @@
 ],
 "why_en": "sie → ending -en: fahren → fahren",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: fahren ← fahren",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie fahren nach Islamabad.",
@@ -2066,7 +2066,7 @@
 ],
 "why_en": "sie → ending -t: schlafen → schläft (schlafen changes its vowel: du schläfst, er schläft)",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: schlafen ← schläft",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie schläft acht Stunden.",
@@ -2149,7 +2149,7 @@
 ],
 "why_en": "sie → ending -en: schlafen → schlafen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: schlafen ← schlafen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie schlafen acht Stunden.",
@@ -2316,7 +2316,7 @@
 ],
 "why_en": "sie → ending -t: lesen → liest (lesen changes its vowel: du liest, er liest)",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: lesen ← liest",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie liest die Zeitung.",
@@ -2398,7 +2398,7 @@
 ],
 "why_en": "sie → ending -en: lesen → lesen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: lesen ← lesen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie lesen die Zeitung.",
@@ -2563,7 +2563,7 @@
 ],
 "why_en": "sie → ending -t: essen → isst (essen changes its vowel: du isst, er isst)",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: essen ← isst",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie isst Reis.",
@@ -2644,7 +2644,7 @@
 ],
 "why_en": "sie → ending -en: essen → essen",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: essen ← essen",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie essen Reis.",
@@ -2808,7 +2808,7 @@
 ],
 "why_en": "sie → ending -t: hören → hört",
 "why_ur": "er/sie/es کے ساتھ ‎-t آتا ہے: hören ← hört",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hört Musik.",
@@ -2890,7 +2890,7 @@
 ],
 "why_en": "sie → ending -en: hören → hören",
 "why_ur": "sie/Sie کے ساتھ ‎-en آتا ہے: hören ← hören",
-"cue": ""
+"cue": "(sie = they)"
 },
 "pick": [
 "Sie hören Musik.",
@@ -3038,7 +3038,7 @@
 ],
 "why_en": "sein is irregular: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
 "why_ur": "sein بے قاعدہ ہے: ich bin، du bist، er ist، wir sind، ihr seid، sie sind",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -3104,7 +3104,7 @@
 ],
 "why_en": "sein is irregular: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
 "why_ur": "sein بے قاعدہ ہے: ich bin، du bist، er ist، wir sind، ihr seid، sie sind",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -3236,7 +3236,7 @@
 ],
 "why_en": "sein is irregular: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
 "why_ur": "sein بے قاعدہ ہے: ich bin، du bist، er ist، wir sind، ihr seid، sie sind",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -3302,7 +3302,7 @@
 ],
 "why_en": "sein is irregular: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
 "why_ur": "sein بے قاعدہ ہے: ich bin، du bist، er ist، wir sind، ihr seid، sie sind",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -3434,7 +3434,7 @@
 ],
 "why_en": "sein is irregular: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
 "why_ur": "sein بے قاعدہ ہے: ich bin، du bist، er ist، wir sind، ihr seid، sie sind",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -3500,7 +3500,7 @@
 ],
 "why_en": "sein is irregular: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind",
 "why_ur": "sein بے قاعدہ ہے: ich bin، du bist، er ist، wir sind، ihr seid، sie sind",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -3632,7 +3632,7 @@
 ],
 "why_en": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben",
 "why_ur": "haben: ich habe، du hast، er hat، wir haben، ihr habt، sie haben",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -3698,7 +3698,7 @@
 ],
 "why_en": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben",
 "why_ur": "haben: ich habe، du hast، er hat، wir haben، ihr habt، sie haben",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -3830,7 +3830,7 @@
 ],
 "why_en": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben",
 "why_ur": "haben: ich habe، du hast، er hat، wir haben، ihr habt، sie haben",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -3896,7 +3896,7 @@
 ],
 "why_en": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben",
 "why_ur": "haben: ich habe، du hast، er hat، wir haben، ihr habt، sie haben",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -4028,7 +4028,7 @@
 ],
 "why_en": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben",
 "why_ur": "haben: ich habe، du hast، er hat، wir haben، ihr habt، sie haben",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -4094,7 +4094,7 @@
 ],
 "why_en": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben",
 "why_ur": "haben: ich habe، du hast، er hat، wir haben، ihr habt، sie haben",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -15395,7 +15395,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -15433,7 +15433,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -15511,7 +15511,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -15547,7 +15547,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -15569,7 +15569,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -15607,7 +15607,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -15749,7 +15749,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -15787,7 +15787,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -15984,7 +15984,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -16020,7 +16020,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -16161,7 +16161,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -16199,7 +16199,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -16578,7 +16578,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -16614,7 +16614,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -16875,7 +16875,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -16913,7 +16913,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -16935,7 +16935,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -16973,7 +16973,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -17173,7 +17173,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -17209,7 +17209,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -17291,7 +17291,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -17329,7 +17329,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -17528,7 +17528,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -17564,7 +17564,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -17586,7 +17586,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -17624,7 +17624,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -17942,7 +17942,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -17978,7 +17978,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -18119,7 +18119,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -18155,7 +18155,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -18295,7 +18295,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -18331,7 +18331,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -18651,7 +18651,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -18689,7 +18689,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -18947,7 +18947,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -18985,7 +18985,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -19126,7 +19126,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -19162,7 +19162,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -19184,7 +19184,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -19222,7 +19222,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -19244,7 +19244,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -19282,7 +19282,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -19424,7 +19424,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -19462,7 +19462,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -19780,7 +19780,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -19818,7 +19818,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -19960,7 +19960,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -19998,7 +19998,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -20019,7 +20019,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -20055,7 +20055,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -20255,7 +20255,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -20293,7 +20293,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -20374,7 +20374,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -20410,7 +20410,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -20727,7 +20727,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -20763,7 +20763,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -21145,7 +21145,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -21183,7 +21183,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -21503,7 +21503,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -21539,7 +21539,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -21620,7 +21620,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -21656,7 +21656,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -22034,7 +22034,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -22070,7 +22070,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -22091,7 +22091,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -22127,7 +22127,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -22269,7 +22269,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -22307,7 +22307,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -22448,7 +22448,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -22484,7 +22484,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -22745,7 +22745,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -22783,7 +22783,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -22924,7 +22924,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -22962,7 +22962,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -23636,7 +23636,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -23674,7 +23674,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -23987,7 +23987,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -24023,7 +24023,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -24045,7 +24045,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -24082,7 +24082,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -24164,7 +24164,7 @@
 ],
 "why_en": "Modal verb (können) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -24202,7 +24202,7 @@
 ],
 "why_en": "können: ich kann, du kannst, er/sie kann, wir können, ihr könnt, sie/Sie können",
 "why_ur": "können کی گردان: ich kann، du kannst، er kann (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -24224,7 +24224,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -24262,7 +24262,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -24284,7 +24284,7 @@
 ],
 "why_en": "Modal verb (müssen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -24321,7 +24321,7 @@
 ],
 "why_en": "müssen: ich muss, du musst, er/sie muss, wir müssen, ihr müsst, sie/Sie müssen",
 "why_ur": "müssen کی گردان: ich muss، du musst، er muss (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -24523,7 +24523,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -24560,7 +24560,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -24582,7 +24582,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -24619,7 +24619,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -25295,7 +25295,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -25333,7 +25333,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -25354,7 +25354,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -25390,7 +25390,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -25529,7 +25529,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -25567,7 +25567,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -25706,7 +25706,7 @@
 ],
 "why_en": "Modal verb (möchten) in position 2 is conjugated; the second verb goes to the END as infinitive.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -25744,7 +25744,7 @@
 ],
 "why_en": "möchten: ich möchte, du möchtest, er/sie möchte, wir möchten, ihr möchtet, sie/Sie möchten",
 "why_ur": "möchten کی گردان: ich möchte، du möchtest، er möchte (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -26244,7 +26244,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -26281,7 +26281,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -26303,7 +26303,7 @@
 ],
 "why_en": "Modal verb (wollen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -26341,7 +26341,7 @@
 ],
 "why_en": "wollen: ich will, du willst, er/sie will, wir wollen, ihr wollt, sie/Sie wollen",
 "why_ur": "wollen کی گردان: ich will، du willst، er will (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -26363,7 +26363,7 @@
 ],
 "why_en": "Modal verb (sollen) in position 2 is conjugated; the second verb goes to the END as infinitive. Separable verbs stay together after a modal verb: aufstehen.",
 "why_ur": "Modal verb دوسری جگہ پر بدلتا ہے، اور دوسرا فعل جملے کے آخر میں اپنی اصل شکل (‎-en) میں آتا ہے۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -26400,7 +26400,7 @@
 ],
 "why_en": "sollen: ich soll, du sollst, er/sie soll, wir sollen, ihr sollt, sie/Sie sollen",
 "why_ur": "sollen کی گردان: ich soll، du sollst، er soll (ich اور er ایک جیسے!)",
-"cue": ""
+"cue": "(Sie = you, formal)"
 }
 },
 {
@@ -27744,7 +27744,7 @@
 ],
 "why_en": "aufstehen is separable: the verb part (steht) goes to position 2, the prefix “auf” goes to the END.",
 "why_ur": "aufstehen دو حصوں میں ٹوٹتا ہے: steht دوسری جگہ پر اور “auf” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -27782,7 +27782,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -27841,7 +27841,7 @@
 ],
 "why_en": "aufstehen is separable: the verb part (stehen) goes to position 2, the prefix “auf” goes to the END.",
 "why_ur": "aufstehen دو حصوں میں ٹوٹتا ہے: stehen دوسری جگہ پر اور “auf” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -28134,7 +28134,7 @@
 ],
 "why_en": "einkaufen is separable: the verb part (kauft) goes to position 2, the prefix “ein” goes to the END.",
 "why_ur": "einkaufen دو حصوں میں ٹوٹتا ہے: kauft دوسری جگہ پر اور “ein” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -28172,7 +28172,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -28231,7 +28231,7 @@
 ],
 "why_en": "einkaufen is separable: the verb part (kaufen) goes to position 2, the prefix “ein” goes to the END.",
 "why_ur": "einkaufen دو حصوں میں ٹوٹتا ہے: kaufen دوسری جگہ پر اور “ein” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -28524,7 +28524,7 @@
 ],
 "why_en": "fernsehen is separable: the verb part (sieht) goes to position 2, the prefix “fern” goes to the END.",
 "why_ur": "fernsehen دو حصوں میں ٹوٹتا ہے: sieht دوسری جگہ پر اور “fern” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -28562,7 +28562,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -28621,7 +28621,7 @@
 ],
 "why_en": "fernsehen is separable: the verb part (sehen) goes to position 2, the prefix “fern” goes to the END.",
 "why_ur": "fernsehen دو حصوں میں ٹوٹتا ہے: sehen دوسری جگہ پر اور “fern” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -28936,7 +28936,7 @@
 ],
 "why_en": "mitkommen is separable: the verb part (kommt) goes to position 2, the prefix “mit” goes to the END.",
 "why_ur": "mitkommen دو حصوں میں ٹوٹتا ہے: kommt دوسری جگہ پر اور “mit” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -28974,7 +28974,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -29033,7 +29033,7 @@
 ],
 "why_en": "mitkommen is separable: the verb part (kommen) goes to position 2, the prefix “mit” goes to the END.",
 "why_ur": "mitkommen دو حصوں میں ٹوٹتا ہے: kommen دوسری جگہ پر اور “mit” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -29348,7 +29348,7 @@
 ],
 "why_en": "anrufen is separable: the verb part (ruft) goes to position 2, the prefix “an” goes to the END.",
 "why_ur": "anrufen دو حصوں میں ٹوٹتا ہے: ruft دوسری جگہ پر اور “an” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -29386,7 +29386,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -29445,7 +29445,7 @@
 ],
 "why_en": "anrufen is separable: the verb part (rufen) goes to position 2, the prefix “an” goes to the END.",
 "why_ur": "anrufen دو حصوں میں ٹوٹتا ہے: rufen دوسری جگہ پر اور “an” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -29760,7 +29760,7 @@
 ],
 "why_en": "abholen is separable: the verb part (holt) goes to position 2, the prefix “ab” goes to the END.",
 "why_ur": "abholen دو حصوں میں ٹوٹتا ہے: holt دوسری جگہ پر اور “ab” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -29798,7 +29798,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -29857,7 +29857,7 @@
 ],
 "why_en": "abholen is separable: the verb part (holen) goes to position 2, the prefix “ab” goes to the END.",
 "why_ur": "abholen دو حصوں میں ٹوٹتا ہے: holen دوسری جگہ پر اور “ab” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -30172,7 +30172,7 @@
 ],
 "why_en": "einladen is separable: the verb part (lädt) goes to position 2, the prefix “ein” goes to the END.",
 "why_ur": "einladen دو حصوں میں ٹوٹتا ہے: lädt دوسری جگہ پر اور “ein” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -30210,7 +30210,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -30269,7 +30269,7 @@
 ],
 "why_en": "einladen is separable: the verb part (laden) goes to position 2, the prefix “ein” goes to the END.",
 "why_ur": "einladen دو حصوں میں ٹوٹتا ہے: laden دوسری جگہ پر اور “ein” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -30584,7 +30584,7 @@
 ],
 "why_en": "mitbringen is separable: the verb part (bringt) goes to position 2, the prefix “mit” goes to the END.",
 "why_ur": "mitbringen دو حصوں میں ٹوٹتا ہے: bringt دوسری جگہ پر اور “mit” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -30622,7 +30622,7 @@
 ],
 "why_en": "With a modal verb the separable verb does NOT split: it stays together at the end.",
 "why_ur": "Modal verb کے ساتھ trennbares Verb نہیں ٹوٹتا، پورا آخر میں آتا ہے۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -30681,7 +30681,7 @@
 ],
 "why_en": "mitbringen is separable: the verb part (bringen) goes to position 2, the prefix “mit” goes to the END.",
 "why_ur": "mitbringen دو حصوں میں ٹوٹتا ہے: bringen دوسری جگہ پر اور “mit” جملے کے آخر میں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -30933,7 +30933,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). lernen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -31459,7 +31459,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). machen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -31518,7 +31518,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). kaufen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -32104,7 +32104,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). kochen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -32516,7 +32516,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). arbeiten: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -32868,7 +32868,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). schreiben: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -33221,7 +33221,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). lesen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -33340,7 +33340,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). essen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -33577,7 +33577,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). trinken: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -33755,7 +33755,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). trinken: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -33874,7 +33874,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). hören: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -34518,7 +34518,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). studieren: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -34635,7 +34635,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). studieren: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -34812,7 +34812,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). singen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -35050,7 +35050,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). fahren: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -35283,7 +35283,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). fahren: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -35459,7 +35459,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). kommen: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -35576,7 +35576,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). kommen: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -35694,7 +35694,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). fliegen: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -35872,7 +35872,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). fliegen: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -36050,7 +36050,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). gehen: movement/change of place → sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ حرکت (جگہ بدلنا) ہو تو sein۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -36408,7 +36408,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). bleiben: bleiben is an exception: no movement, but still sein.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ bleiben استثنا ہے: حرکت نہیں پھر بھی sein۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -37060,7 +37060,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). telefonieren: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -37178,7 +37178,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). einkaufen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "order": {
 "chunks": [
@@ -37356,7 +37356,7 @@
 ],
 "why_en": "Perfekt = haben/sein (position 2) + Partizip II (end). einkaufen: most verbs (about 90%) use haben.",
 "why_ur": "Perfekt = haben/sein (دوسری جگہ) + Partizip II (آخر میں)۔ زیادہ تر (تقریباً ۹۰٪) فعل haben کے ساتھ آتے ہیں۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "order": {
 "chunks": [
@@ -37900,7 +37900,7 @@
 ],
 "why_en": "war = past of sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
 "why_ur": "war، sein کا ماضی ہے: ich war، du warst، er war، wir waren، ihr wart، sie waren",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -37922,7 +37922,7 @@
 ],
 "why_en": "war = past of sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
 "why_ur": "war، sein کا ماضی ہے: ich war، du warst، er war، wir waren، ihr wart، sie waren",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -37944,7 +37944,7 @@
 ],
 "why_en": "war = past of sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
 "why_ur": "war، sein کا ماضی ہے: ich war، du warst، er war، wir waren، ihr wart، sie waren",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -37966,7 +37966,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -37988,7 +37988,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -38010,7 +38010,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -38032,7 +38032,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -38362,7 +38362,7 @@
 ],
 "why_en": "war = past of sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
 "why_ur": "war، sein کا ماضی ہے: ich war، du warst، er war، wir waren، ihr wart، sie waren",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -38384,7 +38384,7 @@
 ],
 "why_en": "war = past of sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
 "why_ur": "war، sein کا ماضی ہے: ich war، du warst، er war، wir waren، ihr wart، sie waren",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -38406,7 +38406,7 @@
 ],
 "why_en": "war = past of sein: ich war, du warst, er war, wir waren, ihr wart, sie waren",
 "why_ur": "war، sein کا ماضی ہے: ich war، du warst، er war، wir waren، ihr wart، sie waren",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -38428,7 +38428,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -38450,7 +38450,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -38472,7 +38472,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -38494,7 +38494,7 @@
 ],
 "why_en": "hatte = past of haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten",
 "why_ur": "hatte، haben کا ماضی ہے: ich hatte، du hattest، er hatte، wir hatten، ihr hattet، sie hatten",
-"cue": ""
+"cue": "(sie = they)"
 }
 },
 {
@@ -44381,7 +44381,7 @@
 ],
 "why_en": "kaufen + Akkusativ (direct object: what/whom?). Buch is neuter: das stays das. In Akkusativ only masculine changes.",
 "why_ur": "kaufen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie kaufen das Buch.",
@@ -44437,7 +44437,7 @@
 ],
 "why_en": "kaufen + Akkusativ (direct object: what/whom?). Uhr is feminine: die stays die. In Akkusativ only masculine changes.",
 "why_ur": "kaufen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie kauft die Uhr.",
@@ -44605,7 +44605,7 @@
 ],
 "why_en": "kaufen + Akkusativ (direct object: what/whom?). Computer is masculine: der → den. In Akkusativ only masculine changes.",
 "why_ur": "kaufen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie kaufen den Computer.",
@@ -44661,7 +44661,7 @@
 ],
 "why_en": "kaufen + Akkusativ (direct object: what/whom?). Jacke is feminine: die stays die. In Akkusativ only masculine changes.",
 "why_ur": "kaufen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie kauft die Jacke.",
@@ -44997,7 +44997,7 @@
 ],
 "why_en": "brauchen + Akkusativ (direct object: what/whom?). Tasche is feminine: eine stays eine. In Akkusativ only masculine changes.",
 "why_ur": "brauchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie brauchen eine Tasche.",
@@ -45109,7 +45109,7 @@
 ],
 "why_en": "brauchen + Akkusativ (direct object: what/whom?). Schlüssel is masculine: ein → einen. In Akkusativ only masculine changes.",
 "why_ur": "brauchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie braucht einen Schlüssel.",
@@ -45165,7 +45165,7 @@
 ],
 "why_en": "brauchen + Akkusativ (direct object: what/whom?). Lampe is feminine: eine stays eine. In Akkusativ only masculine changes.",
 "why_ur": "brauchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie brauchen eine Lampe.",
@@ -45193,7 +45193,7 @@
 ],
 "why_en": "brauchen + Akkusativ (direct object: what/whom?). Lampe is feminine: keine stays keine. In Akkusativ only masculine changes.",
 "why_ur": "brauchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie brauchen keine Lampe.",
@@ -45725,7 +45725,7 @@
 ],
 "why_en": "haben + Akkusativ (direct object: what/whom?). Regal is neuter: ein stays ein. In Akkusativ only masculine changes.",
 "why_ur": "haben کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hat ein Regal.",
@@ -45865,7 +45865,7 @@
 ],
 "why_en": "haben + Akkusativ (direct object: what/whom?). Jacke is feminine: keine stays keine. In Akkusativ only masculine changes.",
 "why_ur": "haben کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hat keine Jacke.",
@@ -46313,7 +46313,7 @@
 ],
 "why_en": "suchen + Akkusativ (direct object: what/whom?). Stift is masculine: der → den. In Akkusativ only masculine changes.",
 "why_ur": "suchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie suchen den Stift.",
@@ -46481,7 +46481,7 @@
 ],
 "why_en": "suchen + Akkusativ (direct object: what/whom?). Lampe is feminine: die stays die. In Akkusativ only masculine changes.",
 "why_ur": "suchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie sucht die Lampe.",
@@ -46705,7 +46705,7 @@
 ],
 "why_en": "essen + Akkusativ (direct object: what/whom?). Apfel is masculine: der → den. In Akkusativ only masculine changes.",
 "why_ur": "essen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie isst den Apfel.",
@@ -46733,7 +46733,7 @@
 ],
 "why_en": "essen + Akkusativ (direct object: what/whom?). Pizza is feminine: eine stays eine. In Akkusativ only masculine changes.",
 "why_ur": "essen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie essen eine Pizza.",
@@ -46789,7 +46789,7 @@
 ],
 "why_en": "essen + Akkusativ (direct object: what/whom?). Banane is feminine: eine stays eine. In Akkusativ only masculine changes.",
 "why_ur": "essen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie essen eine Banane.",
@@ -47013,7 +47013,7 @@
 ],
 "why_en": "trinken + Akkusativ (direct object: what/whom?). Saft is masculine: ein → einen. In Akkusativ only masculine changes.",
 "why_ur": "trinken کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie trinkt einen Saft.",
@@ -47097,7 +47097,7 @@
 ],
 "why_en": "lesen + Akkusativ (direct object: what/whom?). Buch is neuter: das stays das. In Akkusativ only masculine changes.",
 "why_ur": "lesen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie lesen das Buch.",
@@ -47573,7 +47573,7 @@
 ],
 "why_en": "besuchen + Akkusativ (direct object: what/whom?). Freund is masculine: der → den. In Akkusativ only masculine changes.",
 "why_ur": "besuchen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie besuchen den Freund.",
@@ -47769,7 +47769,7 @@
 ],
 "why_en": "sehen + Akkusativ (direct object: what/whom?). Frau is feminine: die stays die. In Akkusativ only masculine changes.",
 "why_ur": "sehen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie sieht die Frau.",
@@ -47853,7 +47853,7 @@
 ],
 "why_en": "sehen + Akkusativ (direct object: what/whom?). Opa is masculine: der → den. In Akkusativ only masculine changes.",
 "why_ur": "sehen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie sehen den Opa.",
@@ -47881,7 +47881,7 @@
 ],
 "why_en": "sehen + Akkusativ (direct object: what/whom?). Schwester is feminine: die stays die. In Akkusativ only masculine changes.",
 "why_ur": "sehen کے ساتھ Akkusativ آتا ہے (کیا / کس کو؟)۔ Akkusativ میں صرف masculine بدلتا ہے: der → den، ein → einen۔",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie sieht die Schwester.",
@@ -49393,7 +49393,7 @@
 ],
 "why_en": "helfen + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). das → dem.",
 "why_ur": "helfen کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hilft dem Kind.",
@@ -49449,7 +49449,7 @@
 ],
 "why_en": "helfen + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). der → dem.",
 "why_ur": "helfen کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hilft dem Bruder.",
@@ -49505,7 +49505,7 @@
 ],
 "why_en": "helfen + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "helfen کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie helfen der Schwester.",
@@ -49617,7 +49617,7 @@
 ],
 "why_en": "helfen + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "helfen کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hilft der Mutter.",
@@ -49673,7 +49673,7 @@
 ],
 "why_en": "helfen + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). der → dem.",
 "why_ur": "helfen کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie helfen dem Freund.",
@@ -49729,7 +49729,7 @@
 ],
 "why_en": "helfen + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "helfen کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie hilft der Freundin.",
@@ -50121,7 +50121,7 @@
 ],
 "why_en": "danken + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). das → dem.",
 "why_ur": "danken کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie dankt dem Kind.",
@@ -50177,7 +50177,7 @@
 ],
 "why_en": "danken + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). der → dem.",
 "why_ur": "danken کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie dankt dem Bruder.",
@@ -50233,7 +50233,7 @@
 ],
 "why_en": "danken + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "danken کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie dankt der Schwester.",
@@ -50345,7 +50345,7 @@
 ],
 "why_en": "danken + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "danken کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie dankt der Mutter.",
@@ -50401,7 +50401,7 @@
 ],
 "why_en": "danken + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). der → dem.",
 "why_ur": "danken کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie dankt dem Freund.",
@@ -50569,7 +50569,7 @@
 ],
 "why_en": "danken + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "danken کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie dankt der Lehrerin.",
@@ -50961,7 +50961,7 @@
 ],
 "why_en": "antworten + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "antworten کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie antworten der Schwester.",
@@ -51017,7 +51017,7 @@
 ],
 "why_en": "antworten + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). der → dem.",
 "why_ur": "antworten کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(Sie = you, formal)"
 },
 "pick": [
 "Sie antworten dem Vater.",
@@ -51185,7 +51185,7 @@
 ],
 "why_en": "antworten + Dativ (to whom?). In Dativ everything changes: der → dem, die → der, das → dem, plural → den (+n). die → der.",
 "why_ur": "antworten کے ساتھ Dativ آتا ہے (کس کو؟)۔ Dativ میں سب بدلتا ہے: der → dem، die → der، das → dem، Plural → den",
-"cue": ""
+"cue": "(sie = she)"
 },
 "pick": [
 "Sie antwortet der Freundin.",
@@ -53815,7 +53815,7 @@
 ],
 "why_en": "aus ALWAYS takes Dativ (mit, bei, von, aus, zu, nach, seit).",
 "why_ur": "aus کے بعد ہمیشہ Dativ آتا ہے (mit، bei، von، aus، zu، nach، seit)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -53837,7 +53837,7 @@
 ],
 "why_en": "The article (der) is Dativ → you need a Dativ preposition: aus. für/ohne/durch/gegen take Akkusativ.",
 "why_ur": "Article (der) Dativ میں ہے، اس لیے Dativ والا حرف جار (aus) آئے گا۔ für/ohne/durch Akkusativ لیتے ہیں۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -54535,7 +54535,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: der Flur → in den Flur.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -54579,7 +54579,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “den Flur” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -54619,7 +54619,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -54959,7 +54959,7 @@
 ],
 "why_en": "legen = movement → Wohin? → Akkusativ: der Fernseher → neben den Fernseher.",
 "why_ur": "legen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -55003,7 +55003,7 @@
 ],
 "why_en": "legen (to put, movement + Akkusativ) vs liegen (to be there, Dativ). “den Fernseher” is Akkusativ → legen.",
 "why_ur": "legen = رکھنا (حرکت، Akkusativ)، liegen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -55043,7 +55043,7 @@
 ],
 "why_en": "legen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -55701,7 +55701,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: die Tür → vor die Tür.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -55745,7 +55745,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “die Tür” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -55785,7 +55785,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -56549,7 +56549,7 @@
 ],
 "why_en": "legen = movement → Wohin? → Akkusativ: der Kühlschrank → in den Kühlschrank.",
 "why_ur": "legen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -56593,7 +56593,7 @@
 ],
 "why_en": "legen (to put, movement + Akkusativ) vs liegen (to be there, Dativ). “den Kühlschrank” is Akkusativ → legen.",
 "why_ur": "legen = رکھنا (حرکت، Akkusativ)، liegen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -56633,7 +56633,7 @@
 ],
 "why_en": "legen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -57079,7 +57079,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: der Flur → in den Flur.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -57123,7 +57123,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “den Flur” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -57163,7 +57163,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -57397,7 +57397,7 @@
 ],
 "why_en": "legen = movement → Wohin? → Akkusativ: die Tasche → in die Tasche.",
 "why_ur": "legen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -57441,7 +57441,7 @@
 ],
 "why_en": "legen (to put, movement + Akkusativ) vs liegen (to be there, Dativ). “die Tasche” is Akkusativ → legen.",
 "why_ur": "legen = رکھنا (حرکت، Akkusativ)، liegen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -57481,7 +57481,7 @@
 ],
 "why_en": "legen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -58457,7 +58457,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: der Flur → in den Flur.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -58501,7 +58501,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “den Flur” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -58541,7 +58541,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -58775,7 +58775,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: das Sofa → neben das Sofa.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -58819,7 +58819,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “das Sofa” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -58859,7 +58859,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -59411,7 +59411,7 @@
 ],
 "why_en": "legen = movement → Wohin? → Akkusativ: der Computer → neben den Computer.",
 "why_ur": "legen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -59455,7 +59455,7 @@
 ],
 "why_en": "legen (to put, movement + Akkusativ) vs liegen (to be there, Dativ). “den Computer” is Akkusativ → legen.",
 "why_ur": "legen = رکھنا (حرکت، Akkusativ)، liegen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -59495,7 +59495,7 @@
 ],
 "why_en": "legen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -60683,7 +60683,7 @@
 ],
 "why_en": "legen = movement → Wohin? → Akkusativ: der Fernseher → neben den Fernseher.",
 "why_ur": "legen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -60727,7 +60727,7 @@
 ],
 "why_en": "legen (to put, movement + Akkusativ) vs liegen (to be there, Dativ). “den Fernseher” is Akkusativ → legen.",
 "why_ur": "legen = رکھنا (حرکت، Akkusativ)، liegen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -60767,7 +60767,7 @@
 ],
 "why_en": "legen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -61213,7 +61213,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: der Tisch → unter den Tisch.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -61257,7 +61257,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “den Tisch” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -61297,7 +61297,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -61319,7 +61319,7 @@
 ],
 "why_en": "stellen = movement → Wohin? → Akkusativ: das Sofa → vor das Sofa.",
 "why_ur": "stellen میں حرکت ہے → Wohin؟ (کہاں کو) → Akkusativ۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -61363,7 +61363,7 @@
 ],
 "why_en": "stellen (to put, movement + Akkusativ) vs stehen (to be there, Dativ). “das Sofa” is Akkusativ → stellen.",
 "why_ur": "stellen = رکھنا (حرکت، Akkusativ)، stehen = موجود ہونا (Dativ)۔",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {
@@ -61403,7 +61403,7 @@
 ],
 "why_en": "stellen describes a movement to a place → Wohin? → Akkusativ.",
 "why_ur": "حرکت ہے → Wohin؟ → Akkusativ",
-"cue": ""
+"cue": "(sie = she)"
 }
 },
 {

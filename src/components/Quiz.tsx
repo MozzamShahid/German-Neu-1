@@ -1,15 +1,33 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import type { AnswerRecord, ChoiceQuestion, MatchQuestion, Question } from "@/lib/types";
+import type { AnswerRecord, ChoiceQuestion, MatchQuestion, OrderQuestion, Question, SentenceInfo } from "@/lib/types";
 import { choiceScore, matchScore, roundQuarter, WRONG_PENALTY } from "@/lib/scoring";
-import { ArticleWord, WordCardView } from "./Word";
+import { ArticleWord, SpeakButton, speak, Urdu, WordCardView } from "./Word";
 
 const TYPE_LABEL: Record<Question["type"], string> = {
   meaning: "Meaning",
   reverse: "Reverse",
   article: "der / die / das",
   match: "Matching",
+  grammar: "Grammatik",
+};
+
+const TOPIC_NAME: Record<string, string> = {
+  konjugation: "Konjugation",
+  wortstellung: "Satzbau",
+  pronomen: "Pronomen",
+  artikel: "Artikel",
+  modalverben: "Modalverben",
+  trennbar: "Trennbare Verben",
+  vergangenheit: "Vergangenheit",
+  zahlen: "Zahlen",
+  uhrzeit: "Uhrzeit",
+  wortbildung: "Wortbildung",
+  redemittel: "Redemittel",
+  akkusativ: "Akkusativ",
+  dativ: "Dativ",
+  wechsel: "Wechselpräpositionen",
 };
 
 const ARTICLE_BTN: Record<string, string> = {
@@ -17,6 +35,13 @@ const ARTICLE_BTN: Record<string, string> = {
   die: "text-die",
   das: "text-das",
 };
+
+function badge(q: Question) {
+  if (q.type === "grammar" && q.sentence) return `${TYPE_LABEL.grammar} · ${TOPIC_NAME[q.sentence.topic] ?? q.sentence.topic}`;
+  return TYPE_LABEL[q.type];
+}
+
+const cap = (s: string) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 
 export default function Quiz({
   questions,
@@ -68,8 +93,10 @@ export default function Quiz({
       <div key={q.qid} className="pop">
         {q.type === "match" ? (
           <MatchView q={q} onDone={setCurrent} done={!!current} />
+        ) : q.format === "order" ? (
+          <OrderView q={q as OrderQuestion} onDone={setCurrent} />
         ) : (
-          <ChoiceView q={q} onDone={setCurrent} done={!!current} />
+          <ChoiceView q={q as ChoiceQuestion} onDone={setCurrent} done={!!current} />
         )}
       </div>
 
@@ -88,6 +115,46 @@ export default function Quiz({
           </button>
         </div>
       )}
+    </div>
+  );
+}
+
+// ------------------------------------------------------------- helpers
+/** English + Urdu translation of the sentence (grammar questions). */
+function Translation({ s }: { s: SentenceInfo }) {
+  return (
+    <div className="mt-3 rounded-xl bg-slate-50 px-4 py-2 text-center">
+      <div className="text-sm text-slate-600">{s.en}</div>
+      {s.ur && s.ur !== s.en && <Urdu className="text-base text-slate-700">{s.ur}</Urdu>}
+    </div>
+  );
+}
+
+/** Don't show the translation when the prompt already contains it (phrases) or it would give the answer away. */
+function showTranslation(q: ChoiceQuestion) {
+  if (!q.sentence) return false;
+  if (q.sentence.topic === "zahlen" || q.sentence.topic === "wortbildung") return false;
+  return !q.prompt.includes(q.sentence.en);
+}
+
+function Explanation({ lines, urdu, sentence }: { lines: string[]; urdu?: string[]; sentence?: SentenceInfo }) {
+  return (
+    <div className="space-y-1.5 text-sm text-slate-700">
+      {lines.map((x, i) =>
+        i === 0 && x.startsWith("✔") && sentence ? (
+          <div key={i} className="flex items-center gap-2 text-base font-semibold text-slate-900">
+            <span>{x}</span>
+            <SpeakButton text={sentence.de} />
+          </div>
+        ) : (
+          <p key={i}>{x.includes(" = ") && i === 0 ? <b>{x}</b> : x}</p>
+        ),
+      )}
+      {urdu?.map((x, i) => (
+        <Urdu key={"u" + i} className="rounded-lg bg-emerald-50 px-3 py-1 text-[15px] text-emerald-900">
+          {x}
+        </Urdu>
+      ))}
     </div>
   );
 }
@@ -124,7 +191,9 @@ function ChoiceView({
         usedHint: hintsShown > 0,
         correct,
         firstTry: correct && wrongCount === 0,
+        itemId: q.sentence?.itemId,
       });
+      if (q.sentence && q.sentence.topic !== "zahlen") speak(q.sentence.de);
     },
     [q, hintsShown, onDone],
   );
@@ -155,26 +224,44 @@ function ChoiceView({
   }, [choose, finished, hintsShown, q]);
 
   const isArticle = q.type === "article";
+  const isGrammar = q.type === "grammar";
 
   return (
     <div>
       <div className="rounded-2xl bg-white p-6 shadow-sm">
         <div className="mb-3 flex items-center justify-between text-xs">
-          <span className="rounded-full bg-slate-100 px-2.5 py-1 font-medium text-slate-600">{TYPE_LABEL[q.type]}</span>
+          <span className="rounded-full bg-slate-100 px-2.5 py-1 font-medium text-slate-600">{badge(q)}</span>
           <span className="text-slate-500">
-            {q.card.important && <span className="mr-1 text-amber-500">★ important</span>}
+            {q.card?.important && <span className="mr-1 text-amber-500">★ important</span>}
             {q.marks} marks
           </span>
         </div>
         <div className="py-4 text-center">
-          <div className="text-3xl font-bold leading-tight sm:text-4xl">
-            {finished && isArticle ? <ArticleWord text={q.card.display} /> : q.type === "meaning" ? <ArticleWord text={q.prompt} /> : q.prompt}
-          </div>
-          {isArticle && <div className="mt-2 text-slate-500">{q.card.meaning}</div>}
+          {isGrammar ? (
+            <div className="whitespace-pre-line text-xl font-semibold leading-snug sm:text-2xl">{q.prompt}</div>
+          ) : (
+            <div className="flex items-center justify-center gap-2 text-3xl font-bold leading-tight sm:text-4xl">
+              {finished && isArticle && q.card ? (
+                <ArticleWord text={q.card.display} />
+              ) : q.type === "meaning" ? (
+                <ArticleWord text={q.prompt} />
+              ) : (
+                q.prompt
+              )}
+              {q.type === "meaning" && <SpeakButton text={q.prompt} />}
+            </div>
+          )}
+          {isArticle && q.card && <div className="mt-2 text-slate-500">{q.card.meaning}</div>}
+          {q.card?.ur && q.type === "reverse" && <Urdu className="mt-1 text-lg text-slate-600">{q.card.ur}</Urdu>}
           <div className="mt-2 text-sm text-slate-400">{q.subPrompt}</div>
+          {isGrammar && q.sentence && showTranslation(q) && <Translation s={q.sentence} />}
         </div>
 
-        <div className={`grid gap-2.5 ${isArticle ? "grid-cols-3" : "sm:grid-cols-2"}`}>
+        <div
+          className={`grid gap-2.5 ${
+            isArticle ? "grid-cols-3" : q.format === "pick" || q.options.some((o) => o.length > 28) ? "grid-cols-1" : "sm:grid-cols-2"
+          }`}
+        >
           {q.options.map((opt, i) => {
             const isWrong = wrong.includes(i);
             const isAnswer = finished && i === q.answer;
@@ -248,13 +335,10 @@ function LearnPanel({ q, correct, firstTry }: { q: ChoiceQuestion; correct: bool
     <div className="pop mt-4 rounded-2xl bg-white p-5 shadow-sm">
       <div className={`mb-2 font-semibold ${correct ? "text-green-700" : "text-red-600"}`}>
         {firstTry ? "✓ Richtig!" : correct ? "✓ Got it on retry" : "✗ The answer was:"}{" "}
-        {!correct && <ArticleWord text={q.card.display} />}
+        {!correct && (q.card ? <ArticleWord text={q.card.display} /> : <span>{q.options[q.answer]}</span>)}
       </div>
-      <ul className="space-y-1 text-sm text-slate-700">
-        {q.explanation.map((x, i) => (
-          <li key={i}>{x.includes(" = ") && i === 0 ? <b>{x}</b> : x}</li>
-        ))}
-      </ul>
+      <Explanation lines={q.explanation} urdu={q.explanationUr} sentence={q.sentence} />
+      {q.card?.ur && q.type !== "reverse" && <Urdu className="mt-1 text-base text-slate-600">{q.card.ur}</Urdu>}
       {q.related.length > 0 && (
         <div className="mt-4">
           <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">
@@ -265,6 +349,138 @@ function LearnPanel({ q, correct, firstTry }: { q: ChoiceQuestion; correct: bool
               <WordCardView key={c.id} c={c} />
             ))}
           </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ------------------------------------------------------------------- order
+function OrderView({ q, onDone }: { q: OrderQuestion; onDone: (a: AnswerRecord) => void }) {
+  const [placed, setPlaced] = useState<number[]>([]); // indexes into q.chunks
+  const [wrong, setWrong] = useState(0);
+  const [status, setStatus] = useState<"idle" | "wrong" | "correct" | "revealed">("idle");
+  const finished = status === "correct" || status === "revealed";
+
+  const finish = (correct: boolean, wrongCount: number) => {
+    setStatus(correct ? "correct" : "revealed");
+    onDone({
+      qid: q.qid,
+      type: "grammar",
+      entryIds: [],
+      marks: q.marks,
+      earned: choiceScore(q.marks, wrongCount, correct, false),
+      wrongAttempts: wrongCount,
+      usedHint: false,
+      correct,
+      firstTry: correct && wrongCount === 0,
+      itemId: q.sentence?.itemId,
+    });
+    if (q.sentence) speak(q.sentence.de);
+  };
+
+  const check = () => {
+    const built = placed.map((i) => q.chunks[i]);
+    if (built.join(" ") === q.answer.join(" ")) return finish(true, wrong);
+    const w = wrong + 1;
+    setWrong(w);
+    setStatus("wrong");
+    if (w > q.maxRetries) finish(false, w);
+  };
+
+  const free = q.chunks.map((c, i) => ({ c, i })).filter(({ i }) => !placed.includes(i));
+  const triesLeft = q.maxRetries - wrong + 1;
+
+  return (
+    <div>
+      <div className="rounded-2xl bg-white p-6 shadow-sm">
+        <div className="mb-3 flex items-center justify-between text-xs">
+          <span className="rounded-full bg-slate-100 px-2.5 py-1 font-medium text-slate-600">{badge(q)}</span>
+          <span className="text-slate-500">{q.marks} marks</span>
+        </div>
+        <p className="text-center text-lg font-semibold">{q.prompt}</p>
+        {q.sentence && <Translation s={q.sentence} />}
+
+        <div
+          className={`mt-4 flex min-h-14 flex-wrap items-center gap-2 rounded-xl border-2 border-dashed px-3 py-2 ${
+            status === "correct"
+              ? "border-green-400 bg-green-50"
+              : status === "wrong"
+                ? "shake border-red-300 bg-red-50"
+                : "border-slate-300"
+          }`}
+        >
+          {finished ? (
+            <span className="text-lg font-medium">{q.sentence?.de}</span>
+          ) : (
+            <>
+              {q.fixed.map((c, i) => (
+                <span key={"f" + i} className="rounded-lg bg-slate-200 px-3 py-1.5 font-medium text-slate-700">
+                  {i === 0 ? cap(c) : c}
+                </span>
+              ))}
+              {placed.map((ci, k) => (
+                <button
+                  key={"p" + ci}
+                  onClick={() => {
+                    setPlaced(placed.filter((x) => x !== ci));
+                    setStatus("idle");
+                  }}
+                  className="rounded-lg bg-indigo-600 px-3 py-1.5 font-medium text-white hover:bg-indigo-500"
+                >
+                  {k === 0 && q.fixed.length === 0 ? cap(q.chunks[ci]) : q.chunks[ci]}
+                </button>
+              ))}
+              {placed.length === q.chunks.length && <span className="text-lg font-medium">{q.punct}</span>}
+              {placed.length === 0 && q.fixed.length === 0 && <span className="text-sm text-slate-400">Tap the words below…</span>}
+            </>
+          )}
+        </div>
+
+        {!finished && (
+          <>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {free.map(({ c, i }) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    setPlaced([...placed, i]);
+                    setStatus("idle");
+                  }}
+                  className="rounded-lg border-2 border-slate-200 bg-white px-3 py-1.5 font-medium hover:border-indigo-400 hover:bg-indigo-50"
+                >
+                  {c}
+                </button>
+              ))}
+            </div>
+            <div className="mt-4 flex items-center justify-between gap-2">
+              <span className="text-sm text-red-600">
+                {status === "wrong" && `Not quite (−${WRONG_PENALTY}). ${triesLeft} ${triesLeft === 1 ? "try" : "tries"} left.`}
+              </span>
+              <div className="flex items-center gap-3">
+                {wrong > 0 && (
+                  <button onClick={() => finish(false, wrong)} className="text-sm font-medium text-slate-500 underline">
+                    Show answer
+                  </button>
+                )}
+                <button
+                  disabled={placed.length !== q.chunks.length}
+                  onClick={check}
+                  className="rounded-xl bg-indigo-600 px-5 py-2 font-semibold text-white hover:bg-indigo-700 disabled:opacity-40"
+                >
+                  Check
+                </button>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+      {finished && (
+        <div className="pop mt-4 rounded-2xl bg-white p-5 shadow-sm">
+          <div className={`mb-2 font-semibold ${status === "correct" ? "text-green-700" : "text-red-600"}`}>
+            {status === "correct" ? (wrong === 0 ? "✓ Richtig!" : "✓ Got it on retry") : "✗ The correct order:"}
+          </div>
+          <Explanation lines={q.explanation} urdu={q.explanationUr} sentence={q.sentence} />
         </div>
       )}
     </div>
@@ -328,7 +544,10 @@ function MatchView({ q, onDone, done }: { q: MatchQuestion; onDone: (a: AnswerRe
                 <button
                   key={l.key}
                   disabled={isM || allDone}
-                  onClick={() => setSelLeft(l.key)}
+                  onClick={() => {
+                    setSelLeft(l.key);
+                    speak(l.text);
+                  }}
                   className={`w-full rounded-xl border-2 px-3 py-2.5 text-left text-sm font-medium transition ${
                     isM ? `${colorOf(l.key)}` : selLeft === l.key ? "border-indigo-500 bg-indigo-50" : "border-slate-200 hover:border-indigo-300"
                   }`}

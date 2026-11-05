@@ -210,6 +210,10 @@ def add(topic: str, de: str, en: str, ur: str, *, fill=None, order=None, pick=No
     _seen.add(k)
     en = cap(en) if en.split(" ")[0] in ("i", "you", "he", "she", "we", "they", "the", "this", "these", "my", "it", "where") else en
     item = dict(id=len(ITEMS), topic=topic, de=de, en=en, ur=ur, rule=rule, level=level)
+    if fill and not fill.get("cue") and (fill["text"].startswith("Sie ") or fill["text"].startswith("Sie,")):
+        # "Sie ___ …" is ambiguous at the start of a sentence: she / they / you (formal)
+        first = en.split(" ")[0].lower()
+        fill["cue"] = {"she": "(sie = she)", "they": "(sie = they)", "you": "(Sie = you, formal)"}.get(first, "")
     if fill:
         assert fill["answer"] in fill["options"], fill
         assert len(set(fill["options"])) == len(fill["options"]), fill

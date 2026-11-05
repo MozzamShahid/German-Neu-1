@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import type { AnswerRecord, Chapter, QuizResponse } from "@/lib/types";
+import { GRAMMAR_TOPICS, type AnswerRecord, type Chapter, type QuizResponse } from "@/lib/types";
 import Setup, { type SetupValues } from "./Setup";
 import Quiz from "./Quiz";
 import Results from "./Results";
@@ -12,7 +12,8 @@ const DEFAULTS: SetupValues = {
   mode: "questions",
   count: 10,
   targetMarks: 20,
-  types: ["meaning", "article", "match"],
+  types: ["meaning", "article", "match", "grammar"],
+  grammarTopics: [...GRAMMAR_TOPICS],
 };
 
 type Stage =
@@ -106,8 +107,14 @@ export default function App({ chapters }: { chapters: Chapter[] }) {
         totalMarks={stage.quiz.totalMarks}
         saveState={saveState}
         onRestart={() => setStage({ kind: "setup" })}
-        onPracticeMistakes={(ids) =>
-          start({ ...settings, mode: "questions", count: Math.min(30, Math.max(5, ids.length)), reviewIds: ids })
+        onPracticeMistakes={(ids, itemIds) =>
+          start({
+            ...settings,
+            mode: "questions",
+            count: Math.min(30, Math.max(5, ids.length + itemIds.length)),
+            reviewIds: ids,
+            reviewItemIds: itemIds,
+          })
         }
       />
     );

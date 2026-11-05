@@ -1,6 +1,7 @@
 import "server-only";
 import vocabJson from "@/data/vocab.json";
 import { roundQuarter } from "./scoring";
+import { grammarQuestions } from "./grammar";
 import type {
   ChoiceQuestion,
   Entry,
@@ -57,6 +58,7 @@ function card(e: Entry): WordCard {
     forms: e.forms,
     example_de: e.example_de || undefined,
     example_en: e.example_en || undefined,
+    ur: e.ur || undefined,
   };
 }
 
@@ -365,8 +367,15 @@ function matchQuestion(seed: Word, pool: Word[], poolByEntry: Map<number, Word>)
 // --------------------------------------------------------------- generator
 export function generateQuiz(req: QuizRequest): QuizResponse {
   const chapters = new Set(req.chapters.filter((c) => c >= 1 && c <= vocab.chapters.length));
-  if (chapters.size === 0) throw new Error("Select at least one chapter");
   let types = (req.types?.length ? req.types : ["meaning", "article", "match"]) as QuestionType[];
+  const topics = req.grammarTopics ?? [];
+  if (!topics.length) types = types.filter((t) => t !== "grammar");
+  const vocabTypes = types.filter((t) => t !== "grammar");
+  if (vocabTypes.length && chapters.size === 0) {
+    if (types.includes("grammar")) types = ["grammar"];
+    else throw new Error("Select at least one chapter");
+  }
+  if (types.length === 0) throw new Error("Select at least one question type");
 
   const pool = buildWords(vocab.entries.filter((e) => chapters.has(e.chapter)));
   const poolByEntry = new Map<number, Word>();
@@ -375,7 +384,14 @@ export function generateQuiz(req: QuizRequest): QuizResponse {
   const boost = new Set(req.reviewIds ?? []);
   const nounPool = pool.filter((w) => articleEligible(w.main));
   if (nounPool.length === 0) types = types.filter((t) => t !== "article");
-  if (types.length === 0) types = ["meaning"];
+  if (pool.length === 0) types = types.filter((t) => t === "grammar");
+  if (types.length === 0) throw new Error("No words in the selected chapters");
+
+  // grammar questions are prepared up front (balanced over the chosen topics)
+  const grammarQueue: Question[] = types.includes("grammar")
+    ? grammarQuestions(topics, req.mode === "marks" ? 200 : Math.min(200, req.count ?? 10), req.reviewItemIds)
+    : [];
+  if (types.includes("grammar") && grammarQueue.length === 0) types = types.filter((t) => t !== "grammar");
 
   const ordered = weightedOrder(pool, boost);
   const orderedNouns = weightedOrder(nounPool, boost);
@@ -406,7 +422,16 @@ export function generateQuiz(req: QuizRequest): QuizResponse {
   while (req.mode === "marks" ? total < target && questions.length < 200 : questions.length < maxQ) {
     const t = nextType();
     let q: Question;
-    if (t === "article") q = articleQuestion(next(orderedNouns));
+    if (t === "grammar") {
+      const g = grammarQueue.shift();
+      if (!g) {
+        types = types.filter((x) => x !== "grammar");
+        cycle = [];
+        if (types.length === 0) break;
+        continue;
+      }
+      q = g;
+    } else if (t === "article") q = articleQuestion(next(orderedNouns));
     else if (t === "match") {
       const seed = familySeeds.find((x) => !used.has(x.key)) ?? next(ordered);
       used.add(seed.key);

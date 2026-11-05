@@ -1,8 +1,8 @@
 "use client";
 
-import type { AnswerRecord, Question, WordCard } from "@/lib/types";
+import type { AnswerRecord, Question, SentenceInfo, WordCard } from "@/lib/types";
 import { roundQuarter } from "@/lib/scoring";
-import { WordCardView } from "./Word";
+import { SpeakButton, Urdu, WordCardView } from "./Word";
 
 export default function Results({
   name,
@@ -18,7 +18,7 @@ export default function Results({
   answers: AnswerRecord[];
   totalMarks: number;
   saveState: "saving" | "saved" | "off" | "error";
-  onPracticeMistakes: (ids: number[]) => void;
+  onPracticeMistakes: (ids: number[], itemIds: number[]) => void;
   onRestart: () => void;
 }) {
   const score = roundQuarter(answers.reduce((s, a) => s + a.earned, 0));
@@ -31,11 +31,20 @@ export default function Results({
   const qById = new Map(questions.map((q) => [q.qid, q]));
   const reviewCards: WordCard[] = [];
   const seen = new Set<number>();
+  const reviewSentences: SentenceInfo[] = [];
+  const seenSentence = new Set<number>();
   for (const a of answers) {
     if (a.firstTry) continue;
     const q = qById.get(a.qid);
     if (!q) continue;
-    const cards = q.type === "match" ? q.cards : [q.card];
+    if (q.type === "grammar") {
+      if (q.sentence && !seenSentence.has(q.sentence.itemId)) {
+        seenSentence.add(q.sentence.itemId);
+        reviewSentences.push(q.sentence);
+      }
+      continue;
+    }
+    const cards = q.type === "match" ? q.cards : q.card ? [q.card] : [];
     for (const c of cards) {
       if (seen.has(c.id)) continue;
       seen.add(c.id);
@@ -92,10 +101,29 @@ export default function Results({
         </div>
       )}
 
+      {reviewSentences.length > 0 && (
+        <div className="mt-5 rounded-2xl bg-white p-5 shadow-sm">
+          <h2 className="mb-1 font-semibold">Sentences to review ({reviewSentences.length})</h2>
+          <p className="mb-3 text-sm text-slate-500">Read them aloud. Listening to them helps you remember the pattern.</p>
+          <div className="space-y-2">
+            {reviewSentences.map((s) => (
+              <div key={s.itemId} className="rounded-xl border border-slate-200 px-3 py-2">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-medium">{s.de}</span>
+                  <SpeakButton text={s.de} />
+                </div>
+                <div className="text-sm text-slate-500">{s.en}</div>
+                {s.ur && s.ur !== s.en && <Urdu className="text-sm text-slate-600">{s.ur}</Urdu>}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="mt-5 flex flex-col gap-2 sm:flex-row">
-        {reviewCards.length > 0 && (
+        {(reviewCards.length > 0 || reviewSentences.length > 0) && (
           <button
-            onClick={() => onPracticeMistakes(reviewCards.map((c) => c.id))}
+            onClick={() => onPracticeMistakes(reviewCards.map((c) => c.id), reviewSentences.map((s) => s.itemId))}
             className="flex-1 rounded-xl bg-indigo-600 py-3 font-semibold text-white hover:bg-indigo-700"
           >
             Practise these words

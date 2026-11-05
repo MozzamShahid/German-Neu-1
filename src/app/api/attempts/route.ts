@@ -42,7 +42,7 @@ export async function POST(request: Request) {
 /** History for a name + the words they still get wrong (for "practice mistakes"). */
 export async function GET(request: Request) {
   const sb = getSupabase();
-  if (!sb) return Response.json({ configured: false, attempts: [], reviewIds: [] });
+  if (!sb) return Response.json({ configured: false, attempts: [], reviewIds: [], reviewItemIds: [] });
 
   const name = clampName(new URL(request.url).searchParams.get("name")).toLowerCase();
   if (!name) return Response.json({ configured: true, attempts: [], reviewIds: [] });
@@ -60,8 +60,15 @@ export async function GET(request: Request) {
   // newest first: a word counts as "learned" once answered right on first try later
   const learned = new Set<number>();
   const review = new Set<number>();
+  const learnedItems = new Set<number>();
+  const reviewItems = new Set<number>();
   for (const a of data) {
     for (const ans of (a.answers ?? []) as AnswerRecord[]) {
+      if (typeof ans.itemId === "number") {
+        if (ans.firstTry) {
+          if (!reviewItems.has(ans.itemId)) learnedItems.add(ans.itemId);
+        } else if (!learnedItems.has(ans.itemId)) reviewItems.add(ans.itemId);
+      }
       for (const id of ans.entryIds ?? []) {
         if (ans.firstTry) {
           if (!review.has(id)) learned.add(id);
@@ -74,5 +81,6 @@ export async function GET(request: Request) {
     configured: true,
     attempts: data.map((a) => ({ id: a.id, chapters: a.chapters, question_count: a.question_count, max_score: a.max_score, score: a.score, correct_first: a.correct_first, wrong: a.wrong, created_at: a.created_at })),
     reviewIds: [...review],
+    reviewItemIds: [...reviewItems],
   });
 }

@@ -23,6 +23,7 @@ export interface Entry {
   article_rule: string | null;
   compound_head: number | null;
   family: number[];
+  ur?: string;
 }
 
 export interface Chapter {
@@ -40,7 +41,45 @@ export interface Vocab {
   entries: Entry[];
 }
 
-export type QuestionType = "meaning" | "reverse" | "article" | "match";
+export type QuestionType = "meaning" | "reverse" | "article" | "match" | "grammar";
+
+export const GRAMMAR_TOPICS = [
+  "konjugation",
+  "wortstellung",
+  "pronomen",
+  "artikel",
+  "modalverben",
+  "trennbar",
+  "vergangenheit",
+  "zahlen",
+  "uhrzeit",
+  "wortbildung",
+  "redemittel",
+] as const;
+export const OPTIONAL_TOPICS = ["akkusativ", "dativ", "wechsel"] as const;
+export type GrammarTopic = (typeof GRAMMAR_TOPICS)[number] | (typeof OPTIONAL_TOPICS)[number];
+
+export interface GrammarItem {
+  id: number;
+  topic: GrammarTopic;
+  de: string;
+  en: string;
+  ur: string;
+  rule: string;
+  level: number;
+  fill?: { text: string; answer: string; options: string[]; why_en: string; why_ur: string; cue: string };
+  order?: { chunks: string[]; fixed: number; punct: string };
+  pick?: string[];
+}
+
+/** A full sentence with its translations, shown with grammar questions. */
+export interface SentenceInfo {
+  de: string;
+  en: string;
+  ur: string;
+  topic: GrammarTopic;
+  itemId: number;
+}
 
 /** Compact word card shown after answering ("learn more" panel). */
 export interface WordCard {
@@ -52,6 +91,7 @@ export interface WordCard {
   chapter: number;
   plural?: string | null;
   forms?: string | null;
+  ur?: string;
   example_de?: string;
   example_en?: string;
 }
@@ -61,10 +101,13 @@ interface BaseQuestion {
   type: QuestionType;
   marks: number;
   entryIds: number[];
+  /** grammar questions: the sentence + translations */
+  sentence?: SentenceInfo;
+  format?: "fill" | "pick" | "order";
 }
 
 export interface ChoiceQuestion extends BaseQuestion {
-  type: "meaning" | "reverse" | "article";
+  type: "meaning" | "reverse" | "article" | "grammar";
   prompt: string;
   subPrompt?: string;
   options: string[];
@@ -72,8 +115,23 @@ export interface ChoiceQuestion extends BaseQuestion {
   maxRetries: number;
   hints: string[];
   explanation: string[];
-  card: WordCard;
+  /** Urdu explanation lines (grammar questions) */
+  explanationUr?: string[];
+  card?: WordCard;
   related: WordCard[];
+}
+
+export interface OrderQuestion extends BaseQuestion {
+  type: "grammar";
+  format: "order";
+  prompt: string;
+  chunks: string[]; // shuffled, excluding the fixed ones
+  fixed: string[]; // already placed at the start
+  answer: string[]; // correct order of the movable chunks
+  punct: string;
+  maxRetries: number;
+  explanation: string[];
+  explanationUr?: string[];
 }
 
 export interface MatchQuestion extends BaseQuestion {
@@ -85,7 +143,7 @@ export interface MatchQuestion extends BaseQuestion {
   cards: WordCard[];
 }
 
-export type Question = ChoiceQuestion | MatchQuestion;
+export type Question = ChoiceQuestion | MatchQuestion | OrderQuestion;
 
 export interface QuizRequest {
   chapters: number[];
@@ -94,6 +152,8 @@ export interface QuizRequest {
   targetMarks?: number;
   types: QuestionType[];
   reviewIds?: number[];
+  grammarTopics?: GrammarTopic[];
+  reviewItemIds?: number[];
 }
 
 export interface QuizResponse {
@@ -113,4 +173,5 @@ export interface AnswerRecord {
   usedHint: boolean;
   correct: boolean; // eventually answered correctly (first try or retry)
   firstTry: boolean;
+  itemId?: number; // grammar item id
 }

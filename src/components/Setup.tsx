@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Chapter, QuestionType } from "@/lib/types";
+import { GRAMMAR_TOPICS, OPTIONAL_TOPICS, type Chapter, type GrammarTopic, type QuestionType } from "@/lib/types";
 import { HINT_COST, WRONG_PENALTY } from "@/lib/scoring";
 
 export interface SetupValues {
@@ -11,8 +11,27 @@ export interface SetupValues {
   count: number;
   targetMarks: number;
   types: QuestionType[];
+  grammarTopics: GrammarTopic[];
   reviewIds?: number[];
+  reviewItemIds?: number[];
 }
+
+const TOPIC_INFO: Record<GrammarTopic, { label: string; ur: string }> = {
+  konjugation: { label: "Verben & Konjugation", ur: "فعل کی گردان" },
+  wortstellung: { label: "Satzbau (verb position)", ur: "جملے کی ترتیب" },
+  pronomen: { label: "Pronomen (er/sie/es, Sie)", ur: "ضمیریں" },
+  artikel: { label: "ein/kein, Plural, mein/dein", ur: "آرٹیکل" },
+  modalverben: { label: "Modalverben", ur: "können, müssen" },
+  trennbar: { label: "Trennbare Verben", ur: "ٹوٹنے والے فعل" },
+  vergangenheit: { label: "Perfekt, war, hatte", ur: "ماضی" },
+  zahlen: { label: "Zahlen & Datum", ur: "گنتی اور تاریخ" },
+  uhrzeit: { label: "Uhrzeit, am/um/zum", ur: "وقت" },
+  wortbildung: { label: "Wortbildung (-los, -er, -ung)", ur: "الفاظ بنانا" },
+  redemittel: { label: "Redemittel (Brief, Arzt …)", ur: "روزمرہ جملے" },
+  akkusativ: { label: "Akkusativ", ur: "der → den" },
+  dativ: { label: "Dativ", ur: "der → dem" },
+  wechsel: { label: "Wechselpräpositionen", ur: "Wo / Wohin" },
+};
 
 interface Attempt {
   id: string;
@@ -29,6 +48,7 @@ const TYPE_INFO: { id: QuestionType; label: string; desc: string }[] = [
   { id: "article", label: "der / die / das", desc: "Pick the right article" },
   { id: "match", label: "Matching", desc: "Word families: das Kind ↔ der Kindergarten" },
   { id: "reverse", label: "Reverse", desc: "English → German" },
+  { id: "grammar", label: "Grammatik + Sätze", desc: "From the lectures: sentences in German · English · Urdu" },
 ];
 
 const PRESETS: { label: string; chapters: number[] }[] = [
@@ -54,7 +74,7 @@ export default function Setup({
   const [v, setV] = useState<SetupValues>(initial);
   const [fetched, setFetched] = useState<{
     name: string;
-    data: { configured: boolean; attempts: Attempt[]; reviewIds: number[] };
+    data: { configured: boolean; attempts: Attempt[]; reviewIds: number[]; reviewItemIds?: number[] };
   } | null>(null);
   const trimmedName = v.name.trim();
   const history = trimmedName.length >= 2 && fetched?.name === trimmedName ? fetched.data : null;
@@ -64,6 +84,8 @@ export default function Setup({
     set("chapters", v.chapters.includes(id) ? v.chapters.filter((c) => c !== id) : [...v.chapters, id].sort((a, b) => a - b));
   const toggleType = (t: QuestionType) =>
     set("types", v.types.includes(t) ? v.types.filter((x) => x !== t) : [...v.types, t]);
+  const toggleTopic = (t: GrammarTopic) =>
+    set("grammarTopics", v.grammarTopics.includes(t) ? v.grammarTopics.filter((x) => x !== t) : [...v.grammarTopics, t]);
 
   // load history when the name settles
   useEffect(() => {
@@ -79,7 +101,14 @@ export default function Setup({
 
   const selected = chapters.filter((c) => v.chapters.includes(c.id));
   const wordCount = selected.reduce((s, c) => s + c.count, 0);
-  const canStart = v.name.trim().length > 0 && v.chapters.length > 0 && v.types.length > 0 && !loading;
+  const vocabOn = v.types.some((t) => t !== "grammar");
+  const grammarOn = v.types.includes("grammar");
+  const canStart =
+    v.name.trim().length > 0 &&
+    v.types.length > 0 &&
+    (!vocabOn || v.chapters.length > 0 || grammarOn) &&
+    (!grammarOn || v.grammarTopics.length > 0 || vocabOn) &&
+    !loading;
 
   const allIds = chapters.map((c) => c.id);
   const isPreset = (p: number[]) => {
@@ -91,7 +120,13 @@ export default function Setup({
     <div className="mx-auto w-full max-w-3xl px-4 py-8">
       <header className="mb-6 text-center">
         <h1 className="text-3xl font-bold tracking-tight">Deutsch Quiz</h1>
-        <p className="mt-1 text-slate-500">Netzwerk neu A1 · all words come from the book glossary</p>
+        <p className="mt-1 text-slate-500">Netzwerk neu A1 · book glossary + lecture notes · German · English · اردو</p>
+        <a
+          href="/learn"
+          className="mt-3 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-emerald-700"
+        >
+          📖 Lernen – notes, tables &amp; sentences
+        </a>
       </header>
 
       <div className="space-y-5">
@@ -120,7 +155,7 @@ export default function Setup({
                   </li>
                 ))}
               </ul>
-              {history.reviewIds.length > 0 && (
+              {history.reviewIds.length + (history.reviewItemIds?.length ?? 0) > 0 && (
                 <button
                   disabled={loading}
                   onClick={() =>
@@ -128,13 +163,16 @@ export default function Setup({
                       ...v,
                       chapters: allIds,
                       mode: "questions",
-                      count: Math.min(30, history.reviewIds.length),
+                      count: Math.min(30, Math.max(5, history.reviewIds.length + (history.reviewItemIds?.length ?? 0))),
                       reviewIds: history.reviewIds,
+                      reviewItemIds: history.reviewItemIds ?? [],
+                      types: history.reviewItemIds?.length && !v.types.includes("grammar") ? [...v.types, "grammar"] : v.types,
                     })
                   }
                   className="mt-2 rounded-lg bg-indigo-600 px-3 py-1.5 font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
                 >
-                  Practice my mistakes ({history.reviewIds.length} words)
+                  Practice my mistakes ({history.reviewIds.length} words
+                  {history.reviewItemIds?.length ? `, ${history.reviewItemIds.length} sentences` : ""})
                 </button>
               )}
             </div>
@@ -181,7 +219,11 @@ export default function Setup({
             })}
           </div>
           <p className="mt-2 text-xs text-slate-500">
-            {v.chapters.length ? `${wordCount} words selected` : "Select at least one chapter"}
+            {v.chapters.length
+              ? `${wordCount} words selected`
+              : vocabOn
+                ? "Select at least one chapter"
+                : "Chapters are only needed for vocabulary questions"}
           </p>
         </section>
 
@@ -257,6 +299,70 @@ export default function Setup({
           </div>
         </section>
 
+        {grammarOn && (
+          <section className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h2 className="text-sm font-semibold">Grammar topics (from the lectures)</h2>
+              <div className="flex gap-1.5">
+                <button
+                  onClick={() =>
+                    set("grammarTopics", [
+                      ...GRAMMAR_TOPICS,
+                      ...v.grammarTopics.filter((t) => (OPTIONAL_TOPICS as readonly string[]).includes(t)),
+                    ])
+                  }
+                  className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium hover:bg-slate-200"
+                >
+                  All
+                </button>
+                <button onClick={() => set("grammarTopics", [])} className="rounded-full px-3 py-1 text-xs text-slate-500 hover:bg-slate-100">
+                  Clear
+                </button>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {GRAMMAR_TOPICS.map((t) => {
+                const on = v.grammarTopics.includes(t);
+                return (
+                  <button
+                    key={t}
+                    onClick={() => toggleTopic(t)}
+                    className={`flex items-center gap-2 rounded-xl border px-3 py-1.5 text-left text-sm ${
+                      on ? "border-indigo-500 bg-indigo-50 text-indigo-900" : "border-slate-200 text-slate-600 hover:border-slate-300"
+                    }`}
+                  >
+                    <span>{TOPIC_INFO[t].label}</span>
+                    <span dir="rtl" lang="ur" className="urdu text-xs leading-normal text-slate-500">
+                      {TOPIC_INFO[t].ur}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="mt-4 rounded-xl border border-violet-200 bg-violet-50 p-3">
+              <div className="mb-2 text-sm font-semibold text-violet-900">Optional: Akkusativ &amp; Dativ</div>
+              <div className="flex flex-wrap gap-2">
+                {OPTIONAL_TOPICS.map((t) => {
+                  const on = v.grammarTopics.includes(t);
+                  return (
+                    <button
+                      key={t}
+                      onClick={() => toggleTopic(t)}
+                      className={`flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm ${
+                        on ? "border-violet-600 bg-violet-600 text-white" : "border-violet-300 bg-white text-violet-800 hover:bg-violet-100"
+                      }`}
+                    >
+                      <span>{on ? "✓" : "+"}</span>
+                      {TOPIC_INFO[t].label}
+                      <span className={`text-xs ${on ? "text-violet-100" : "text-violet-500"}`}>{TOPIC_INFO[t].ur}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
         <section className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <div className="mb-1 font-semibold">How marks work (learning first!)</div>
           <ul className="list-disc space-y-0.5 pl-5">
@@ -271,7 +377,7 @@ export default function Setup({
 
         <button
           disabled={!canStart}
-          onClick={() => onStart({ ...v, reviewIds: undefined })}
+          onClick={() => onStart({ ...v, reviewIds: undefined, reviewItemIds: undefined })}
           className="w-full rounded-2xl bg-indigo-600 py-3.5 text-lg font-semibold text-white shadow-sm transition hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-40"
         >
           {loading ? "Preparing…" : "Start quiz"}

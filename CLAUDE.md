@@ -52,14 +52,18 @@ Run order: `python scripts/parse_glossary.py && python scripts/lecture_vocab.py 
 - Article colours: der = blue, die = red, das = green.
 
 ## Status (2026-11-05)
-Done and deployed: vocab quiz (Kapitel 1–12), Supabase saving, Railway deploy.
-In progress (not yet in the UI or deployed):
-- grammar.json generated and QA'd (konjugation, wortstellung, pronomen, artikel, modalverben, trennbar,
-  vergangenheit, zahlen, uhrzeit, wortbildung, redemittel + optional akkusativ, dativ, wechsel)
-- Kapitel 13 lecture vocab merged into vocab.json
-- TODO: grammar question types in the quiz engine/UI (fill, order = arrange chunks with a fixed first chunk,
-  pick), topic chips plus the Akk/Dat/Wechsel toggles in Setup, Urdu font + rtl, show `ur` on word cards,
-  a "Lernen" page (lecture notes in English + Urdu, tables, examples, 🔊 de-DE speech), then build, push and verify.
+Done and deployed:
+- vocab quiz (Kapitel 1–12 + Kapitel 13 lecture words with Urdu), Supabase saving, Railway deploy
+- grammar quiz type "grammar" (`src/lib/grammar.ts`): fill / pick / order (word-order game) from
+  grammar.json, balanced over the chosen topics; Akk/Dat/Wechsel are optional toggles in Setup
+- Urdu shown in Nastaliq (`.urdu` class, Noto Nastaliq Urdu via next/font) through the `Urdu` component in Word.tsx
+- 🔊 German speech (Web Speech API, de-DE) on words, sentences and examples
+- `/learn` page: lecture notes (`src/data/lessons.ts`) with tables, examples, and daily-life sentences from
+  `/api/sentences?topic=`
+- "Practice my mistakes" covers both words (`reviewIds`) and grammar sentences (`reviewItemIds`, saved as `itemId` in answers)
+
+Ideas for next time: flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have
+them now); a dürfen modal verb; more Wechselpräposition places (an/über).
 
 ## Gotchas
 - On Windows PowerShell, `npm` may be blocked by the execution policy; use `npm.cmd` (or

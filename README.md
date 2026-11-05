@@ -4,6 +4,9 @@ A vocabulary quiz built **only** from the *Netzwerk neu A1* glossary (German →
 chapters 1–12. The goal is learning rather than strict testing.
 
 ## Features
+- **Grammatik + Sätze** from the lecture notes: ~2400 daily-life sentences in German · English · اردو (fill the gap, word order, pick the correct sentence). Topics: verb position, Konjugation, Modalverben, trennbare Verben, Perfekt/war/hatte, Uhrzeit, Zahlen, Artikel, Wortbildung, Redemittel; optional **Akkusativ, Dativ, Wechselpräpositionen**
+- **Lernen** page (`/learn`): the lecture notes as tables + examples, with 🔊 pronunciation
+- **Kapitel 13**: lecture vocabulary with Urdu meanings
 - **Meaning** (German → English) with step-by-step hints (example sentence, lesson, first letter)
 - **der / die / das**, with real rules as hints: suffix rules (-ung → die, -chen → das …) and the
   compound rule (*der Kinder**garten*** takes the article of ***der Garten***)
@@ -41,10 +44,13 @@ npm install
 cp .env.example .env.local      # fill in SUPABASE_SECRET_KEY
 npm run dev                     # http://localhost:3000
 ```
-To rebuild the vocabulary from the PDF (put the PDF in the project root):
+To rebuild the data (put the PDF in the project root):
 ```bash
 pip install -r scripts/requirements.txt
-npm run parse
+cd scripts
+python parse_glossary.py      # book glossary -> vocab.json
+python lecture_vocab.py       # + Kapitel 13 lecture words
+python build_sentences.py     # sentence generator -> grammar.json
 ```
 
 ## Supabase
