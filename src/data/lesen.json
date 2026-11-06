@@ -1510,6 +1510,338 @@
           "sign": "Hotel Krone\nFrühstück: 6:30–10:00 Uhr\nim Restaurant"
         }
       ]
+    },
+    {
+      "id": "t10",
+      "title": "Modelltest 10",
+      "texts": {
+        "a": {
+          "title": "E-Mail",
+          "de": "Hallo Kiran,\nwie geht es dir und deiner Familie? Bei uns ist alles gut. Mein Sohn Hamza geht jetzt in die Schule. Er findet die Schule super und hat schon viele Freunde. Ich arbeite jetzt nur noch halbtags, von 8 bis 12 Uhr. So habe ich am Nachmittag Zeit für Hamza. Kommst du uns im Herbst besuchen?\nLiebe Grüße\nSadia"
+        },
+        "b": {
+          "title": "Zettel im Hausflur",
+          "de": "Liebe Nachbarn,\nam Mittwoch kommt ein Techniker und kontrolliert die Wasserzähler. Bitte seien Sie zwischen 9 und 12 Uhr zu Hause. Wenn Sie keine Zeit haben, rufen Sie bitte die Hausverwaltung an: 030 123 456.\nIhre Hausverwaltung"
+        }
+      },
+      "items": [
+        {
+          "id": "t10-1",
+          "teil": 1,
+          "question": "Hamza mag die Schule.",
+          "answer": 0,
+          "en": "Right: er findet die Schule super.",
+          "ur": "صحیح۔ حمزہ کو اسکول بہت پسند ہے۔",
+          "text": "a"
+        },
+        {
+          "id": "t10-2",
+          "teil": 1,
+          "question": "Sadia arbeitet jetzt den ganzen Tag.",
+          "answer": 1,
+          "en": "Wrong: only half days (halbtags).",
+          "ur": "غلط۔ صرف آدھا دن (halbtags)۔",
+          "text": "a"
+        },
+        {
+          "id": "t10-3",
+          "teil": 1,
+          "question": "Kiran soll im Herbst kommen.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ خزاں میں آنے کی دعوت۔",
+          "text": "a"
+        },
+        {
+          "id": "t10-4",
+          "teil": 1,
+          "question": "Der Techniker kommt am Nachmittag.",
+          "answer": 1,
+          "en": "Wrong: between 9 and 12 (morning).",
+          "ur": "غلط۔ نو سے بارہ بجے، یعنی صبح۔",
+          "text": "b"
+        },
+        {
+          "id": "t10-5",
+          "teil": 1,
+          "question": "Wer keine Zeit hat, soll die Hausverwaltung anrufen.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ وقت نہ ہو تو ہاؤس مینجمنٹ کو فون کریں۔",
+          "text": "b"
+        },
+        {
+          "id": "t10-6",
+          "teil": 2,
+          "question": "Sie möchten mit Ihren Kindern Tiere sehen.",
+          "answer": 0,
+          "en": "a: the zoo.",
+          "ur": "a: چڑیا گھر۔",
+          "choices": [
+            "Tierpark\ntäglich 9–18 Uhr, Kinder 4 €",
+            "Kunstmuseum\nDi–So 10–17 Uhr"
+          ]
+        },
+        {
+          "id": "t10-7",
+          "teil": 2,
+          "question": "Sie suchen am Wochenende einen Babysitter.",
+          "answer": 1,
+          "en": "b: babysitter at weekends.",
+          "ur": "b: ویک اینڈ پر بچوں کی دیکھ بھال۔",
+          "choices": [
+            "Nachhilfe Mathe\nMo–Fr nachmittags",
+            "Studentin sucht Babysitter-Job\nfreitags und samstags abends"
+          ]
+        },
+        {
+          "id": "t10-8",
+          "teil": 2,
+          "question": "Sie möchten günstig Kleidung kaufen.",
+          "answer": 0,
+          "en": "a: second-hand clothes, cheap.",
+          "ur": "a: پرانے کپڑے، سستے۔",
+          "choices": [
+            "Second-Hand-Laden\nKleidung ab 2 €",
+            "Boutique Chic\nDesignermode"
+          ]
+        },
+        {
+          "id": "t10-9",
+          "teil": 2,
+          "question": "Sie möchten Ihr Auto waschen.",
+          "answer": 1,
+          "en": "b: car wash.",
+          "ur": "b: گاڑی دھونے کی جگہ۔",
+          "choices": [
+            "Autohaus Nord\nNeuwagen und Gebrauchtwagen",
+            "Waschstraße Blitz\nAutowäsche ab 6 €"
+          ]
+        },
+        {
+          "id": "t10-10",
+          "teil": 2,
+          "question": "Sie möchten am Abend mit Freunden Fußball sehen.",
+          "answer": 0,
+          "en": "a: a sports bar showing the match.",
+          "ur": "a: اسپورٹس بار جہاں میچ دکھایا جاتا ہے۔",
+          "choices": [
+            "Sportbar Tor\nalle Spiele live auf großem Bildschirm",
+            "Bibliothek\nruhige Leseplätze bis 20 Uhr"
+          ]
+        },
+        {
+          "id": "t10-11",
+          "teil": 3,
+          "question": "Hier gibt es kostenloses Internet.",
+          "answer": 0,
+          "en": "Right: free WLAN.",
+          "ur": "صحیح۔ مفت وائی فائی۔",
+          "sign": "📶 Kostenloses WLAN\nPasswort an der Kasse"
+        },
+        {
+          "id": "t10-12",
+          "teil": 3,
+          "question": "Das Schwimmbad ist heute nur für Frauen offen.",
+          "answer": 0,
+          "en": "Right: Frauenschwimmen today 18–21.",
+          "ur": "صحیح۔ آج شام صرف خواتین کے لیے۔",
+          "sign": "Hallenbad\nHeute 18–21 Uhr: Frauenschwimmen"
+        },
+        {
+          "id": "t10-13",
+          "teil": 3,
+          "question": "Man muss hier bezahlen.",
+          "answer": 1,
+          "en": "Wrong: entry is free (Eintritt frei).",
+          "ur": "غلط۔ داخلہ مفت (Eintritt frei)۔",
+          "sign": "Stadtfest\nEintritt frei!"
+        },
+        {
+          "id": "t10-14",
+          "teil": 3,
+          "question": "Man soll den Hund an der Leine führen.",
+          "answer": 0,
+          "en": "Right: Hunde an die Leine.",
+          "ur": "صحیح۔ کتے کو پٹے میں رکھیں۔",
+          "sign": "🐕 Hunde bitte an die Leine!"
+        },
+        {
+          "id": "t10-15",
+          "teil": 3,
+          "question": "Die Schule beginnt nach den Ferien am Montag.",
+          "answer": 0,
+          "en": "Right: Montag, 9. September.",
+          "ur": "صحیح۔ چھٹیوں کے بعد پیر کو۔",
+          "sign": "Schulbeginn nach den Ferien:\nMontag, 9. September, 8 Uhr"
+        }
+      ]
+    },
+    {
+      "id": "t11",
+      "title": "Modelltest 11",
+      "texts": {
+        "a": {
+          "title": "E-Mail",
+          "de": "Lieber Daniel,\ndanke für die Einladung zu deiner Hochzeit! Ich komme sehr gern. Meine Frau kann leider nicht mitkommen, sie muss an diesem Wochenende arbeiten. Ich komme mit dem Zug und bin am Freitagabend in Köln. Kannst du mir ein Hotel in der Nähe empfehlen?\nViele Grüße\nAdnan"
+        },
+        "b": {
+          "title": "Kursinformation",
+          "de": "Kochkurs „Pakistanische Küche“\nWann: jeden Donnerstag, 18–21 Uhr\nWo: Volkshochschule, Küche im Keller\nPreis: 60 € für 4 Abende\nBitte bringen Sie eine Schürze mit. Die Lebensmittel kauft die Kursleiterin."
+        }
+      },
+      "items": [
+        {
+          "id": "t11-1",
+          "teil": 1,
+          "question": "Adnan kommt mit seiner Frau zur Hochzeit.",
+          "answer": 1,
+          "en": "Wrong: his wife has to work.",
+          "ur": "غلط۔ ان کی بیوی کو کام کرنا ہے۔",
+          "text": "a"
+        },
+        {
+          "id": "t11-2",
+          "teil": 1,
+          "question": "Adnan fährt mit dem Zug nach Köln.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ وہ ٹرین سے کولون جائیں گے۔",
+          "text": "a"
+        },
+        {
+          "id": "t11-3",
+          "teil": 1,
+          "question": "Adnan sucht ein Hotel.",
+          "answer": 0,
+          "en": "Right: kannst du mir ein Hotel empfehlen?",
+          "ur": "صحیح۔ وہ ہوٹل کا مشورہ مانگ رہے ہیں۔",
+          "text": "a"
+        },
+        {
+          "id": "t11-4",
+          "teil": 1,
+          "question": "Der Kochkurs ist am Donnerstagabend.",
+          "answer": 0,
+          "en": "Right: 18–21 Uhr.",
+          "ur": "صحیح۔ جمعرات کی شام۔",
+          "text": "b"
+        },
+        {
+          "id": "t11-5",
+          "teil": 1,
+          "question": "Die Teilnehmer sollen Lebensmittel mitbringen.",
+          "answer": 1,
+          "en": "Wrong: the teacher buys the food; bring an apron.",
+          "ur": "غلط۔ کھانے کی چیزیں استاد خریدیں گی؛ صرف ایپرن لائیں۔",
+          "text": "b"
+        },
+        {
+          "id": "t11-6",
+          "teil": 2,
+          "question": "Sie möchten einen Ausflug in die Berge machen.",
+          "answer": 1,
+          "en": "b: bus trip to the Alps.",
+          "ur": "b: الپس کا بس ٹور۔",
+          "choices": [
+            "Stadtrundfahrt\njeden Tag 10 Uhr",
+            "Busreise in die Alpen\nSamstag, 7–20 Uhr"
+          ]
+        },
+        {
+          "id": "t11-7",
+          "teil": 2,
+          "question": "Sie brauchen Hilfe bei Ihrer Steuererklärung.",
+          "answer": 0,
+          "en": "a: tax advice.",
+          "ur": "a: ٹیکس میں مدد۔",
+          "choices": [
+            "Steuerberatung Klar\nHilfe bei der Steuererklärung",
+            "Rechtsanwalt\nMietrecht und Arbeitsrecht"
+          ]
+        },
+        {
+          "id": "t11-8",
+          "teil": 2,
+          "question": "Sie möchten mit Ihren Kindern ins Kino gehen.",
+          "answer": 1,
+          "en": "b: children's film in the afternoon.",
+          "ur": "b: سہ پہر کو بچوں کی فلم۔",
+          "choices": [
+            "Kino Royal\n22 Uhr: Horrorfilm (ab 18)",
+            "Kino Royal\n15 Uhr: Kinderfilm „Der kleine Bär“"
+          ]
+        },
+        {
+          "id": "t11-9",
+          "teil": 2,
+          "question": "Sie möchten ein Zimmer in einer WG.",
+          "answer": 0,
+          "en": "a: a room in a shared flat (WG).",
+          "ur": "a: شیئرڈ فلیٹ (WG) میں کمرہ۔",
+          "choices": [
+            "WG-Zimmer frei\n15 m², 380 € warm",
+            "Haus zu verkaufen\n5 Zimmer, Garten"
+          ]
+        },
+        {
+          "id": "t11-10",
+          "teil": 2,
+          "question": "Sie möchten Ihren Führerschein machen.",
+          "answer": 0,
+          "en": "a: driving school.",
+          "ur": "a: ڈرائیونگ اسکول۔",
+          "choices": [
+            "Fahrschule Grün\nAnmeldung Mo–Fr 16–19 Uhr",
+            "Taxi-Zentrale\nTag und Nacht"
+          ]
+        },
+        {
+          "id": "t11-11",
+          "teil": 3,
+          "question": "Hier kann man Geld abheben.",
+          "answer": 0,
+          "en": "Right: Geldautomat = ATM.",
+          "ur": "صحیح۔ Geldautomat یعنی اے ٹی ایم۔",
+          "sign": "🏧 Geldautomat\n24 Stunden"
+        },
+        {
+          "id": "t11-12",
+          "teil": 3,
+          "question": "Die Bäckerei verkauft heute kein Brot mehr.",
+          "answer": 0,
+          "en": "Right: ausverkauft = sold out.",
+          "ur": "صحیح۔ ausverkauft یعنی سب بک گیا۔",
+          "sign": "Brot heute ausverkauft!\nMorgen ab 6 Uhr wieder frisch."
+        },
+        {
+          "id": "t11-13",
+          "teil": 3,
+          "question": "Der Spielplatz ist für alle Kinder.",
+          "answer": 1,
+          "en": "Wrong: only for children up to 12.",
+          "ur": "غلط۔ صرف بارہ سال تک کے بچوں کے لیے۔",
+          "sign": "Spielplatz\nnur für Kinder bis 12 Jahre"
+        },
+        {
+          "id": "t11-14",
+          "teil": 3,
+          "question": "Im Zug darf man telefonieren.",
+          "answer": 1,
+          "en": "Wrong: Ruhebereich, please do not phone.",
+          "ur": "غلط۔ خاموش حصہ، فون نہ کریں۔",
+          "sign": "🔇 Ruhebereich\nBitte nicht telefonieren."
+        },
+        {
+          "id": "t11-15",
+          "teil": 3,
+          "question": "Die Post ist umgezogen.",
+          "answer": 0,
+          "en": "Right: now in Bahnhofstraße 5.",
+          "ur": "صحیح۔ ڈاک خانہ اب Bahnhofstraße 5 میں ہے۔",
+          "sign": "Die Postfiliale ist umgezogen!\nNeu: Bahnhofstraße 5"
+        }
+      ]
     }
   ]
 }

@@ -348,6 +348,78 @@
           "partner": "Können Sie bitte den Fernseher leiser machen?"
         }
       ]
+    },
+    {
+      "id": "t10",
+      "title": "Modelltest 10",
+      "theme2": "Feste und Feiern",
+      "cards2": [
+        {
+          "word": "Eid",
+          "partner": "Wie feiern Sie Ihren Geburtstag?"
+        },
+        {
+          "word": "Geschenk",
+          "partner": "Was essen Sie gern auf einem Fest?"
+        },
+        {
+          "word": "Hochzeit",
+          "partner": "Welches Fest feiern Sie gern?"
+        }
+      ],
+      "cards3": [
+        {
+          "emoji": "🎂",
+          "word": "Kuchen",
+          "partner": "Können Sie bitte zu meiner Party kommen?"
+        },
+        {
+          "emoji": "🎁",
+          "word": "Geschenk",
+          "partner": "Können Sie mir bitte beim Kochen helfen?"
+        },
+        {
+          "emoji": "📷",
+          "word": "Foto",
+          "partner": "Können Sie bitte Musik mitbringen?"
+        }
+      ]
+    },
+    {
+      "id": "t11",
+      "title": "Modelltest 11",
+      "theme2": "Sprachen lernen",
+      "cards2": [
+        {
+          "word": "Deutsch",
+          "partner": "Welche Sprachen sprechen Sie?"
+        },
+        {
+          "word": "Kurs",
+          "partner": "Warum lernen Sie Deutsch?"
+        },
+        {
+          "word": "Hausaufgaben",
+          "partner": "Wie lange lernen Sie schon Deutsch?"
+        }
+      ],
+      "cards3": [
+        {
+          "emoji": "📚",
+          "word": "Wörterbuch",
+          "partner": "Können Sie das bitte noch einmal sagen?"
+        },
+        {
+          "emoji": "✏️",
+          "word": "Bleistift",
+          "partner": "Können Sie mir bitte das Wort buchstabieren?"
+        },
+        {
+          "emoji": "🗣️",
+          "word": "langsam sprechen",
+          "partner": "Können Sie bitte lauter sprechen?"
+        }
+      ]
     }
   ]
 }

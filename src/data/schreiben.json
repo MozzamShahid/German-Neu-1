@@ -654,6 +654,147 @@
         "en": "You bought a phone online but it does not work. Write to the shop: describe the problem, say what you want (money back or a new phone), ask for a quick reply. Formal (Sie).",
         "ur": "آپ نے آن لائن موبائل خریدا لیکن وہ کام نہیں کرتا۔ دکان کو لکھیں: مسئلہ بتائیں، کیا چاہتے ہیں (پیسے واپس یا نیا فون)، اور جلد جواب مانگیں۔ رسمی انداز۔"
       }
+    },
+    {
+      "id": "t10",
+      "title": "Modelltest 10",
+      "form": {
+        "title": "Anmeldung – Fitnessstudio Aktiv",
+        "text": "Ihr Bruder Asad Mehmood möchte im Fitnessstudio trainieren. Er ist am 17. Oktober 1995 geboren. Er wohnt in der Gartenstraße 3 in Essen. Er möchte am Abend trainieren und monatlich bezahlen. Seine Handynummer ist 0157 889900.",
+        "en": "Your brother wants to join a gym. Fill in the 5 missing details.",
+        "ur": "آپ کا بھائی جم جوائن کرنا چاہتا ہے۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Asad Mehmood"
+          ],
+          [
+            "Stadt",
+            "Essen"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Geburtsdatum",
+            "accept": [
+              "17.10.1995",
+              "17. Oktober 1995"
+            ],
+            "kind": "date"
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Gartenstraße 3",
+              "Gartenstrasse 3",
+              "Gartenstr. 3"
+            ]
+          },
+          {
+            "label": "Trainingszeit",
+            "options": [
+              "Morgen",
+              "Mittag",
+              "Abend"
+            ],
+            "answer": 2
+          },
+          {
+            "label": "Bezahlung",
+            "options": [
+              "monatlich",
+              "jährlich"
+            ],
+            "answer": 0
+          },
+          {
+            "label": "Handy",
+            "accept": [
+              "0157 889900",
+              "0157889900"
+            ]
+          }
+        ]
+      },
+      "email": {
+        "register": "informell",
+        "situation": "Sie haben am Wochenende Ihre Freundin Sara besucht. Schreiben Sie ihr eine E-Mail.",
+        "points": [
+          "Bedanken Sie sich für das Wochenende.",
+          "Was hat Ihnen besonders gut gefallen?",
+          "Laden Sie Sara zu sich ein."
+        ],
+        "en": "You visited your friend Sara at the weekend. Write: thank her, say what you liked most, invite her to you. About 30 words.",
+        "ur": "آپ ویک اینڈ پر دوست سارہ کے پاس گئے تھے۔ لکھیں: شکریہ ادا کریں، کیا سب سے اچھا لگا، اور اسے اپنے ہاں دعوت دیں۔"
+      }
+    },
+    {
+      "id": "t11",
+      "title": "Modelltest 11",
+      "form": {
+        "title": "Anmeldung – Elternabend, Grundschule Mitte",
+        "text": "Frau Nadia Karim kommt mit ihrem Mann zum Elternabend am Dienstag. Ihre Tochter Aliya geht in die Klasse 3a. Frau Karim spricht nicht so gut Deutsch und braucht einen Dolmetscher für Urdu. Ihre E-Mail-Adresse ist nadia.karim@web.de.",
+        "en": "Ms Karim registers for the parents' evening. Fill in the 5 missing details.",
+        "ur": "نادیہ کریم والدین کی میٹنگ کے لیے رجسٹر ہو رہی ہیں۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Nadia Karim"
+          ],
+          [
+            "Termin",
+            "Dienstag, Elternabend"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Name des Kindes",
+            "accept": [
+              "Aliya",
+              "Aliya Karim"
+            ]
+          },
+          {
+            "label": "Klasse",
+            "accept": [
+              "3a",
+              "3 a"
+            ]
+          },
+          {
+            "label": "Anzahl Personen",
+            "options": [
+              "1",
+              "2",
+              "3"
+            ],
+            "answer": 1
+          },
+          {
+            "label": "Dolmetscher für",
+            "accept": [
+              "Urdu"
+            ]
+          },
+          {
+            "label": "E-Mail",
+            "accept": [
+              "nadia.karim@web.de"
+            ]
+          }
+        ]
+      },
+      "email": {
+        "register": "formell",
+        "situation": "Ihr Kind ist krank und kann morgen nicht zur Schule kommen. Schreiben Sie an die Lehrerin, Frau Schmidt.",
+        "points": [
+          "Was hat Ihr Kind?",
+          "Wie lange bleibt es zu Hause?",
+          "Fragen Sie nach den Hausaufgaben."
+        ],
+        "en": "Your child is ill and cannot go to school tomorrow. Write to the teacher Ms Schmidt: what is wrong, how long the child stays at home, ask about the homework. Formal (Sie).",
+        "ur": "آپ کا بچہ بیمار ہے اور کل اسکول نہیں جا سکتا۔ استانی کو لکھیں: بچے کو کیا ہوا ہے، کتنے دن گھر رہے گا، اور ہوم ورک کے بارے میں پوچھیں۔ رسمی انداز۔"
+      }
     }
   ]
 }
