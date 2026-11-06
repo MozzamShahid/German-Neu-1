@@ -62,14 +62,22 @@ Done and deployed:
   `/api/sentences?topic=`
 - "Practice my mistakes" covers both words (`reviewIds`) and grammar sentences (`reviewItemIds`, saved as `itemId` in answers)
 
-- `/hoeren`: A1 Hören mock test (Goethe Start Deutsch 1 format, Teil 1–3, 2 Modelltests × 15) from
-  `src/data/hoeren.json`. Audio is pre-generated with ElevenLabs (German-verified premade voices, `eleven_v4`) by
-  `node --env-file=.env.local scripts/build_hoeren_audio.mjs` (`--dry-run` counts characters; only new/changed lines
-  cost credits) into `public/audio/hoeren/` + `src/data/hoeren-audio.json`. Railway does not need the ElevenLabs key.
-  Results are saved to Supabase `public.mock_attempts` via `/api/mock` (table created 2026-11-06).
-  `ELEVENLABS_API_KEY` is in `.env.local` only (free plan, 10k chars/month; ~3.8k used for the 2 tests).
+- `/pruefung` hub + four A1 mock sections (Goethe Start Deutsch 1 format, 2 Modelltests each), results saved to
+  Supabase `public.mock_attempts` via `/api/mock` (section = hoeren | lesen | schreiben | sprechen).
+  Shared UI in `src/components/mock.tsx`; client-only loaders in `MockLoaders.tsx`.
+  - `/hoeren` (`src/data/hoeren.json`): voices pre-generated with ElevenLabs (`eleven_v4`, German-verified premade
+    voices) by `node --env-file=.env.local scripts/build_hoeren_audio.mjs` (`--dry-run` counts characters; only
+    new/changed lines cost credits; also makes the Sprechen partner lines `sp-*`). Background ambience, gong (Teil 2)
+    and phone beep (Teil 3) from `scripts/build_sfx.mjs` → `public/audio/sfx/`; an item's `scene` picks the ambience.
+  - `/lesen` (`src/data/lesen.json`): texts, ads (a/b), signs. No AI.
+  - `/schreiben` (`src/data/schreiben.json`): form (auto-checked, 5 pts) + email (AI, 10 pts).
+  - `/sprechen` (`src/data/sprechen.json`): browser SpeechRecognition (de-DE, Chrome/Edge) or typing; AI scores
+    Teil 1 (3) + Teil 2 (6) + Teil 3 (6). Also Urdu → Deutsch speaking drill from `/api/sentences`.
+  - AI checker `src/lib/ai.ts` + `/api/check`: OpenAI-compatible; `DEEPSEEK_API_KEY` (deepseek-chat) or
+    `OPENROUTER_API_KEY` (+ optional `AI_MODEL`). Without a key the UI says "AI check not set up". 60 checks / 10 min per IP.
+  - `ELEVENLABS_API_KEY` is in `.env.local` only (free plan 10k credits/month); Railway does not need it.
 
-Ideas for next time: Lesen / Schreiben / Sprechen mock sections (Schreiben + Sprechen need an LLM checker); flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have
+Ideas for next time: more Modelltests; flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have
 them now); a dürfen modal verb; more Wechselpräposition places (an/über).
 
 ## Gotchas

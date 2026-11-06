@@ -1,4 +1,52 @@
 {
+  "sp-t1-c2-0-0": {
+    "file": "sp-t1-c2-0-0.mp3",
+    "hash": "3476c51328"
+  },
+  "sp-t1-c2-1-0": {
+    "file": "sp-t1-c2-1-0.mp3",
+    "hash": "300b077aca"
+  },
+  "sp-t1-c2-2-0": {
+    "file": "sp-t1-c2-2-0.mp3",
+    "hash": "7a1bce7570"
+  },
+  "sp-t1-c3-0-0": {
+    "file": "sp-t1-c3-0-0.mp3",
+    "hash": "1ba3ebf11a"
+  },
+  "sp-t1-c3-1-0": {
+    "file": "sp-t1-c3-1-0.mp3",
+    "hash": "352cc731a3"
+  },
+  "sp-t1-c3-2-0": {
+    "file": "sp-t1-c3-2-0.mp3",
+    "hash": "04d6c591f4"
+  },
+  "sp-t2-c2-0-0": {
+    "file": "sp-t2-c2-0-0.mp3",
+    "hash": "3d656a12da"
+  },
+  "sp-t2-c2-1-0": {
+    "file": "sp-t2-c2-1-0.mp3",
+    "hash": "84c11af0d3"
+  },
+  "sp-t2-c2-2-0": {
+    "file": "sp-t2-c2-2-0.mp3",
+    "hash": "2ed37b51a4"
+  },
+  "sp-t2-c3-0-0": {
+    "file": "sp-t2-c3-0-0.mp3",
+    "hash": "757decc9f9"
+  },
+  "sp-t2-c3-1-0": {
+    "file": "sp-t2-c3-1-0.mp3",
+    "hash": "aa31d67b62"
+  },
+  "sp-t2-c3-2-0": {
+    "file": "sp-t2-c3-2-0.mp3",
+    "hash": "284498983e"
+  },
   "t1-1-0": {
     "file": "t1-1-0.mp3",
     "hash": "9865c59d90"

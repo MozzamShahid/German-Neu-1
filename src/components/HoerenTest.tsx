@@ -15,6 +15,7 @@ type Item = {
   lines: Line[];
   en: string;
   ur: string;
+  scene?: string;
 };
 type PartKey = keyof typeof data.parts;
 
@@ -24,31 +25,59 @@ const LETTERS = ["a", "b", "c"];
 const seconds = () => Date.now() / 1000;
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** Plays the ElevenLabs recordings of an item line by line; falls back to the browser voice if a file is missing. */
-async function playLines(item: Item, stop: { current: boolean }) {
-  for (let i = 0; i < item.lines.length; i++) {
-    if (stop.current) return;
-    const rec = MANIFEST[`${item.id}-${i}`];
-    if (rec) {
-      const audio = new Audio(`/audio/hoeren/${rec.file}?v=${rec.hash}`);
-      await new Promise<void>((resolve) => {
-        audio.onended = () => resolve();
-        audio.onerror = () => resolve();
-        const poll = setInterval(() => {
-          if (stop.current) {
-            audio.pause();
-            clearInterval(poll);
-            resolve();
-          }
-        }, 200);
-        audio.addEventListener("ended", () => clearInterval(poll));
-        audio.play().catch(() => resolve());
-      });
-    } else {
-      speak(item.lines[i].de);
-      await wait(item.lines[i].de.length * 75);
+/** Plays one audio file to the end (or until stopped). */
+function playFile(src: string, stop: { current: boolean }, volume = 1) {
+  const audio = new Audio(src);
+  audio.volume = volume;
+  return new Promise<void>((resolve) => {
+    const poll = setInterval(() => {
+      if (stop.current) done();
+    }, 200);
+    function done() {
+      clearInterval(poll);
+      audio.pause();
+      resolve();
     }
-    await wait(500);
+    audio.onended = done;
+    audio.onerror = done;
+    audio.play().catch(done);
+  });
+}
+
+/**
+ * Plays an item like in the exam: a quiet background (station, café, …) under the voices,
+ * a gong before announcements and a beep before phone messages.
+ * Falls back to the browser voice if a recording is missing.
+ */
+async function playLines(item: Item, stop: { current: boolean }) {
+  const part = data.parts[String(item.teil) as PartKey] as { intro?: string };
+  const intro = part.intro;
+  let bg: HTMLAudioElement | null = null;
+  if (item.scene) {
+    bg = new Audio(`/audio/sfx/${item.scene}.mp3`);
+    bg.loop = true;
+    bg.volume = 0.22;
+    bg.play().catch(() => {});
+    await wait(1200);
+  }
+  try {
+    if (intro && !stop.current) {
+      await playFile(`/audio/sfx/${intro}.mp3`, stop, 0.6);
+      await wait(400);
+    }
+    for (let i = 0; i < item.lines.length; i++) {
+      if (stop.current) return;
+      const rec = MANIFEST[`${item.id}-${i}`];
+      if (rec) await playFile(`/audio/hoeren/${rec.file}?v=${rec.hash}`, stop);
+      else {
+        speak(item.lines[i].de);
+        await wait(item.lines[i].de.length * 75);
+      }
+      await wait(500);
+    }
+    if (bg && !stop.current) await wait(800);
+  } finally {
+    bg?.pause();
   }
 }
 

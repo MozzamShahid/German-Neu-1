@@ -1,0 +1,115 @@
+{
+  "parts": {
+    "1": {
+      "title": "Teil 1 – Kurze Texte",
+      "en": "Read the two texts. Are the sentences right (richtig) or wrong (falsch)?",
+      "ur": "دونوں تحریریں پڑھیں۔ جملے صحیح (richtig) ہیں یا غلط (falsch)؟"
+    },
+    "2": {
+      "title": "Teil 2 – Anzeigen",
+      "en": "Read the situation and the two ads. Which ad fits: a or b?",
+      "ur": "صورتحال اور دونوں اشتہار پڑھیں۔ کون سا اشتہار صحیح ہے: a یا b؟"
+    },
+    "3": {
+      "title": "Teil 3 – Schilder",
+      "en": "Read the signs and notices. Are the sentences right or wrong?",
+      "ur": "بورڈ اور نوٹس پڑھیں۔ جملے صحیح ہیں یا غلط؟"
+    }
+  },
+  "tests": [
+    {
+      "id": "t1",
+      "title": "Modelltest 1",
+      "texts": {
+        "a": { "title": "E-Mail", "de": "Liebe Sara,\nwie geht es dir? Ich bin jetzt seit zwei Wochen in Berlin. Meine Wohnung ist klein, aber sehr schön. Sie hat ein Zimmer, eine Küche und ein Bad. Ich arbeite in einem Hotel. Die Arbeit beginnt um sieben Uhr, das ist sehr früh! Am Wochenende habe ich frei. Kommst du mich im Mai besuchen? Dann zeige ich dir die Stadt.\nViele Grüße\nAyesha" },
+        "b": { "title": "Notiz", "de": "Hallo Tom,\nich bin beim Arzt. Ich komme um 16 Uhr zurück. Kannst du bitte den Hund füttern? Sein Essen steht im Kühlschrank. Bitte kauf auch Brot, wir haben keins mehr. Danke!\nMama" }
+      },
+      "items": [
+        { "id": "t1-1", "teil": 1, "text": "a", "question": "Ayesha wohnt seit zwei Monaten in Berlin.", "answer": 1,
+          "en": "Wrong: seit zwei Wochen = for two weeks, not months.", "ur": "غلط۔ seit zwei Wochen یعنی دو ہفتوں سے، مہینوں سے نہیں۔" },
+        { "id": "t1-2", "teil": 1, "text": "a", "question": "Die Wohnung hat nur ein Zimmer.", "answer": 0,
+          "en": "Right: Sie hat ein Zimmer, eine Küche und ein Bad.", "ur": "صحیح۔ فلیٹ میں ایک کمرہ، ایک کچن اور ایک باتھ روم ہے۔" },
+        { "id": "t1-3", "teil": 1, "text": "a", "question": "Ayesha arbeitet am Samstag nicht.", "answer": 0,
+          "en": "Right: am Wochenende habe ich frei (Saturday is part of the weekend).", "ur": "صحیح۔ ہفتے کے آخر (Wochenende) میں اس کی چھٹی ہوتی ہے، اور Samstag ویک اینڈ کا حصہ ہے۔" },
+        { "id": "t1-4", "teil": 1, "text": "b", "question": "Mama ist am Nachmittag wieder zu Hause.", "answer": 0,
+          "en": "Right: she comes back at 16 Uhr = 4 pm, in the afternoon.", "ur": "صحیح۔ وہ چار بجے (16 Uhr) واپس آئیں گی، یعنی سہ پہر کو۔" },
+        { "id": "t1-5", "teil": 1, "text": "b", "question": "Das Essen für den Hund ist im Schrank.", "answer": 1,
+          "en": "Wrong: it is in the fridge (Kühlschrank), not in the cupboard (Schrank).", "ur": "غلط۔ کھانا فریج (Kühlschrank) میں ہے، الماری (Schrank) میں نہیں۔" },
+
+        { "id": "t1-6", "teil": 2, "question": "Sie möchten am Sonntag schwimmen gehen.",
+          "choices": ["Hallenbad Mitte\nMo–Fr 7–21 Uhr, Sa 9–18 Uhr\nSonntag geschlossen", "Freizeitbad Sonne\nTäglich von 8 bis 22 Uhr geöffnet – auch am Wochenende!"], "answer": 1,
+          "en": "b: open every day (täglich), also at the weekend. Hallenbad Mitte is closed on Sunday.", "ur": "b: یہ روزانہ (täglich) کھلا ہے۔ Hallenbad Mitte اتوار کو بند (geschlossen) ہے۔" },
+        { "id": "t1-7", "teil": 2, "question": "Sie suchen eine Wohnung für eine Familie mit zwei Kindern.",
+          "choices": ["1-Zimmer-Wohnung, 30 m²\nIdeal für Studenten – 350 € warm", "4-Zimmer-Wohnung mit Garten, 95 m²\nNah an Schule und Kindergarten – 1.100 € warm"], "answer": 1,
+          "en": "b: four rooms, a garden, close to school and kindergarten.", "ur": "b: چار کمرے، باغ، اور اسکول و کنڈرگارٹن قریب ہیں۔" },
+        { "id": "t1-8", "teil": 2, "question": "Sie möchten günstig nach Hamburg fahren.",
+          "choices": ["Fernbus Berlin – Hamburg\nab 9,99 € – jeden Tag, mehrmals", "ICE Berlin – Hamburg\n1. Klasse ab 89 € – schnell und bequem"], "answer": 0,
+          "en": "a: günstig = cheap. €9.99 is much cheaper than €89.", "ur": "a: günstig یعنی سستا۔ 9.99 یورو، 89 یورو سے بہت سستا ہے۔" },
+        { "id": "t1-9", "teil": 2, "question": "Sie möchten Deutsch lernen. Sie haben nur am Abend Zeit.",
+          "choices": ["Deutschkurs A1\nMontag bis Freitag, 18:30–21:00 Uhr", "Intensivkurs A1\nMontag bis Freitag, 9:00–13:00 Uhr"], "answer": 0,
+          "en": "a: 18:30–21:00 is in the evening (am Abend).", "ur": "a: ساڑھے چھ سے نو بجے تک شام (am Abend) کا وقت ہے۔" },
+        { "id": "t1-10", "teil": 2, "question": "Ihr Handy ist kaputt.",
+          "choices": ["Computerkurs für Anfänger\nLernen Sie E-Mails schreiben!", "Handy-Doktor\nReparatur in einer Stunde! Bahnhofstraße 3"], "answer": 1,
+          "en": "b: Reparatur = repair.", "ur": "b: Reparatur یعنی مرمت۔" },
+
+        { "id": "t1-11", "teil": 3, "sign": "Praxis Dr. Müller\nVom 1. bis 14. August Urlaub.\nVertretung: Dr. Klein, Hauptstraße 8", "question": "Im August können Sie zu Dr. Klein gehen.", "answer": 0,
+          "en": "Right: Dr. Klein is the stand-in (Vertretung) during the holiday.", "ur": "صحیح۔ چھٹی کے دوران ڈاکٹر کلائن متبادل (Vertretung) ہیں۔" },
+        { "id": "t1-12", "teil": 3, "sign": "Wir sind umgezogen!\nSie finden uns jetzt in der Gartenstraße 20.", "question": "Das Geschäft ist noch in dieser Straße.", "answer": 1,
+          "en": "Wrong: umgezogen = moved. The shop is now in Gartenstraße.", "ur": "غلط۔ umgezogen یعنی دوسری جگہ منتقل ہو گئے۔ دکان اب Gartenstraße میں ہے۔" },
+        { "id": "t1-13", "teil": 3, "sign": "🚌 Bitte vorne einsteigen und die Fahrkarte zeigen.", "question": "Im Bus muss man die Fahrkarte zeigen.", "answer": 0,
+          "en": "Right: Fahrkarte zeigen = show the ticket. Einsteigen is a separable verb.", "ur": "صحیح۔ ٹکٹ دکھانا ضروری ہے۔ einsteigen ایک trennbares Verb ہے۔" },
+        { "id": "t1-14", "teil": 3, "sign": "Bibliothek\nHeute wegen Krankheit geschlossen.\nMorgen ab 10 Uhr wieder geöffnet.", "question": "Die Bibliothek ist heute offen.", "answer": 1,
+          "en": "Wrong: closed today (heute geschlossen), open again tomorrow.", "ur": "غلط۔ لائبریری آج بند ہے، کل دوبارہ کھلے گی۔" },
+        { "id": "t1-15", "teil": 3, "sign": "🎬 Kinotag!\nJeden Dienstag: alle Filme nur 5 Euro.", "question": "Am Dienstag sind die Kinokarten billiger.", "answer": 0,
+          "en": "Right: every Tuesday all films cost only €5.", "ur": "صحیح۔ ہر منگل کو ہر فلم صرف پانچ یورو کی ہے۔" }
+      ]
+    },
+    {
+      "id": "t2",
+      "title": "Modelltest 2",
+      "texts": {
+        "a": { "title": "E-Mail", "de": "Hallo Bilal,\ndanke für deine Einladung! Leider kann ich am Freitag nicht kommen. Ich muss bis 20 Uhr arbeiten. Aber am Samstag habe ich Zeit. Wollen wir am Samstagnachmittag zusammen Kaffee trinken? Ich kenne ein gutes Café am Marktplatz, das „Café Rosa“. Ruf mich an!\nLiebe Grüße\nDaniel" },
+        "b": { "title": "Nachricht von der Sprachschule", "de": "Liebe Kursteilnehmer,\nder Kurs am Montag fällt aus, die Lehrerin ist krank. Der nächste Kurs ist am Mittwoch um 18 Uhr in Raum 12. Bitte bringen Sie Ihre Hausaufgaben mit.\nIhre Sprachschule" }
+      },
+      "items": [
+        { "id": "t2-1", "teil": 1, "text": "a", "question": "Daniel kommt am Freitag zu Bilal.", "answer": 1,
+          "en": "Wrong: Leider kann ich am Freitag nicht kommen.", "ur": "غلط۔ ڈینیئل جمعہ کو نہیں آ سکتا (kann nicht kommen)۔" },
+        { "id": "t2-2", "teil": 1, "text": "a", "question": "Daniel arbeitet am Freitag bis acht Uhr abends.", "answer": 0,
+          "en": "Right: 20 Uhr = 8 pm.", "ur": "صحیح۔ 20 Uhr یعنی رات آٹھ بجے۔" },
+        { "id": "t2-3", "teil": 1, "text": "a", "question": "Das Café ist am Bahnhof.", "answer": 1,
+          "en": "Wrong: the café is at the market square (am Marktplatz).", "ur": "غلط۔ کیفے مارکیٹ اسکوائر (Marktplatz) پر ہے، اسٹیشن پر نہیں۔" },
+        { "id": "t2-4", "teil": 1, "text": "b", "question": "Am Montag gibt es keinen Kurs.", "answer": 0,
+          "en": "Right: fällt aus = is cancelled.", "ur": "صحیح۔ fällt aus یعنی منسوخ ہے۔" },
+        { "id": "t2-5", "teil": 1, "text": "b", "question": "Der Kurs am Mittwoch ist in Raum 21.", "answer": 1,
+          "en": "Wrong: Raum 12 (zwölf), not 21.", "ur": "غلط۔ کمرہ نمبر 12 ہے، 21 نہیں۔" },
+
+        { "id": "t2-6", "teil": 2, "question": "Sie möchten am Abend mit Freunden Pizza essen.",
+          "choices": ["Pizzeria Napoli\nMo–So 17–23 Uhr\nTisch reservieren: 0221 45 67 89", "Bäckerei Schmidt\nFrische Brötchen ab 6 Uhr\nMittagspause 13–14 Uhr"], "answer": 0,
+          "en": "a: a pizzeria open in the evening (17–23 Uhr).", "ur": "a: پیزا کی دکان جو شام کو (پانچ سے گیارہ بجے) کھلی ہے۔" },
+        { "id": "t2-7", "teil": 2, "question": "Sie brauchen ein Fahrrad für eine Woche.",
+          "choices": ["Fahrrad zu verkaufen\n3 Jahre alt, 120 €", "Fahrradverleih am Bahnhof\npro Tag 10 €, pro Woche 45 €"], "answer": 1,
+          "en": "b: Verleih = rental. You need it only for one week, so you do not buy one.", "ur": "b: Verleih یعنی کرائے پر۔ صرف ایک ہفتے کے لیے چاہیے، خریدنا نہیں۔" },
+        { "id": "t2-8", "teil": 2, "question": "Sie brauchen einen Arzt. Heute ist Samstag.",
+          "choices": ["Praxis Dr. Yilmaz\nMo–Fr 8–12 und 15–18 Uhr", "Ärztlicher Notdienst\nam Wochenende und an Feiertagen\nTel. 116 117"], "answer": 1,
+          "en": "b: the emergency service works at the weekend. Dr. Yilmaz is open only Monday–Friday.", "ur": "b: ایمرجنسی سروس ویک اینڈ پر کام کرتی ہے۔ ڈاکٹر یلماز صرف پیر سے جمعہ تک ہیں۔" },
+        { "id": "t2-9", "teil": 2, "question": "Sie möchten für Ihr Kind ein Buch auf Deutsch kaufen.",
+          "choices": ["Buchhandlung Lesewelt\nKinderbücher im 1. Stock", "Stadtbibliothek\nBücher kostenlos leihen – mit Ausweis"], "answer": 0,
+          "en": "a: a bookshop sells books. In a library you only borrow (leihen).", "ur": "a: کتابوں کی دکان کتابیں بیچتی ہے۔ لائبریری میں صرف ادھار (leihen) ملتی ہیں۔" },
+        { "id": "t2-10", "teil": 2, "question": "Sie suchen eine Arbeit am Wochenende.",
+          "choices": ["Café sucht Kellner/in\nfür Samstag und Sonntag, 10–16 Uhr", "Büro sucht Sekretär/in\nMontag bis Freitag, 8–17 Uhr"], "answer": 0,
+          "en": "a: Saturday and Sunday = the weekend.", "ur": "a: ہفتہ اور اتوار یعنی ویک اینڈ۔" },
+
+        { "id": "t2-11", "teil": 3, "sign": "Supermarkt\nNeue Öffnungszeiten ab 1. März:\nMo–Sa 7–22 Uhr", "question": "Der Supermarkt ist am Sonntag geöffnet.", "answer": 1,
+          "en": "Wrong: Mo–Sa only, so it is closed on Sunday.", "ur": "غلط۔ صرف پیر سے ہفتہ تک، اتوار کو بند۔" },
+        { "id": "t2-12", "teil": 3, "sign": "Liebe Nachbarn,\nam Samstag gibt es von 8 bis 12 Uhr kein Wasser.\nDie Hausverwaltung", "question": "Am Samstagvormittag gibt es kein Wasser.", "answer": 0,
+          "en": "Right: 8–12 Uhr is the morning (Vormittag).", "ur": "صحیح۔ آٹھ سے بارہ بجے صبح (Vormittag) کا وقت ہے۔" },
+        { "id": "t2-13", "teil": 3, "sign": "🚆 Gleis 4: Heute kein Zugverkehr.\nBitte benutzen Sie Gleis 6.", "question": "Die Züge fahren heute von Gleis 6.", "answer": 0,
+          "en": "Right: use platform 6 today.", "ur": "صحیح۔ آج پلیٹ فارم چھ استعمال کریں۔" },
+        { "id": "t2-14", "teil": 3, "sign": "Mittagsmenü: Suppe + Hauptgericht 8,50 €\nnur Mo–Fr, 12–15 Uhr", "question": "Das Mittagsmenü gibt es auch am Sonntag.", "answer": 1,
+          "en": "Wrong: nur Mo–Fr = only Monday to Friday.", "ur": "غلط۔ nur Mo–Fr یعنی صرف پیر سے جمعہ تک۔" },
+        { "id": "t2-15", "teil": 3, "sign": "Elternabend\nam Donnerstag um 19 Uhr in Raum 5", "question": "Der Elternabend ist am Morgen.", "answer": 1,
+          "en": "Wrong: 19 Uhr = 7 pm, in the evening (Abend is even in the word).", "ur": "غلط۔ 19 Uhr یعنی شام سات بجے۔ لفظ Elternabend میں بھی Abend ہے۔" }
+      ]
+    }
+  ]
+}

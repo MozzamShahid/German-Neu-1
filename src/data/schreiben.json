@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "id": "t1",
+      "title": "Modelltest 1",
+      "form": {
+        "title": "Anmeldung – Volkshochschule Köln",
+        "text": "Ihr Freund Ahmad Raza möchte einen Deutschkurs an der Volkshochschule machen. Er ist am 14. August 1998 in Lahore geboren. Er wohnt seit drei Monaten in Köln, in der Bahnhofstraße 12. Seine Muttersprache ist Urdu, er spricht auch Englisch. Ahmad arbeitet am Tag und kann nur am Abend lernen. Er bezahlt mit Karte.",
+        "en": "Your friend Ahmad wants to register for a German course. Fill in the 5 missing details for him.",
+        "ur": "آپ کا دوست احمد جرمن کورس میں داخلہ لینا چاہتا ہے۔ اس کے لیے فارم کی پانچ خالی جگہیں بھریں۔",
+        "given": [["Familienname", "Raza"], ["Vorname", "Ahmad"], ["Wohnort", "Köln"]],
+        "fields": [
+          { "label": "Geburtsdatum", "accept": ["14.08.1998", "14.8.1998", "14. August 1998"], "kind": "date" },
+          { "label": "Geburtsort", "accept": ["Lahore"] },
+          { "label": "Straße, Hausnummer", "accept": ["Bahnhofstraße 12", "Bahnhofstrasse 12", "Bahnhofstr. 12"] },
+          { "label": "Muttersprache", "accept": ["Urdu"] },
+          { "label": "Kurszeit", "options": ["Vormittag", "Nachmittag", "Abend"], "answer": 2 }
+        ]
+      },
+      "email": {
+        "register": "informell",
+        "situation": "Sie haben am Samstag Geburtstag und machen eine Party. Schreiben Sie Ihrem Freund Jonas eine E-Mail.",
+        "points": ["Laden Sie Jonas ein.", "Wann und wo ist die Party?", "Was soll Jonas mitbringen?"],
+        "en": "It is your birthday on Saturday and you are having a party. Write an email to your friend Jonas: invite him, say when and where, and say what he should bring. Write about 30 words. Remember the greeting and the closing.",
+        "ur": "ہفتے کو آپ کی سالگرہ ہے اور آپ پارٹی کر رہے ہیں۔ دوست یوناس کو ای میل لکھیں: اسے دعوت دیں، بتائیں کب اور کہاں ہے، اور کیا ساتھ لائے۔ تقریباً تیس الفاظ۔ شروع میں سلام اور آخر میں الوداعی جملہ ضرور لکھیں۔"
+      }
+    },
+    {
+      "id": "t2",
+      "title": "Modelltest 2",
+      "form": {
+        "title": "Mitglied werden – Fitnessstudio FitAktiv",
+        "text": "Maria Lopez kommt aus Spanien und möchte im Fitnessstudio FitAktiv Mitglied werden. Sie ist 27 Jahre alt und studiert Medizin. Sie wohnt in der Goethestraße 5, 10115 Berlin. Sie hat in der Woche keine Zeit und möchte nur am Wochenende trainieren. Ihre E-Mail-Adresse ist maria.lopez@web.de.",
+        "en": "Maria wants to join a gym. Fill in the 5 missing details for her.",
+        "ur": "ماریا جم کی ممبر بننا چاہتی ہے۔ اس کے لیے فارم کی پانچ خالی جگہیں بھریں۔",
+        "given": [["Name", "Maria Lopez"], ["Straße", "Goethestraße 5"], ["Wohnort", "Berlin"]],
+        "fields": [
+          { "label": "Alter", "accept": ["27", "27 Jahre"] },
+          { "label": "Postleitzahl", "accept": ["10115"] },
+          { "label": "Beruf", "accept": ["Studentin", "Student", "Medizinstudentin"] },
+          { "label": "Herkunftsland", "accept": ["Spanien"] },
+          { "label": "Trainingszeit", "options": ["Montag – Freitag", "Wochenende"], "answer": 1 }
+        ]
+      },
+      "email": {
+        "register": "formell",
+        "situation": "Sie haben morgen um 10 Uhr einen Termin bei Dr. Weber. Sie können nicht kommen. Schreiben Sie an die Praxis.",
+        "points": ["Warum können Sie nicht kommen?", "Bitten Sie um einen neuen Termin.", "Wann haben Sie Zeit?"],
+        "en": "You have a doctor's appointment tomorrow at 10 but cannot come. Write to the practice: say why, ask for a new appointment, say when you have time. Formal: use Sie, \"Sehr geehrte Damen und Herren\" and \"Mit freundlichen Grüßen\". About 30 words.",
+        "ur": "کل دس بجے ڈاکٹر کے پاس آپ کی اپائنٹمنٹ ہے لیکن آپ نہیں جا سکتے۔ کلینک کو لکھیں: کیوں نہیں آ سکتے، نئی اپائنٹمنٹ مانگیں، اور بتائیں کب فارغ ہیں۔ رسمی انداز: Sie، شروع میں Sehr geehrte Damen und Herren اور آخر میں Mit freundlichen Grüßen۔"
+      }
+    }
+  ]
+}

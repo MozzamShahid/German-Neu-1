@@ -1,0 +1,51 @@
+{
+  "intro": {
+    "title": "Teil 1 – Sich vorstellen",
+    "en": "Introduce yourself. Say something about all these points. Then spell your name and say your phone number.",
+    "ur": "اپنا تعارف کرائیں۔ ان سب نکات کے بارے میں کچھ بولیں۔ پھر اپنا نام ہجے کریں اور فون نمبر بتائیں۔",
+    "keywords": ["Name", "Alter", "Land", "Wohnort", "Sprachen", "Beruf", "Hobby"],
+    "example": "Ich heiße Ali Khan. Ich bin 25 Jahre alt. Ich komme aus Pakistan und wohne jetzt in Lahore. Ich spreche Urdu, Englisch und ein bisschen Deutsch. Ich bin Ingenieur. Mein Hobby ist Kricket. Mein Name: A – L – I. Meine Telefonnummer ist 0300 12 34 567."
+  },
+  "teil2": {
+    "title": "Teil 2 – Fragen stellen und antworten",
+    "en": "Look at the card. Ask a question with the word on the card. Then answer your partner's question.",
+    "ur": "کارڈ دیکھیں۔ کارڈ والے لفظ سے ایک سوال پوچھیں۔ پھر اپنے پارٹنر کے سوال کا جواب دیں۔"
+  },
+  "teil3": {
+    "title": "Teil 3 – Bitten formulieren und reagieren",
+    "en": "Look at the picture card and make a polite request (Können Sie … bitte …? / Ich möchte …). Then react to your partner's request.",
+    "ur": "تصویر والا کارڈ دیکھیں اور شائستہ درخواست کریں (Können Sie … bitte …?)۔ پھر پارٹنر کی درخواست کا جواب دیں۔"
+  },
+  "tests": [
+    {
+      "id": "t1",
+      "title": "Modelltest 1",
+      "theme2": "Essen und Trinken",
+      "cards2": [
+        { "word": "Frühstück", "partner": "Was essen Sie gern zum Mittagessen?" },
+        { "word": "Lieblingsessen", "partner": "Trinken Sie lieber Tee oder Kaffee?" },
+        { "word": "Restaurant", "partner": "Kochen Sie gern?" }
+      ],
+      "cards3": [
+        { "emoji": "🪟", "word": "Fenster", "partner": "Können Sie mir bitte helfen?" },
+        { "emoji": "🧂", "word": "Salz", "partner": "Können Sie bitte langsam sprechen?" },
+        { "emoji": "☕", "word": "Kaffee", "partner": "Kann ich bitte Ihren Kuli haben?" }
+      ]
+    },
+    {
+      "id": "t2",
+      "title": "Modelltest 2",
+      "theme2": "Freizeit",
+      "cards2": [
+        { "word": "Wochenende", "partner": "Was machen Sie am Abend?" },
+        { "word": "Sport", "partner": "Wohin fahren Sie gern im Urlaub?" },
+        { "word": "Kino", "partner": "Lesen Sie gern Bücher?" }
+      ],
+      "cards3": [
+        { "emoji": "🚪", "word": "Tür", "partner": "Können Sie bitte das Licht anmachen?" },
+        { "emoji": "📖", "word": "Buch", "partner": "Haben Sie Ihre Telefonnummer für mich?" },
+        { "emoji": "💧", "word": "Wasser", "partner": "Können Sie bitte morgen um neun Uhr kommen?" }
+      ]
+    }
+  ]
+}

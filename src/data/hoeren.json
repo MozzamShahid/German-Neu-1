@@ -10,13 +10,15 @@
       "title": "Teil 2 – Durchsagen",
       "en": "You hear announcements. Is the sentence right (richtig) or wrong (falsch)? You hear each announcement once.",
       "ur": "آپ اعلانات سنیں گے۔ جملہ صحیح (richtig) ہے یا غلط (falsch)؟ ہر اعلان صرف ایک بار سنائی دے گا۔",
-      "plays": 1
+      "plays": 1,
+      "intro": "gong"
     },
     "3": {
       "title": "Teil 3 – Telefonnachrichten",
       "en": "You hear phone messages. Choose a, b or c. You hear each message twice.",
       "ur": "آپ فون پیغامات سنیں گے۔ a، b یا c چنیں۔ ہر پیغام دو بار سنائی دے گا۔",
-      "plays": 2
+      "plays": 2,
+      "intro": "beep"
     }
   },
   "tests": [
@@ -25,159 +27,321 @@
       "title": "Modelltest 1",
       "items": [
         {
-          "id": "t1-1", "teil": 1,
+          "id": "t1-1",
+          "teil": 1,
           "question": "Wann beginnt der Deutschkurs morgen?",
-          "options": ["Um 9 Uhr", "Um halb zehn", "Um 10 Uhr"], "answer": 1,
+          "options": [
+            "Um 9 Uhr",
+            "Um halb zehn",
+            "Um 10 Uhr"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Entschuldigung, wann beginnt der Deutschkurs morgen?" },
-            { "sp": "m", "de": "Nicht um neun Uhr wie heute. Morgen beginnt er um halb zehn." },
-            { "sp": "f", "de": "Also um neun Uhr dreißig. Danke!" }
+            {
+              "sp": "f",
+              "de": "Entschuldigung, wann beginnt der Deutschkurs morgen?"
+            },
+            {
+              "sp": "m",
+              "de": "Nicht um neun Uhr wie heute. Morgen beginnt er um halb zehn."
+            },
+            {
+              "sp": "f",
+              "de": "Also um neun Uhr dreißig. Danke!"
+            }
           ],
           "en": "Tomorrow the course starts at half past nine (halb zehn = 9:30), not at nine like today.",
-          "ur": "کل کورس ساڑھے نو بجے شروع ہوگا۔ halb zehn کا مطلب ہے ساڑھے نو، دس نہیں۔"
+          "ur": "کل کورس ساڑھے نو بجے شروع ہوگا۔ halb zehn کا مطلب ہے ساڑھے نو، دس نہیں۔",
+          "scene": "strasse"
         },
         {
-          "id": "t1-2", "teil": 1,
+          "id": "t1-2",
+          "teil": 1,
           "question": "Was kostet der Kaffee?",
-          "options": ["2,50 €", "1,70 €", "4,20 €"], "answer": 0,
+          "options": [
+            "2,50 €",
+            "1,70 €",
+            "4,20 €"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "m", "de": "Ein Kaffee und ein Wasser, bitte. Was kostet das?" },
-            { "sp": "f", "de": "Der Kaffee kostet zwei Euro fünfzig, das Wasser einen Euro siebzig. Zusammen vier Euro zwanzig." }
+            {
+              "sp": "m",
+              "de": "Ein Kaffee und ein Wasser, bitte. Was kostet das?"
+            },
+            {
+              "sp": "f",
+              "de": "Der Kaffee kostet zwei Euro fünfzig, das Wasser einen Euro siebzig. Zusammen vier Euro zwanzig."
+            }
           ],
           "en": "The coffee costs €2.50. €1.70 is the water and €4.20 is the total.",
-          "ur": "کافی ڈھائی یورو کی ہے۔ ایک یورو ستر پانی کی قیمت ہے اور چار یورو بیس کُل رقم ہے۔"
+          "ur": "کافی ڈھائی یورو کی ہے۔ ایک یورو ستر پانی کی قیمت ہے اور چار یورو بیس کُل رقم ہے۔",
+          "scene": "cafe"
         },
         {
-          "id": "t1-3", "teil": 1,
+          "id": "t1-3",
+          "teil": 1,
           "question": "Wo ist der Schlüssel?",
-          "options": ["Auf dem Tisch", "In der Tasche", "Unter dem Buch"], "answer": 1,
+          "options": [
+            "Auf dem Tisch",
+            "In der Tasche",
+            "Unter dem Buch"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Peter, wo ist mein Schlüssel? Liegt er auf dem Tisch?" },
-            { "sp": "m", "de": "Nein, da ist er nicht. Er ist in deiner Tasche. Ich habe ihn gestern in die Tasche gelegt." }
+            {
+              "sp": "f",
+              "de": "Peter, wo ist mein Schlüssel? Liegt er auf dem Tisch?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, da ist er nicht. Er ist in deiner Tasche. Ich habe ihn gestern in die Tasche gelegt."
+            }
           ],
           "en": "The key is in her bag. Wo? → Dativ (in der Tasche); wohin? → Akkusativ (in die Tasche gelegt).",
           "ur": "چابی بیگ میں ہے۔ Wo پر Dativ (in der Tasche) اور Wohin پر Akkusativ (in die Tasche) آتا ہے۔"
         },
         {
-          "id": "t1-4", "teil": 1,
+          "id": "t1-4",
+          "teil": 1,
           "question": "Was hat die Frau?",
-          "options": ["Kopfschmerzen", "Bauchschmerzen", "Halsschmerzen"], "answer": 2,
+          "options": [
+            "Kopfschmerzen",
+            "Bauchschmerzen",
+            "Halsschmerzen"
+          ],
+          "answer": 2,
           "lines": [
-            { "sp": "m", "de": "Guten Tag, Frau Schmidt. Was fehlt Ihnen?" },
-            { "sp": "f", "de": "Ich habe seit zwei Tagen Halsschmerzen. Kopfschmerzen habe ich nicht, aber ich bin sehr müde." }
+            {
+              "sp": "m",
+              "de": "Guten Tag, Frau Schmidt. Was fehlt Ihnen?"
+            },
+            {
+              "sp": "f",
+              "de": "Ich habe seit zwei Tagen Halsschmerzen. Kopfschmerzen habe ich nicht, aber ich bin sehr müde."
+            }
           ],
           "en": "She has a sore throat (Halsschmerzen). She says she does NOT have a headache.",
           "ur": "عورت کے گلے میں درد ہے (Halsschmerzen)۔ وہ کہتی ہے کہ سر میں درد نہیں ہے۔"
         },
         {
-          "id": "t1-5", "teil": 1,
+          "id": "t1-5",
+          "teil": 1,
           "question": "Wann hat Anna Geburtstag?",
-          "options": ["Am 3. Mai", "Am 13. Mai", "Am 30. Mai"], "answer": 1,
+          "options": [
+            "Am 3. Mai",
+            "Am 13. Mai",
+            "Am 30. Mai"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "m", "de": "Anna, wann hast du Geburtstag?" },
-            { "sp": "f", "de": "Am dreizehnten Mai. Und du?" },
-            { "sp": "m", "de": "Ich habe am dritten Mai Geburtstag." }
+            {
+              "sp": "m",
+              "de": "Anna, wann hast du Geburtstag?"
+            },
+            {
+              "sp": "f",
+              "de": "Am dreizehnten Mai. Und du?"
+            },
+            {
+              "sp": "m",
+              "de": "Ich habe am dritten Mai Geburtstag."
+            }
           ],
           "en": "Anna: 13 May (am dreizehnten). The 3rd of May is the man's birthday.",
           "ur": "انا کی سالگرہ تیرہ مئی کو ہے (dreizehnten)۔ تین مئی آدمی کی سالگرہ ہے۔"
         },
         {
-          "id": "t1-6", "teil": 1,
+          "id": "t1-6",
+          "teil": 1,
           "question": "Was macht der Mann am Wochenende?",
-          "options": ["Er spielt Fußball.", "Er besucht seine Eltern.", "Er arbeitet."], "answer": 1,
+          "options": [
+            "Er spielt Fußball.",
+            "Er besucht seine Eltern.",
+            "Er arbeitet."
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Was machst du am Wochenende? Spielst du wieder Fußball?" },
-            { "sp": "m", "de": "Nein, diesmal nicht. Ich fahre nach Hamburg und besuche meine Eltern." }
+            {
+              "sp": "f",
+              "de": "Was machst du am Wochenende? Spielst du wieder Fußball?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, diesmal nicht. Ich fahre nach Hamburg und besuche meine Eltern."
+            }
           ],
           "en": "He visits his parents in Hamburg. He says no to football this time.",
-          "ur": "آدمی ہیمبرگ جا کر اپنے والدین سے ملے گا۔ اس بار وہ فٹ بال نہیں کھیلے گا۔"
+          "ur": "آدمی ہیمبرگ جا کر اپنے والدین سے ملے گا۔ اس بار وہ فٹ بال نہیں کھیلے گا۔",
+          "scene": "strasse"
         },
         {
-          "id": "t1-7", "teil": 2,
+          "id": "t1-7",
+          "teil": 2,
           "question": "Der Zug nach München fährt von Gleis 3.",
-          "options": ["Richtig", "Falsch"], "answer": 1,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "a", "de": "Liebe Fahrgäste, der Zug nach München fährt heute nicht von Gleis drei, sondern von Gleis sieben. Abfahrt ist um vierzehn Uhr zehn." }
+            {
+              "sp": "a",
+              "de": "Liebe Fahrgäste, der Zug nach München fährt heute nicht von Gleis drei, sondern von Gleis sieben. Abfahrt ist um vierzehn Uhr zehn."
+            }
           ],
           "en": "Wrong: today the train leaves from platform 7, not 3 (nicht … sondern …).",
-          "ur": "غلط۔ آج ٹرین پلیٹ فارم سات سے جائے گی، تین سے نہیں (nicht … sondern = نہیں … بلکہ)۔"
+          "ur": "غلط۔ آج ٹرین پلیٹ فارم سات سے جائے گی، تین سے نہیں (nicht … sondern = نہیں … بلکہ)۔",
+          "scene": "bahnhof"
         },
         {
-          "id": "t1-8", "teil": 2,
+          "id": "t1-8",
+          "teil": 2,
           "question": "Die Schuhe sind im zweiten Stock.",
-          "options": ["Richtig", "Falsch"], "answer": 0,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "a", "de": "Liebe Kunden, heute haben wir ein Sonderangebot: Alle Schuhe im zweiten Stock kosten nur zwanzig Euro." }
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, heute haben wir ein Sonderangebot: Alle Schuhe im zweiten Stock kosten nur zwanzig Euro."
+            }
           ],
           "en": "Right: the shoes are on the second floor and cost only €20 today.",
-          "ur": "صحیح۔ جوتے دوسری منزل پر ہیں اور آج صرف بیس یورو کے ہیں۔"
+          "ur": "صحیح۔ جوتے دوسری منزل پر ہیں اور آج صرف بیس یورو کے ہیں۔",
+          "scene": "kaufhaus"
         },
         {
-          "id": "t1-9", "teil": 2,
+          "id": "t1-9",
+          "teil": 2,
           "question": "Der Flug nach Berlin ist pünktlich.",
-          "options": ["Richtig", "Falsch"], "answer": 1,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "a", "de": "Achtung, eine Information für die Passagiere nach Berlin: Ihr Flug hat dreißig Minuten Verspätung. Die neue Abflugzeit ist zehn Uhr fünfundvierzig." }
+            {
+              "sp": "a",
+              "de": "Achtung, eine Information für die Passagiere nach Berlin: Ihr Flug hat dreißig Minuten Verspätung. Die neue Abflugzeit ist zehn Uhr fünfundvierzig."
+            }
           ],
           "en": "Wrong: the flight is 30 minutes late (Verspätung = delay).",
-          "ur": "غلط۔ فلائٹ تیس منٹ لیٹ ہے (Verspätung = تاخیر)۔"
+          "ur": "غلط۔ فلائٹ تیس منٹ لیٹ ہے (Verspätung = تاخیر)۔",
+          "scene": "flughafen"
         },
         {
-          "id": "t1-10", "teil": 2,
+          "id": "t1-10",
+          "teil": 2,
           "question": "Der Supermarkt schließt bald.",
-          "options": ["Richtig", "Falsch"], "answer": 0,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "a", "de": "Liebe Kunden, unser Supermarkt schließt in fünfzehn Minuten. Bitte kommen Sie jetzt zur Kasse." }
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, unser Supermarkt schließt in fünfzehn Minuten. Bitte kommen Sie jetzt zur Kasse."
+            }
           ],
           "en": "Right: it closes in 15 minutes, so soon (bald).",
-          "ur": "صحیح۔ سپر مارکیٹ پندرہ منٹ میں بند ہو رہی ہے، یعنی جلد (bald)۔"
+          "ur": "صحیح۔ سپر مارکیٹ پندرہ منٹ میں بند ہو رہی ہے، یعنی جلد (bald)۔",
+          "scene": "kaufhaus"
         },
         {
-          "id": "t1-11", "teil": 3,
+          "id": "t1-11",
+          "teil": 3,
           "question": "Warum kommt Jonas nicht ins Kino?",
-          "options": ["Er muss arbeiten.", "Er ist krank.", "Er hat kein Geld."], "answer": 1,
+          "options": [
+            "Er muss arbeiten.",
+            "Er ist krank.",
+            "Er hat kein Geld."
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "m", "de": "Hallo Maria, hier ist Jonas. Ich kann heute leider nicht ins Kino kommen. Ich bin krank. Können wir am Samstag gehen? Ruf mich bitte an. Tschüss!" }
+            {
+              "sp": "m",
+              "de": "Hallo Maria, hier ist Jonas. Ich kann heute leider nicht ins Kino kommen. Ich bin krank. Können wir am Samstag gehen? Ruf mich bitte an. Tschüss!"
+            }
           ],
           "en": "Jonas is ill (Ich bin krank). He wants to go on Saturday instead.",
           "ur": "یوناس بیمار ہے (Ich bin krank)۔ وہ ہفتے کو جانا چاہتا ہے۔"
         },
         {
-          "id": "t1-12", "teil": 3,
+          "id": "t1-12",
+          "teil": 3,
           "question": "Wann ist der Termin?",
-          "options": ["Montag, 11 Uhr", "Dienstag, 10 Uhr", "Dienstag, 11 Uhr"], "answer": 2,
+          "options": [
+            "Montag, 11 Uhr",
+            "Dienstag, 10 Uhr",
+            "Dienstag, 11 Uhr"
+          ],
+          "answer": 2,
           "lines": [
-            { "sp": "f", "de": "Guten Tag, Herr Khan. Hier ist die Praxis Doktor Weber. Ihr Termin ist nicht am Montag, sondern am Dienstag um elf Uhr. Bitte bringen Sie Ihre Versichertenkarte mit." }
+            {
+              "sp": "f",
+              "de": "Guten Tag, Herr Khan. Hier ist die Praxis Doktor Weber. Ihr Termin ist nicht am Montag, sondern am Dienstag um elf Uhr. Bitte bringen Sie Ihre Versichertenkarte mit."
+            }
           ],
           "en": "The appointment is on Tuesday at 11, not on Monday.",
           "ur": "اپائنٹمنٹ منگل کو گیارہ بجے ہے، پیر کو نہیں۔"
         },
         {
-          "id": "t1-13", "teil": 3,
+          "id": "t1-13",
+          "teil": 3,
           "question": "Was soll Ali kaufen?",
-          "options": ["Brot, Milch und Eier", "Brot, Käse und Eier", "Milch, Äpfel und Eier"], "answer": 0,
+          "options": [
+            "Brot, Milch und Eier",
+            "Brot, Käse und Eier",
+            "Milch, Äpfel und Eier"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "f2", "de": "Hallo Ali, hier ist Mama. Kannst du bitte nach der Schule einkaufen? Wir brauchen Brot, Milch und zehn Eier. Danke, mein Schatz!" }
+            {
+              "sp": "f2",
+              "de": "Hallo Ali, hier ist Mama. Kannst du bitte nach der Schule einkaufen? Wir brauchen Brot, Milch und zehn Eier. Danke, mein Schatz!"
+            }
           ],
           "en": "Mum needs bread, milk and ten eggs. Einkaufen is a separable verb: Kannst du … einkaufen?",
           "ur": "امی کو روٹی، دودھ اور دس انڈے چاہئیں۔ einkaufen علیحدہ ہونے والا فعل (trennbares Verb) ہے۔"
         },
         {
-          "id": "t1-14", "teil": 3,
+          "id": "t1-14",
+          "teil": 3,
           "question": "Wo ist das Treffen?",
-          "options": ["Im Restaurant", "Im Café", "In der Schule"], "answer": 1,
+          "options": [
+            "Im Restaurant",
+            "Im Café",
+            "In der Schule"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Hallo, hier ist Sabine vom Deutschkurs. Unser Treffen ist morgen um achtzehn Uhr im Café Mozart, nicht im Restaurant. Bis morgen!" }
+            {
+              "sp": "f",
+              "de": "Hallo, hier ist Sabine vom Deutschkurs. Unser Treffen ist morgen um achtzehn Uhr im Café Mozart, nicht im Restaurant. Bis morgen!"
+            }
           ],
           "en": "The meeting is in Café Mozart, not in the restaurant.",
           "ur": "ملاقات کیفے موزارٹ میں ہے، ریسٹورنٹ میں نہیں۔"
         },
         {
-          "id": "t1-15", "teil": 3,
+          "id": "t1-15",
+          "teil": 3,
           "question": "Wie ist die Telefonnummer von Herrn Becker?",
-          "options": ["0176 42 38 15", "0176 24 83 15", "0167 42 38 50"], "answer": 0,
+          "options": [
+            "0176 42 38 15",
+            "0176 24 83 15",
+            "0167 42 38 50"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "m2", "de": "Guten Morgen, hier ist Thomas Becker. Ich möchte eine Wohnung mieten. Meine Telefonnummer ist null eins sieben sechs, zweiundvierzig, achtunddreißig, fünfzehn. Bitte rufen Sie mich zurück." }
+            {
+              "sp": "m2",
+              "de": "Guten Morgen, hier ist Thomas Becker. Ich möchte eine Wohnung mieten. Meine Telefonnummer ist null eins sieben sechs, zweiundvierzig, achtunddreißig, fünfzehn. Bitte rufen Sie mich zurück."
+            }
           ],
           "en": "0176 – zweiundvierzig (42) – achtunddreißig (38) – fünfzehn (15). German says the ones digit first: zwei-und-vierzig = 42.",
           "ur": "جرمن میں اکائی پہلے بولی جاتی ہے: zweiundvierzig = دو اور چالیس = 42۔"
@@ -189,160 +353,326 @@
       "title": "Modelltest 2",
       "items": [
         {
-          "id": "t2-1", "teil": 1,
+          "id": "t2-1",
+          "teil": 1,
           "question": "Wie spät ist es?",
-          "options": ["2:45 Uhr", "3:15 Uhr", "3:45 Uhr"], "answer": 1,
+          "options": [
+            "2:45 Uhr",
+            "3:15 Uhr",
+            "3:45 Uhr"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Entschuldigung, wie spät ist es?" },
-            { "sp": "m", "de": "Es ist Viertel nach drei." },
-            { "sp": "f", "de": "Oh, schon so spät! Vielen Dank." }
+            {
+              "sp": "f",
+              "de": "Entschuldigung, wie spät ist es?"
+            },
+            {
+              "sp": "m",
+              "de": "Es ist Viertel nach drei."
+            },
+            {
+              "sp": "f",
+              "de": "Oh, schon so spät! Vielen Dank."
+            }
           ],
           "en": "Viertel nach drei = quarter past three = 3:15. (Viertel vor drei would be 2:45.)",
-          "ur": "Viertel nach drei یعنی سوا تین بجے (3:15)۔ Viertel vor drei پونے تین ہوتا۔"
+          "ur": "Viertel nach drei یعنی سوا تین بجے (3:15)۔ Viertel vor drei پونے تین ہوتا۔",
+          "scene": "strasse"
         },
         {
-          "id": "t2-2", "teil": 1,
+          "id": "t2-2",
+          "teil": 1,
           "question": "Was isst die Frau?",
-          "options": ["Ein Schnitzel", "Einen Salat", "Eine Suppe"], "answer": 2,
+          "options": [
+            "Ein Schnitzel",
+            "Einen Salat",
+            "Eine Suppe"
+          ],
+          "answer": 2,
           "lines": [
-            { "sp": "m", "de": "Guten Abend. Was möchten Sie trinken?" },
-            { "sp": "f", "de": "Einen Apfelsaft, bitte. Und zum Essen nehme ich die Suppe." },
-            { "sp": "m", "de": "Nicht das Schnitzel?" },
-            { "sp": "f", "de": "Nein, danke. Ich esse kein Fleisch." }
+            {
+              "sp": "m",
+              "de": "Guten Abend. Was möchten Sie trinken?"
+            },
+            {
+              "sp": "f",
+              "de": "Einen Apfelsaft, bitte. Und zum Essen nehme ich die Suppe."
+            },
+            {
+              "sp": "m",
+              "de": "Nicht das Schnitzel?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, danke. Ich esse kein Fleisch."
+            }
           ],
           "en": "She takes the soup. She does not eat meat (kein Fleisch), so no Schnitzel.",
-          "ur": "عورت سوپ لیتی ہے۔ وہ گوشت نہیں کھاتی (kein Fleisch)، اس لیے شنِٹزل نہیں۔"
+          "ur": "عورت سوپ لیتی ہے۔ وہ گوشت نہیں کھاتی (kein Fleisch)، اس لیے شنِٹزل نہیں۔",
+          "scene": "cafe"
         },
         {
-          "id": "t2-3", "teil": 1,
+          "id": "t2-3",
+          "teil": 1,
           "question": "Wie viele Zimmer hat die Wohnung?",
-          "options": ["Zwei", "Drei", "Vier"], "answer": 1,
+          "options": [
+            "Zwei",
+            "Drei",
+            "Vier"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Wie ist deine neue Wohnung?" },
-            { "sp": "m", "de": "Sie ist schön. Sie hat drei Zimmer, eine Küche und einen Balkon. Aber sie ist ein bisschen teuer." }
+            {
+              "sp": "f",
+              "de": "Wie ist deine neue Wohnung?"
+            },
+            {
+              "sp": "m",
+              "de": "Sie ist schön. Sie hat drei Zimmer, eine Küche und einen Balkon. Aber sie ist ein bisschen teuer."
+            }
           ],
           "en": "Three rooms, a kitchen and a balcony.",
           "ur": "فلیٹ میں تین کمرے، ایک کچن اور ایک بالکونی ہے۔"
         },
         {
-          "id": "t2-4", "teil": 1,
+          "id": "t2-4",
+          "teil": 1,
           "question": "Was hat die Frau gestern gemacht?",
-          "options": ["Sie hat gekocht.", "Sie hat eingekauft.", "Sie hat gearbeitet."], "answer": 1,
+          "options": [
+            "Sie hat gekocht.",
+            "Sie hat eingekauft.",
+            "Sie hat gearbeitet."
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "m", "de": "Was hast du gestern gemacht?" },
-            { "sp": "f", "de": "Ich bin mit meiner Schwester in die Stadt gefahren. Wir haben Kleidung gekauft." }
+            {
+              "sp": "m",
+              "de": "Was hast du gestern gemacht?"
+            },
+            {
+              "sp": "f",
+              "de": "Ich bin mit meiner Schwester in die Stadt gefahren. Wir haben Kleidung gekauft."
+            }
           ],
           "en": "She went into town and bought clothes = she went shopping. Perfekt: ich bin gefahren (sein), wir haben gekauft (haben).",
           "ur": "وہ شہر گئی اور کپڑے خریدے، یعنی شاپنگ کی۔ Perfekt: fahren کے ساتھ sein، kaufen کے ساتھ haben۔"
         },
         {
-          "id": "t2-5", "teil": 1,
+          "id": "t2-5",
+          "teil": 1,
           "question": "Wann ist die Bank am Samstag geöffnet?",
-          "options": ["Von 9 bis 12 Uhr", "Von 9 bis 14 Uhr", "Sie ist geschlossen."], "answer": 0,
+          "options": [
+            "Von 9 bis 12 Uhr",
+            "Von 9 bis 14 Uhr",
+            "Sie ist geschlossen."
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "f", "de": "Hat die Bank am Samstag geöffnet?" },
-            { "sp": "m", "de": "Ja, aber nur von neun bis zwölf Uhr." }
+            {
+              "sp": "f",
+              "de": "Hat die Bank am Samstag geöffnet?"
+            },
+            {
+              "sp": "m",
+              "de": "Ja, aber nur von neun bis zwölf Uhr."
+            }
           ],
           "en": "On Saturday the bank is open only from 9 to 12.",
-          "ur": "ہفتے کو بینک صرف نو سے بارہ بجے تک کھلا ہے۔"
+          "ur": "ہفتے کو بینک صرف نو سے بارہ بجے تک کھلا ہے۔",
+          "scene": "strasse"
         },
         {
-          "id": "t2-6", "teil": 1,
+          "id": "t2-6",
+          "teil": 1,
           "question": "Was muss die Frau heute Abend machen?",
-          "options": ["Essen gehen", "Arbeiten", "Lernen"], "answer": 2,
+          "options": [
+            "Essen gehen",
+            "Arbeiten",
+            "Lernen"
+          ],
+          "answer": 2,
           "lines": [
-            { "sp": "m", "de": "Möchtest du heute Abend mit uns essen gehen?" },
-            { "sp": "f", "de": "Ich möchte gern, aber ich kann nicht. Ich muss für die Prüfung lernen." }
+            {
+              "sp": "m",
+              "de": "Möchtest du heute Abend mit uns essen gehen?"
+            },
+            {
+              "sp": "f",
+              "de": "Ich möchte gern, aber ich kann nicht. Ich muss für die Prüfung lernen."
+            }
           ],
           "en": "She must study for the exam (Ich muss … lernen). Modal verb in position 2, infinitive at the end.",
           "ur": "اسے امتحان کی تیاری کرنی ہے (Ich muss … lernen)۔ Modalverb دوسری جگہ، اصل فعل آخر میں۔"
         },
         {
-          "id": "t2-7", "teil": 2,
+          "id": "t2-7",
+          "teil": 2,
           "question": "Die Linie 5 fährt heute nur bis zum Hauptbahnhof.",
-          "options": ["Richtig", "Falsch"], "answer": 0,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "a", "de": "Liebe Fahrgäste, wegen Bauarbeiten fährt die Linie fünf heute nur bis zum Hauptbahnhof. Bitte nehmen Sie dort den Bus." }
+            {
+              "sp": "a",
+              "de": "Liebe Fahrgäste, wegen Bauarbeiten fährt die Linie fünf heute nur bis zum Hauptbahnhof. Bitte nehmen Sie dort den Bus."
+            }
           ],
           "en": "Right: because of construction work line 5 only goes to the main station today.",
-          "ur": "صحیح۔ تعمیراتی کام کی وجہ سے آج لائن پانچ صرف مین اسٹیشن تک جائے گی۔"
+          "ur": "صحیح۔ تعمیراتی کام کی وجہ سے آج لائن پانچ صرف مین اسٹیشن تک جائے گی۔",
+          "scene": "bus"
         },
         {
-          "id": "t2-8", "teil": 2,
+          "id": "t2-8",
+          "teil": 2,
           "question": "Ein Kilo Äpfel kostet 2,99 €.",
-          "options": ["Richtig", "Falsch"], "answer": 1,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "a", "de": "Liebe Kunden, im Erdgeschoss finden Sie heute frisches Obst und Gemüse. Ein Kilo Äpfel kostet nur einen Euro neunundneunzig." }
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, im Erdgeschoss finden Sie heute frisches Obst und Gemüse. Ein Kilo Äpfel kostet nur einen Euro neunundneunzig."
+            }
           ],
           "en": "Wrong: a kilo of apples costs €1.99 (einen Euro neunundneunzig).",
-          "ur": "غلط۔ ایک کلو سیب ایک یورو ننانوے سینٹ کے ہیں۔"
+          "ur": "غلط۔ ایک کلو سیب ایک یورو ننانوے سینٹ کے ہیں۔",
+          "scene": "kaufhaus"
         },
         {
-          "id": "t2-9", "teil": 2,
+          "id": "t2-9",
+          "teil": 2,
           "question": "Max wartet im Erdgeschoss.",
-          "options": ["Richtig", "Falsch"], "answer": 1,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "a", "de": "Achtung bitte! Der kleine Max sucht seine Mutter. Er wartet an der Information im ersten Stock." }
+            {
+              "sp": "a",
+              "de": "Achtung bitte! Der kleine Max sucht seine Mutter. Er wartet an der Information im ersten Stock."
+            }
           ],
           "en": "Wrong: Max waits at the information desk on the first floor (erster Stock), not on the ground floor (Erdgeschoss).",
-          "ur": "غلط۔ میکس پہلی منزل (erster Stock) پر انتظار کر رہا ہے، گراؤنڈ فلور (Erdgeschoss) پر نہیں۔"
+          "ur": "غلط۔ میکس پہلی منزل (erster Stock) پر انتظار کر رہا ہے، گراؤنڈ فلور (Erdgeschoss) پر نہیں۔",
+          "scene": "kaufhaus"
         },
         {
-          "id": "t2-10", "teil": 2,
+          "id": "t2-10",
+          "teil": 2,
           "question": "Kinder müssen im Museum nicht bezahlen.",
-          "options": ["Richtig", "Falsch"], "answer": 0,
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "a", "de": "Guten Tag, liebe Gäste. Das Museum ist heute bis zwanzig Uhr geöffnet. Der Eintritt für Kinder ist frei." }
+            {
+              "sp": "a",
+              "de": "Guten Tag, liebe Gäste. Das Museum ist heute bis zwanzig Uhr geöffnet. Der Eintritt für Kinder ist frei."
+            }
           ],
           "en": "Right: entry for children is free (frei).",
-          "ur": "صحیح۔ بچوں کے لیے داخلہ مفت ہے (frei)۔"
+          "ur": "صحیح۔ بچوں کے لیے داخلہ مفت ہے (frei)۔",
+          "scene": "kaufhaus"
         },
         {
-          "id": "t2-11", "teil": 3,
+          "id": "t2-11",
+          "teil": 3,
           "question": "Wann treffen sich Sara und Fatima?",
-          "options": ["Um 7 Uhr", "Um 8 Uhr", "Um 9 Uhr"], "answer": 1,
+          "options": [
+            "Um 7 Uhr",
+            "Um 8 Uhr",
+            "Um 9 Uhr"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f2", "de": "Hallo Sara, hier ist Fatima. Wir treffen uns morgen nicht um sieben, sondern um acht Uhr. Ich hole dich ab. Bis morgen!" }
+            {
+              "sp": "f2",
+              "de": "Hallo Sara, hier ist Fatima. Wir treffen uns morgen nicht um sieben, sondern um acht Uhr. Ich hole dich ab. Bis morgen!"
+            }
           ],
           "en": "At 8 o'clock (nicht um sieben, sondern um acht). Abholen is separable: Ich hole dich ab.",
           "ur": "آٹھ بجے (سات نہیں بلکہ آٹھ)۔ abholen علیحدہ ہونے والا فعل ہے: Ich hole dich ab۔"
         },
         {
-          "id": "t2-12", "teil": 3,
+          "id": "t2-12",
+          "teil": 3,
           "question": "Wie viel kostet der Deutschkurs?",
-          "options": ["315 €", "350 €", "530 €"], "answer": 1,
+          "options": [
+            "315 €",
+            "350 €",
+            "530 €"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Guten Tag, hier ist die Sprachschule Lingua. Ihr Deutschkurs beginnt am ersten Oktober. Der Kurs kostet dreihundertfünfzig Euro." }
+            {
+              "sp": "f",
+              "de": "Guten Tag, hier ist die Sprachschule Lingua. Ihr Deutschkurs beginnt am ersten Oktober. Der Kurs kostet dreihundertfünfzig Euro."
+            }
           ],
           "en": "dreihundertfünfzig = 350.",
           "ur": "dreihundertfünfzig یعنی تین سو پچاس (350)۔"
         },
         {
-          "id": "t2-13", "teil": 3,
+          "id": "t2-13",
+          "teil": 3,
           "question": "Was soll Bilal machen?",
-          "options": ["Den Onkel abholen", "Ein Handy kaufen", "Ins Café gehen"], "answer": 0,
+          "options": [
+            "Den Onkel abholen",
+            "Ein Handy kaufen",
+            "Ins Café gehen"
+          ],
+          "answer": 0,
           "lines": [
-            { "sp": "m2", "de": "Hallo Bilal, hier ist Onkel Tariq. Ich bin am Bahnhof, aber mein Handy ist fast leer. Kannst du mich mit dem Auto abholen? Ich warte vor dem Café." }
+            {
+              "sp": "m2",
+              "de": "Hallo Bilal, hier ist Onkel Tariq. Ich bin am Bahnhof, aber mein Handy ist fast leer. Kannst du mich mit dem Auto abholen? Ich warte vor dem Café."
+            }
           ],
           "en": "He should pick his uncle up by car (abholen). The café is only where the uncle waits.",
-          "ur": "بلال کو چچا کو گاڑی سے لینے جانا ہے (abholen)۔ کیفے صرف وہ جگہ ہے جہاں چچا انتظار کر رہے ہیں۔"
+          "ur": "بلال کو چچا کو گاڑی سے لینے جانا ہے (abholen)۔ کیفے صرف وہ جگہ ہے جہاں چچا انتظار کر رہے ہیں۔",
+          "scene": "bahnhof"
         },
         {
-          "id": "t2-14", "teil": 3,
+          "id": "t2-14",
+          "teil": 3,
           "question": "Wohin geht Lena heute nicht?",
-          "options": ["Zum Arzt", "Zur Arbeit", "Zum Deutschkurs"], "answer": 1,
+          "options": [
+            "Zum Arzt",
+            "Zur Arbeit",
+            "Zum Deutschkurs"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "f", "de": "Hallo, hier ist Lena. Ich habe Kopfschmerzen und gehe heute nicht zur Arbeit. Kannst du bitte den Chef informieren? Danke!" }
+            {
+              "sp": "f",
+              "de": "Hallo, hier ist Lena. Ich habe Kopfschmerzen und gehe heute nicht zur Arbeit. Kannst du bitte den Chef informieren? Danke!"
+            }
           ],
           "en": "She has a headache and does not go to work today.",
           "ur": "لینا کے سر میں درد ہے، اس لیے وہ آج کام پر نہیں جا رہی۔"
         },
         {
-          "id": "t2-15", "teil": 3,
+          "id": "t2-15",
+          "teil": 3,
           "question": "Für wie viele Personen ist der Tisch?",
-          "options": ["Für zwei", "Für vier", "Für vierzehn"], "answer": 1,
+          "options": [
+            "Für zwei",
+            "Für vier",
+            "Für vierzehn"
+          ],
+          "answer": 1,
           "lines": [
-            { "sp": "m", "de": "Guten Abend, hier ist das Restaurant Roma. Ihre Reservierung für Freitag um neunzehn Uhr ist okay: ein Tisch für vier Personen. Vielen Dank!" }
+            {
+              "sp": "m",
+              "de": "Guten Abend, hier ist das Restaurant Roma. Ihre Reservierung für Freitag um neunzehn Uhr ist okay: ein Tisch für vier Personen. Vielen Dank!"
+            }
           ],
           "en": "A table for four (vier). 19 Uhr is the time, not the number of people.",
           "ur": "چار لوگوں کی میز ہے (vier)۔ انیس بجے وقت ہے، لوگوں کی تعداد نہیں۔"

@@ -14,6 +14,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "src/data/hoeren.json");
+const SPRECHEN = join(ROOT, "src/data/sprechen.json");
 const MANIFEST = join(ROOT, "src/data/hoeren-audio.json");
 const OUT_DIR = join(ROOT, "public/audio/hoeren");
 
@@ -46,6 +47,21 @@ for (const test of data.tests) {
       const file = `${key}.mp3`;
       if (manifest[key]?.hash === hash && existsSync(join(OUT_DIR, file))) return;
       jobs.push({ key, file, hash, voiceId, text: line.de });
+    });
+  }
+}
+
+// Sprechen: the partner's questions / requests (key sp-<test>-c2-<i>-0 / sp-<test>-c3-<i>-0)
+const sprechen = JSON.parse(readFileSync(SPRECHEN, "utf8"));
+for (const test of sprechen.tests) {
+  if (onlyTest && test.id !== onlyTest) continue;
+  for (const [part, cards] of [["c2", test.cards2], ["c3", test.cards3]]) {
+    cards.forEach((card, i) => {
+      const key = `sp-${test.id}-${part}-${i}-0`;
+      const voiceId = VOICES.f;
+      const hash = createHash("sha1").update(`${MODEL}|${voiceId}|${card.partner}`).digest("hex").slice(0, 10);
+      if (manifest[key]?.hash === hash && existsSync(join(OUT_DIR, `${key}.mp3`))) return;
+      jobs.push({ key, file: `${key}.mp3`, hash, voiceId, text: card.partner });
     });
   }
 }
