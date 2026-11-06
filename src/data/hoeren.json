@@ -1638,6 +1638,645 @@
           "ur": "ہوٹل میں ویک اینڈ پر کوئی کمرہ خالی نہیں ہے۔"
         }
       ]
+    },
+    {
+      "id": "t6",
+      "title": "Modelltest 6",
+      "items": [
+        {
+          "id": "t6-1",
+          "teil": 1,
+          "question": "Was möchte die Frau kaufen?",
+          "options": [
+            "Einen Rock",
+            "Eine Hose",
+            "Ein Kleid"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Entschuldigung, ich suche eine Hose in Größe vierzig."
+            },
+            {
+              "sp": "m",
+              "de": "Die Hosen sind dort hinten, neben den Röcken."
+            }
+          ],
+          "en": "She is looking for trousers (eine Hose). The skirts are only next to them.",
+          "ur": "وہ پتلون (Hose) ڈھونڈ رہی ہے۔ اسکرٹ صرف ساتھ میں رکھے ہیں۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t6-2",
+          "teil": 1,
+          "question": "Wann kommt der Techniker?",
+          "options": [
+            "Heute Nachmittag",
+            "Morgen Vormittag",
+            "Morgen Nachmittag"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Unser Internet funktioniert nicht. Wann kann der Techniker kommen?"
+            },
+            {
+              "sp": "m",
+              "de": "Heute geht es leider nicht. Morgen Vormittag um zehn Uhr, ist das gut?"
+            },
+            {
+              "sp": "f",
+              "de": "Ja, perfekt."
+            }
+          ],
+          "en": "Tomorrow morning at 10.",
+          "ur": "کل صبح دس بجے۔"
+        },
+        {
+          "id": "t6-3",
+          "teil": 1,
+          "question": "Wie viel kostet das Ticket?",
+          "options": [
+            "3,40 €",
+            "4,30 €",
+            "3,04 €"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Ein Ticket für die Stadtmitte, bitte. Was kostet das?"
+            },
+            {
+              "sp": "f",
+              "de": "Drei Euro vierzig."
+            }
+          ],
+          "en": "Drei Euro vierzig = €3.40.",
+          "ur": "تین یورو چالیس سینٹ۔",
+          "scene": "bahnhof"
+        },
+        {
+          "id": "t6-4",
+          "teil": 1,
+          "question": "Was ist das Hobby von Tom?",
+          "options": [
+            "Schwimmen",
+            "Kochen",
+            "Fotografieren"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Tom, was machst du in deiner Freizeit?"
+            },
+            {
+              "sp": "m",
+              "de": "Ich fotografiere gern. Am Wochenende gehe ich oft mit meiner Kamera in den Park."
+            }
+          ],
+          "en": "Taking photos (fotografieren).",
+          "ur": "فوٹوگرافی (fotografieren)۔"
+        },
+        {
+          "id": "t6-5",
+          "teil": 1,
+          "question": "Wohin geht der Mann?",
+          "options": [
+            "Zur Bank",
+            "Zur Post",
+            "Zum Supermarkt"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Wohin gehst du?"
+            },
+            {
+              "sp": "m",
+              "de": "Zur Post. Ich muss ein Paket nach Pakistan schicken."
+            }
+          ],
+          "en": "To the post office: he sends a parcel to Pakistan.",
+          "ur": "ڈاک خانے: وہ پاکستان پارسل بھیج رہا ہے۔",
+          "scene": "strasse"
+        },
+        {
+          "id": "t6-6",
+          "teil": 1,
+          "question": "Was ist am Wochenende passiert?",
+          "options": [
+            "Der Mann war krank.",
+            "Der Mann hat gearbeitet.",
+            "Der Mann war im Urlaub."
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Wie war dein Wochenende?"
+            },
+            {
+              "sp": "m",
+              "de": "Nicht so gut. Ich war krank und habe viel geschlafen."
+            }
+          ],
+          "en": "He was ill and slept a lot (war krank).",
+          "ur": "وہ بیمار تھا اور بہت سویا۔"
+        },
+        {
+          "id": "t6-7",
+          "teil": 2,
+          "question": "Der Zug nach Dortmund kommt heute auf Gleis 9 an.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Achtung an Gleis neun: Der Intercity aus Köln nach Dortmund fährt ein. Bitte Vorsicht an der Bahnsteigkante."
+            }
+          ],
+          "en": "Right: the train to Dortmund arrives at platform 9.",
+          "ur": "صحیح۔ ڈورٹمنڈ کی ٹرین پلیٹ فارم نو پر آ رہی ہے۔",
+          "scene": "bahnhof"
+        },
+        {
+          "id": "t6-8",
+          "teil": 2,
+          "question": "Das Kaufhaus schließt in zehn Minuten.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Kundinnen und Kunden, in dreißig Minuten schließen wir. Bitte gehen Sie zu den Kassen."
+            }
+          ],
+          "en": "Wrong: in thirty minutes, not ten.",
+          "ur": "غلط۔ تیس منٹ میں بند ہوگا، دس میں نہیں۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t6-9",
+          "teil": 2,
+          "question": "Der Flug nach Lahore hat Verspätung.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Information für die Passagiere nach Lahore: Ihr Flug ist pünktlich. Das Boarding beginnt um elf Uhr an Gate D vier."
+            }
+          ],
+          "en": "Wrong: the flight is on time (pünktlich).",
+          "ur": "غلط۔ فلائٹ وقت پر (pünktlich) ہے۔",
+          "scene": "flughafen"
+        },
+        {
+          "id": "t6-10",
+          "teil": 2,
+          "question": "Die Fahrgäste sollen an der nächsten Haltestelle aussteigen.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Fahrgäste, dieser Bus endet an der nächsten Haltestelle. Bitte alle aussteigen."
+            }
+          ],
+          "en": "Right: the bus ends at the next stop, everybody gets off.",
+          "ur": "صحیح۔ بس اگلے اسٹاپ پر ختم ہوتی ہے، سب اتریں۔",
+          "scene": "bus"
+        },
+        {
+          "id": "t6-11",
+          "teil": 3,
+          "question": "Was soll Frau Hussain mitbringen?",
+          "options": [
+            "Ein Passfoto",
+            "Ihren Mietvertrag",
+            "Ihr Zeugnis"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Tag, Frau Hussain, hier ist das Bürgeramt. Für die Anmeldung brauchen wir noch Ihren Mietvertrag. Bitte bringen Sie ihn am Montag mit."
+            }
+          ],
+          "en": "Her rental contract (Mietvertrag).",
+          "ur": "کرائے کا معاہدہ (Mietvertrag)۔"
+        },
+        {
+          "id": "t6-12",
+          "teil": 3,
+          "question": "Wann ist das Fußballtraining?",
+          "options": [
+            "Am Dienstag",
+            "Am Donnerstag",
+            "Am Samstag"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Hallo Ali, hier ist Trainer Klaus. Das Training am Dienstag fällt aus. Wir trainieren diese Woche am Donnerstag um siebzehn Uhr."
+            }
+          ],
+          "en": "On Thursday; Tuesday is cancelled.",
+          "ur": "جمعرات کو۔ منگل والا منسوخ ہے۔"
+        },
+        {
+          "id": "t6-13",
+          "teil": 3,
+          "question": "Was hat Lisa vergessen?",
+          "options": [
+            "Ihr Handy",
+            "Ihren Schlüssel",
+            "Ihre Brille"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f2",
+              "de": "Hallo, hier ist Lisa. Ich glaube, mein Schlüssel liegt noch bei dir auf dem Tisch. Kann ich ihn heute Abend holen?"
+            }
+          ],
+          "en": "Her key (Schlüssel).",
+          "ur": "اس کی چابی (Schlüssel)۔"
+        },
+        {
+          "id": "t6-14",
+          "teil": 3,
+          "question": "Wo ist das neue Büro?",
+          "options": [
+            "Im Erdgeschoss",
+            "Im zweiten Stock",
+            "Im dritten Stock"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "m2",
+              "de": "Guten Morgen, hier ist Herr Fischer. Unser Büro ist jetzt im dritten Stock, Zimmer dreihundertzwei. Der Aufzug ist links."
+            }
+          ],
+          "en": "On the third floor (dritter Stock).",
+          "ur": "تیسری منزل (dritter Stock) پر۔"
+        },
+        {
+          "id": "t6-15",
+          "teil": 3,
+          "question": "Wie viel kostet die Reparatur?",
+          "options": [
+            "45 €",
+            "54 €",
+            "145 €"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Guten Tag, hier ist der Fahrradladen Meyer. Ihr Fahrrad ist fertig. Die Reparatur kostet fünfundvierzig Euro. Sie können es ab heute abholen."
+            }
+          ],
+          "en": "fünfundvierzig = 45.",
+          "ur": "fünfundvierzig یعنی 45۔"
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "title": "Modelltest 7",
+      "items": [
+        {
+          "id": "t7-1",
+          "teil": 1,
+          "question": "Wie ist die Telefonnummer?",
+          "options": [
+            "0761 23 45",
+            "0761 32 54",
+            "0716 23 45"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Wie ist Ihre Telefonnummer?"
+            },
+            {
+              "sp": "m",
+              "de": "Null sieben sechs eins, dreiundzwanzig, fünfundvierzig."
+            }
+          ],
+          "en": "0761 – 23 (dreiundzwanzig) – 45 (fünfundvierzig).",
+          "ur": "0761 – تئیس (23) – پینتالیس (45)۔"
+        },
+        {
+          "id": "t7-2",
+          "teil": 1,
+          "question": "Was isst das Kind?",
+          "options": [
+            "Pommes",
+            "Ein Eis",
+            "Einen Apfel"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Möchtest du Pommes oder ein Eis?"
+            },
+            {
+              "sp": "m2",
+              "de": "Nein, Mama, ich habe keinen Hunger. Ich esse nur einen Apfel."
+            }
+          ],
+          "en": "An apple; no chips and no ice cream.",
+          "ur": "ایک سیب؛ نہ چپس نہ آئس کریم۔",
+          "scene": "cafe"
+        },
+        {
+          "id": "t7-3",
+          "teil": 1,
+          "question": "Wann ist der Arzttermin?",
+          "options": [
+            "Um 8:30 Uhr",
+            "Um 9:30 Uhr",
+            "Um 10:30 Uhr"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Ich habe einen Termin um halb neun, oder?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, Herr Ali, Ihr Termin ist um halb zehn."
+            }
+          ],
+          "en": "Halb zehn = 9:30.",
+          "ur": "halb zehn یعنی ساڑھے نو۔"
+        },
+        {
+          "id": "t7-4",
+          "teil": 1,
+          "question": "Wie fährt die Familie in den Urlaub?",
+          "options": [
+            "Mit dem Zug",
+            "Mit dem Auto",
+            "Mit dem Flugzeug"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Fliegt ihr nach Italien?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, Fliegen ist zu teuer. Wir fahren mit dem Zug. Das Auto ist kaputt."
+            }
+          ],
+          "en": "By train (mit dem Zug).",
+          "ur": "ٹرین سے (mit dem Zug)۔"
+        },
+        {
+          "id": "t7-5",
+          "teil": 1,
+          "question": "Was sucht der Mann?",
+          "options": [
+            "Seine Jacke",
+            "Seine Tasche",
+            "Seinen Regenschirm"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Hast du meinen Regenschirm gesehen? Es regnet."
+            },
+            {
+              "sp": "f",
+              "de": "Ja, er steht hinter der Tür."
+            }
+          ],
+          "en": "His umbrella (Regenschirm), it is behind the door.",
+          "ur": "اس کی چھتری (Regenschirm)، دروازے کے پیچھے ہے۔"
+        },
+        {
+          "id": "t7-6",
+          "teil": 1,
+          "question": "Wann hat das Geschäft geöffnet?",
+          "options": [
+            "Ab 8 Uhr",
+            "Ab 9 Uhr",
+            "Ab 10 Uhr"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Haben Sie morgen ab acht Uhr geöffnet?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, morgen ist Samstag. Da öffnen wir erst um zehn."
+            }
+          ],
+          "en": "On Saturday it opens at 10.",
+          "ur": "ہفتے کو دس بجے کھلتا ہے۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t7-7",
+          "teil": 2,
+          "question": "Der Zug nach Bremen fährt heute von Gleis 5.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Achtung, Gleisänderung! Der Zug nach Bremen fährt heute nicht von Gleis fünf, sondern von Gleis acht."
+            }
+          ],
+          "en": "Wrong: platform 8, not 5 (Gleisänderung = platform change).",
+          "ur": "غلط۔ پلیٹ فارم آٹھ، پانچ نہیں (Gleisänderung = پلیٹ فارم تبدیل)۔",
+          "scene": "bahnhof"
+        },
+        {
+          "id": "t7-8",
+          "teil": 2,
+          "question": "Heute ist alles im ersten Stock billiger.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, heute im ersten Stock: alle Kinderkleider und Spielsachen dreißig Prozent billiger!"
+            }
+          ],
+          "en": "Right: on the first floor everything is 30% cheaper.",
+          "ur": "صحیح۔ پہلی منزل پر سب تیس فیصد سستا ہے۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t7-9",
+          "teil": 2,
+          "question": "Die Passagiere nach Dubai sollen zum Schalter kommen.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Herr Rashid Mahmood, Passagier nach Dubai, bitte kommen Sie zum Schalter zwölf."
+            }
+          ],
+          "en": "Right: the passenger to Dubai should come to counter 12.",
+          "ur": "صحیح۔ دبئی کے مسافر کاؤنٹر بارہ پر آئیں۔",
+          "scene": "flughafen"
+        },
+        {
+          "id": "t7-10",
+          "teil": 2,
+          "question": "Die U-Bahn fährt heute nicht.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Fahrgäste, die U-Bahn-Linie zwei hat heute zehn Minuten Verspätung. Wir bitten um Ihr Verständnis."
+            }
+          ],
+          "en": "Wrong: it runs, only 10 minutes late.",
+          "ur": "غلط۔ چل رہی ہے، صرف دس منٹ لیٹ ہے۔",
+          "scene": "bus"
+        },
+        {
+          "id": "t7-11",
+          "teil": 3,
+          "question": "Was soll Imran machen?",
+          "options": [
+            "Den Hund holen",
+            "Die Oma anrufen",
+            "Pizza bestellen"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Hallo Imran, hier ist Mama. Die Oma hat heute Geburtstag. Bitte ruf sie an! Ihre Nummer liegt auf dem Tisch."
+            }
+          ],
+          "en": "Call grandma (die Oma anrufen), it is her birthday.",
+          "ur": "دادی کو فون کرنا ہے، ان کی سالگرہ ہے۔"
+        },
+        {
+          "id": "t7-12",
+          "teil": 3,
+          "question": "Wann kann Herr Klein kommen?",
+          "options": [
+            "Am Montag um 10 Uhr",
+            "Am Dienstag um 10 Uhr",
+            "Am Dienstag um 14 Uhr"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "m2",
+              "de": "Guten Tag, hier ist Herr Klein. Ich kann am Montag leider nicht kommen. Geht es am Dienstag um vierzehn Uhr?"
+            }
+          ],
+          "en": "Tuesday at 14 Uhr (2 pm).",
+          "ur": "منگل کو دو بجے (14 Uhr)۔"
+        },
+        {
+          "id": "t7-13",
+          "teil": 3,
+          "question": "Was bringt Sophie zur Party mit?",
+          "options": [
+            "Kuchen",
+            "Salat",
+            "Getränke"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f2",
+              "de": "Hi, hier ist Sophie! Ich komme gern zu deiner Party. Ich backe einen Kuchen. Brauchst du noch etwas?"
+            }
+          ],
+          "en": "A cake: Ich backe einen Kuchen.",
+          "ur": "کیک: وہ کیک بنائے گی۔"
+        },
+        {
+          "id": "t7-14",
+          "teil": 3,
+          "question": "Wohin soll Herr Shah gehen?",
+          "options": [
+            "In Raum 108",
+            "In Raum 180",
+            "In Raum 118"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Tag, Herr Shah. Ihre Prüfung ist morgen um neun Uhr in Raum hundertacht. Bitte bringen Sie einen Ausweis mit."
+            }
+          ],
+          "en": "hundertacht = 108.",
+          "ur": "hundertacht یعنی 108۔"
+        },
+        {
+          "id": "t7-15",
+          "teil": 3,
+          "question": "Was ist mit dem Paket?",
+          "options": [
+            "Es ist beim Nachbarn.",
+            "Es ist in der Post.",
+            "Es kommt morgen."
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Hallo, hier ist Ihr Nachbar, Herr Becker, aus dem ersten Stock. Ich habe ein Paket für Sie. Sie können es heute Abend bei mir holen."
+            }
+          ],
+          "en": "The neighbour has the parcel.",
+          "ur": "پارسل پڑوسی کے پاس ہے۔"
+        }
+      ]
     }
   ]
 }

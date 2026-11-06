@@ -204,6 +204,78 @@
           "partner": "Können Sie mir bitte Ihre E-Mail-Adresse geben?"
         }
       ]
+    },
+    {
+      "id": "t6",
+      "title": "Modelltest 6",
+      "theme2": "Einkaufen",
+      "cards2": [
+        {
+          "word": "Supermarkt",
+          "partner": "Wo kaufen Sie Obst und Gemüse?"
+        },
+        {
+          "word": "Kleidung",
+          "partner": "Was kaufen Sie gern?"
+        },
+        {
+          "word": "Preis",
+          "partner": "Bezahlen Sie lieber bar oder mit Karte?"
+        }
+      ],
+      "cards3": [
+        {
+          "emoji": "🛒",
+          "word": "Einkaufswagen",
+          "partner": "Können Sie mir bitte die Milch geben?"
+        },
+        {
+          "emoji": "👕",
+          "word": "T-Shirt",
+          "partner": "Haben Sie das auch in Größe M?"
+        },
+        {
+          "emoji": "🧾",
+          "word": "Rechnung",
+          "partner": "Können Sie mir bitte eine Tüte geben?"
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "title": "Modelltest 7",
+      "theme2": "Gesundheit",
+      "cards2": [
+        {
+          "word": "Arzt",
+          "partner": "Was machen Sie, wenn Sie krank sind?"
+        },
+        {
+          "word": "Sport",
+          "partner": "Wie oft machen Sie Sport?"
+        },
+        {
+          "word": "Schlaf",
+          "partner": "Wann gehen Sie ins Bett?"
+        }
+      ],
+      "cards3": [
+        {
+          "emoji": "💊",
+          "word": "Tablette",
+          "partner": "Können Sie mir bitte ein Glas Wasser bringen?"
+        },
+        {
+          "emoji": "🌡️",
+          "word": "Fieber",
+          "partner": "Können Sie bitte morgen zum Arzt gehen?"
+        },
+        {
+          "emoji": "🛏️",
+          "word": "Bett",
+          "partner": "Kann ich bitte das Fenster schließen?"
+        }
+      ]
     }
   ]
 }

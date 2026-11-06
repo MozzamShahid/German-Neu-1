@@ -366,6 +366,150 @@
         "en": "You have moved into a new flat. Write to your friend Tom: what the flat is like, invite him, say when he should come. About 30 words.",
         "ur": "آپ نئے فلیٹ میں منتقل ہوئے ہیں۔ دوست ٹام کو لکھیں: فلیٹ کیسا ہے، اسے دعوت دیں، اور بتائیں کب آئے۔ تقریباً تیس الفاظ۔"
       }
+    },
+    {
+      "id": "t6",
+      "title": "Modelltest 6",
+      "form": {
+        "title": "Anmeldung – Deutschkurs A1, Sprachschule Lingua",
+        "text": "Ihre Kollegin Hina Butt möchte einen Deutschkurs machen. Sie kommt aus Pakistan und ist 29 Jahre alt. Sie wohnt in der Schillerstraße 21 in Stuttgart. Sie ist Krankenschwester von Beruf. Sie kann nur am Wochenende lernen.",
+        "en": "Your colleague Hina wants to register for a German course. Fill in the 5 missing details.",
+        "ur": "آپ کی ساتھی حنا جرمن کورس میں داخلہ لینا چاہتی ہے۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Hina Butt"
+          ],
+          [
+            "Stadt",
+            "Stuttgart"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Herkunftsland",
+            "accept": [
+              "Pakistan"
+            ]
+          },
+          {
+            "label": "Alter",
+            "accept": [
+              "29",
+              "29 Jahre"
+            ]
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Schillerstraße 21",
+              "Schillerstrasse 21",
+              "Schillerstr. 21"
+            ]
+          },
+          {
+            "label": "Beruf",
+            "accept": [
+              "Krankenschwester",
+              "Pflegerin",
+              "Krankenpflegerin"
+            ]
+          },
+          {
+            "label": "Kurszeit",
+            "options": [
+              "Montag – Freitag",
+              "Wochenende"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      "email": {
+        "register": "informell",
+        "situation": "Sie möchten am Sonntag mit Ihrer Freundin Julia ins Kino gehen. Schreiben Sie Julia eine E-Mail.",
+        "points": [
+          "Welchen Film möchten Sie sehen?",
+          "Wann und wo treffen Sie sich?",
+          "Fragen Sie: Hat Julia Zeit?"
+        ],
+        "en": "You want to go to the cinema with your friend Julia on Sunday. Write: which film, when and where you meet, and ask if she has time. About 30 words.",
+        "ur": "آپ اتوار کو دوست جولیا کے ساتھ سینما جانا چاہتے ہیں۔ لکھیں: کون سی فلم، کب اور کہاں ملیں گے، اور پوچھیں کیا اس کے پاس وقت ہے۔"
+      }
+    },
+    {
+      "id": "t7",
+      "title": "Modelltest 7",
+      "form": {
+        "title": "Fundbüro – Verlustmeldung",
+        "text": "Herr Usman Ghani hat am Montag, den 4. November, im Bus Nummer 12 seine Tasche verloren. Die Tasche ist schwarz. In der Tasche sind ein Buch und ein Handy. Seine Telefonnummer ist 0172 334455.",
+        "en": "Mr Ghani lost his bag. Fill in the lost-property form (5 missing details).",
+        "ur": "عثمان غنی کا بیگ کھو گیا ہے۔ گمشدگی کا فارم بھریں (پانچ خالی جگہیں)۔",
+        "given": [
+          [
+            "Name",
+            "Usman Ghani"
+          ],
+          [
+            "Gegenstand",
+            "Tasche"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Datum",
+            "accept": [
+              "4.11.",
+              "04.11.",
+              "4. November"
+            ],
+            "kind": "daymonth"
+          },
+          {
+            "label": "Wo verloren?",
+            "accept": [
+              "Bus 12",
+              "im Bus 12",
+              "Bus Nummer 12",
+              "im Bus Nummer 12",
+              "Bus"
+            ]
+          },
+          {
+            "label": "Farbe",
+            "accept": [
+              "schwarz"
+            ]
+          },
+          {
+            "label": "Inhalt",
+            "options": [
+              "Buch und Handy",
+              "Geld und Pass",
+              "Schlüssel"
+            ],
+            "answer": 0
+          },
+          {
+            "label": "Telefon",
+            "accept": [
+              "0172 334455",
+              "0172334455"
+            ]
+          }
+        ]
+      },
+      "email": {
+        "register": "formell",
+        "situation": "Sie haben eine Wohnung im Internet gesehen. Schreiben Sie an den Vermieter, Herrn Braun.",
+        "points": [
+          "Ist die Wohnung noch frei?",
+          "Fragen Sie nach einem Termin für die Besichtigung.",
+          "Wann haben Sie Zeit?"
+        ],
+        "en": "You saw a flat online. Write to the landlord Mr Braun: is the flat still free, ask for a viewing appointment, say when you have time. Formal (Sie).",
+        "ur": "آپ نے انٹرنیٹ پر ایک فلیٹ دیکھا۔ مالک مکان کو لکھیں: کیا فلیٹ ابھی خالی ہے، دیکھنے کا وقت مانگیں، اور بتائیں آپ کب فارغ ہیں۔ رسمی انداز (Sie)۔"
+      }
     }
   ]
 }

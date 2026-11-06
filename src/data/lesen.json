@@ -846,6 +846,338 @@
           "sign": "Freibad\ngeöffnet von Mai bis September"
         }
       ]
+    },
+    {
+      "id": "t6",
+      "title": "Modelltest 6",
+      "texts": {
+        "a": {
+          "title": "E-Mail",
+          "de": "Hallo Ahmed,\nich bin jetzt in München und mache einen Deutschkurs. Der Kurs ist sehr gut, aber auch schwer. Wir haben jeden Tag vier Stunden Unterricht. Meine Lehrerin heißt Frau Wolf, sie ist sehr nett. Nach dem Kurs gehe ich oft in die Bibliothek und lerne Wörter. Am Samstag fahre ich mit meinen Freunden nach Salzburg.\nViele Grüße\nBilal"
+        },
+        "b": {
+          "title": "Notiz",
+          "de": "Liebe Frau Kaya,\nich bin nächste Woche im Urlaub. Können Sie bitte meine Blumen gießen? Der Schlüssel liegt im Briefkasten. Ich komme am Sonntag, den 20. August, zurück. Vielen Dank!\nIhre Nachbarin Anna Roth"
+        }
+      },
+      "items": [
+        {
+          "id": "t6-1",
+          "teil": 1,
+          "question": "Bilal findet den Kurs leicht.",
+          "answer": 1,
+          "en": "Wrong: sehr gut, aber auch schwer.",
+          "ur": "غلط۔ کورس اچھا ہے لیکن مشکل (schwer) ہے۔",
+          "text": "a"
+        },
+        {
+          "id": "t6-2",
+          "teil": 1,
+          "question": "Der Kurs hat jeden Tag vier Stunden.",
+          "answer": 0,
+          "en": "Right: vier Stunden Unterricht.",
+          "ur": "صحیح۔ ہر روز چار گھنٹے کلاس۔",
+          "text": "a"
+        },
+        {
+          "id": "t6-3",
+          "teil": 1,
+          "question": "Am Samstag bleibt Bilal in München.",
+          "answer": 1,
+          "en": "Wrong: he goes to Salzburg.",
+          "ur": "غلط۔ وہ سالزبرگ جائے گا۔",
+          "text": "a"
+        },
+        {
+          "id": "t6-4",
+          "teil": 1,
+          "question": "Frau Kaya soll die Blumen gießen.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ فراؤ کایا کو پودوں کو پانی دینا ہے۔",
+          "text": "b"
+        },
+        {
+          "id": "t6-5",
+          "teil": 1,
+          "question": "Der Schlüssel ist bei Frau Roth.",
+          "answer": 1,
+          "en": "Wrong: it is in the letterbox (Briefkasten).",
+          "ur": "غلط۔ چابی لیٹر باکس (Briefkasten) میں ہے۔",
+          "text": "b"
+        },
+        {
+          "id": "t6-6",
+          "teil": 2,
+          "question": "Sie möchten am Abend ins Theater gehen.",
+          "answer": 0,
+          "en": "a: evening shows at 19:30.",
+          "ur": "a: شام ساڑھے سات بجے شو۔",
+          "choices": [
+            "Stadttheater\n„Romeo und Julia“\nDi–So 19:30 Uhr",
+            "Puppentheater für Kinder\nSa + So 11 Uhr"
+          ]
+        },
+        {
+          "id": "t6-7",
+          "teil": 2,
+          "question": "Sie brauchen neue Möbel für Ihr Wohnzimmer.",
+          "answer": 1,
+          "en": "b: a furniture shop with sofas and tables.",
+          "ur": "b: فرنیچر کی دکان، صوفے اور میزیں۔",
+          "choices": [
+            "Elektromarkt\nFernseher und Handys im Angebot",
+            "Möbel König\nSofas, Tische und Schränke – 20 % billiger"
+          ]
+        },
+        {
+          "id": "t6-8",
+          "teil": 2,
+          "question": "Sie möchten am Sonntag Brot kaufen.",
+          "answer": 0,
+          "en": "a: open on Sunday morning.",
+          "ur": "a: اتوار کی صبح کھلی ہے۔",
+          "choices": [
+            "Bäckerei Sonne\nauch sonntags 7–11 Uhr",
+            "Supermarkt Frisch\nMo–Sa 7–21 Uhr"
+          ]
+        },
+        {
+          "id": "t6-9",
+          "teil": 2,
+          "question": "Ihr Kind möchte schwimmen lernen.",
+          "answer": 1,
+          "en": "b: swimming course for children.",
+          "ur": "b: بچوں کے لیے تیراکی کا کورس۔",
+          "choices": [
+            "Tenniskurs\nfür Kinder ab 6 Jahren",
+            "Schwimmkurs für Kinder\n5–10 Jahre, samstags"
+          ]
+        },
+        {
+          "id": "t6-10",
+          "teil": 2,
+          "question": "Sie möchten einen Laptop kaufen.",
+          "answer": 0,
+          "en": "a: an electronics shop with laptops.",
+          "ur": "a: الیکٹرانکس کی دکان، لیپ ٹاپ۔",
+          "choices": [
+            "Technik-Welt\nLaptops ab 299 €",
+            "Copyshop\nKopieren und Drucken"
+          ]
+        },
+        {
+          "id": "t6-11",
+          "teil": 3,
+          "question": "Man darf hier nicht parken.",
+          "answer": 0,
+          "en": "Right: Parkverbot = no parking.",
+          "ur": "صحیح۔ Parkverbot یعنی پارکنگ منع ہے۔",
+          "sign": "🚫 Parkverbot\nEinfahrt freihalten!"
+        },
+        {
+          "id": "t6-12",
+          "teil": 3,
+          "question": "Die Bank ist heute geöffnet.",
+          "answer": 1,
+          "en": "Wrong: closed today because of a holiday (Feiertag).",
+          "ur": "غلط۔ آج چھٹی (Feiertag) کی وجہ سے بند ہے۔",
+          "sign": "Sparkasse\nHeute wegen Feiertag geschlossen."
+        },
+        {
+          "id": "t6-13",
+          "teil": 3,
+          "question": "Im Museum muss man leise sein.",
+          "answer": 0,
+          "en": "Right: Bitte leise sein.",
+          "ur": "صحیح۔ خاموش رہنا ہے۔",
+          "sign": "Museum\nBitte leise sein und nichts anfassen."
+        },
+        {
+          "id": "t6-14",
+          "teil": 3,
+          "question": "Die Kinder können hier am Sonntag spielen.",
+          "answer": 1,
+          "en": "Wrong: the playground is closed on Sundays.",
+          "ur": "غلط۔ اتوار کو کھیل کا میدان بند ہے۔",
+          "sign": "Spielplatz\nMo–Sa 8–20 Uhr\nSonntag geschlossen"
+        },
+        {
+          "id": "t6-15",
+          "teil": 3,
+          "question": "Man kann hier Wasser kaufen.",
+          "answer": 0,
+          "en": "Right: Getränke = drinks, including water.",
+          "ur": "صحیح۔ Getränke یعنی مشروبات، پانی بھی۔",
+          "sign": "Kiosk\nGetränke · Zeitungen · Snacks"
+        }
+      ]
+    },
+    {
+      "id": "t7",
+      "title": "Modelltest 7",
+      "texts": {
+        "a": {
+          "title": "SMS",
+          "de": "Hallo Papa, ich bin noch in der Schule. Wir haben heute eine Stunde länger Unterricht, bis 15 Uhr. Kannst du mich dann abholen? Ich warte vor der Schule. Danke! Sara"
+        },
+        "b": {
+          "title": "E-Mail an den Vermieter",
+          "de": "Sehr geehrter Herr Lang,\nin meiner Wohnung funktioniert die Heizung nicht. Es ist sehr kalt. Können Sie bitte morgen einen Techniker schicken? Ich bin ab 14 Uhr zu Hause.\nMit freundlichen Grüßen\nKhalid Anwar"
+        }
+      },
+      "items": [
+        {
+          "id": "t7-1",
+          "teil": 1,
+          "question": "Sara hat heute länger Schule.",
+          "answer": 0,
+          "en": "Right: eine Stunde länger.",
+          "ur": "صحیح۔ آج ایک گھنٹہ زیادہ کلاس ہے۔",
+          "text": "a"
+        },
+        {
+          "id": "t7-2",
+          "teil": 1,
+          "question": "Papa soll Sara um 14 Uhr abholen.",
+          "answer": 1,
+          "en": "Wrong: at 15 Uhr.",
+          "ur": "غلط۔ تین بجے (15 Uhr)۔",
+          "text": "a"
+        },
+        {
+          "id": "t7-3",
+          "teil": 1,
+          "question": "Sara wartet vor der Schule.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ وہ اسکول کے سامنے انتظار کرے گی۔",
+          "text": "a"
+        },
+        {
+          "id": "t7-4",
+          "teil": 1,
+          "question": "Die Heizung in der Wohnung ist kaputt.",
+          "answer": 0,
+          "en": "Right: die Heizung funktioniert nicht.",
+          "ur": "صحیح۔ ہیٹنگ خراب ہے۔",
+          "text": "b"
+        },
+        {
+          "id": "t7-5",
+          "teil": 1,
+          "question": "Herr Anwar ist morgen den ganzen Tag zu Hause.",
+          "answer": 1,
+          "en": "Wrong: only from 14 Uhr.",
+          "ur": "غلط۔ صرف دو بجے کے بعد گھر پر ہیں۔",
+          "text": "b"
+        },
+        {
+          "id": "t7-6",
+          "teil": 2,
+          "question": "Sie möchten Deutsch online lernen.",
+          "answer": 1,
+          "en": "b: an online course.",
+          "ur": "b: آن لائن کورس۔",
+          "choices": [
+            "Sprachschule Berlin\nKurse im Klassenraum, Mo–Fr",
+            "Deutsch online\nlernen Sie zu Hause am Computer"
+          ]
+        },
+        {
+          "id": "t7-7",
+          "teil": 2,
+          "question": "Sie suchen eine Wohnung mit Balkon.",
+          "answer": 0,
+          "en": "a: with balcony.",
+          "ur": "a: بالکونی کے ساتھ۔",
+          "choices": [
+            "3 Zimmer, Küche, Bad, Balkon\n780 € warm",
+            "2 Zimmer, Küche, Bad\nErdgeschoss, ohne Balkon, 590 € warm"
+          ]
+        },
+        {
+          "id": "t7-8",
+          "teil": 2,
+          "question": "Sie möchten einen Film auf Englisch sehen.",
+          "answer": 0,
+          "en": "a: in Originalsprache Englisch.",
+          "ur": "a: اصل زبان انگریزی میں۔",
+          "choices": [
+            "Kino Lux\nFilme in Originalsprache (Englisch)",
+            "Kino Stern\nalle Filme auf Deutsch"
+          ]
+        },
+        {
+          "id": "t7-9",
+          "teil": 2,
+          "question": "Sie haben Fieber und brauchen Medikamente.",
+          "answer": 1,
+          "en": "b: a pharmacy (Apotheke).",
+          "ur": "b: فارمیسی (Apotheke)۔",
+          "choices": [
+            "Drogerie Rossi\nShampoo, Seife, Zahnpasta",
+            "Apotheke am Bahnhof\nMedikamente – auch am Wochenende"
+          ]
+        },
+        {
+          "id": "t7-10",
+          "teil": 2,
+          "question": "Sie möchten am Wochenende wandern.",
+          "answer": 0,
+          "en": "a: hiking trip on Saturday.",
+          "ur": "a: ہفتے کو پہاڑی سیر۔",
+          "choices": [
+            "Wandergruppe\njeden Samstag 9 Uhr, Treffpunkt Bahnhof",
+            "Schachclub\njeden Mittwoch 19 Uhr"
+          ]
+        },
+        {
+          "id": "t7-11",
+          "teil": 3,
+          "question": "Man muss hier eine Maske tragen.",
+          "answer": 1,
+          "en": "Wrong: masks are only recommended (empfohlen), not required.",
+          "ur": "غلط۔ ماسک صرف تجویز (empfohlen) ہے، لازمی نہیں۔",
+          "sign": "Praxis\nMaske empfohlen – nicht Pflicht"
+        },
+        {
+          "id": "t7-12",
+          "teil": 3,
+          "question": "Der Laden hat am Mittag eine Pause.",
+          "answer": 0,
+          "en": "Right: Mittagspause 13–14 Uhr.",
+          "ur": "صحیح۔ دوپہر ایک سے دو بجے وقفہ۔",
+          "sign": "Schuhladen\n9–13 und 14–18 Uhr\nMittagspause 13–14 Uhr"
+        },
+        {
+          "id": "t7-13",
+          "teil": 3,
+          "question": "Hier kann man Fahrräder parken.",
+          "answer": 0,
+          "en": "Right: Fahrradparkplatz.",
+          "ur": "صحیح۔ سائیکل پارکنگ۔",
+          "sign": "🚲 Fahrradparkplatz"
+        },
+        {
+          "id": "t7-14",
+          "teil": 3,
+          "question": "Die Toilette ist kostenlos.",
+          "answer": 1,
+          "en": "Wrong: it costs 50 cents.",
+          "ur": "غلط۔ پچاس سینٹ لگتے ہیں۔",
+          "sign": "WC\nBenutzung: 0,50 €"
+        },
+        {
+          "id": "t7-15",
+          "teil": 3,
+          "question": "Der Kurs beginnt eine Woche später.",
+          "answer": 0,
+          "en": "Right: beginnt erst am 15. statt am 8. März.",
+          "ur": "صحیح۔ کورس ایک ہفتہ بعد شروع ہوگا۔",
+          "sign": "Deutschkurs A1\nBeginn nicht am 8. März,\nsondern am 15. März!"
+        }
+      ]
     }
   ]
 }
