@@ -57,7 +57,11 @@ Done and deployed:
 - grammar quiz type "grammar" (`src/lib/grammar.ts`): fill / pick / order (word-order game) from
   grammar.json, balanced over the chosen topics; Akk/Dat/Wechsel are optional toggles in Setup
 - Urdu shown in Nastaliq (`.urdu` class, Noto Nastaliq Urdu via next/font) through the `Urdu` component in Word.tsx
-- 🔊 German speech (Web Speech API, de-DE) on words, sentences and examples
+- 🔊 German speech: `speak()` in Word.tsx plays `public/audio/tts/<fnv1a-key>.mp3` (free offline Piper voices, 5 German
+  speakers rotating) and falls back to the browser voice (Web Speech API, de-DE). Generate with
+  `.venv/Scripts/python scripts/build_voices.py` (setup lines at the top of the file; voices live in
+  `%LOCALAPPDATA%/piper-voices`; only new texts are generated, ~4000 files / 42 MB). Re-run it after changing
+  vocab / grammar / lessons, or new sentences will use the browser voice. `audioKey()` must match `key_of()`.
 - `/learn` page: lecture notes (`src/data/lessons.ts`) with tables, examples, and daily-life sentences from
   `/api/sentences?topic=`
 - "Practice my mistakes" covers both words (`reviewIds`) and grammar sentences (`reviewItemIds`, saved as `itemId` in answers)
@@ -74,7 +78,7 @@ Done and deployed:
   - `/sprechen` (`src/data/sprechen.json`): browser SpeechRecognition (de-DE, Chrome/Edge) or typing; AI scores
     Teil 1 (3) + Teil 2 (6) + Teil 3 (6). Also Urdu → Deutsch speaking drill from `/api/sentences`.
   - AI checker `src/lib/ai.ts` + `/api/check`: OpenAI-compatible; `DEEPSEEK_API_KEY` (deepseek-chat) or
-    `OPENROUTER_API_KEY` (+ optional `AI_MODEL`). Without a key the UI says "AI check not set up". 60 checks / 10 min per IP.
+    `OPENROUTER_API_KEY` (+ optional `AI_MODEL`). OPENROUTER_API_KEY is set in `.env.local` and Railway (2026-11-06). Without a key the UI says "AI check not set up". 60 checks / 10 min per IP.
   - `ELEVENLABS_API_KEY` is in `.env.local` only (free plan 10k credits/month); Railway does not need it.
 
 Ideas for next time: more Modelltests; flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have

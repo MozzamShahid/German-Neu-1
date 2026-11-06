@@ -29,9 +29,41 @@ export function Urdu({ children, className = "" }: { children: React.ReactNode; 
   );
 }
 
-/** Reads German text aloud with the browser's speech engine (de-DE). */
+/** FNV-1a 32-bit key of the normalised text; must match key_of() in scripts/build_voices.py. */
+export function audioKey(text: string) {
+  const norm = text.normalize("NFC").replace(/___/g, "…").replace(/\s+/g, " ").trim();
+  let h = 0x811c9dc5;
+  for (const b of new TextEncoder().encode(norm)) {
+    h ^= b;
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h.toString(16).padStart(8, "0");
+}
+
+let current: HTMLAudioElement | null = null;
+
+/**
+ * Reads German text aloud: the pre-made recording (Piper voices, public/audio/tts) if there is one,
+ * otherwise the browser's speech engine (de-DE).
+ */
 export function speak(text: string) {
-  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+  if (typeof window === "undefined") return;
+  current?.pause();
+  window.speechSynthesis?.cancel();
+  const audio = new Audio(`/audio/tts/${audioKey(text)}.mp3`);
+  current = audio;
+  let fellBack = false;
+  const fallback = () => {
+    if (fellBack || current !== audio) return;
+    fellBack = true;
+    browserSpeak(text);
+  };
+  audio.onerror = fallback;
+  audio.play().catch(fallback);
+}
+
+function browserSpeak(text: string) {
+  if (!("speechSynthesis" in window)) return;
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text.replace(/___/g, "…"));
   u.lang = "de-DE";
