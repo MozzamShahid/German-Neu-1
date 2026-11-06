@@ -421,5 +421,179 @@
         }
       ]
     }
-  ]
+  ],
+  "hints": {
+    "intro": [
+      {
+        "de": "Ich heiße … / Mein Name ist …",
+        "en": "My name is …",
+        "ur": "میرا نام … ہے۔"
+      },
+      {
+        "de": "Ich bin … Jahre alt.",
+        "en": "I am … years old.",
+        "ur": "میری عمر … سال ہے۔"
+      },
+      {
+        "de": "Ich komme aus Pakistan.",
+        "en": "I come from Pakistan.",
+        "ur": "میں پاکستان سے ہوں۔"
+      },
+      {
+        "de": "Ich wohne in …",
+        "en": "I live in …",
+        "ur": "میں … میں رہتا / رہتی ہوں۔"
+      },
+      {
+        "de": "Ich spreche Urdu, Englisch und ein bisschen Deutsch.",
+        "en": "I speak Urdu, English and a little German.",
+        "ur": "میں اردو، انگریزی اور تھوڑی جرمن بولتا ہوں۔"
+      },
+      {
+        "de": "Ich bin … von Beruf. / Ich arbeite als …",
+        "en": "I am a … by profession.",
+        "ur": "میرا پیشہ … ہے۔"
+      },
+      {
+        "de": "Mein Hobby ist … / Ich spiele gern Kricket.",
+        "en": "My hobby is … / I like playing cricket.",
+        "ur": "میرا شوق … ہے۔"
+      },
+      {
+        "de": "Mein Vorname: A – L – I.",
+        "en": "Spell your name letter by letter.",
+        "ur": "اپنا نام حرف بہ حرف بتائیں (buchstabieren)۔"
+      },
+      {
+        "de": "Meine Telefonnummer ist null drei null null …",
+        "en": "Say the phone number digit by digit.",
+        "ur": "فون نمبر ایک ایک ہندسہ کر کے بولیں۔"
+      }
+    ],
+    "ask": [
+      {
+        "de": "Das Wort von der Karte muss in die Frage!",
+        "en": "The word on the card MUST be in your question (teacher's note).",
+        "ur": "کارڈ والا لفظ سوال کے اندر لازمی آنا چاہیے۔"
+      },
+      {
+        "de": "W-Frage: Was / Wann / Wo / Wie … + Verb + Sie …?",
+        "en": "W-question: question word, then the verb in position 2.",
+        "ur": "W-سوال: پہلے سوالیہ لفظ، پھر فعل دوسری جگہ پر۔"
+      },
+      {
+        "de": "Was essen Sie zum Frühstück?",
+        "en": "What do you eat for breakfast?",
+        "ur": "آپ ناشتے میں کیا کھاتے ہیں؟"
+      },
+      {
+        "de": "Ja/Nein-Frage: Verb zuerst – Trinken Sie gern Tee?",
+        "en": "Yes/no question: the verb comes first.",
+        "ur": "ہاں/نہیں والے سوال میں فعل سب سے پہلے آتا ہے۔"
+      },
+      {
+        "de": "Haben Sie …? / Möchten Sie …? / Mögen Sie …?",
+        "en": "Do you have …? / Would you like …? / Do you like …?",
+        "ur": "کیا آپ کے پاس … ہے؟ / کیا آپ … چاہیں گے؟"
+      }
+    ],
+    "answer": [
+      {
+        "de": "Antworten Sie mit einem ganzen Satz.",
+        "en": "Answer in a full sentence, verb in position 2.",
+        "ur": "پورے جملے میں جواب دیں، فعل دوسری جگہ۔"
+      },
+      {
+        "de": "Ja, ich … gern …  / Nein, ich … nicht gern …",
+        "en": "Yes, I like … / No, I don't like …",
+        "ur": "ہاں، مجھے … پسند ہے / نہیں، مجھے … پسند نہیں۔"
+      },
+      {
+        "de": "Nein, ich habe kein Auto / keine Zeit.",
+        "en": "Use kein / keine for nouns.",
+        "ur": "اسم کے ساتھ kein / keine استعمال کریں۔"
+      },
+      {
+        "de": "Am Wochenende spiele ich Fußball.",
+        "en": "Time first → verb still in position 2.",
+        "ur": "وقت پہلے آئے تو بھی فعل دوسری جگہ پر۔"
+      },
+      {
+        "de": "Gestern habe ich … gemacht. / Ich bin nach … gefahren.",
+        "en": "Perfekt: haben / sein + Partizip (ge…t / ge…en) at the end.",
+        "ur": "Perfekt: haben یا sein، اور آخر میں ge…t / ge…en۔"
+      }
+    ],
+    "bitte": [
+      {
+        "de": "Können Sie bitte das Fenster öffnen?",
+        "en": "Could you please open the window?",
+        "ur": "کیا آپ براہ کرم کھڑکی کھول سکتے ہیں؟"
+      },
+      {
+        "de": "Kannst du mir bitte … geben?",
+        "en": "Can you please give me …? (du – friends)",
+        "ur": "کیا تم مجھے … دے سکتے ہو؟ (دوستوں کے ساتھ du)"
+      },
+      {
+        "de": "Ich möchte bitte einen Kaffee.",
+        "en": "I would like a coffee, please.",
+        "ur": "مجھے ایک کافی چاہیے۔"
+      },
+      {
+        "de": "Haben Sie bitte … für mich?",
+        "en": "Do you have … for me, please?",
+        "ur": "کیا آپ کے پاس میرے لیے … ہے؟"
+      },
+      {
+        "de": "Geben Sie mir bitte das Salz!",
+        "en": "Imperativ (Sie-form): verb first + Sie.",
+        "ur": "حکم (Imperativ): فعل پہلے، پھر Sie۔"
+      }
+    ],
+    "react": [
+      {
+        "de": "Ja, gern! / Ja, natürlich.",
+        "en": "Yes, gladly! / Yes, of course.",
+        "ur": "جی ہاں، ضرور!"
+      },
+      {
+        "de": "Hier, bitte.",
+        "en": "Here you are.",
+        "ur": "یہ لیجیے۔"
+      },
+      {
+        "de": "Kein Problem.",
+        "en": "No problem.",
+        "ur": "کوئی مسئلہ نہیں۔"
+      },
+      {
+        "de": "Nein, leider nicht. Ich habe keine Zeit.",
+        "en": "Unfortunately not, I have no time.",
+        "ur": "افسوس، نہیں۔ میرے پاس وقت نہیں ہے۔"
+      },
+      {
+        "de": "Tut mir leid, das geht nicht.",
+        "en": "Sorry, that's not possible.",
+        "ur": "معذرت، یہ ممکن نہیں۔"
+      }
+    ],
+    "translate": [
+      {
+        "de": "Verb an Position 2: Heute gehe ich …",
+        "en": "Verb in position 2, also after time words.",
+        "ur": "فعل ہمیشہ دوسری جگہ پر۔"
+      },
+      {
+        "de": "Modalverb + Infinitiv am Ende: Ich muss … lernen.",
+        "en": "Modal verb in position 2, the main verb at the end.",
+        "ur": "Modalverb دوسری جگہ، اصل فعل آخر میں۔"
+      },
+      {
+        "de": "Trennbar: Ich stehe um 7 Uhr auf.",
+        "en": "Separable verbs: the prefix goes to the end.",
+        "ur": "trennbares Verb: سابقہ آخر میں جاتا ہے۔"
+      }
+    ]
+  }
 }

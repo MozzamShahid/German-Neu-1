@@ -74,7 +74,10 @@ def collect() -> list[str]:
     lesen = json.loads((ROOT / "src/data/lesen.json").read_text(encoding="utf-8"))
     for t in lesen["tests"]:
         texts += [x["de"] for x in t["texts"].values()]
-    texts.append(json.loads((ROOT / "src/data/sprechen.json").read_text(encoding="utf-8"))["intro"]["example"])
+    sprechen = json.loads((ROOT / "src/data/sprechen.json").read_text(encoding="utf-8"))
+    texts.append(sprechen["intro"]["example"])
+    # hint phrases (SpeakButton drops the "…")
+    texts += [h["de"].replace("…", "") for hs in sprechen.get("hints", {}).values() for h in hs]
 
     seen, out = set(), []
     for t in texts:

@@ -82,7 +82,9 @@ Done and deployed:
     and phone beep (Teil 3) from `scripts/build_sfx.mjs` → `public/audio/sfx/`; an item's `scene` picks the ambience.
   - `/lesen` (`src/data/lesen.json`): texts, ads (a/b), signs. No AI.
   - `/schreiben` (`src/data/schreiben.json`): form (auto-checked, 5 pts) + email (AI, 10 pts).
-  - `/sprechen` (`src/data/sprechen.json`): browser SpeechRecognition (de-DE, Chrome/Edge) or typing; AI scores
+  - `/sprechen` (`src/data/sprechen.json`): mic = record + ElevenLabs Scribe v2 via `/api/stt` when ELEVENLABS_API_KEY is
+    set on the server (with the card word as keyterm), else browser SpeechRecognition in short non-continuous sessions
+    (continuous mode on Android repeated the text). Hints per box from `hints` in sprechen.json (teacher's notes); AI scores
     Teil 1 (3) + Teil 2 (6) + Teil 3 (6). Also Urdu → Deutsch speaking drill from `/api/sentences`.
   - AI checker `src/lib/ai.ts` + `/api/check`: OpenAI-compatible; `DEEPSEEK_API_KEY` (deepseek-chat) or
     `OPENROUTER_API_KEY` (+ optional `AI_MODEL`). OPENROUTER_API_KEY is set in `.env.local` and Railway (2026-11-06). OpenRouter requests use

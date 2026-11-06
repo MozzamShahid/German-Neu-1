@@ -37,61 +37,168 @@ function playPartner(key: string, text: string) {
 
 /* ---------------- one spoken answer ---------------- */
 
+export type Hint = { de: string; ur: string; en?: string };
+
+/** Asked once per page: is the better (ElevenLabs Scribe) speech-to-text available on the server? */
+let sttAvailable: Promise<boolean> | null = null;
+function checkStt() {
+  sttAvailable ??= fetch("/api/stt")
+    .then((r) => r.json())
+    .then((d) => !!d.configured)
+    .catch(() => false);
+  return sttAvailable;
+}
+
 function AnswerBox({
   label,
   placeholder,
   onCheck,
   result,
   rows = 2,
+  keyterms = [],
+  hints,
 }: {
   label: string;
   placeholder?: string;
   onCheck: (text: string) => Promise<void>;
   result?: AiResult;
   rows?: number;
+  /** words that should be recognised well (e.g. the word on the card) */
+  keyterms?: string[];
+  hints?: Hint[];
 }) {
   const [text, setText] = useState("");
   const [listening, setListening] = useState(false);
+  const [transcribing, setTranscribing] = useState(false);
   const [checking, setChecking] = useState(false);
   const [micError, setMicError] = useState("");
+  const [showHints, setShowHints] = useState(false);
   const recRef = useRef<Rec | null>(null);
-  const base = useRef("");
+  const mediaRef = useRef<MediaRecorder | null>(null);
+  const wantRef = useRef(false);
+  const committed = useRef("");
 
-  useEffect(() => () => recRef.current?.stop(), []);
-
-  const toggleMic = () => {
-    if (listening) {
+  useEffect(
+    () => () => {
+      wantRef.current = false;
       recRef.current?.stop();
+      if (mediaRef.current?.state === "recording") mediaRef.current.stop();
+    },
+    [],
+  );
+
+  const append = (t: string) => setText((prev) => (prev.trim() ? prev.trim() + " " : "") + t);
+
+  /* --- 1) record, then ElevenLabs Scribe writes it down (best quality) --- */
+  const startRecorder = async () => {
+    let stream: MediaStream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch {
+      setMicError("Microphone permission was denied.");
       return;
     }
+    const mime = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"].find((m) => MediaRecorder.isTypeSupported?.(m));
+    const mr = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+    const chunks: Blob[] = [];
+    mr.ondataavailable = (e) => {
+      if (e.data.size) chunks.push(e.data);
+    };
+    mr.onstop = async () => {
+      stream.getTracks().forEach((t) => t.stop());
+      setListening(false);
+      const blob = new Blob(chunks, { type: mr.mimeType || "audio/webm" });
+      if (blob.size < 1500) return;
+      setTranscribing(true);
+      const ext = blob.type.includes("mp4") ? "mp4" : blob.type.includes("ogg") ? "ogg" : "webm";
+      const fd = new FormData();
+      fd.append("audio", blob, `speech.${ext}`);
+      fd.append("keyterms", keyterms.join("|"));
+      try {
+        const r = await fetch("/api/stt", { method: "POST", body: fd });
+        const d = await r.json();
+        if (d.text) append(d.text);
+        else setMicError(d.error ?? "Nothing recognised – please try again, a bit louder.");
+      } catch {
+        setMicError("Could not reach the server.");
+      }
+      setTranscribing(false);
+    };
+    mediaRef.current = mr;
+    mr.start();
+    setListening(true);
+    setTimeout(() => {
+      if (mr.state === "recording") mr.stop();
+    }, 60_000);
+  };
+
+  /* --- 2) fallback: the browser's live recognition, one short session at a time ---
+     (continuous mode on Android repeats the text again and again, so we restart short sessions instead) */
+  const browserSession = () => {
     const rec = getRecognition();
-    if (!rec) {
+    if (!rec) return;
+    rec.lang = "de-DE";
+    rec.continuous = false;
+    rec.interimResults = true;
+    rec.onresult = (e) => {
+      let interim = "";
+      for (let i = e.resultIndex; i < e.results.length; i++) {
+        const r = e.results[i];
+        const t = r[0].transcript.trim();
+        if (!t) continue;
+        if (r.isFinal) {
+          if (!committed.current.trimEnd().endsWith(t)) committed.current += t + " ";
+          interim = "";
+        } else interim = t;
+      }
+      setText((committed.current + interim).replace(/\s+/g, " "));
+    };
+    rec.onerror = (e) => {
+      if (e.error === "no-speech" || e.error === "aborted") return;
+      wantRef.current = false;
+      setMicError(e.error === "not-allowed" ? "Microphone permission was denied." : `Mic error: ${e.error}`);
+    };
+    rec.onend = () => {
+      if (wantRef.current) {
+        try {
+          browserSession();
+        } catch {
+          wantRef.current = false;
+          setListening(false);
+        }
+      } else setListening(false);
+    };
+    recRef.current = rec;
+    rec.start();
+  };
+
+  const startBrowser = () => {
+    if (!getRecognition()) {
       setMicError("Speech recognition is not available in this browser. Use Chrome, or type your answer.");
       return;
     }
-    setMicError("");
-    rec.lang = "de-DE";
-    rec.continuous = true;
-    rec.interimResults = true;
-    base.current = text ? text.trim() + " " : "";
-    rec.onresult = (e) => {
-      let finalText = "";
-      let interim = "";
-      for (let i = 0; i < e.results.length; i++) {
-        const r = e.results[i];
-        if (r.isFinal) finalText += r[0].transcript + " ";
-        else interim += r[0].transcript;
-      }
-      setText((base.current + finalText + interim).replace(/\s+/g, " "));
-    };
-    rec.onerror = (e) => setMicError(e.error === "not-allowed" ? "Microphone permission was denied." : `Mic error: ${e.error}`);
-    rec.onend = () => setListening(false);
-    recRef.current = rec;
-    rec.start();
+    committed.current = text.trim() ? text.trim() + " " : "";
+    wantRef.current = true;
     setListening(true);
+    browserSession();
+  };
+
+  const toggleMic = async () => {
+    if (transcribing) return;
+    if (listening) {
+      wantRef.current = false;
+      recRef.current?.stop();
+      if (mediaRef.current?.state === "recording") mediaRef.current.stop();
+      else setListening(false);
+      return;
+    }
+    setMicError("");
+    if (typeof MediaRecorder !== "undefined" && navigator.mediaDevices && (await checkStt())) await startRecorder();
+    else startBrowser();
   };
 
   const check = async () => {
+    wantRef.current = false;
     recRef.current?.stop();
     if (!text.trim()) return;
     setChecking(true);
@@ -106,6 +213,7 @@ function AnswerBox({
         <button
           type="button"
           onClick={toggleMic}
+          disabled={transcribing}
           title="Speak (German)"
           className={`grid h-11 w-11 shrink-0 place-items-center rounded-full text-lg ${listening ? "animate-pulse bg-rose-500 text-white" : "bg-indigo-600 text-white hover:bg-indigo-700"}`}
         >
@@ -127,7 +235,30 @@ function AnswerBox({
           {checking ? "…" : result ? "Again" : "Check"}
         </button>
       </div>
+      {listening && <div className="mt-1 text-xs font-medium text-rose-600">● Listening… speak, then press ■</div>}
+      {transcribing && <div className="mt-1 animate-pulse text-xs font-medium text-indigo-600">✍️ Writing down what you said…</div>}
       {micError && <div className="mt-1 text-xs text-rose-600">{micError}</div>}
+      {hints && hints.length > 0 && (
+        <div className="mt-1">
+          <button onClick={() => setShowHints(!showHints)} className="text-sm font-medium text-amber-700 hover:underline">
+            {showHints ? "Hide hints" : "💡 Hint – useful phrases from your notes"}
+          </button>
+          {showHints && (
+            <ul className="mt-1 space-y-1 rounded-xl bg-amber-50 px-3 py-2 text-sm">
+              {hints.map((h, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <SpeakButton text={h.de.replace(/…/g, "")} className="h-6 w-6 text-xs" />
+                  <div className="flex-1">
+                    <div className="font-medium">{h.de}</div>
+                    {h.en && <div className="text-xs text-slate-500">{h.en}</div>}
+                    <Urdu className="text-[14px] text-slate-600">{h.ur}</Urdu>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
       {result && (
         <div className="mt-2">
           <AiFeedback r={result} />
@@ -199,7 +330,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
             </span>
           ))}
         </div>
-        <AnswerBox label="Ihre Vorstellung" rows={4} onCheck={run("intro", { role: "intro" })} result={results.intro} />
+        <AnswerBox label="Ihre Vorstellung" rows={4} hints={data.hints.intro} keyterms={data.intro.keywords} onCheck={run("intro", { role: "intro" })} result={results.intro} />
         <button onClick={() => setShowExample(!showExample)} className="mt-2 text-sm text-indigo-600 hover:underline">
           {showExample ? "Hide example" : "Show an example"}
         </button>
@@ -220,7 +351,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
                 <div className="text-xs text-slate-500">Thema: {test.theme2}</div>
                 <div className="mt-1 text-xl font-bold">{c.word}</div>
               </div>
-              <AnswerBox label={`① Stellen Sie eine Frage mit „${c.word}“`} onCheck={run(`ask${i}`, { role: "ask", card: i })} result={results[`ask${i}`]} />
+              <AnswerBox label={`① Stellen Sie eine Frage mit „${c.word}“`} hints={data.hints.ask} keyterms={[c.word]} onCheck={run(`ask${i}`, { role: "ask", card: i })} result={results[`ask${i}`]} />
               <div className="mt-4 flex items-center gap-2 text-sm font-medium text-slate-600">
                 ② Ihr Partner fragt:
                 <button
@@ -231,7 +362,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
                 </button>
                 {results[`answer${i}`] && <span className="text-slate-500">„{c.partner}“</span>}
               </div>
-              <AnswerBox label="Ihre Antwort" onCheck={run(`answer${i}`, { role: "answer", card: i })} result={results[`answer${i}`]} />
+              <AnswerBox label="Ihre Antwort" hints={data.hints.answer} onCheck={run(`answer${i}`, { role: "answer", card: i })} result={results[`answer${i}`]} />
             </div>
           ))}
         </div>
@@ -246,7 +377,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
                 <div className="text-5xl">{c.emoji}</div>
                 <div className="mt-1 text-xs text-slate-400">{c.word}</div>
               </div>
-              <AnswerBox label="① Ihre Bitte" placeholder="Können Sie bitte …?" onCheck={run(`bitte${i}`, { role: "bitte", card: i })} result={results[`bitte${i}`]} />
+              <AnswerBox label="① Ihre Bitte" placeholder="Können Sie bitte …?" hints={data.hints.bitte} keyterms={[c.word]} onCheck={run(`bitte${i}`, { role: "bitte", card: i })} result={results[`bitte${i}`]} />
               <div className="mt-4 flex items-center gap-2 text-sm font-medium text-slate-600">
                 ② Ihr Partner bittet:
                 <button
@@ -257,7 +388,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
                 </button>
                 {results[`react${i}`] && <span className="text-slate-500">„{c.partner}“</span>}
               </div>
-              <AnswerBox label="Ihre Reaktion" placeholder="Ja, gern. / Nein, leider …" onCheck={run(`react${i}`, { role: "react", card: i })} result={results[`react${i}`]} />
+              <AnswerBox label="Ihre Reaktion" placeholder="Ja, gern. / Nein, leider …" hints={data.hints.react} onCheck={run(`react${i}`, { role: "react", card: i })} result={results[`react${i}`]} />
             </div>
           ))}
         </div>
@@ -355,7 +486,7 @@ function TranslateMode() {
         <Urdu className="text-2xl text-emerald-900">{s.ur}</Urdu>
         <div className="mt-1 text-sm text-slate-500">{s.en}</div>
       </div>
-      <AnswerBox key={s.id} label="Auf Deutsch:" onCheck={check} result={result} />
+      <AnswerBox key={s.id} label="Auf Deutsch:" hints={data.hints.translate} onCheck={check} result={result} />
       <div className="mt-3 flex items-center justify-between">
         <button onClick={() => setReveal(true)} className="text-sm text-indigo-600 hover:underline">
           Show answer
