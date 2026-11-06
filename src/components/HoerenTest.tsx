@@ -33,10 +33,69 @@ function makeRandom() {
 const seconds = () => Date.now() / 1000;
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/* ---------- sound effects (Web Audio): telephone line for Teil 3, hall echo for Teil 2 ---------- */
+
+type Effect = "phone" | "hall" | null;
+let ctx: AudioContext | null = null;
+let hallIR: AudioBuffer | null = null;
+
+function audioCtx() {
+  if (!ctx) ctx = new AudioContext();
+  if (ctx.state === "suspended") ctx.resume().catch(() => {});
+  return ctx;
+}
+
+/** A synthetic impulse response: decaying noise = the echo of a big station hall. */
+function hallImpulse(c: AudioContext) {
+  const len = Math.floor(c.sampleRate * 1.6);
+  const buf = c.createBuffer(2, len, c.sampleRate);
+  for (let ch = 0; ch < 2; ch++) {
+    const d = buf.getChannelData(ch);
+    for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 3.5);
+  }
+  return buf;
+}
+
+function connectEffect(audio: HTMLAudioElement, effect: Effect) {
+  if (!effect) return;
+  try {
+    const c = audioCtx();
+    const src = c.createMediaElementSource(audio);
+    if (effect === "phone") {
+      // telephone band 400–3000 Hz, a bit louder
+      const hp = c.createBiquadFilter();
+      hp.type = "highpass";
+      hp.frequency.value = 400;
+      const lp = c.createBiquadFilter();
+      lp.type = "lowpass";
+      lp.frequency.value = 3000;
+      const peak = c.createBiquadFilter();
+      peak.type = "peaking";
+      peak.frequency.value = 1500;
+      peak.gain.value = 6;
+      const gain = c.createGain();
+      gain.gain.value = 1.3;
+      src.connect(hp).connect(lp).connect(peak).connect(gain).connect(c.destination);
+    } else {
+      const conv = c.createConvolver();
+      conv.buffer = hallIR ??= hallImpulse(c);
+      const dry = c.createGain();
+      dry.gain.value = 0.85;
+      const wet = c.createGain();
+      wet.gain.value = 0.35;
+      src.connect(dry).connect(c.destination);
+      src.connect(conv).connect(wet).connect(c.destination);
+    }
+  } catch {
+    // no Web Audio: play without the effect
+  }
+}
+
 /** Plays one audio file to the end (or until stopped). */
-function playFile(src: string, stop: { current: boolean }, volume = 1) {
+function playFile(src: string, stop: { current: boolean }, volume = 1, effect: Effect = null) {
   const audio = new Audio(src);
   audio.volume = volume;
+  connectEffect(audio, effect);
   return new Promise<void>((resolve) => {
     const poll = setInterval(() => {
       if (stop.current) done();
@@ -52,41 +111,71 @@ function playFile(src: string, stop: { current: boolean }, volume = 1) {
   });
 }
 
+function playSystem(key: string, stop: { current: boolean }) {
+  const rec = MANIFEST[key];
+  return rec ? playFile(`/audio/hoeren/${rec.file}?v=${rec.hash}`, stop) : Promise.resolve();
+}
+
+/** waits, but returns early when stopped */
+async function pause(ms: number, stop: { current: boolean }) {
+  for (let t = 0; t < ms && !stop.current; t += 100) await wait(100);
+}
+
 /**
  * Plays an item like in the exam: a quiet background (station, café, …) under the voices,
- * a gong before announcements and a beep before phone messages.
+ * a gong + hall echo for announcements, a beep + telephone sound for phone messages.
  * Falls back to the browser voice if a recording is missing.
  */
 async function playLines(item: Item, stop: { current: boolean }) {
   const part = data.parts[String(item.teil) as PartKey] as { intro?: string };
   const intro = part.intro;
+  const effect: Effect = item.teil === 3 ? "phone" : item.teil === 2 ? "hall" : null;
   let bg: HTMLAudioElement | null = null;
   if (item.scene) {
     bg = new Audio(`/audio/sfx/${item.scene}.mp3`);
     bg.loop = true;
     bg.volume = 0.22;
     bg.play().catch(() => {});
-    await wait(1200);
+    await pause(1200, stop);
   }
   try {
     if (intro && !stop.current) {
       await playFile(`/audio/sfx/${intro}.mp3`, stop, 0.6);
-      await wait(400);
+      await pause(400, stop);
     }
     for (let i = 0; i < item.lines.length; i++) {
       if (stop.current) return;
       const rec = MANIFEST[`${item.id}-${i}`];
-      if (rec) await playFile(`/audio/hoeren/${rec.file}?v=${rec.hash}`, stop);
+      if (rec) await playFile(`/audio/hoeren/${rec.file}?v=${rec.hash}`, stop, 1, effect);
       else {
         speak(item.lines[i].de);
-        await wait(item.lines[i].de.length * 75);
+        await pause(item.lines[i].de.length * 75, stop);
       }
-      await wait(500);
+      await pause(500, stop);
     }
-    if (bg && !stop.current) await wait(800);
+    if (bg) await pause(800, stop);
   } finally {
     bg?.pause();
   }
+}
+
+/** The Goethe exam sequence: "Aufgabe N" → reading time → text → "noch einmal" → text again. */
+async function playExam(item: Item, n: number, times: number, stop: { current: boolean }, phase: (p: string) => void) {
+  phase("📢 Aufgabe " + n);
+  await playSystem(`sys-aufgabe-${n}`, stop);
+  phase("📖 Lesezeit – read the question");
+  await pause(4000, stop);
+  for (let k = 1; k <= times && !stop.current; k++) {
+    if (k > 1) {
+      phase("🔁 noch einmal");
+      await pause(1200, stop);
+      await playSystem("sys-noch-einmal", stop);
+      await pause(800, stop);
+    }
+    phase(times > 1 ? `🎧 ${k}. Hören` : "🎧 Hören");
+    await playLines(item, stop);
+  }
+  phase("");
 }
 
 export default function HoerenTest() {
@@ -102,6 +191,7 @@ export default function HoerenTest() {
   const [chosen, setChosen] = useState<Record<string, number>>({});
   const [plays, setPlays] = useState<Record<string, number>>({});
   const [playing, setPlaying] = useState<string | null>(null);
+  const [phase, setPhase] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [shownText, setShownText] = useState<Record<string, boolean>>({});
   const [randomTest, setRandomTest] = useState<(typeof TESTS)[number] | null>(null);
@@ -129,12 +219,16 @@ export default function HoerenTest() {
   const play = async (item: Item) => {
     const limit = data.parts[String(item.teil) as PartKey].plays;
     const used = plays[item.id] ?? 0;
-    if (playing || (exam && !submitted && used >= limit)) return;
+    const examRun = exam && !submitted;
+    if (playing || (examRun && used >= 1)) return;
     if (!startedAt.current) startedAt.current = seconds();
     stop.current = false;
+    audioCtx();
     setPlaying(item.id);
     setPlays((p) => ({ ...p, [item.id]: used + 1 }));
-    await playLines(item, stop);
+    if (examRun) await playExam(item, test.items.indexOf(item) + 1, limit, stop, setPhase);
+    else await playLines(item, stop);
+    setPhase("");
     setPlaying(null);
   };
 
@@ -214,7 +308,7 @@ export default function HoerenTest() {
             <li>Read the question first, then press <b>▶ Hören</b>. You hear a short scene (with background sounds like in the Goethe exam).</li>
             <li>Choose the answer (a / b / c, or richtig / falsch).</li>
             <li>At the end press <b>Abgeben</b>: you get your score, the full text and an explanation in English and Urdu.</li>
-            <li><b>Prüfungsmodus</b> on = limited plays like the real exam. Off = practice: listen as often as you like and see the text.</li>
+            <li><b>Prüfungsmodus</b> on = like the real exam: one click says &quot;Aufgabe …&quot;, gives reading time and plays the text (twice in Teil 1 and 3). Off = practice: listen as often as you like and see the text.</li>
           </ol>
           <Urdu className="mt-2 text-[15px] text-slate-700">
             پہلے سوال پڑھیں، پھر ▶ Hören دبائیں اور سنیں۔ جواب چنیں۔ آخر میں Abgeben دبائیں: نمبر، پوری تحریر اور اردو وضاحت ملے گی۔ Prüfungsmodus بند کریں تو جتنی بار چاہیں سنیں اور متن بھی دیکھ سکتے ہیں۔
@@ -252,8 +346,7 @@ export default function HoerenTest() {
             {items.map((it) => {
               const n = test.items.indexOf(it) + 1;
               const used = plays[it.id] ?? 0;
-              const left = info.plays - used;
-              const locked = exam && !submitted && left <= 0;
+              const locked = exam && !submitted && used >= 1;
               return (
                 <div key={it.id} className="rounded-xl border border-slate-200 p-4">
                   <div className="flex items-start justify-between gap-3">
@@ -266,10 +359,15 @@ export default function HoerenTest() {
                       disabled={(!!playing && playing !== it.id) || locked}
                       className="shrink-0 rounded-full bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:bg-slate-300"
                     >
-                      {playing === it.id ? "■ Stop" : "▶ Hören"}
-                      {exam && !submitted && <span className="ml-1 font-normal opacity-80">({Math.max(0, left)}×)</span>}
+                      {playing === it.id ? "■ Stop" : locked ? "✓ gehört" : "▶ Hören"}
+                      {exam && !submitted && !locked && playing !== it.id && (
+                        <span className="ml-1 font-normal opacity-80">({info.plays}×)</span>
+                      )}
                     </button>
                   </div>
+                  {playing === it.id && phase && (
+                    <div className="mt-2 animate-pulse text-sm font-medium text-indigo-700">{phase}</div>
+                  )}
 
                   <div className={`mt-3 grid gap-2 ${it.options.length === 2 ? "grid-cols-2" : "sm:grid-cols-3"}`}>
                     {it.options.map((o, i) => {

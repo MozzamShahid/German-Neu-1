@@ -73,7 +73,10 @@ Done and deployed:
   Shared UI in `src/components/mock.tsx`; client-only loaders in `MockLoaders.tsx`.
   - `/hoeren` (`src/data/hoeren.json`): Modelltest 1–2 voiced with ElevenLabs; 3–5 (and Sprechen t3–t5 partners) with
     Piper via `.venv/Scripts/python scripts/build_hoeren_piper.py` (fills every line without a recording,
-    manifest entries get `engine: piper`; the ElevenLabs script keeps them unless `--replace-piper`). ElevenLabs: (`eleven_v4`, German-verified premade
+    manifest entries get `engine: piper`; the ElevenLabs script keeps them unless `--replace-piper`). Each conversation
+    gets its own voices from pools (Kerstin/Ramona/Thorsten/Karlsson + 24 MLS speakers sorted by measured pitch),
+    plus a narrator (`sys-aufgabe-N`, `sys-noch-einmal`). Player: Teil 3 telephone filter, Teil 2 hall echo (Web Audio);
+    Prüfungsmodus = one click runs Aufgabe N → 4 s Lesezeit → text (×2 in Teil 1/3). ElevenLabs: (`eleven_v4`, German-verified premade
     voices) by `node --env-file=.env.local scripts/build_hoeren_audio.mjs` (`--dry-run` counts characters; only
     new/changed lines cost credits; also makes the Sprechen partner lines `sp-*`). Background ambience, gong (Teil 2)
     and phone beep (Teil 3) from `scripts/build_sfx.mjs` → `public/audio/sfx/`; an item's `scene` picks the ambience.
