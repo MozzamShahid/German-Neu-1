@@ -51,7 +51,7 @@ Run order: `python scripts/parse_glossary.py && python scripts/lecture_vocab.py 
   looks broken in a terminal, that is only terminal rendering; browsers shape it correctly.
 - Article colours: der = blue, die = red, das = green.
 
-## Status (2026-11-05)
+## Status (2026-11-06)
 Done and deployed:
 - vocab quiz (Kapitel 1–12 + Kapitel 13 lecture words with Urdu), Supabase saving, Railway deploy
 - grammar quiz type "grammar" (`src/lib/grammar.ts`): fill / pick / order (word-order game) from
@@ -62,7 +62,14 @@ Done and deployed:
   `/api/sentences?topic=`
 - "Practice my mistakes" covers both words (`reviewIds`) and grammar sentences (`reviewItemIds`, saved as `itemId` in answers)
 
-Ideas for next time: flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have
+- `/hoeren`: A1 Hören mock test (Goethe Start Deutsch 1 format, Teil 1–3, 2 Modelltests × 15) from
+  `src/data/hoeren.json`. Audio is pre-generated with ElevenLabs (German-verified premade voices, `eleven_v4`) by
+  `node --env-file=.env.local scripts/build_hoeren_audio.mjs` (`--dry-run` counts characters; only new/changed lines
+  cost credits) into `public/audio/hoeren/` + `src/data/hoeren-audio.json`. Railway does not need the ElevenLabs key.
+  Results are saved to Supabase `public.mock_attempts` via `/api/mock` (table created 2026-11-06).
+  `ELEVENLABS_API_KEY` is in `.env.local` only (free plan, 10k chars/month; ~3.8k used for the 2 tests).
+
+Ideas for next time: Lesen / Schreiben / Sprechen mock sections (Schreiben + Sprechen need an LLM checker); flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have
 them now); a dürfen modal verb; more Wechselpräposition places (an/über).
 
 ## Gotchas
