@@ -414,7 +414,7 @@ export default function SprechenTest() {
       </p>
       {mode === "exam" ? (
         <>
-          <TestPicker tests={data.tests} random value={testId} onChange={pickTest} name={name} onName={setName} locked={false} />
+          <TestPicker tests={data.tests} random section="sprechen" value={testId} onChange={pickTest} name={name} onName={setName} locked={false} />
           <ExamMode key={`${testId}-${round}`} test={test} name={name} />
         </>
       ) : (

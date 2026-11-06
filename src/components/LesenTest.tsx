@@ -123,7 +123,7 @@ export default function LesenTest() {
 
   return (
     <div className="space-y-5">
-      <TestPicker tests={TESTS} random value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
+      <TestPicker tests={TESTS} random section="lesen" value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
 
       {submitted && <ScoreBox score={score} max={test.items.length} saveState={saveState} onRetry={() => reset(testId)} />}
 

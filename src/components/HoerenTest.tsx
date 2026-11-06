@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import data from "@/data/hoeren.json";
 import audioManifest from "@/data/hoeren-audio.json";
-import { RANDOM_ID, RANDOM_TITLE, shuffle } from "./mock";
+import { RANDOM_ID, RANDOM_TITLE, saveMock, shuffle, TestPicker } from "./mock";
 import { speak, Urdu } from "./Word";
 
 type Line = { sp: string; de: string };
@@ -236,36 +236,24 @@ export default function HoerenTest() {
     stop.current = true;
     setSubmitted(true);
     window.scrollTo(0, 0);
-    if (!name.trim()) {
-      setSaveState("off");
-      return;
-    }
     setSaveState("saving");
-    try {
-      const res = await fetch("/api/mock", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: name.trim(),
-          section: "hoeren",
-          testId,
-          mode: exam ? "exam" : "practice",
-          score,
-          maxScore: test.items.length,
-          durationSeconds: startedAt.current ? Math.round(seconds() - startedAt.current) : null,
-          answers: test.items.map((it) => ({
-            itemId: it.id,
-            chosen: chosen[it.id] ?? null,
-            correct: chosen[it.id] === it.answer,
-            plays: plays[it.id] ?? 0,
-          })),
-        }),
-      });
-      const d = await res.json();
-      setSaveState(d.saved ? "saved" : d.reason === "Supabase not configured" ? "off" : "error");
-    } catch {
-      setSaveState("error");
-    }
+    setSaveState(
+      await saveMock({
+        name,
+        section: "hoeren",
+        testId,
+        mode: exam ? "exam" : "practice",
+        score,
+        maxScore: test.items.length,
+        durationSeconds: startedAt.current ? Math.round(seconds() - startedAt.current) : null,
+        answers: test.items.map((it) => ({
+          itemId: it.id,
+          chosen: chosen[it.id] ?? null,
+          correct: chosen[it.id] === it.answer,
+          plays: plays[it.id] ?? 0,
+        })),
+      }),
+    );
   };
 
   const parts = [1, 2, 3].map((teil) => ({
@@ -277,29 +265,12 @@ export default function HoerenTest() {
 
   return (
     <div className="space-y-5">
-      {/* settings */}
-      <div className="flex flex-wrap items-center gap-2 rounded-2xl bg-white p-4 shadow-sm">
-        {[...TESTS, { id: RANDOM_ID, title: RANDOM_TITLE }].map((t) => (
-          <button
-            key={t.id}
-            onClick={() => reset(t.id)}
-            className={`rounded-full px-4 py-1.5 text-sm font-semibold ${t.id === testId ? "bg-amber-500 text-white" : "bg-slate-100 text-slate-600 hover:bg-amber-100"}`}
-          >
-            {t.title}
-          </button>
-        ))}
-        <label className="ml-auto flex items-center gap-2 text-sm text-slate-600">
+      <TestPicker tests={TESTS} random section="hoeren" value={testId} onChange={reset} name={name} onName={setName} locked={submitted}>
+        <label className="flex items-center gap-2 text-sm text-slate-600">
           <input type="checkbox" checked={exam} disabled={submitted} onChange={(e) => setExam(e.target.checked)} />
-          Prüfungsmodus (limited plays)
+          Prüfungsmodus
         </label>
-        <input
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          disabled={submitted}
-          placeholder="Your name (to save)"
-          className="w-full rounded-xl border border-slate-200 px-3 py-1.5 text-sm sm:w-48"
-        />
-      </div>
+      </TestPicker>
 
       {!submitted && (
         <div className="rounded-2xl bg-sky-50 p-4 text-sm text-slate-700 shadow-sm">

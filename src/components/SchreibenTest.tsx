@@ -99,7 +99,7 @@ export default function SchreibenTest() {
 
   return (
     <div className="space-y-5">
-      <TestPicker tests={data.tests} random value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
+      <TestPicker tests={data.tests} random section="schreiben" value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
 
       {submitted && (
         <ScoreBox

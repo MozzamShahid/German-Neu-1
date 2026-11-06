@@ -32,9 +32,29 @@ export function shuffle<T>(a: T[]): T[] {
 export const RANDOM_ID = "random";
 export const RANDOM_TITLE = "🎲 Zufallstest";
 
+type Section = "hoeren" | "lesen" | "schreiben" | "sprechen";
+
+/** Best result per test, kept in this browser (works without a name / Supabase). */
+function readBest(section: Section): Record<string, number> {
+  try {
+    return JSON.parse(localStorage.getItem(`mock-best-${section}`) ?? "{}");
+  } catch {
+    return {};
+  }
+}
+
+function rememberBest(section: Section, testId: string, pct: number) {
+  if (testId === RANDOM_ID) return;
+  const best = readBest(section);
+  if (pct > (best[testId] ?? -1)) {
+    best[testId] = pct;
+    localStorage.setItem(`mock-best-${section}`, JSON.stringify(best));
+  }
+}
+
 export async function saveMock(body: {
   name: string;
-  section: "hoeren" | "lesen" | "schreiben" | "sprechen";
+  section: Section;
   testId: string;
   mode?: "exam" | "practice";
   score: number;
@@ -42,6 +62,7 @@ export async function saveMock(body: {
   durationSeconds: number | null;
   answers: unknown[];
 }): Promise<SaveState> {
+  if (body.maxScore > 0) rememberBest(body.section, body.testId, Math.round((body.score / body.maxScore) * 100));
   if (!body.name.trim()) return "off";
   try {
     const res = await fetch("/api/mock", {
@@ -60,6 +81,7 @@ export function TestPicker({
   tests,
   value,
   random,
+  section,
   onChange,
   name,
   onName,
@@ -70,23 +92,61 @@ export function TestPicker({
   value: string;
   /** shows a "🎲 Zufallstest" button that mixes all Modelltests */
   random?: boolean;
+  /** shows the best score per test (from this browser) */
+  section?: Section;
   onChange: (id: string) => void;
   name: string;
   onName: (n: string) => void;
   locked: boolean;
   children?: React.ReactNode;
 }) {
+  // read on every render: cheap, and stays fresh after a test is finished
+  const best = section && typeof window !== "undefined" ? readBest(section) : {};
+  const label = (t: { id: string; title: string }) =>
+    best[t.id] !== undefined ? `${t.title}  ${best[t.id] >= 60 ? "✓" : "·"} ${best[t.id]} %` : t.title;
+  const done = tests.filter((t) => best[t.id] !== undefined).length;
+
   return (
     <div className="flex flex-wrap items-center gap-2 rounded-2xl bg-white p-4 shadow-sm">
-      {[...tests, ...(random ? [{ id: RANDOM_ID, title: RANDOM_TITLE }] : [])].map((t) => (
-        <button
-          key={t.id}
-          onClick={() => onChange(t.id)}
-          className={`rounded-full px-4 py-1.5 text-sm font-semibold ${t.id === value ? "bg-amber-500 text-white" : "bg-slate-100 text-slate-600 hover:bg-amber-100"}`}
-        >
-          {t.title}
-        </button>
-      ))}
+      {tests.length > 5 ? (
+        <>
+          <select
+            value={value === RANDOM_ID ? "" : value}
+            onChange={(e) => e.target.value && onChange(e.target.value)}
+            className={`rounded-full border-2 px-3 py-1.5 text-sm font-semibold ${value !== RANDOM_ID ? "border-amber-500 bg-amber-50" : "border-slate-200"}`}
+          >
+            {value === RANDOM_ID && <option value="">Modelltest wählen…</option>}
+            {tests.map((t) => (
+              <option key={t.id} value={t.id}>
+                {label(t)}
+              </option>
+            ))}
+          </select>
+          {random && (
+            <button
+              onClick={() => onChange(RANDOM_ID)}
+              className={`rounded-full px-4 py-1.5 text-sm font-semibold ${value === RANDOM_ID ? "bg-amber-500 text-white" : "bg-slate-100 text-slate-600 hover:bg-amber-100"}`}
+            >
+              {value === RANDOM_ID ? "🎲 Neuer Zufallstest" : RANDOM_TITLE}
+            </button>
+          )}
+          {section && (
+            <span className="text-xs text-slate-500">
+              {done}/{tests.length} gemacht
+            </span>
+          )}
+        </>
+      ) : (
+        [...tests, ...(random ? [{ id: RANDOM_ID, title: RANDOM_TITLE }] : [])].map((t) => (
+          <button
+            key={t.id}
+            onClick={() => onChange(t.id)}
+            className={`rounded-full px-4 py-1.5 text-sm font-semibold ${t.id === value ? "bg-amber-500 text-white" : "bg-slate-100 text-slate-600 hover:bg-amber-100"}`}
+          >
+            {label(t)}
+          </button>
+        ))
+      )}
       <div className="ml-auto flex flex-wrap items-center gap-2">
         {children}
         <input
