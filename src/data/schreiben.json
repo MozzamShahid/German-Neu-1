@@ -8,19 +8,69 @@
         "text": "Ihr Freund Ahmad Raza möchte einen Deutschkurs an der Volkshochschule machen. Er ist am 14. August 1998 in Lahore geboren. Er wohnt seit drei Monaten in Köln, in der Bahnhofstraße 12. Seine Muttersprache ist Urdu, er spricht auch Englisch. Ahmad arbeitet am Tag und kann nur am Abend lernen. Er bezahlt mit Karte.",
         "en": "Your friend Ahmad wants to register for a German course. Fill in the 5 missing details for him.",
         "ur": "آپ کا دوست احمد جرمن کورس میں داخلہ لینا چاہتا ہے۔ اس کے لیے فارم کی پانچ خالی جگہیں بھریں۔",
-        "given": [["Familienname", "Raza"], ["Vorname", "Ahmad"], ["Wohnort", "Köln"]],
+        "given": [
+          [
+            "Familienname",
+            "Raza"
+          ],
+          [
+            "Vorname",
+            "Ahmad"
+          ],
+          [
+            "Wohnort",
+            "Köln"
+          ]
+        ],
         "fields": [
-          { "label": "Geburtsdatum", "accept": ["14.08.1998", "14.8.1998", "14. August 1998"], "kind": "date" },
-          { "label": "Geburtsort", "accept": ["Lahore"] },
-          { "label": "Straße, Hausnummer", "accept": ["Bahnhofstraße 12", "Bahnhofstrasse 12", "Bahnhofstr. 12"] },
-          { "label": "Muttersprache", "accept": ["Urdu"] },
-          { "label": "Kurszeit", "options": ["Vormittag", "Nachmittag", "Abend"], "answer": 2 }
+          {
+            "label": "Geburtsdatum",
+            "accept": [
+              "14.08.1998",
+              "14.8.1998",
+              "14. August 1998"
+            ],
+            "kind": "date"
+          },
+          {
+            "label": "Geburtsort",
+            "accept": [
+              "Lahore"
+            ]
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Bahnhofstraße 12",
+              "Bahnhofstrasse 12",
+              "Bahnhofstr. 12"
+            ]
+          },
+          {
+            "label": "Muttersprache",
+            "accept": [
+              "Urdu"
+            ]
+          },
+          {
+            "label": "Kurszeit",
+            "options": [
+              "Vormittag",
+              "Nachmittag",
+              "Abend"
+            ],
+            "answer": 2
+          }
         ]
       },
       "email": {
         "register": "informell",
         "situation": "Sie haben am Samstag Geburtstag und machen eine Party. Schreiben Sie Ihrem Freund Jonas eine E-Mail.",
-        "points": ["Laden Sie Jonas ein.", "Wann und wo ist die Party?", "Was soll Jonas mitbringen?"],
+        "points": [
+          "Laden Sie Jonas ein.",
+          "Wann und wo ist die Party?",
+          "Was soll Jonas mitbringen?"
+        ],
         "en": "It is your birthday on Saturday and you are having a party. Write an email to your friend Jonas: invite him, say when and where, and say what he should bring. Write about 30 words. Remember the greeting and the closing.",
         "ur": "ہفتے کو آپ کی سالگرہ ہے اور آپ پارٹی کر رہے ہیں۔ دوست یوناس کو ای میل لکھیں: اسے دعوت دیں، بتائیں کب اور کہاں ہے، اور کیا ساتھ لائے۔ تقریباً تیس الفاظ۔ شروع میں سلام اور آخر میں الوداعی جملہ ضرور لکھیں۔"
       }
@@ -33,21 +83,288 @@
         "text": "Maria Lopez kommt aus Spanien und möchte im Fitnessstudio FitAktiv Mitglied werden. Sie ist 27 Jahre alt und studiert Medizin. Sie wohnt in der Goethestraße 5, 10115 Berlin. Sie hat in der Woche keine Zeit und möchte nur am Wochenende trainieren. Ihre E-Mail-Adresse ist maria.lopez@web.de.",
         "en": "Maria wants to join a gym. Fill in the 5 missing details for her.",
         "ur": "ماریا جم کی ممبر بننا چاہتی ہے۔ اس کے لیے فارم کی پانچ خالی جگہیں بھریں۔",
-        "given": [["Name", "Maria Lopez"], ["Straße", "Goethestraße 5"], ["Wohnort", "Berlin"]],
+        "given": [
+          [
+            "Name",
+            "Maria Lopez"
+          ],
+          [
+            "Straße",
+            "Goethestraße 5"
+          ],
+          [
+            "Wohnort",
+            "Berlin"
+          ]
+        ],
         "fields": [
-          { "label": "Alter", "accept": ["27", "27 Jahre"] },
-          { "label": "Postleitzahl", "accept": ["10115"] },
-          { "label": "Beruf", "accept": ["Studentin", "Student", "Medizinstudentin"] },
-          { "label": "Herkunftsland", "accept": ["Spanien"] },
-          { "label": "Trainingszeit", "options": ["Montag – Freitag", "Wochenende"], "answer": 1 }
+          {
+            "label": "Alter",
+            "accept": [
+              "27",
+              "27 Jahre"
+            ]
+          },
+          {
+            "label": "Postleitzahl",
+            "accept": [
+              "10115"
+            ]
+          },
+          {
+            "label": "Beruf",
+            "accept": [
+              "Studentin",
+              "Student",
+              "Medizinstudentin"
+            ]
+          },
+          {
+            "label": "Herkunftsland",
+            "accept": [
+              "Spanien"
+            ]
+          },
+          {
+            "label": "Trainingszeit",
+            "options": [
+              "Montag – Freitag",
+              "Wochenende"
+            ],
+            "answer": 1
+          }
         ]
       },
       "email": {
         "register": "formell",
         "situation": "Sie haben morgen um 10 Uhr einen Termin bei Dr. Weber. Sie können nicht kommen. Schreiben Sie an die Praxis.",
-        "points": ["Warum können Sie nicht kommen?", "Bitten Sie um einen neuen Termin.", "Wann haben Sie Zeit?"],
+        "points": [
+          "Warum können Sie nicht kommen?",
+          "Bitten Sie um einen neuen Termin.",
+          "Wann haben Sie Zeit?"
+        ],
         "en": "You have a doctor's appointment tomorrow at 10 but cannot come. Write to the practice: say why, ask for a new appointment, say when you have time. Formal: use Sie, \"Sehr geehrte Damen und Herren\" and \"Mit freundlichen Grüßen\". About 30 words.",
         "ur": "کل دس بجے ڈاکٹر کے پاس آپ کی اپائنٹمنٹ ہے لیکن آپ نہیں جا سکتے۔ کلینک کو لکھیں: کیوں نہیں آ سکتے، نئی اپائنٹمنٹ مانگیں، اور بتائیں کب فارغ ہیں۔ رسمی انداز: Sie، شروع میں Sehr geehrte Damen und Herren اور آخر میں Mit freundlichen Grüßen۔"
+      }
+    },
+    {
+      "id": "t3",
+      "title": "Modelltest 3",
+      "form": {
+        "title": "Anmeldung – Stadtbibliothek",
+        "text": "Ihre Freundin Sana Mirza möchte einen Bibliotheksausweis. Sie ist 31 Jahre alt und wohnt in der Kantstraße 7 in 80331 München. Sie ist Ärztin von Beruf. Sie möchte Bücher auf Deutsch und Englisch lesen. Ihre Telefonnummer ist 0151 2233 44.",
+        "en": "Your friend Sana wants a library card. Fill in the 5 missing details.",
+        "ur": "آپ کی دوست ثنا لائبریری کارڈ بنوانا چاہتی ہے۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Sana Mirza"
+          ],
+          [
+            "Stadt",
+            "München"
+          ],
+          [
+            "Telefon",
+            "0151 2233 44"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Alter",
+            "accept": [
+              "31",
+              "31 Jahre"
+            ]
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Kantstraße 7",
+              "Kantstrasse 7",
+              "Kantstr. 7"
+            ]
+          },
+          {
+            "label": "Postleitzahl",
+            "accept": [
+              "80331"
+            ]
+          },
+          {
+            "label": "Beruf",
+            "accept": [
+              "Ärztin",
+              "Aerztin",
+              "Arzt"
+            ]
+          },
+          {
+            "label": "Bücher in",
+            "options": [
+              "Deutsch",
+              "Englisch",
+              "Deutsch und Englisch"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      "email": {
+        "register": "informell",
+        "situation": "Sie sind krank und können morgen nicht zum Deutschkurs kommen. Schreiben Sie Ihrer Freundin Maria.",
+        "points": [
+          "Warum kommen Sie nicht?",
+          "Bitten Sie Maria um die Hausaufgaben.",
+          "Wann sehen Sie Maria wieder?"
+        ],
+        "en": "You are ill and cannot come to the German course tomorrow. Write to your friend Maria: why you are not coming, ask her for the homework, and when you will see her again. About 30 words.",
+        "ur": "آپ بیمار ہیں اور کل کورس نہیں آ سکتے۔ دوست ماریا کو لکھیں: کیوں نہیں آ رہے، اس سے ہوم ورک مانگیں، اور بتائیں دوبارہ کب ملیں گے۔ تقریباً تیس الفاظ۔"
+      }
+    },
+    {
+      "id": "t4",
+      "title": "Modelltest 4",
+      "form": {
+        "title": "Reservierung – Hotel am See",
+        "text": "Herr Bilal Chaudhry möchte ein Zimmer im Hotel am See reservieren. Er kommt am 3. Juli und bleibt drei Nächte. Er reist mit seiner Frau, sie brauchen ein Doppelzimmer. Sie möchten auch Frühstück. Er bezahlt bar.",
+        "en": "Mr Chaudhry wants to book a hotel room. Fill in the 5 missing details.",
+        "ur": "مسٹر چوہدری ہوٹل میں کمرہ بک کرنا چاہتے ہیں۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Bilal Chaudhry"
+          ],
+          [
+            "Hotel",
+            "Hotel am See"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Anreise (Datum)",
+            "accept": [
+              "3.7.",
+              "03.07.",
+              "3. Juli",
+              "3.07."
+            ],
+            "kind": "daymonth"
+          },
+          {
+            "label": "Wie viele Nächte?",
+            "accept": [
+              "3",
+              "drei"
+            ]
+          },
+          {
+            "label": "Zimmer",
+            "options": [
+              "Einzelzimmer",
+              "Doppelzimmer"
+            ],
+            "answer": 1
+          },
+          {
+            "label": "Frühstück",
+            "options": [
+              "ja",
+              "nein"
+            ],
+            "answer": 0
+          },
+          {
+            "label": "Bezahlung",
+            "options": [
+              "bar",
+              "Karte"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      "email": {
+        "register": "formell",
+        "situation": "Sie möchten einen Deutschkurs an der Sprachschule „Lingua“ machen. Schreiben Sie an die Sprachschule.",
+        "points": [
+          "Welchen Kurs möchten Sie machen?",
+          "Wann haben Sie Zeit?",
+          "Fragen Sie nach dem Preis."
+        ],
+        "en": "You want to take a German course. Write to the language school: which course, when you have time, and ask about the price. Formal (Sie). About 30 words.",
+        "ur": "آپ جرمن کورس کرنا چاہتے ہیں۔ اسکول کو لکھیں: کون سا کورس، آپ کب فارغ ہیں، اور قیمت پوچھیں۔ رسمی انداز (Sie)۔"
+      }
+    },
+    {
+      "id": "t5",
+      "title": "Modelltest 5",
+      "form": {
+        "title": "Anmeldung – Sportverein FC Grün",
+        "text": "Der Sohn von Ihrem Freund, Ayan Shah, möchte im Fußballverein spielen. Er ist am 9. März 2014 geboren. Die Familie wohnt in der Rosenweg 4 in Frankfurt. Ayan möchte am Dienstag und Donnerstag trainieren. Seine Mutter heißt Nadia Shah.",
+        "en": "Your friend’s son wants to join a football club. Fill in the 5 missing details.",
+        "ur": "آپ کے دوست کا بیٹا فٹ بال کلب میں شامل ہونا چاہتا ہے۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Ayan Shah"
+          ],
+          [
+            "Stadt",
+            "Frankfurt"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Geburtsdatum",
+            "accept": [
+              "9.3.2014",
+              "09.03.2014",
+              "9. März 2014"
+            ],
+            "kind": "date"
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Rosenweg 4"
+            ]
+          },
+          {
+            "label": "Sportart",
+            "accept": [
+              "Fußball",
+              "Fussball"
+            ]
+          },
+          {
+            "label": "Trainingstage",
+            "options": [
+              "Montag und Mittwoch",
+              "Dienstag und Donnerstag",
+              "Samstag"
+            ],
+            "answer": 1
+          },
+          {
+            "label": "Name der Mutter",
+            "accept": [
+              "Nadia Shah",
+              "Nadia"
+            ]
+          }
+        ]
+      },
+      "email": {
+        "register": "informell",
+        "situation": "Sie sind in eine neue Wohnung umgezogen. Schreiben Sie Ihrem Freund Tom.",
+        "points": [
+          "Wie ist die neue Wohnung?",
+          "Laden Sie Tom ein.",
+          "Wann soll er kommen?"
+        ],
+        "en": "You have moved into a new flat. Write to your friend Tom: what the flat is like, invite him, say when he should come. About 30 words.",
+        "ur": "آپ نئے فلیٹ میں منتقل ہوئے ہیں۔ دوست ٹام کو لکھیں: فلیٹ کیسا ہے، اسے دعوت دیں، اور بتائیں کب آئے۔ تقریباً تیس الفاظ۔"
       }
     }
   ]

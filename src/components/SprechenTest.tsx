@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import data from "@/data/sprechen.json";
 import audioManifest from "@/data/hoeren-audio.json";
 import AiFeedback, { aiCheck, type AiResult } from "./AiFeedback";
-import { PartHeader, saveMock, TestPicker, useSavedName, type SaveState } from "./mock";
+import { PartHeader, RANDOM_ID, RANDOM_TITLE, saveMock, shuffle, TestPicker, useSavedName, type SaveState } from "./mock";
 import { speak, SpeakButton, Urdu } from "./Word";
 
 const MANIFEST = audioManifest as Record<string, { file: string; hash: string }>;
@@ -139,15 +139,24 @@ function AnswerBox({
 
 /* ---------------- exam mode ---------------- */
 
-type Test = (typeof data.tests)[number];
+type Test = (typeof data.tests)[number] & { src2?: string; src3?: string };
+
+/** Teil 2 cards from one Modelltest (one theme), Teil 3 cards from another. */
+function makeRandom(): Test {
+  const [a, b] = shuffle(data.tests);
+  return { id: RANDOM_ID, title: RANDOM_TITLE, theme2: a.theme2, cards2: a.cards2, cards3: b.cards3, src2: a.id, src3: b.id };
+}
 
 function ExamMode({ test, name }: { test: Test; name: string }) {
   const [results, setResults] = useState<Record<string, AiResult>>({});
   const [saveState, setSaveState] = useState<SaveState>("idle");
   const [showExample, setShowExample] = useState(false);
 
+  const src2 = test.src2 ?? test.id;
+  const src3 = test.src3 ?? test.id;
   const run = (key: string, body: Record<string, unknown>) => async (text: string) => {
-    const r = await aiCheck({ kind: "sprechen", testId: test.id, text, ...body });
+    const src = body.role === "bitte" || body.role === "react" ? src3 : src2;
+    const r = await aiCheck({ kind: "sprechen", testId: src, text, ...body });
     setResults((s) => ({ ...s, [key]: r }));
     setSaveState("idle");
   };
@@ -215,7 +224,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
               <div className="mt-4 flex items-center gap-2 text-sm font-medium text-slate-600">
                 ② Ihr Partner fragt:
                 <button
-                  onClick={() => playPartner(`sp-${test.id}-c2-${i}-0`, c.partner)}
+                  onClick={() => playPartner(`sp-${src2}-c2-${i}-0`, c.partner)}
                   className="rounded-full bg-indigo-100 px-3 py-1 text-indigo-700 hover:bg-indigo-200"
                 >
                   ▶ Hören
@@ -241,7 +250,7 @@ function ExamMode({ test, name }: { test: Test; name: string }) {
               <div className="mt-4 flex items-center gap-2 text-sm font-medium text-slate-600">
                 ② Ihr Partner bittet:
                 <button
-                  onClick={() => playPartner(`sp-${test.id}-c3-${i}-0`, c.partner)}
+                  onClick={() => playPartner(`sp-${src3}-c3-${i}-0`, c.partner)}
                   className="rounded-full bg-indigo-100 px-3 py-1 text-indigo-700 hover:bg-indigo-200"
                 >
                   ▶ Hören
@@ -371,7 +380,16 @@ export default function SprechenTest() {
   const [mode, setMode] = useState<"exam" | "translate">("exam");
   const [testId, setTestId] = useState(data.tests[0].id);
   const [name, setName] = useSavedName();
-  const test = data.tests.find((t) => t.id === testId)!;
+  const [randomTest, setRandomTest] = useState<Test | null>(null);
+  const [round, setRound] = useState(0);
+  const test: Test = (testId === RANDOM_ID && randomTest) || data.tests.find((t) => t.id === testId)!;
+  const pickTest = (id: string) => {
+    if (id === RANDOM_ID) {
+      setRandomTest(makeRandom());
+      setRound((r) => r + 1);
+    }
+    setTestId(id);
+  };
 
   return (
     <div className="space-y-5">
@@ -396,8 +414,8 @@ export default function SprechenTest() {
       </p>
       {mode === "exam" ? (
         <>
-          <TestPicker tests={data.tests} value={testId} onChange={setTestId} name={name} onName={setName} locked={false} />
-          <ExamMode key={testId} test={test} name={name} />
+          <TestPicker tests={data.tests} random value={testId} onChange={pickTest} name={name} onName={setName} locked={false} />
+          <ExamMode key={`${testId}-${round}`} test={test} name={name} />
         </>
       ) : (
         <TranslateMode />

@@ -19,7 +19,7 @@ export default function PruefungPage() {
           <p className="text-slate-500">Mock tests in the Goethe Start Deutsch 1 format · pass ≈ 60 % per part</p>
         </div>
         <Link href="/" className="rounded-xl bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-700">
-          Quiz →
+          ← Vokabel-Quiz
         </Link>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">

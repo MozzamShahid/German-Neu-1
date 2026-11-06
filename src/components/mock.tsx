@@ -19,6 +19,19 @@ export function useSavedName() {
 
 export const nowSeconds = () => Date.now() / 1000;
 
+/** Random order (call only in event handlers, not during render). */
+export function shuffle<T>(a: T[]): T[] {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
+
+export const RANDOM_ID = "random";
+export const RANDOM_TITLE = "🎲 Zufallstest";
+
 export async function saveMock(body: {
   name: string;
   section: "hoeren" | "lesen" | "schreiben" | "sprechen";
@@ -46,6 +59,7 @@ export async function saveMock(body: {
 export function TestPicker({
   tests,
   value,
+  random,
   onChange,
   name,
   onName,
@@ -54,6 +68,8 @@ export function TestPicker({
 }: {
   tests: { id: string; title: string }[];
   value: string;
+  /** shows a "🎲 Zufallstest" button that mixes all Modelltests */
+  random?: boolean;
   onChange: (id: string) => void;
   name: string;
   onName: (n: string) => void;
@@ -62,7 +78,7 @@ export function TestPicker({
 }) {
   return (
     <div className="flex flex-wrap items-center gap-2 rounded-2xl bg-white p-4 shadow-sm">
-      {tests.map((t) => (
+      {[...tests, ...(random ? [{ id: RANDOM_ID, title: RANDOM_TITLE }] : [])].map((t) => (
         <button
           key={t.id}
           onClick={() => onChange(t.id)}

@@ -47,6 +47,96 @@
     "file": "sp-t2-c3-2-0.mp3",
     "hash": "284498983e"
   },
+  "sp-t3-c2-0-0": {
+    "file": "sp-t3-c2-0-0.mp3",
+    "hash": "98530bd7bd",
+    "engine": "piper"
+  },
+  "sp-t3-c2-1-0": {
+    "file": "sp-t3-c2-1-0.mp3",
+    "hash": "c94b3c69ee",
+    "engine": "piper"
+  },
+  "sp-t3-c2-2-0": {
+    "file": "sp-t3-c2-2-0.mp3",
+    "hash": "22e30a8071",
+    "engine": "piper"
+  },
+  "sp-t3-c3-0-0": {
+    "file": "sp-t3-c3-0-0.mp3",
+    "hash": "3883cb176e",
+    "engine": "piper"
+  },
+  "sp-t3-c3-1-0": {
+    "file": "sp-t3-c3-1-0.mp3",
+    "hash": "c21b89012d",
+    "engine": "piper"
+  },
+  "sp-t3-c3-2-0": {
+    "file": "sp-t3-c3-2-0.mp3",
+    "hash": "e225a2ae65",
+    "engine": "piper"
+  },
+  "sp-t4-c2-0-0": {
+    "file": "sp-t4-c2-0-0.mp3",
+    "hash": "0654c4a963",
+    "engine": "piper"
+  },
+  "sp-t4-c2-1-0": {
+    "file": "sp-t4-c2-1-0.mp3",
+    "hash": "a7f56d3964",
+    "engine": "piper"
+  },
+  "sp-t4-c2-2-0": {
+    "file": "sp-t4-c2-2-0.mp3",
+    "hash": "4a0de35bcb",
+    "engine": "piper"
+  },
+  "sp-t4-c3-0-0": {
+    "file": "sp-t4-c3-0-0.mp3",
+    "hash": "0258ba2635",
+    "engine": "piper"
+  },
+  "sp-t4-c3-1-0": {
+    "file": "sp-t4-c3-1-0.mp3",
+    "hash": "717e81bf7b",
+    "engine": "piper"
+  },
+  "sp-t4-c3-2-0": {
+    "file": "sp-t4-c3-2-0.mp3",
+    "hash": "1461caf20a",
+    "engine": "piper"
+  },
+  "sp-t5-c2-0-0": {
+    "file": "sp-t5-c2-0-0.mp3",
+    "hash": "b02648bee7",
+    "engine": "piper"
+  },
+  "sp-t5-c2-1-0": {
+    "file": "sp-t5-c2-1-0.mp3",
+    "hash": "b4817295e4",
+    "engine": "piper"
+  },
+  "sp-t5-c2-2-0": {
+    "file": "sp-t5-c2-2-0.mp3",
+    "hash": "7b6f082bee",
+    "engine": "piper"
+  },
+  "sp-t5-c3-0-0": {
+    "file": "sp-t5-c3-0-0.mp3",
+    "hash": "c71b8b6b54",
+    "engine": "piper"
+  },
+  "sp-t5-c3-1-0": {
+    "file": "sp-t5-c3-1-0.mp3",
+    "hash": "b98a13b0c0",
+    "engine": "piper"
+  },
+  "sp-t5-c3-2-0": {
+    "file": "sp-t5-c3-2-0.mp3",
+    "hash": "7b570332e0",
+    "engine": "piper"
+  },
   "t1-1-0": {
     "file": "t1-1-0.mp3",
     "hash": "9865c59d90"
@@ -234,5 +324,335 @@
   "t2-9-0": {
     "file": "t2-9-0.mp3",
     "hash": "33964477f6"
+  },
+  "t3-1-0": {
+    "file": "t3-1-0.mp3",
+    "hash": "4582c043eb",
+    "engine": "piper"
+  },
+  "t3-1-1": {
+    "file": "t3-1-1.mp3",
+    "hash": "7a4d653868",
+    "engine": "piper"
+  },
+  "t3-10-0": {
+    "file": "t3-10-0.mp3",
+    "hash": "a7ac3cd116",
+    "engine": "piper"
+  },
+  "t3-11-0": {
+    "file": "t3-11-0.mp3",
+    "hash": "44df39308c",
+    "engine": "piper"
+  },
+  "t3-12-0": {
+    "file": "t3-12-0.mp3",
+    "hash": "ea0671c4f5",
+    "engine": "piper"
+  },
+  "t3-13-0": {
+    "file": "t3-13-0.mp3",
+    "hash": "9316eb41fd",
+    "engine": "piper"
+  },
+  "t3-14-0": {
+    "file": "t3-14-0.mp3",
+    "hash": "77ed31787a",
+    "engine": "piper"
+  },
+  "t3-15-0": {
+    "file": "t3-15-0.mp3",
+    "hash": "46a724926a",
+    "engine": "piper"
+  },
+  "t3-2-0": {
+    "file": "t3-2-0.mp3",
+    "hash": "4bb40a0d2b",
+    "engine": "piper"
+  },
+  "t3-2-1": {
+    "file": "t3-2-1.mp3",
+    "hash": "17a12f4e9b",
+    "engine": "piper"
+  },
+  "t3-3-0": {
+    "file": "t3-3-0.mp3",
+    "hash": "bea8f60bf2",
+    "engine": "piper"
+  },
+  "t3-3-1": {
+    "file": "t3-3-1.mp3",
+    "hash": "658113db15",
+    "engine": "piper"
+  },
+  "t3-4-0": {
+    "file": "t3-4-0.mp3",
+    "hash": "f22e32f3b6",
+    "engine": "piper"
+  },
+  "t3-4-1": {
+    "file": "t3-4-1.mp3",
+    "hash": "a2ce161f03",
+    "engine": "piper"
+  },
+  "t3-5-0": {
+    "file": "t3-5-0.mp3",
+    "hash": "13f911fe6e",
+    "engine": "piper"
+  },
+  "t3-5-1": {
+    "file": "t3-5-1.mp3",
+    "hash": "d5e362e356",
+    "engine": "piper"
+  },
+  "t3-6-0": {
+    "file": "t3-6-0.mp3",
+    "hash": "fd073073ef",
+    "engine": "piper"
+  },
+  "t3-6-1": {
+    "file": "t3-6-1.mp3",
+    "hash": "ec2a4a64df",
+    "engine": "piper"
+  },
+  "t3-7-0": {
+    "file": "t3-7-0.mp3",
+    "hash": "a1b9ba6817",
+    "engine": "piper"
+  },
+  "t3-8-0": {
+    "file": "t3-8-0.mp3",
+    "hash": "cd9e7dc9e6",
+    "engine": "piper"
+  },
+  "t3-9-0": {
+    "file": "t3-9-0.mp3",
+    "hash": "06ebc68fb3",
+    "engine": "piper"
+  },
+  "t4-1-0": {
+    "file": "t4-1-0.mp3",
+    "hash": "9802647ae9",
+    "engine": "piper"
+  },
+  "t4-1-1": {
+    "file": "t4-1-1.mp3",
+    "hash": "eb756e3904",
+    "engine": "piper"
+  },
+  "t4-10-0": {
+    "file": "t4-10-0.mp3",
+    "hash": "ae17d97c71",
+    "engine": "piper"
+  },
+  "t4-11-0": {
+    "file": "t4-11-0.mp3",
+    "hash": "b4e5eb5bee",
+    "engine": "piper"
+  },
+  "t4-12-0": {
+    "file": "t4-12-0.mp3",
+    "hash": "2a74ed673c",
+    "engine": "piper"
+  },
+  "t4-13-0": {
+    "file": "t4-13-0.mp3",
+    "hash": "a513aeb2c6",
+    "engine": "piper"
+  },
+  "t4-14-0": {
+    "file": "t4-14-0.mp3",
+    "hash": "d2c5a8c981",
+    "engine": "piper"
+  },
+  "t4-15-0": {
+    "file": "t4-15-0.mp3",
+    "hash": "a0544e3d6f",
+    "engine": "piper"
+  },
+  "t4-2-0": {
+    "file": "t4-2-0.mp3",
+    "hash": "6000e9e398",
+    "engine": "piper"
+  },
+  "t4-2-1": {
+    "file": "t4-2-1.mp3",
+    "hash": "8aaa921540",
+    "engine": "piper"
+  },
+  "t4-2-2": {
+    "file": "t4-2-2.mp3",
+    "hash": "4ebd2838b2",
+    "engine": "piper"
+  },
+  "t4-3-0": {
+    "file": "t4-3-0.mp3",
+    "hash": "c5690e6b34",
+    "engine": "piper"
+  },
+  "t4-3-1": {
+    "file": "t4-3-1.mp3",
+    "hash": "1698a81072",
+    "engine": "piper"
+  },
+  "t4-4-0": {
+    "file": "t4-4-0.mp3",
+    "hash": "becfae2395",
+    "engine": "piper"
+  },
+  "t4-4-1": {
+    "file": "t4-4-1.mp3",
+    "hash": "df36d6d78f",
+    "engine": "piper"
+  },
+  "t4-5-0": {
+    "file": "t4-5-0.mp3",
+    "hash": "796da15b3e",
+    "engine": "piper"
+  },
+  "t4-5-1": {
+    "file": "t4-5-1.mp3",
+    "hash": "aa88b73782",
+    "engine": "piper"
+  },
+  "t4-6-0": {
+    "file": "t4-6-0.mp3",
+    "hash": "c78e257b8c",
+    "engine": "piper"
+  },
+  "t4-6-1": {
+    "file": "t4-6-1.mp3",
+    "hash": "a5e768abcc",
+    "engine": "piper"
+  },
+  "t4-7-0": {
+    "file": "t4-7-0.mp3",
+    "hash": "764903a9fc",
+    "engine": "piper"
+  },
+  "t4-8-0": {
+    "file": "t4-8-0.mp3",
+    "hash": "0833e5c247",
+    "engine": "piper"
+  },
+  "t4-9-0": {
+    "file": "t4-9-0.mp3",
+    "hash": "709864cbae",
+    "engine": "piper"
+  },
+  "t5-1-0": {
+    "file": "t5-1-0.mp3",
+    "hash": "c4821dbdf6",
+    "engine": "piper"
+  },
+  "t5-1-1": {
+    "file": "t5-1-1.mp3",
+    "hash": "6ebbc3ec1a",
+    "engine": "piper"
+  },
+  "t5-1-2": {
+    "file": "t5-1-2.mp3",
+    "hash": "cee9b6a5ce",
+    "engine": "piper"
+  },
+  "t5-10-0": {
+    "file": "t5-10-0.mp3",
+    "hash": "4dd5a6d86b",
+    "engine": "piper"
+  },
+  "t5-11-0": {
+    "file": "t5-11-0.mp3",
+    "hash": "68262bc892",
+    "engine": "piper"
+  },
+  "t5-12-0": {
+    "file": "t5-12-0.mp3",
+    "hash": "5aaa344ea3",
+    "engine": "piper"
+  },
+  "t5-13-0": {
+    "file": "t5-13-0.mp3",
+    "hash": "7dd4cd083a",
+    "engine": "piper"
+  },
+  "t5-14-0": {
+    "file": "t5-14-0.mp3",
+    "hash": "6bc44f46f7",
+    "engine": "piper"
+  },
+  "t5-15-0": {
+    "file": "t5-15-0.mp3",
+    "hash": "f3a51b1ff2",
+    "engine": "piper"
+  },
+  "t5-2-0": {
+    "file": "t5-2-0.mp3",
+    "hash": "c2c2af7b3b",
+    "engine": "piper"
+  },
+  "t5-2-1": {
+    "file": "t5-2-1.mp3",
+    "hash": "a894d8da80",
+    "engine": "piper"
+  },
+  "t5-2-2": {
+    "file": "t5-2-2.mp3",
+    "hash": "b792accabe",
+    "engine": "piper"
+  },
+  "t5-3-0": {
+    "file": "t5-3-0.mp3",
+    "hash": "d35fb0bba7",
+    "engine": "piper"
+  },
+  "t5-3-1": {
+    "file": "t5-3-1.mp3",
+    "hash": "473838afd9",
+    "engine": "piper"
+  },
+  "t5-4-0": {
+    "file": "t5-4-0.mp3",
+    "hash": "bb3be6d07e",
+    "engine": "piper"
+  },
+  "t5-4-1": {
+    "file": "t5-4-1.mp3",
+    "hash": "6b22c5d566",
+    "engine": "piper"
+  },
+  "t5-5-0": {
+    "file": "t5-5-0.mp3",
+    "hash": "b3138cfae3",
+    "engine": "piper"
+  },
+  "t5-5-1": {
+    "file": "t5-5-1.mp3",
+    "hash": "99b1887428",
+    "engine": "piper"
+  },
+  "t5-6-0": {
+    "file": "t5-6-0.mp3",
+    "hash": "3ea1296b78",
+    "engine": "piper"
+  },
+  "t5-6-1": {
+    "file": "t5-6-1.mp3",
+    "hash": "171438cf28",
+    "engine": "piper"
+  },
+  "t5-7-0": {
+    "file": "t5-7-0.mp3",
+    "hash": "49a28f68a6",
+    "engine": "piper"
+  },
+  "t5-8-0": {
+    "file": "t5-8-0.mp3",
+    "hash": "185b80ec34",
+    "engine": "piper"
+  },
+  "t5-9-0": {
+    "file": "t5-9-0.mp3",
+    "hash": "42a46c0fe6",
+    "engine": "piper"
   }
 }

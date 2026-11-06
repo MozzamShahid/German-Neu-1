@@ -678,6 +678,966 @@
           "ur": "چار لوگوں کی میز ہے (vier)۔ انیس بجے وقت ہے، لوگوں کی تعداد نہیں۔"
         }
       ]
+    },
+    {
+      "id": "t3",
+      "title": "Modelltest 3",
+      "items": [
+        {
+          "id": "t3-1",
+          "teil": 1,
+          "question": "Wo wohnt Frau Ahmed jetzt?",
+          "options": [
+            "In Hamburg",
+            "In Köln",
+            "In München"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Frau Ahmed, wohnen Sie noch in Hamburg?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, seit Januar wohne ich in Köln. Meine Schwester wohnt in München."
+            }
+          ],
+          "en": "She has lived in Cologne since January. Munich is her sister.",
+          "ur": "وہ جنوری سے کولون میں رہتی ہیں۔ میونخ میں ان کی بہن رہتی ہے۔"
+        },
+        {
+          "id": "t3-2",
+          "teil": 1,
+          "question": "Was kauft der Mann?",
+          "options": [
+            "Äpfel und Bananen",
+            "Tomaten und Brot",
+            "Äpfel und Brot"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Tag, was möchten Sie?"
+            },
+            {
+              "sp": "m",
+              "de": "Ein Kilo Äpfel und ein Brot, bitte. Bananen habe ich noch zu Hause."
+            }
+          ],
+          "en": "Apples and bread. He still has bananas at home.",
+          "ur": "سیب اور روٹی۔ کیلے اس کے پاس گھر پر ابھی ہیں۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t3-3",
+          "teil": 1,
+          "question": "Wann fährt der Bus?",
+          "options": [
+            "Um 8:05 Uhr",
+            "Um 8:15 Uhr",
+            "Um 8:50 Uhr"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Entschuldigung, wann fährt der nächste Bus zum Bahnhof?"
+            },
+            {
+              "sp": "m",
+              "de": "Um acht Uhr fünfzehn. Der Bus um acht Uhr fünf ist schon weg."
+            }
+          ],
+          "en": "At 8:15 (acht Uhr fünfzehn). The 8:05 bus has already gone.",
+          "ur": "سوا آٹھ بجے (acht Uhr fünfzehn)۔ آٹھ بج کر پانچ منٹ والی بس جا چکی ہے۔",
+          "scene": "strasse"
+        },
+        {
+          "id": "t3-4",
+          "teil": 1,
+          "question": "Was ist der Mann von Beruf?",
+          "options": [
+            "Lehrer",
+            "Arzt",
+            "Koch"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Was sind Sie von Beruf? Sind Sie Lehrer?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, ich bin Koch. Ich arbeite in einem Restaurant. Mein Bruder ist Lehrer."
+            }
+          ],
+          "en": "He is a cook (Koch). His brother is the teacher.",
+          "ur": "وہ باورچی (Koch) ہے۔ استاد اس کا بھائی ہے۔"
+        },
+        {
+          "id": "t3-5",
+          "teil": 1,
+          "question": "Wohin soll der Mann das Buch stellen?",
+          "options": [
+            "Auf den Tisch",
+            "In das Regal",
+            "Unter das Bett"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Wohin soll ich das Buch legen? Auf den Tisch?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, bitte stell es ins Regal. Der Tisch ist schon voll."
+            }
+          ],
+          "en": "Into the shelf (ins Regal). Wohin? → Akkusativ: in das = ins.",
+          "ur": "کتاب شیلف میں (ins Regal) رکھنی ہے۔ Wohin کے ساتھ Akkusativ آتا ہے: in das = ins۔"
+        },
+        {
+          "id": "t3-6",
+          "teil": 1,
+          "question": "Wie war das Wetter im Urlaub?",
+          "options": [
+            "Es hat viel geregnet.",
+            "Es war sonnig und warm.",
+            "Es war kalt."
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Wie war dein Urlaub in Spanien?"
+            },
+            {
+              "sp": "m",
+              "de": "Super! Das Wetter war jeden Tag sonnig und warm. Wir waren viel am Strand."
+            }
+          ],
+          "en": "Sunny and warm every day. Präteritum: das Wetter war …",
+          "ur": "ہر دن دھوپ اور گرمی تھی۔ Präteritum: war = تھا۔"
+        },
+        {
+          "id": "t3-7",
+          "teil": 2,
+          "question": "Der Zug nach Frankfurt hat zwanzig Minuten Verspätung.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Information zu ICE fünfhundertzwölf nach Frankfurt: Der Zug hat heute circa zwanzig Minuten Verspätung. Wir bitten um Entschuldigung."
+            }
+          ],
+          "en": "Right: about 20 minutes late.",
+          "ur": "صحیح۔ ٹرین تقریباً بیس منٹ لیٹ ہے۔",
+          "scene": "bahnhof"
+        },
+        {
+          "id": "t3-8",
+          "teil": 2,
+          "question": "Die Kunden sollen zur Kasse drei gehen.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, Kasse drei ist jetzt geschlossen. Bitte gehen Sie zu Kasse eins oder zwei."
+            }
+          ],
+          "en": "Wrong: checkout 3 is closed. Go to 1 or 2.",
+          "ur": "غلط۔ کاؤنٹر تین بند ہے۔ ایک یا دو پر جائیں۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t3-9",
+          "teil": 2,
+          "question": "Der Bus fährt heute nicht zum Rathaus.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Fahrgäste, wegen eines Festes fährt dieser Bus heute nicht zum Rathaus. Nächste Haltestelle: Marktplatz."
+            }
+          ],
+          "en": "Right: because of a festival the bus does not go to the town hall today.",
+          "ur": "صحیح۔ میلے کی وجہ سے بس آج ٹاؤن ہال نہیں جائے گی۔",
+          "scene": "bus"
+        },
+        {
+          "id": "t3-10",
+          "teil": 2,
+          "question": "Die Passagiere nach Istanbul gehen zu Gate B 12.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Achtung bitte! Die Passagiere des Fluges nach Istanbul gehen bitte sofort zu Gate C zwölf. Gate C zwölf."
+            }
+          ],
+          "en": "Wrong: Gate C 12, not B 12.",
+          "ur": "غلط۔ گیٹ C بارہ، B بارہ نہیں۔",
+          "scene": "flughafen"
+        },
+        {
+          "id": "t3-11",
+          "teil": 3,
+          "question": "Was soll Herr Malik mitbringen?",
+          "options": [
+            "Seinen Pass",
+            "Ein Foto",
+            "Seine Bankkarte"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Tag, Herr Malik. Hier ist das Bürgeramt. Ihr Termin ist am Donnerstag um neun Uhr. Bitte bringen Sie Ihren Pass mit. Auf Wiederhören."
+            }
+          ],
+          "en": "His passport (Pass). Mitbringen is separable: Bringen Sie … mit.",
+          "ur": "اپنا پاسپورٹ۔ mitbringen ایک trennbares Verb ہے: Bringen Sie … mit۔"
+        },
+        {
+          "id": "t3-12",
+          "teil": 3,
+          "question": "Wann kommt Sara nach Hause?",
+          "options": [
+            "Um 17 Uhr",
+            "Um 18 Uhr",
+            "Um 19 Uhr"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f2",
+              "de": "Hallo Mama, hier ist Sara. Ich bin noch in der Bibliothek. Ich komme heute erst um sieben Uhr abends nach Hause. Tschüss!"
+            }
+          ],
+          "en": "At 7 pm (sieben Uhr abends = 19 Uhr).",
+          "ur": "شام سات بجے (19 Uhr)۔"
+        },
+        {
+          "id": "t3-13",
+          "teil": 3,
+          "question": "Was ist kaputt?",
+          "options": [
+            "Die Heizung",
+            "Die Waschmaschine",
+            "Der Kühlschrank"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m2",
+              "de": "Guten Tag, hier ist Peter Braun aus der Gartenstraße acht. Meine Waschmaschine ist kaputt. Können Sie bitte morgen kommen? Danke."
+            }
+          ],
+          "en": "The washing machine (Waschmaschine).",
+          "ur": "کپڑے دھونے کی مشین (Waschmaschine) خراب ہے۔"
+        },
+        {
+          "id": "t3-14",
+          "teil": 3,
+          "question": "Wo treffen sich Ali und Jan?",
+          "options": [
+            "Vor dem Kino",
+            "Im Park",
+            "Am Bahnhof"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Hallo Ali, hier ist Jan. Der Film beginnt um acht. Wir treffen uns um Viertel vor acht vor dem Kino. Bis dann!"
+            }
+          ],
+          "en": "In front of the cinema (vor dem Kino). Wo? → Dativ.",
+          "ur": "سینما کے سامنے (vor dem Kino)۔ Wo کے ساتھ Dativ۔"
+        },
+        {
+          "id": "t3-15",
+          "teil": 3,
+          "question": "Wie viel kostet die Jacke jetzt?",
+          "options": [
+            "39 €",
+            "59 €",
+            "93 €"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Tag, hier ist das Modehaus Klein. Die Jacke in Größe achtunddreißig ist da. Sie kostet jetzt nur neununddreißig Euro. Wir sind bis zwanzig Uhr für Sie da."
+            }
+          ],
+          "en": "neununddreißig = 39. (38 is the size.)",
+          "ur": "neununddreißig یعنی 39۔ اڑتیس (38) سائز ہے۔"
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "title": "Modelltest 4",
+      "items": [
+        {
+          "id": "t4-1",
+          "teil": 1,
+          "question": "Wie viele Kinder hat Herr Wagner?",
+          "options": [
+            "Eins",
+            "Zwei",
+            "Drei"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Herr Wagner, haben Sie Kinder?"
+            },
+            {
+              "sp": "m",
+              "de": "Ja, ich habe drei Kinder: zwei Töchter und einen Sohn."
+            }
+          ],
+          "en": "Three: two daughters and one son.",
+          "ur": "تین: دو بیٹیاں اور ایک بیٹا۔"
+        },
+        {
+          "id": "t4-2",
+          "teil": 1,
+          "question": "Wann ist der Termin beim Friseur?",
+          "options": [
+            "Am Montag",
+            "Am Mittwoch",
+            "Am Freitag"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Ich möchte einen Termin am Montag, bitte."
+            },
+            {
+              "sp": "m",
+              "de": "Am Montag haben wir leider zu. Geht Mittwoch um zehn Uhr?"
+            },
+            {
+              "sp": "f",
+              "de": "Ja, Mittwoch ist gut."
+            }
+          ],
+          "en": "Wednesday. The salon is closed on Monday.",
+          "ur": "بدھ کو۔ پیر کو سیلون بند ہے۔"
+        },
+        {
+          "id": "t4-3",
+          "teil": 1,
+          "question": "Was trinkt der Mann?",
+          "options": [
+            "Kaffee mit Milch",
+            "Schwarzen Tee",
+            "Orangensaft"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Möchtest du einen Kaffee?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, danke. Ich trinke keinen Kaffee. Hast du Tee? Schwarz, ohne Zucker, bitte."
+            }
+          ],
+          "en": "Black tea without sugar. Kein + Akkusativ: keinen Kaffee.",
+          "ur": "بغیر چینی کی کالی چائے۔ keinen Kaffee یعنی کافی نہیں۔",
+          "scene": "cafe"
+        },
+        {
+          "id": "t4-4",
+          "teil": 1,
+          "question": "Wo ist die Toilette?",
+          "options": [
+            "Im Erdgeschoss",
+            "Im ersten Stock",
+            "Im zweiten Stock"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Entschuldigung, wo ist hier die Toilette?"
+            },
+            {
+              "sp": "f",
+              "de": "Die Toilette ist unten im Erdgeschoss, neben dem Eingang."
+            }
+          ],
+          "en": "On the ground floor (Erdgeschoss), next to the entrance.",
+          "ur": "گراؤنڈ فلور (Erdgeschoss) پر، داخلی دروازے کے ساتھ۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t4-5",
+          "teil": 1,
+          "question": "Was hat der Mann am Wochenende gemacht?",
+          "options": [
+            "Er hat Fußball gespielt.",
+            "Er hat seine Wohnung geputzt.",
+            "Er war im Kino."
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Was hast du am Wochenende gemacht? Warst du im Kino?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, ich hatte keine Zeit. Ich habe meine Wohnung geputzt. Am Montag kommen meine Eltern."
+            }
+          ],
+          "en": "He cleaned his flat (geputzt). Perfekt with haben.",
+          "ur": "اس نے اپنا فلیٹ صاف کیا (geputzt)۔ Perfekt، haben کے ساتھ۔"
+        },
+        {
+          "id": "t4-6",
+          "teil": 1,
+          "question": "Wie kommt die Frau zur Arbeit?",
+          "options": [
+            "Mit dem Auto",
+            "Mit dem Fahrrad",
+            "Mit der U-Bahn"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Fährst du mit dem Auto zur Arbeit?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, ich habe kein Auto. Ich fahre mit der U-Bahn. Das dauert nur zwanzig Minuten."
+            }
+          ],
+          "en": "By underground (mit der U-Bahn). Mit + Dativ.",
+          "ur": "زیر زمین ٹرین (U-Bahn) سے۔ mit کے بعد Dativ آتا ہے۔"
+        },
+        {
+          "id": "t4-7",
+          "teil": 2,
+          "question": "Der Zug nach Hannover fährt von Gleis 2.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Achtung an Gleis zwei: Bitte einsteigen, der Regionalexpress nach Hannover fährt gleich ab. Bitte Vorsicht bei der Abfahrt."
+            }
+          ],
+          "en": "Right: the train to Hannover is at platform 2.",
+          "ur": "صحیح۔ ہینوور کی ٹرین پلیٹ فارم دو پر ہے۔",
+          "scene": "bahnhof"
+        },
+        {
+          "id": "t4-8",
+          "teil": 2,
+          "question": "Im dritten Stock gibt es heute billige Computer.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, besuchen Sie unsere Elektroabteilung im vierten Stock. Heute sind alle Computer zwanzig Prozent billiger."
+            }
+          ],
+          "en": "Wrong: the electronics department is on the 4th floor (vierter Stock).",
+          "ur": "غلط۔ الیکٹرانکس کا شعبہ چوتھی منزل (vierter Stock) پر ہے۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t4-9",
+          "teil": 2,
+          "question": "Das Schwimmbad schließt heute um 14 Uhr.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Badegäste, heute schließt das Schwimmbad schon um vierzehn Uhr. Morgen sind wir wieder ab acht Uhr für Sie da."
+            }
+          ],
+          "en": "Right: it closes at 2 pm today.",
+          "ur": "صحیح۔ آج سوئمنگ پول دو بجے بند ہو جائے گا۔"
+        },
+        {
+          "id": "t4-10",
+          "teil": 2,
+          "question": "Der Bus fährt in fünf Minuten weiter.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Fahrgäste, wir machen hier zehn Minuten Pause. Danach fährt der Bus weiter."
+            }
+          ],
+          "en": "Wrong: the break is ten minutes, not five.",
+          "ur": "غلط۔ وقفہ دس منٹ کا ہے، پانچ کا نہیں۔",
+          "scene": "bus"
+        },
+        {
+          "id": "t4-11",
+          "teil": 3,
+          "question": "Was möchte Frau Schulz?",
+          "options": [
+            "Einen Tisch reservieren",
+            "Einen Termin absagen",
+            "Ein Zimmer buchen"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Tag, mein Name ist Schulz. Ich möchte ein Zimmer für zwei Nächte buchen, vom zehnten bis zum zwölften Mai. Bitte rufen Sie mich zurück."
+            }
+          ],
+          "en": "She wants to book a room (ein Zimmer buchen) for two nights.",
+          "ur": "وہ دو راتوں کے لیے کمرہ بک کرنا چاہتی ہیں۔"
+        },
+        {
+          "id": "t4-12",
+          "teil": 3,
+          "question": "Wann beginnt die Party?",
+          "options": [
+            "Um 18 Uhr",
+            "Um 20 Uhr",
+            "Um 21 Uhr"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Hallo Ayesha, hier ist Daniel. Die Party ist am Samstag, aber nicht um achtzehn Uhr. Sie beginnt um acht Uhr abends. Bis Samstag!"
+            }
+          ],
+          "en": "At 8 pm (acht Uhr abends = 20 Uhr).",
+          "ur": "رات آٹھ بجے (20 Uhr)۔"
+        },
+        {
+          "id": "t4-13",
+          "teil": 3,
+          "question": "Was soll Omar machen?",
+          "options": [
+            "Den Arzt anrufen",
+            "Medikamente kaufen",
+            "Zur Schule gehen"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f2",
+              "de": "Hallo Omar, hier ist deine Schwester. Ich bin krank und liege im Bett. Kannst du bitte in der Apotheke Medikamente für mich kaufen? Danke!"
+            }
+          ],
+          "en": "Buy medicine at the pharmacy (Apotheke).",
+          "ur": "فارمیسی (Apotheke) سے دوائیاں خریدنی ہیں۔"
+        },
+        {
+          "id": "t4-14",
+          "teil": 3,
+          "question": "Wie ist die Hausnummer von Tim?",
+          "options": [
+            "16",
+            "60",
+            "66"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m2",
+              "de": "Hallo, hier ist Tim. Meine neue Adresse ist Lindenstraße sechzehn. Ich wiederhole: Lindenstraße eins, sechs. Komm mich mal besuchen!"
+            }
+          ],
+          "en": "sechzehn = 16 (sechzig would be 60).",
+          "ur": "sechzehn یعنی سولہ (16)، sechzig ساٹھ ہوتا۔"
+        },
+        {
+          "id": "t4-15",
+          "teil": 3,
+          "question": "Wann ist das Büro geöffnet?",
+          "options": [
+            "Montag bis Freitag",
+            "Nur am Wochenende",
+            "Montag bis Samstag"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Sie sind mit dem Büro der Sprachschule verbunden. Wir sind von Montag bis Freitag von neun bis sechzehn Uhr für Sie da. Am Wochenende ist das Büro geschlossen."
+            }
+          ],
+          "en": "Monday to Friday. Closed at the weekend.",
+          "ur": "پیر سے جمعہ تک۔ ویک اینڈ پر بند۔"
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "title": "Modelltest 5",
+      "items": [
+        {
+          "id": "t5-1",
+          "teil": 1,
+          "question": "Woher kommt die Frau?",
+          "options": [
+            "Aus Indien",
+            "Aus Pakistan",
+            "Aus der Türkei"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Woher kommen Sie?"
+            },
+            {
+              "sp": "f",
+              "de": "Ich komme aus Pakistan, aus Islamabad. Und Sie?"
+            },
+            {
+              "sp": "m",
+              "de": "Ich komme aus der Türkei."
+            }
+          ],
+          "en": "From Pakistan (Islamabad). The man is from Turkey.",
+          "ur": "وہ پاکستان (اسلام آباد) سے ہیں۔ آدمی ترکی سے ہے۔"
+        },
+        {
+          "id": "t5-2",
+          "teil": 1,
+          "question": "Welche Farbe hat die Tasche?",
+          "options": [
+            "Rot",
+            "Blau",
+            "Schwarz"
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Ich suche meine Tasche. Haben Sie eine rote Tasche gefunden?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, aber hier ist eine schwarze Tasche."
+            },
+            {
+              "sp": "f",
+              "de": "Ach ja, stimmt, meine Tasche ist schwarz! Danke!"
+            }
+          ],
+          "en": "Black. She first says red, but then remembers it is black.",
+          "ur": "کالا۔ پہلے وہ لال کہتی ہے، پھر یاد آتا ہے کہ بیگ کالا ہے۔"
+        },
+        {
+          "id": "t5-3",
+          "teil": 1,
+          "question": "Wie spät ist es?",
+          "options": [
+            "Halb acht",
+            "Halb neun",
+            "Acht Uhr"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Wie spät ist es? Ist es schon acht?"
+            },
+            {
+              "sp": "f",
+              "de": "Nein, es ist erst halb acht. Wir haben noch Zeit."
+            }
+          ],
+          "en": "Halb acht = 7:30 (half to eight).",
+          "ur": "halb acht یعنی ساڑھے سات بجے۔"
+        },
+        {
+          "id": "t5-4",
+          "teil": 1,
+          "question": "Was macht die Frau heute Abend?",
+          "options": [
+            "Sie geht ins Kino.",
+            "Sie lernt Deutsch.",
+            "Sie besucht eine Freundin."
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Kommst du heute Abend mit ins Kino?"
+            },
+            {
+              "sp": "f",
+              "de": "Heute nicht. Ich besuche meine Freundin Lena. Sie hat Geburtstag."
+            }
+          ],
+          "en": "She visits her friend Lena; it is Lena’s birthday.",
+          "ur": "وہ اپنی دوست لینا سے ملنے جا رہی ہے، اس کی سالگرہ ہے۔"
+        },
+        {
+          "id": "t5-5",
+          "teil": 1,
+          "question": "Was tut dem Mann weh?",
+          "options": [
+            "Der Rücken",
+            "Das Knie",
+            "Der Arm"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Was ist los? Hast du Schmerzen?"
+            },
+            {
+              "sp": "m",
+              "de": "Ja, mein Rücken tut weh. Ich habe gestern im Garten gearbeitet."
+            }
+          ],
+          "en": "His back (Rücken). wehtun: mein Rücken tut weh.",
+          "ur": "اس کی کمر (Rücken) میں درد ہے۔ wehtun: mein Rücken tut weh۔"
+        },
+        {
+          "id": "t5-6",
+          "teil": 1,
+          "question": "Wo steht das Auto?",
+          "options": [
+            "Vor dem Haus",
+            "Hinter dem Haus",
+            "In der Garage"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Wo hast du das Auto geparkt? In der Garage?"
+            },
+            {
+              "sp": "m",
+              "de": "Nein, die Garage ist voll. Das Auto steht hinter dem Haus."
+            }
+          ],
+          "en": "Behind the house (hinter dem Haus). Wo? → Dativ.",
+          "ur": "گھر کے پیچھے (hinter dem Haus)۔ Wo کے ساتھ Dativ۔"
+        },
+        {
+          "id": "t5-7",
+          "teil": 2,
+          "question": "Der Zug um 10:12 Uhr nach Leipzig fällt heute aus.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Information für die Fahrgäste nach Leipzig: Der Zug um zehn Uhr zwölf fällt heute leider aus. Bitte nehmen Sie den Zug um elf Uhr zwölf."
+            }
+          ],
+          "en": "Right: fällt aus = is cancelled today.",
+          "ur": "صحیح۔ fällt aus یعنی آج منسوخ ہے۔",
+          "scene": "bahnhof"
+        },
+        {
+          "id": "t5-8",
+          "teil": 2,
+          "question": "Im Supermarkt ist heute Obst billiger.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Liebe Kunden, heute im Angebot: Fleisch und Wurst zwanzig Prozent billiger. Besuchen Sie unsere Fleischtheke!"
+            }
+          ],
+          "en": "Wrong: meat and sausage are cheaper, not fruit.",
+          "ur": "غلط۔ آج گوشت اور ساسیج سستے ہیں، پھل نہیں۔",
+          "scene": "kaufhaus"
+        },
+        {
+          "id": "t5-9",
+          "teil": 2,
+          "question": "Die Passagiere nach Wien sollen zu Gate A 7 gehen.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Letzter Aufruf für die Passagiere nach Wien: Bitte kommen Sie sofort zu Gate A sieben."
+            }
+          ],
+          "en": "Right: Gate A 7.",
+          "ur": "صحیح۔ گیٹ A سات۔",
+          "scene": "flughafen"
+        },
+        {
+          "id": "t5-10",
+          "teil": 2,
+          "question": "Die nächste Haltestelle ist der Hauptbahnhof.",
+          "options": [
+            "Richtig",
+            "Falsch"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "a",
+              "de": "Nächste Haltestelle: Goetheplatz. Umsteigen zur U-Bahn. Danach: Hauptbahnhof."
+            }
+          ],
+          "en": "Wrong: next stop is Goetheplatz; the main station comes after it.",
+          "ur": "غلط۔ اگلا اسٹاپ Goetheplatz ہے، مین اسٹیشن اس کے بعد ہے۔",
+          "scene": "bus"
+        },
+        {
+          "id": "t5-11",
+          "teil": 3,
+          "question": "Warum ruft Frau Becker an?",
+          "options": [
+            "Sie hat eine neue Telefonnummer.",
+            "Sie ist krank.",
+            "Sie kommt später."
+          ],
+          "answer": 2,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Morgen, hier ist Anna Becker. Ich stehe im Stau. Ich komme circa dreißig Minuten später zur Besprechung. Entschuldigung!"
+            }
+          ],
+          "en": "She is coming later; she is stuck in a traffic jam (Stau).",
+          "ur": "وہ ٹریفک جام (Stau) میں ہیں، اس لیے دیر سے آئیں گی۔"
+        },
+        {
+          "id": "t5-12",
+          "teil": 3,
+          "question": "Was soll Hamza mitbringen?",
+          "options": [
+            "Getränke",
+            "Salat",
+            "Kuchen"
+          ],
+          "answer": 0,
+          "lines": [
+            {
+              "sp": "m",
+              "de": "Hallo Hamza, hier ist Felix. Wir grillen am Sonntag im Park. Ich habe Fleisch und Salat. Kannst du bitte Getränke mitbringen? Danke!"
+            }
+          ],
+          "en": "Drinks (Getränke). Felix already has meat and salad.",
+          "ur": "مشروبات (Getränke)۔ گوشت اور سلاد فیلکس کے پاس ہے۔"
+        },
+        {
+          "id": "t5-13",
+          "teil": 3,
+          "question": "Wann kann Herr Iqbal das Auto abholen?",
+          "options": [
+            "Heute um 17 Uhr",
+            "Morgen um 10 Uhr",
+            "Morgen um 17 Uhr"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "m2",
+              "de": "Guten Tag, Herr Iqbal, hier ist die Autowerkstatt Müller. Ihr Auto ist leider heute noch nicht fertig. Sie können es morgen um zehn Uhr abholen."
+            }
+          ],
+          "en": "Tomorrow at 10. It is not ready today.",
+          "ur": "کل دس بجے۔ آج گاڑی تیار نہیں ہے۔"
+        },
+        {
+          "id": "t5-14",
+          "teil": 3,
+          "question": "Wo ist der Deutschkurs nächste Woche?",
+          "options": [
+            "In Raum 4",
+            "In Raum 14",
+            "In Raum 40"
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f2",
+              "de": "Hallo, hier ist Frau Weber, Ihre Deutschlehrerin. Nächste Woche haben wir einen neuen Raum: Raum vierzehn im ersten Stock. Bis Montag!"
+            }
+          ],
+          "en": "vierzehn = 14.",
+          "ur": "vierzehn یعنی چودہ (14)۔"
+        },
+        {
+          "id": "t5-15",
+          "teil": 3,
+          "question": "Was ist das Problem?",
+          "options": [
+            "Der Flug ist ausgebucht.",
+            "Das Hotel hat kein Zimmer mehr.",
+            "Das Restaurant ist geschlossen."
+          ],
+          "answer": 1,
+          "lines": [
+            {
+              "sp": "f",
+              "de": "Guten Abend, hier ist das Hotel Sonne. Leider haben wir am Wochenende kein Zimmer mehr frei. Aber im Hotel Stern gibt es noch Zimmer."
+            }
+          ],
+          "en": "The hotel has no free room at the weekend.",
+          "ur": "ہوٹل میں ویک اینڈ پر کوئی کمرہ خالی نہیں ہے۔"
+        }
+      ]
     }
   ]
 }

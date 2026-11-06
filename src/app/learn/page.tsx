@@ -16,7 +16,7 @@ export default function LearnPage() {
           <p className="text-slate-500">Lecture notes (Week 2–13) · German · English · اردو · 🔊 listen</p>
         </div>
         <Link href="/" className="rounded-xl bg-indigo-600 px-4 py-2 font-semibold text-white hover:bg-indigo-700">
-          Quiz →
+          ← Vokabel-Quiz
         </Link>
       </div>
 

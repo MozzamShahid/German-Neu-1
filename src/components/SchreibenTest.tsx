@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import data from "@/data/schreiben.json";
 import AiFeedback, { aiCheck, type AiResult } from "./AiFeedback";
-import { nowSeconds, saveMock, ScoreBox, TestPicker, useSavedName, type SaveState } from "./mock";
+import { nowSeconds, RANDOM_ID, RANDOM_TITLE, saveMock, ScoreBox, shuffle, TestPicker, useSavedName, type SaveState } from "./mock";
 import { Urdu } from "./Word";
 
 type Field = { label: string; accept?: string[]; kind?: string; options?: string[]; answer?: number };
@@ -27,7 +27,16 @@ function fieldCorrect(f: Field, v: string | number | undefined) {
   const s = String(v ?? "");
   if (!s.trim()) return false;
   if (f.kind === "date") return f.accept!.some((a) => dateKey(a) === dateKey(s));
+  if (f.kind === "daymonth") return f.accept!.some((a) => dateKey(`${a} 2000`) === dateKey(`${s.replace(/\d{4}/, "")} 2000`));
   return f.accept!.some((a) => norm(a) === norm(s));
+}
+
+type STest = (typeof data.tests)[number] & { emailFrom?: string };
+
+/** Form from one Modelltest, email task from another. */
+function makeRandom(): STest {
+  const [a, b] = shuffle(data.tests);
+  return { id: RANDOM_ID, title: RANDOM_TITLE, form: a.form, email: b.email, emailFrom: b.id };
 }
 
 const words = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
@@ -41,8 +50,9 @@ export default function SchreibenTest() {
   const [result, setResult] = useState<AiResult | null>(null);
   const [saveState, setSaveState] = useState<SaveState>("idle");
   const startedAt = useRef(0);
+  const [randomTest, setRandomTest] = useState<STest | null>(null);
 
-  const test = data.tests.find((t) => t.id === testId)!;
+  const test: STest = (testId === RANDOM_ID && randomTest) || data.tests.find((t) => t.id === testId)!;
   const fields = test.form.fields as Field[];
   const submitted = result !== null;
   const formScore = fields.filter((f, i) => fieldCorrect(f, form[i])).length;
@@ -51,6 +61,7 @@ export default function SchreibenTest() {
   const max = aiOk ? 15 : 5;
 
   const reset = (id: string) => {
+    if (id === RANDOM_ID) setRandomTest(makeRandom());
     setTestId(id);
     setForm({});
     setEmail("");
@@ -64,7 +75,7 @@ export default function SchreibenTest() {
 
   const submit = async () => {
     setChecking(true);
-    const r = email.trim() ? await aiCheck({ kind: "email", testId, text: email }) : { configured: true, score: 0, max: 10, feedback_en: "No email written." };
+    const r = email.trim() ? await aiCheck({ kind: "email", testId: test.emailFrom ?? testId, text: email }) : { configured: true, score: 0, max: 10, feedback_en: "No email written." };
     setChecking(false);
     setResult(r);
     window.scrollTo(0, 0);
@@ -88,7 +99,7 @@ export default function SchreibenTest() {
 
   return (
     <div className="space-y-5">
-      <TestPicker tests={data.tests} value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
+      <TestPicker tests={data.tests} random value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
 
       {submitted && (
         <ScoreBox
@@ -197,7 +208,7 @@ export default function SchreibenTest() {
             disabled={checking}
             className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white hover:bg-amber-600 disabled:opacity-60"
           >
-            {checking ? "🤖 Checking your email…" : "Abgeben – check"}
+            {checking ? "🤖 Checking your email… (up to 30 s)" : "Abgeben – check"}
           </button>
         </div>
       )}

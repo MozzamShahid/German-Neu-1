@@ -46,7 +46,7 @@ const norm = (s: string) =>
     .replace(/\s+/g, " ")
     .trim();
 
-function card(e: Entry): WordCard {
+export function card(e: Entry): WordCard {
   return {
     id: e.id,
     display: display(e),

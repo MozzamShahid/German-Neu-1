@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import data from "@/data/lesen.json";
-import { nowSeconds, PartHeader, saveMock, ScoreBox, TestPicker, useSavedName, type SaveState } from "./mock";
+import { nowSeconds, PartHeader, RANDOM_ID, RANDOM_TITLE, saveMock, ScoreBox, shuffle, TestPicker, useSavedName, type SaveState } from "./mock";
 import { SpeakButton, Urdu } from "./Word";
 
 type Item = {
@@ -22,18 +22,44 @@ type PartKey = keyof typeof data.parts;
 const TESTS = data.tests as Test[];
 const RF = ["Richtig", "Falsch"];
 
+/** A new test mixed from all Modelltests: 2 texts (Teil 1), 5 ads (Teil 2), 5 signs (Teil 3). */
+function makeRandom(): Test {
+  const blocks = shuffle(
+    TESTS.flatMap((t) =>
+      Object.entries(t.texts).map(([k, v]) => ({
+        key: `${t.id}-${k}`,
+        text: v,
+        items: t.items.filter((it) => it.teil === 1 && it.text === k).map((it) => ({ ...it, text: `${t.id}-${k}` })),
+      })),
+    ),
+  ).slice(0, 2);
+  const all = TESTS.flatMap((t) => t.items);
+  return {
+    id: RANDOM_ID,
+    title: RANDOM_TITLE,
+    texts: Object.fromEntries(blocks.map((b) => [b.key, b.text])),
+    items: [
+      ...blocks.flatMap((b) => b.items),
+      ...shuffle(all.filter((it) => it.teil === 2)).slice(0, 5),
+      ...shuffle(all.filter((it) => it.teil === 3)).slice(0, 5),
+    ],
+  };
+}
+
 export default function LesenTest() {
   const [testId, setTestId] = useState(TESTS[0].id);
   const [name, setName] = useSavedName();
   const [chosen, setChosen] = useState<Record<string, number>>({});
   const [submitted, setSubmitted] = useState(false);
   const [saveState, setSaveState] = useState<SaveState>("idle");
+  const [randomTest, setRandomTest] = useState<Test | null>(null);
   const startedAt = useRef(0);
 
-  const test = TESTS.find((t) => t.id === testId)!;
+  const test = (testId === RANDOM_ID && randomTest) || TESTS.find((t) => t.id === testId)!;
   const score = test.items.filter((it) => chosen[it.id] === it.answer).length;
 
   const reset = (id: string) => {
+    if (id === RANDOM_ID) setRandomTest(makeRandom());
     setTestId(id);
     setChosen({});
     setSubmitted(false);
@@ -97,7 +123,7 @@ export default function LesenTest() {
 
   return (
     <div className="space-y-5">
-      <TestPicker tests={TESTS} value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
+      <TestPicker tests={TESTS} random value={testId} onChange={reset} name={name} onName={setName} locked={submitted} />
 
       {submitted && <ScoreBox score={score} max={test.items.length} saveState={saveState} onRetry={() => reset(testId)} />}
 

@@ -31,6 +31,10 @@ const VOICES = {
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const onlyTest = args.includes("--test") ? args[args.indexOf("--test") + 1] : null;
+// lines made with the free Piper voices (scripts/build_hoeren_piper.py) are kept unless you pass --replace-piper
+const replacePiper = args.includes("--replace-piper");
+const keep = (key, hash, file) =>
+  existsSync(join(OUT_DIR, file)) && (manifest[key]?.hash === hash || (manifest[key]?.engine === "piper" && !replacePiper));
 
 const data = JSON.parse(readFileSync(DATA, "utf8"));
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, "utf8")) : {};
@@ -45,7 +49,7 @@ for (const test of data.tests) {
       const key = `${item.id}-${i}`;
       const hash = createHash("sha1").update(`${MODEL}|${voiceId}|${line.de}`).digest("hex").slice(0, 10);
       const file = `${key}.mp3`;
-      if (manifest[key]?.hash === hash && existsSync(join(OUT_DIR, file))) return;
+      if (keep(key, hash, file)) return;
       jobs.push({ key, file, hash, voiceId, text: line.de });
     });
   }
@@ -60,7 +64,7 @@ for (const test of sprechen.tests) {
       const key = `sp-${test.id}-${part}-${i}-0`;
       const voiceId = VOICES.f;
       const hash = createHash("sha1").update(`${MODEL}|${voiceId}|${card.partner}`).digest("hex").slice(0, 10);
-      if (manifest[key]?.hash === hash && existsSync(join(OUT_DIR, `${key}.mp3`))) return;
+      if (keep(key, hash, `${key}.mp3`)) return;
       jobs.push({ key, file: `${key}.mp3`, hash, voiceId, text: card.partner });
     });
   }

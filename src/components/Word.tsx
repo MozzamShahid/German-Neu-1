@@ -44,33 +44,52 @@ let current: HTMLAudioElement | null = null;
 
 /**
  * Reads German text aloud: the pre-made recording (Piper voices, public/audio/tts) if there is one,
- * otherwise the browser's speech engine (de-DE).
+ * otherwise the browser's speech engine (de-DE). Resolves when the speech has finished (or was interrupted).
  */
-export function speak(text: string) {
-  if (typeof window === "undefined") return;
+export function speak(text: string): Promise<void> {
+  if (typeof window === "undefined") return Promise.resolve();
   current?.pause();
   window.speechSynthesis?.cancel();
   const audio = new Audio(`/audio/tts/${audioKey(text)}.mp3`);
   current = audio;
-  let fellBack = false;
-  const fallback = () => {
-    if (fellBack || current !== audio) return;
-    fellBack = true;
-    browserSpeak(text);
-  };
-  audio.onerror = fallback;
-  audio.play().catch(fallback);
+  return new Promise<void>((resolve) => {
+    let settled = false;
+    const finish = () => {
+      if (!settled) {
+        settled = true;
+        resolve();
+      }
+    };
+    const fallback = () => {
+      if (settled) return;
+      if (current !== audio) return finish();
+      settled = true;
+      browserSpeak(text, resolve);
+    };
+    audio.onended = finish;
+    audio.onpause = finish;
+    audio.onerror = fallback;
+    audio.play().catch(fallback);
+  });
 }
 
-function browserSpeak(text: string) {
-  if (!("speechSynthesis" in window)) return;
+function browserSpeak(text: string, done: () => void) {
+  if (!("speechSynthesis" in window)) return done();
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text.replace(/___/g, "…"));
   u.lang = "de-DE";
   u.rate = 0.9;
   const voice = window.speechSynthesis.getVoices().find((v) => v.lang.startsWith("de"));
   if (voice) u.voice = voice;
+  u.onend = () => done();
+  u.onerror = () => done();
   window.speechSynthesis.speak(u);
+}
+
+/** Stops whatever speak() is playing. */
+export function stopSpeaking() {
+  current?.pause();
+  if (typeof window !== "undefined") window.speechSynthesis?.cancel();
 }
 
 export function SpeakButton({ text, className = "" }: { text: string; className?: string }) {

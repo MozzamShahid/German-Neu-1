@@ -66,10 +66,14 @@ Done and deployed:
   `/api/sentences?topic=`
 - "Practice my mistakes" covers both words (`reviewIds`) and grammar sentences (`reviewItemIds`, saved as `itemId` in answers)
 
-- `/pruefung` hub + four A1 mock sections (Goethe Start Deutsch 1 format, 2 Modelltests each), results saved to
+- `/woerter`: all words of a Kapitel (`/api/words?chapter=`), 🔊, "▶ Alle anhören", flashcards.
+- `/pruefung` hub + four A1 mock sections (Goethe Start Deutsch 1 format, 5 Modelltests each + "🎲 Zufallstest"
+  that mixes items from all tests with the exam structure), results saved to
   Supabase `public.mock_attempts` via `/api/mock` (section = hoeren | lesen | schreiben | sprechen).
   Shared UI in `src/components/mock.tsx`; client-only loaders in `MockLoaders.tsx`.
-  - `/hoeren` (`src/data/hoeren.json`): voices pre-generated with ElevenLabs (`eleven_v4`, German-verified premade
+  - `/hoeren` (`src/data/hoeren.json`): Modelltest 1–2 voiced with ElevenLabs; 3–5 (and Sprechen t3–t5 partners) with
+    Piper via `.venv/Scripts/python scripts/build_hoeren_piper.py` (fills every line without a recording,
+    manifest entries get `engine: piper`; the ElevenLabs script keeps them unless `--replace-piper`). ElevenLabs: (`eleven_v4`, German-verified premade
     voices) by `node --env-file=.env.local scripts/build_hoeren_audio.mjs` (`--dry-run` counts characters; only
     new/changed lines cost credits; also makes the Sprechen partner lines `sp-*`). Background ambience, gong (Teil 2)
     and phone beep (Teil 3) from `scripts/build_sfx.mjs` → `public/audio/sfx/`; an item's `scene` picks the ambience.
@@ -78,7 +82,8 @@ Done and deployed:
   - `/sprechen` (`src/data/sprechen.json`): browser SpeechRecognition (de-DE, Chrome/Edge) or typing; AI scores
     Teil 1 (3) + Teil 2 (6) + Teil 3 (6). Also Urdu → Deutsch speaking drill from `/api/sentences`.
   - AI checker `src/lib/ai.ts` + `/api/check`: OpenAI-compatible; `DEEPSEEK_API_KEY` (deepseek-chat) or
-    `OPENROUTER_API_KEY` (+ optional `AI_MODEL`). OPENROUTER_API_KEY is set in `.env.local` and Railway (2026-11-06). Without a key the UI says "AI check not set up". 60 checks / 10 min per IP.
+    `OPENROUTER_API_KEY` (+ optional `AI_MODEL`). OPENROUTER_API_KEY is set in `.env.local` and Railway (2026-11-06). OpenRouter requests use
+    `provider.sort = latency` (default routing once took 128 s → timeout); 50 s timeout + one retry. Without a key the UI says "AI check not set up". 60 checks / 10 min per IP.
   - `ELEVENLABS_API_KEY` is in `.env.local` only (free plan 10k credits/month); Railway does not need it.
 
 Ideas for next time: more Modelltests; flashcard mode for Kapitel 13; Urdu meanings for the book words (only the lecture words have

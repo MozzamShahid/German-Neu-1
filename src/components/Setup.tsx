@@ -131,7 +131,13 @@ export default function Setup({
           href="/pruefung"
           className="ml-2 mt-3 inline-flex items-center gap-2 rounded-full bg-amber-500 px-4 py-1.5 text-sm font-semibold text-white hover:bg-amber-600"
         >
-          🎧 Hören – A1 mock test
+          🎓 A1 Prüfung – Hören · Lesen · Schreiben · Sprechen
+        </a>
+        <a
+          href="/woerter"
+          className="ml-2 mt-3 inline-flex items-center gap-2 rounded-full bg-sky-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-sky-700"
+        >
+          📚 Wörter – all words with 🔊
         </a>
       </header>
 

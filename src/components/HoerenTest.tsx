@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import data from "@/data/hoeren.json";
 import audioManifest from "@/data/hoeren-audio.json";
+import { RANDOM_ID, RANDOM_TITLE, shuffle } from "./mock";
 import { speak, Urdu } from "./Word";
 
 type Line = { sp: string; de: string };
@@ -22,6 +23,13 @@ type PartKey = keyof typeof data.parts;
 const MANIFEST = audioManifest as Record<string, { file: string; hash: string }>;
 const TESTS = data.tests as { id: string; title: string; items: Item[] }[];
 const LETTERS = ["a", "b", "c"];
+
+/** A new test mixed from all Modelltests, with the exam structure: 6 + 4 + 5 items. */
+function makeRandom() {
+  const all = TESTS.flatMap((t) => t.items);
+  const pick = (teil: number, n: number) => shuffle(all.filter((it) => it.teil === teil)).slice(0, n);
+  return { id: RANDOM_ID, title: RANDOM_TITLE, items: [...pick(1, 6), ...pick(2, 4), ...pick(3, 5)] };
+}
 const seconds = () => Date.now() / 1000;
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -95,21 +103,25 @@ export default function HoerenTest() {
   const [plays, setPlays] = useState<Record<string, number>>({});
   const [playing, setPlaying] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [shownText, setShownText] = useState<Record<string, boolean>>({});
+  const [randomTest, setRandomTest] = useState<(typeof TESTS)[number] | null>(null);
   const [saveState, setSaveState] = useState<"idle" | "saving" | "saved" | "off" | "error">("idle");
   const stop = useRef({ current: false }).current;
   const startedAt = useRef(0);
 
 
-  const test = TESTS.find((t) => t.id === testId)!;
+  const test = (testId === RANDOM_ID && randomTest) || TESTS.find((t) => t.id === testId)!;
   const score = test.items.filter((it) => chosen[it.id] === it.answer).length;
 
   const reset = (id: string) => {
     stop.current = true;
+    if (id === RANDOM_ID) setRandomTest(makeRandom());
     setTestId(id);
     setChosen({});
     setPlays({});
     setPlaying(null);
     setSubmitted(false);
+    setShownText({});
     setSaveState("idle");
     startedAt.current = 0;
   };
@@ -173,7 +185,7 @@ export default function HoerenTest() {
     <div className="space-y-5">
       {/* settings */}
       <div className="flex flex-wrap items-center gap-2 rounded-2xl bg-white p-4 shadow-sm">
-        {TESTS.map((t) => (
+        {[...TESTS, { id: RANDOM_ID, title: RANDOM_TITLE }].map((t) => (
           <button
             key={t.id}
             onClick={() => reset(t.id)}
@@ -194,6 +206,21 @@ export default function HoerenTest() {
           className="w-full rounded-xl border border-slate-200 px-3 py-1.5 text-sm sm:w-48"
         />
       </div>
+
+      {!submitted && (
+        <div className="rounded-2xl bg-sky-50 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="font-semibold text-sky-800">So geht&apos;s – how it works</div>
+          <ol className="mt-1 list-decimal space-y-0.5 pl-5">
+            <li>Read the question first, then press <b>▶ Hören</b>. You hear a short scene (with background sounds like in the Goethe exam).</li>
+            <li>Choose the answer (a / b / c, or richtig / falsch).</li>
+            <li>At the end press <b>Abgeben</b>: you get your score, the full text and an explanation in English and Urdu.</li>
+            <li><b>Prüfungsmodus</b> on = limited plays like the real exam. Off = practice: listen as often as you like and see the text.</li>
+          </ol>
+          <Urdu className="mt-2 text-[15px] text-slate-700">
+            پہلے سوال پڑھیں، پھر ▶ Hören دبائیں اور سنیں۔ جواب چنیں۔ آخر میں Abgeben دبائیں: نمبر، پوری تحریر اور اردو وضاحت ملے گی۔ Prüfungsmodus بند کریں تو جتنی بار چاہیں سنیں اور متن بھی دیکھ سکتے ہیں۔
+          </Urdu>
+        </div>
+      )}
 
       {submitted && (
         <div className="rounded-2xl bg-amber-50 p-5 text-center shadow-sm">
@@ -267,7 +294,15 @@ export default function HoerenTest() {
                     })}
                   </div>
 
-                  {submitted && (
+                  {!exam && !submitted && (plays[it.id] ?? 0) > 0 && (
+                    <button
+                      onClick={() => setShownText((t) => ({ ...t, [it.id]: !t[it.id] }))}
+                      className="mt-2 text-sm text-indigo-600 hover:underline"
+                    >
+                      {shownText[it.id] ? "Text verbergen" : "📝 Text zeigen"}
+                    </button>
+                  )}
+                  {(submitted || shownText[it.id]) && (
                     <div className="mt-3 space-y-1 rounded-xl bg-slate-50 px-3 py-2 text-sm">
                       {it.lines.map((l, i) => (
                         <div key={i}>
@@ -275,8 +310,8 @@ export default function HoerenTest() {
                           {l.de}
                         </div>
                       ))}
-                      <div className="pt-1 text-slate-600">💡 {it.en}</div>
-                      <Urdu className="text-[15px] text-slate-700">{it.ur}</Urdu>
+                      {submitted && <div className="pt-1 text-slate-600">💡 {it.en}</div>}
+                      {submitted && <Urdu className="text-[15px] text-slate-700">{it.ur}</Urdu>}
                     </div>
                   )}
                 </div>
