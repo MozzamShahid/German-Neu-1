@@ -276,6 +276,78 @@
           "partner": "Kann ich bitte das Fenster schließen?"
         }
       ]
+    },
+    {
+      "id": "t8",
+      "title": "Modelltest 8",
+      "theme2": "Reisen und Verkehr",
+      "cards2": [
+        {
+          "word": "Urlaub",
+          "partner": "Fahren Sie lieber mit dem Zug oder mit dem Auto?"
+        },
+        {
+          "word": "Ticket",
+          "partner": "Wohin möchten Sie gern reisen?"
+        },
+        {
+          "word": "Hotel",
+          "partner": "Mit wem fahren Sie in den Urlaub?"
+        }
+      ],
+      "cards3": [
+        {
+          "emoji": "🗺️",
+          "word": "Stadtplan",
+          "partner": "Können Sie mir bitte den Weg zum Bahnhof zeigen?"
+        },
+        {
+          "emoji": "🎫",
+          "word": "Fahrkarte",
+          "partner": "Können Sie bitte ein Foto von uns machen?"
+        },
+        {
+          "emoji": "🧳",
+          "word": "Koffer",
+          "partner": "Können Sie mir bitte mit dem Koffer helfen?"
+        }
+      ]
+    },
+    {
+      "id": "t9",
+      "title": "Modelltest 9",
+      "theme2": "Tagesablauf",
+      "cards2": [
+        {
+          "word": "Morgen",
+          "partner": "Wann stehen Sie auf?"
+        },
+        {
+          "word": "Mittagessen",
+          "partner": "Was machen Sie am Abend?"
+        },
+        {
+          "word": "Wochenende",
+          "partner": "Wann frühstücken Sie?"
+        }
+      ],
+      "cards3": [
+        {
+          "emoji": "⏰",
+          "word": "Wecker",
+          "partner": "Können Sie mich bitte morgen um sieben Uhr wecken?"
+        },
+        {
+          "emoji": "🚿",
+          "word": "Dusche",
+          "partner": "Können Sie bitte heute einkaufen?"
+        },
+        {
+          "emoji": "📺",
+          "word": "Fernseher",
+          "partner": "Können Sie bitte den Fernseher leiser machen?"
+        }
+      ]
     }
   ]
 }

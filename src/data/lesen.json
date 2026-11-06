@@ -1178,6 +1178,338 @@
           "sign": "Deutschkurs A1\nBeginn nicht am 8. März,\nsondern am 15. März!"
         }
       ]
+    },
+    {
+      "id": "t8",
+      "title": "Modelltest 8",
+      "texts": {
+        "a": {
+          "title": "E-Mail",
+          "de": "Liebe Mariam,\nich habe eine neue Arbeit! Ich arbeite jetzt in einer Bäckerei. Die Arbeit beginnt sehr früh, um fünf Uhr. Aber um 13 Uhr habe ich schon frei. Meine Kollegen sind sehr freundlich. Am Nachmittag lerne ich Deutsch oder ich gehe mit meinem Sohn auf den Spielplatz.\nLiebe Grüße\nRubina"
+        },
+        "b": {
+          "title": "Nachricht",
+          "de": "Hallo zusammen!\nUnser Grillfest im Park ist am Sonntag, nicht am Samstag. Wir treffen uns um 12 Uhr am See. Bitte bringt etwas zum Essen mit. Ich bringe Getränke und Teller.\nBis Sonntag!\nKarim"
+        }
+      },
+      "items": [
+        {
+          "id": "t8-1",
+          "teil": 1,
+          "question": "Rubina arbeitet in einem Restaurant.",
+          "answer": 1,
+          "en": "Wrong: in a bakery (Bäckerei).",
+          "ur": "غلط۔ بیکری (Bäckerei) میں۔",
+          "text": "a"
+        },
+        {
+          "id": "t8-2",
+          "teil": 1,
+          "question": "Rubina ist am Nachmittag frei.",
+          "answer": 0,
+          "en": "Right: um 13 Uhr hat sie frei.",
+          "ur": "صحیح۔ ایک بجے کے بعد چھٹی۔",
+          "text": "a"
+        },
+        {
+          "id": "t8-3",
+          "teil": 1,
+          "question": "Rubina mag ihre Kollegen.",
+          "answer": 0,
+          "en": "Right: sehr freundlich.",
+          "ur": "صحیح۔ ساتھی بہت مہربان ہیں۔",
+          "text": "a"
+        },
+        {
+          "id": "t8-4",
+          "teil": 1,
+          "question": "Das Grillfest ist am Samstag.",
+          "answer": 1,
+          "en": "Wrong: on Sunday.",
+          "ur": "غلط۔ اتوار کو۔",
+          "text": "b"
+        },
+        {
+          "id": "t8-5",
+          "teil": 1,
+          "question": "Karim bringt Getränke mit.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ کریم مشروبات لائے گا۔",
+          "text": "b"
+        },
+        {
+          "id": "t8-6",
+          "teil": 2,
+          "question": "Sie möchten am Abend einen Computerkurs machen.",
+          "answer": 1,
+          "en": "b: evening course.",
+          "ur": "b: شام کا کورس۔",
+          "choices": [
+            "Computerkurs\nMo + Mi 9–12 Uhr",
+            "Computerkurs am Abend\nDi + Do 18–20 Uhr"
+          ]
+        },
+        {
+          "id": "t8-7",
+          "teil": 2,
+          "question": "Sie suchen ein Geschenk für ein Baby.",
+          "answer": 0,
+          "en": "a: toys and clothes for babies.",
+          "ur": "a: بچوں کے کھلونے اور کپڑے۔",
+          "choices": [
+            "Baby-Welt\nSpielzeug und Kleidung für Babys",
+            "Sport-Shop\nFußbälle und Sportschuhe"
+          ]
+        },
+        {
+          "id": "t8-8",
+          "teil": 2,
+          "question": "Sie möchten mit dem Zug nach Berlin fahren.",
+          "answer": 0,
+          "en": "a: train tickets.",
+          "ur": "a: ٹرین کے ٹکٹ۔",
+          "choices": [
+            "Deutsche Bahn\nTickets online oder am Automaten",
+            "Fernbus\nBerlin – Hamburg ab 9 €"
+          ]
+        },
+        {
+          "id": "t8-9",
+          "teil": 2,
+          "question": "Sie haben Probleme mit den Zähnen.",
+          "answer": 1,
+          "en": "b: dentist (Zahnarzt).",
+          "ur": "b: دانتوں کا ڈاکٹر۔",
+          "choices": [
+            "Augenarzt Dr. Kim\nMo–Fr 8–16 Uhr",
+            "Zahnarztpraxis Dr. Ali\nauch Notfälle"
+          ]
+        },
+        {
+          "id": "t8-10",
+          "teil": 2,
+          "question": "Sie möchten Ihr altes Sofa verkaufen.",
+          "answer": 0,
+          "en": "a: a second-hand market where you can sell things.",
+          "ur": "a: پرانی چیزیں بیچنے کا بازار۔",
+          "choices": [
+            "Flohmarkt am Samstag\nverkaufen Sie alte Sachen!",
+            "Möbelhaus\nneue Sofas ab 399 €"
+          ]
+        },
+        {
+          "id": "t8-11",
+          "teil": 3,
+          "question": "Hier darf man schwimmen.",
+          "answer": 1,
+          "en": "Wrong: Baden verboten = no swimming.",
+          "ur": "غلط۔ Baden verboten یعنی نہانا منع ہے۔",
+          "sign": "⚠ Baden verboten!"
+        },
+        {
+          "id": "t8-12",
+          "teil": 3,
+          "question": "Das Restaurant ist heute für eine Feier reserviert.",
+          "answer": 0,
+          "en": "Right: geschlossene Gesellschaft = private party.",
+          "ur": "صحیح۔ آج پرائیویٹ تقریب ہے۔",
+          "sign": "Heute geschlossene Gesellschaft.\nAb morgen wieder für alle geöffnet."
+        },
+        {
+          "id": "t8-13",
+          "teil": 3,
+          "question": "Man soll den Müll trennen.",
+          "answer": 0,
+          "en": "Right: separate paper, plastic and other waste.",
+          "ur": "صحیح۔ کچرا الگ الگ کرنا ہے۔",
+          "sign": "♻ Bitte Müll trennen:\nPapier · Plastik · Restmüll"
+        },
+        {
+          "id": "t8-14",
+          "teil": 3,
+          "question": "Das Wartezimmer ist im ersten Stock.",
+          "answer": 1,
+          "en": "Wrong: on the ground floor.",
+          "ur": "غلط۔ گراؤنڈ فلور پر۔",
+          "sign": "Praxis Dr. Lee\nAnmeldung + Wartezimmer: Erdgeschoss"
+        },
+        {
+          "id": "t8-15",
+          "teil": 3,
+          "question": "Der Aufzug ist nur für 6 Personen.",
+          "answer": 0,
+          "en": "Right: max. 6 Personen.",
+          "ur": "صحیح۔ زیادہ سے زیادہ چھ افراد۔",
+          "sign": "Aufzug\nmax. 6 Personen / 450 kg"
+        }
+      ]
+    },
+    {
+      "id": "t9",
+      "title": "Modelltest 9",
+      "texts": {
+        "a": {
+          "title": "Postkarte",
+          "de": "Hallo Leon,\nviele Grüße aus Hamburg! Das Wetter ist leider schlecht, es regnet jeden Tag. Aber die Stadt ist toll. Gestern waren wir am Hafen und haben Fisch gegessen. Morgen besuchen wir ein Museum. Am Freitag fahren wir wieder nach Hause.\nBis bald!\nNoor"
+        },
+        "b": {
+          "title": "Information",
+          "de": "Liebe Eltern,\nam Donnerstag machen die Kinder der Klasse 2b einen Ausflug in den Wald. Die Kinder brauchen feste Schuhe, eine Jacke und etwas zu trinken. Wir sind um 14 Uhr wieder in der Schule.\nFrau Krause"
+        }
+      },
+      "items": [
+        {
+          "id": "t9-1",
+          "teil": 1,
+          "question": "In Hamburg scheint jeden Tag die Sonne.",
+          "answer": 1,
+          "en": "Wrong: it rains every day.",
+          "ur": "غلط۔ ہر روز بارش ہوتی ہے۔",
+          "text": "a"
+        },
+        {
+          "id": "t9-2",
+          "teil": 1,
+          "question": "Noor hat gestern Fisch gegessen.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ کل مچھلی کھائی۔",
+          "text": "a"
+        },
+        {
+          "id": "t9-3",
+          "teil": 1,
+          "question": "Noor fährt am Freitag nach Hause.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ جمعہ کو گھر واپس۔",
+          "text": "a"
+        },
+        {
+          "id": "t9-4",
+          "teil": 1,
+          "question": "Die Kinder gehen in den Zoo.",
+          "answer": 1,
+          "en": "Wrong: into the forest (Wald).",
+          "ur": "غلط۔ جنگل (Wald) میں جائیں گے۔",
+          "text": "b"
+        },
+        {
+          "id": "t9-5",
+          "teil": 1,
+          "question": "Die Kinder sollen etwas zu trinken mitnehmen.",
+          "answer": 0,
+          "en": "Right.",
+          "ur": "صحیح۔ کچھ پینے کو ساتھ لائیں۔",
+          "text": "b"
+        },
+        {
+          "id": "t9-6",
+          "teil": 2,
+          "question": "Sie möchten am Sonntag frühstücken gehen.",
+          "answer": 0,
+          "en": "a: Sunday brunch.",
+          "ur": "a: اتوار کا ناشتہ (Brunch)۔",
+          "choices": [
+            "Café Morgen\nSonntagsbrunch 9–14 Uhr",
+            "Bar Mitternacht\ntäglich ab 20 Uhr"
+          ]
+        },
+        {
+          "id": "t9-7",
+          "teil": 2,
+          "question": "Sie brauchen eine Arbeit für den Nachmittag.",
+          "answer": 1,
+          "en": "b: afternoon job.",
+          "ur": "b: سہ پہر کی نوکری۔",
+          "choices": [
+            "Bäckerei sucht Hilfe\n5–11 Uhr",
+            "Supermarkt sucht Kassierer/in\n14–20 Uhr"
+          ]
+        },
+        {
+          "id": "t9-8",
+          "teil": 2,
+          "question": "Sie möchten ein gebrauchtes Fahrrad kaufen.",
+          "answer": 0,
+          "en": "a: used bike for sale.",
+          "ur": "a: پرانی سائیکل برائے فروخت۔",
+          "choices": [
+            "Verkaufe Fahrrad\n2 Jahre alt, 90 €",
+            "Fahrradladen\nneue Fahrräder ab 450 €"
+          ]
+        },
+        {
+          "id": "t9-9",
+          "teil": 2,
+          "question": "Sie möchten Ihre Haare schneiden lassen.",
+          "answer": 1,
+          "en": "b: hairdresser (Friseur).",
+          "ur": "b: حجام (Friseur)۔",
+          "choices": [
+            "Kosmetik-Studio\nNägel und Make-up",
+            "Friseur Schnitt\nHaare schneiden ab 15 €"
+          ]
+        },
+        {
+          "id": "t9-10",
+          "teil": 2,
+          "question": "Sie möchten Ihre Familie in Pakistan anrufen. Es soll nichts kosten.",
+          "answer": 0,
+          "en": "a: free video calls on the internet.",
+          "ur": "a: انٹرنیٹ پر مفت ویڈیو کال۔",
+          "choices": [
+            "Internet-Café\nkostenlos Videoanrufe mit WLAN",
+            "Telefonladen\nAnrufe nach Asien 0,20 €/Min."
+          ]
+        },
+        {
+          "id": "t9-11",
+          "teil": 3,
+          "question": "Hier dürfen nur Taxis halten.",
+          "answer": 0,
+          "en": "Right: nur für Taxis.",
+          "ur": "صحیح۔ صرف ٹیکسیوں کے لیے۔",
+          "sign": "🚕 Nur für Taxis"
+        },
+        {
+          "id": "t9-12",
+          "teil": 3,
+          "question": "Man kann hier am Wochenende parken.",
+          "answer": 0,
+          "en": "Right: Sa/So frei.",
+          "ur": "صحیح۔ ہفتہ اتوار پارکنگ آزاد۔",
+          "sign": "Parken nur für Mitarbeiter\nMo–Fr 7–18 Uhr\nSa + So für alle frei"
+        },
+        {
+          "id": "t9-13",
+          "teil": 3,
+          "question": "Der Arzt ist heute bis 18 Uhr da.",
+          "answer": 1,
+          "en": "Wrong: today only until 12.",
+          "ur": "غلط۔ آج صرف بارہ بجے تک۔",
+          "sign": "Heute nur bis 12 Uhr geöffnet!\nDr. Hoffmann"
+        },
+        {
+          "id": "t9-14",
+          "teil": 3,
+          "question": "Das Wasser kann man trinken.",
+          "answer": 1,
+          "en": "Wrong: kein Trinkwasser = not drinking water.",
+          "ur": "غلط۔ kein Trinkwasser یعنی پینے کا پانی نہیں۔",
+          "sign": "🚱 Kein Trinkwasser!"
+        },
+        {
+          "id": "t9-15",
+          "teil": 3,
+          "question": "Im Hotel gibt es ab 6:30 Uhr Frühstück.",
+          "answer": 0,
+          "en": "Right: Frühstück 6:30–10 Uhr.",
+          "ur": "صحیح۔ ناشتہ ساڑھے چھ سے دس بجے۔",
+          "sign": "Hotel Krone\nFrühstück: 6:30–10:00 Uhr\nim Restaurant"
+        }
+      ]
     }
   ]
 }

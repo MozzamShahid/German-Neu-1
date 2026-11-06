@@ -510,6 +510,150 @@
         "en": "You saw a flat online. Write to the landlord Mr Braun: is the flat still free, ask for a viewing appointment, say when you have time. Formal (Sie).",
         "ur": "آپ نے انٹرنیٹ پر ایک فلیٹ دیکھا۔ مالک مکان کو لکھیں: کیا فلیٹ ابھی خالی ہے، دیکھنے کا وقت مانگیں، اور بتائیں آپ کب فارغ ہیں۔ رسمی انداز (Sie)۔"
       }
+    },
+    {
+      "id": "t8",
+      "title": "Modelltest 8",
+      "form": {
+        "title": "Anmeldung – Kindergarten Regenbogen",
+        "text": "Ihr Nachbar Faisal Qureshi möchte seine Tochter Zara im Kindergarten anmelden. Zara ist am 2. Mai 2021 geboren. Sie spricht Urdu und ein bisschen Deutsch. Die Familie wohnt in der Bergstraße 9. Zara soll von 8 bis 13 Uhr im Kindergarten bleiben.",
+        "en": "Your neighbour wants to register his daughter for kindergarten. Fill in the 5 missing details.",
+        "ur": "آپ کا پڑوسی اپنی بیٹی کو کنڈرگارٹن میں داخل کرانا چاہتا ہے۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name des Kindes",
+            "Zara Qureshi"
+          ],
+          [
+            "Vater",
+            "Faisal Qureshi"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Geburtsdatum",
+            "accept": [
+              "2.5.2021",
+              "02.05.2021",
+              "2. Mai 2021"
+            ],
+            "kind": "date"
+          },
+          {
+            "label": "Sprachen",
+            "accept": [
+              "Urdu und Deutsch",
+              "Urdu, Deutsch",
+              "Urdu und ein bisschen Deutsch",
+              "Urdu, ein bisschen Deutsch"
+            ]
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Bergstraße 9",
+              "Bergstrasse 9",
+              "Bergstr. 9"
+            ]
+          },
+          {
+            "label": "Betreuung",
+            "options": [
+              "8–13 Uhr",
+              "8–16 Uhr"
+            ],
+            "answer": 0
+          },
+          {
+            "label": "Geschlecht",
+            "options": [
+              "Junge",
+              "Mädchen"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      "email": {
+        "register": "informell",
+        "situation": "Ihre Freundin Emma hat Ihnen ein Buch geliehen. Sie haben das Buch noch nicht zurückgegeben. Schreiben Sie Emma.",
+        "points": [
+          "Entschuldigen Sie sich.",
+          "Wie finden Sie das Buch?",
+          "Wann bringen Sie das Buch zurück?"
+        ],
+        "en": "Your friend Emma lent you a book and you have not returned it yet. Write: say sorry, say what you think of the book, say when you bring it back. About 30 words.",
+        "ur": "دوست ایما نے آپ کو کتاب دی تھی جو آپ نے ابھی واپس نہیں کی۔ لکھیں: معذرت کریں، کتاب کیسی لگی، اور کب واپس کریں گے۔"
+      }
+    },
+    {
+      "id": "t9",
+      "title": "Modelltest 9",
+      "form": {
+        "title": "Kontoeröffnung – Stadtbank",
+        "text": "Frau Amina Rauf möchte ein Konto bei der Stadtbank eröffnen. Sie ist Studentin an der Universität Bonn. Sie wohnt in der Poststraße 14, 53111 Bonn. Ihre E-Mail-Adresse ist amina.rauf@mail.de. Sie möchte eine Bankkarte, aber keine Kreditkarte.",
+        "en": "Ms Rauf wants to open a bank account. Fill in the 5 missing details.",
+        "ur": "آمنہ رؤف بینک اکاؤنٹ کھولنا چاہتی ہیں۔ پانچ خالی جگہیں بھریں۔",
+        "given": [
+          [
+            "Name",
+            "Amina Rauf"
+          ],
+          [
+            "Stadt",
+            "Bonn"
+          ]
+        ],
+        "fields": [
+          {
+            "label": "Beruf",
+            "accept": [
+              "Studentin",
+              "Student"
+            ]
+          },
+          {
+            "label": "Straße, Hausnummer",
+            "accept": [
+              "Poststraße 14",
+              "Poststrasse 14",
+              "Poststr. 14"
+            ]
+          },
+          {
+            "label": "Postleitzahl",
+            "accept": [
+              "53111"
+            ]
+          },
+          {
+            "label": "E-Mail",
+            "accept": [
+              "amina.rauf@mail.de"
+            ]
+          },
+          {
+            "label": "Karte",
+            "options": [
+              "Bankkarte",
+              "Kreditkarte",
+              "Bankkarte und Kreditkarte"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      "email": {
+        "register": "formell",
+        "situation": "Sie haben im Internet ein Handy gekauft, aber es funktioniert nicht. Schreiben Sie an den Online-Shop.",
+        "points": [
+          "Was ist das Problem?",
+          "Was möchten Sie: Geld zurück oder ein neues Handy?",
+          "Bitten Sie um eine schnelle Antwort."
+        ],
+        "en": "You bought a phone online but it does not work. Write to the shop: describe the problem, say what you want (money back or a new phone), ask for a quick reply. Formal (Sie).",
+        "ur": "آپ نے آن لائن موبائل خریدا لیکن وہ کام نہیں کرتا۔ دکان کو لکھیں: مسئلہ بتائیں، کیا چاہتے ہیں (پیسے واپس یا نیا فون)، اور جلد جواب مانگیں۔ رسمی انداز۔"
+      }
     }
   ]
 }
