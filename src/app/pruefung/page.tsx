@@ -35,6 +35,13 @@ export default function PruefungPage() {
           </Link>
         ))}
       </div>
+      <Link href="/a2" className="mt-6 flex items-center gap-4 rounded-2xl bg-rose-500 p-5 text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+        <span className="text-4xl">🗣️</span>
+        <div className="flex-1">
+          <div className="text-xl font-semibold">Next: A2 Sprechen</div>
+          <p className="text-sm text-rose-50">16 daily-life topics · speak for 1, 2 or 5 minutes · Redemittel for every conversation · AI feedback</p>
+        </div>
+      </Link>
     </main>
   );
 }

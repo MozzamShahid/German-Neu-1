@@ -1,0 +1,778 @@
+{
+  "redemittel": [
+    {
+      "id": "anfangen", "title": "Anfangen", "title_en": "Starting to talk", "title_ur": "بات شروع کرنا",
+      "tip_en": "Say one of these first. It gives you 3 seconds and sounds natural.",
+      "phrases": [
+        { "de": "Ich möchte heute über meinen Alltag sprechen.", "en": "Today I'd like to talk about my daily life.", "ur": "میں آج اپنے روزمرہ کے بارے میں بات کرنا چاہتا ہوں۔" },
+        { "de": "Also, ich fange mal an.", "en": "Well, I'll start.", "ur": "تو، میں شروع کرتا ہوں۔" },
+        { "de": "Das ist ein interessantes Thema für mich.", "en": "That is an interesting topic for me.", "ur": "یہ میرے لیے ایک دلچسپ موضوع ہے۔" },
+        { "de": "Dazu kann ich viel erzählen.", "en": "I can say a lot about that.", "ur": "اس بارے میں میں بہت کچھ بتا سکتا ہوں۔" },
+        { "de": "Zuerst erzähle ich etwas über meine Familie, dann über meine Arbeit.", "en": "First I'll say something about my family, then about my work.", "ur": "پہلے میں اپنے خاندان کے بارے میں کچھ بتاؤں گا، پھر اپنے کام کے بارے میں۔" },
+        { "de": "Bei mir ist das so:", "en": "For me it's like this:", "ur": "میرے ساتھ ایسا ہے:" }
+      ]
+    },
+    {
+      "id": "zeit", "title": "Zeit gewinnen", "title_en": "When you need a moment", "title_ur": "سوچنے کا وقت لینا",
+      "tip_en": "Germans do this all the time. Silence is worse than „Hm, wie soll ich sagen …“.",
+      "phrases": [
+        { "de": "Hm, wie soll ich sagen …", "en": "Hmm, how should I put it …", "ur": "ہمم، کیسے کہوں …" },
+        { "de": "Moment, ich überlege kurz.", "en": "One moment, let me think.", "ur": "ایک منٹ، میں ذرا سوچتا ہوں۔" },
+        { "de": "Das ist eine gute Frage.", "en": "That's a good question.", "ur": "یہ اچھا سوال ہے۔" },
+        { "de": "Na ja, das ist nicht so einfach.", "en": "Well, that isn't so easy.", "ur": "خیر، یہ اتنا آسان نہیں ہے۔" },
+        { "de": "Wie heißt das auf Deutsch?", "en": "What's that called in German?", "ur": "جرمن میں اسے کیا کہتے ہیں؟" },
+        { "de": "Ich weiß das Wort nicht, aber man braucht es für die Küche.", "en": "I don't know the word, but you need it for the kitchen.", "ur": "مجھے یہ لفظ نہیں آتا، لیکن یہ باورچی خانے کے لیے چاہیے ہوتا ہے۔" },
+        { "de": "Also, ich meine …", "en": "Well, I mean …", "ur": "یعنی، میرا مطلب ہے …" },
+        { "de": "Wo war ich? Ach ja!", "en": "Where was I? Oh yes!", "ur": "میں کہاں تھا؟ ہاں یاد آیا!" }
+      ]
+    },
+    {
+      "id": "meinung", "title": "Meinung sagen", "title_en": "Giving your opinion", "title_ur": "اپنی رائے دینا",
+      "tip_en": "„dass“ and „weil“ push the verb to the end: Ich finde, dass Deutsch schwer ist.",
+      "phrases": [
+        { "de": "Ich finde, dass Deutsch nicht so schwer ist.", "en": "I think German isn't that hard.", "ur": "میرے خیال میں جرمن اتنی مشکل نہیں ہے۔" },
+        { "de": "Ich glaube, das ist eine gute Idee.", "en": "I think that's a good idea.", "ur": "میرا خیال ہے یہ اچھا خیال ہے۔" },
+        { "de": "Meiner Meinung nach ist das zu teuer.", "en": "In my opinion that's too expensive.", "ur": "میری رائے میں یہ بہت مہنگا ہے۔" },
+        { "de": "Für mich ist die Familie sehr wichtig.", "en": "For me family is very important.", "ur": "میرے لیے خاندان بہت اہم ہے۔" },
+        { "de": "Ehrlich gesagt mag ich das nicht so gern.", "en": "Honestly, I don't like that so much.", "ur": "سچ پوچھیں تو مجھے یہ اتنا پسند نہیں۔" },
+        { "de": "Das kommt darauf an.", "en": "That depends.", "ur": "یہ اس پر منحصر ہے۔" },
+        { "de": "Einerseits ist das praktisch, andererseits ist es teuer.", "en": "On the one hand it's practical, on the other hand it's expensive.", "ur": "ایک طرف یہ آسان ہے، دوسری طرف مہنگا ہے۔" },
+        { "de": "Am liebsten bleibe ich am Wochenende zu Hause.", "en": "What I like best is staying at home at the weekend.", "ur": "مجھے سب سے زیادہ ہفتے کے آخر میں گھر پر رہنا پسند ہے۔" }
+      ]
+    },
+    {
+      "id": "zustimmen", "title": "Zustimmen & widersprechen", "title_en": "Agreeing & disagreeing", "title_ur": "متفق یا غیر متفق ہونا",
+      "tip_en": "„Ja, schon, aber …“ is the polite German way to disagree.",
+      "phrases": [
+        { "de": "Genau, das finde ich auch.", "en": "Exactly, I think so too.", "ur": "بالکل، میرا بھی یہی خیال ہے۔" },
+        { "de": "Da hast du recht.", "en": "You're right there.", "ur": "اس بات میں تم ٹھیک ہو۔" },
+        { "de": "Das sehe ich genauso.", "en": "I see it the same way.", "ur": "میں بھی ایسا ہی سمجھتا ہوں۔" },
+        { "de": "Ja, schon, aber das ist nicht immer so.", "en": "Yes, sure, but it isn't always like that.", "ur": "ہاں، ٹھیک ہے، لیکن ہمیشہ ایسا نہیں ہوتا۔" },
+        { "de": "Das sehe ich anders.", "en": "I see that differently.", "ur": "میری رائے اس سے مختلف ہے۔" },
+        { "de": "Da bin ich mir nicht sicher.", "en": "I'm not sure about that.", "ur": "اس بارے میں مجھے یقین نہیں ہے۔" },
+        { "de": "Das stimmt nicht ganz.", "en": "That's not quite right.", "ur": "یہ پوری طرح درست نہیں ہے۔" }
+      ]
+    },
+    {
+      "id": "nachfragen", "title": "Nachfragen", "title_en": "Asking back & keeping the talk going", "title_ur": "دوبارہ پوچھنا اور بات آگے بڑھانا",
+      "tip_en": "In the exam you also get points for asking your partner. „Und du?“ always works.",
+      "phrases": [
+        { "de": "Wie bitte? Kannst du das noch einmal sagen?", "en": "Sorry? Can you say that again?", "ur": "کیا کہا؟ کیا تم دوبارہ کہہ سکتے ہو؟" },
+        { "de": "Kannst du bitte langsamer sprechen?", "en": "Can you speak more slowly, please?", "ur": "کیا تم ذرا آہستہ بول سکتے ہو؟" },
+        { "de": "Was bedeutet das?", "en": "What does that mean?", "ur": "اس کا کیا مطلب ہے؟" },
+        { "de": "Was meinst du damit?", "en": "What do you mean by that?", "ur": "اس سے تمہارا کیا مطلب ہے؟" },
+        { "de": "Habe ich das richtig verstanden?", "en": "Did I understand that correctly?", "ur": "کیا میں نے صحیح سمجھا؟" },
+        { "de": "Und du? Wie ist das bei dir?", "en": "And you? How is it for you?", "ur": "اور تم؟ تمہارے ساتھ کیسا ہے؟" },
+        { "de": "Erzähl mal!", "en": "Tell me!", "ur": "بتاؤ نا!" }
+      ]
+    },
+    {
+      "id": "erzaehlen", "title": "Erzählen", "title_en": "Telling a story (order & past)", "title_ur": "واقعہ سنانا – ترتیب اور ماضی",
+      "tip_en": "A2 = Perfekt. Zuerst / dann / danach / zum Schluss makes any story clear.",
+      "phrases": [
+        { "de": "Zuerst habe ich gefrühstückt, dann bin ich zur Arbeit gefahren.", "en": "First I had breakfast, then I went to work.", "ur": "پہلے میں نے ناشتہ کیا، پھر میں کام پر گیا۔" },
+        { "de": "Danach haben wir zusammen gegessen.", "en": "After that we ate together.", "ur": "اس کے بعد ہم نے مل کر کھانا کھایا۔" },
+        { "de": "Am Anfang war es schwer, aber jetzt geht es.", "en": "At first it was hard, but now it's okay.", "ur": "شروع میں مشکل تھا، لیکن اب ٹھیک ہے۔" },
+        { "de": "Letztes Wochenende habe ich meine Freunde getroffen.", "en": "Last weekend I met my friends.", "ur": "پچھلے ہفتے کے آخر میں میں اپنے دوستوں سے ملا۔" },
+        { "de": "Vor zwei Jahren bin ich nach Islamabad gezogen.", "en": "Two years ago I moved to Islamabad.", "ur": "دو سال پہلے میں اسلام آباد منتقل ہوا۔" },
+        { "de": "Plötzlich hat es angefangen zu regnen.", "en": "Suddenly it started to rain.", "ur": "اچانک بارش شروع ہو گئی۔" },
+        { "de": "Zum Schluss sind wir müde nach Hause gefahren.", "en": "In the end we went home tired.", "ur": "آخر میں ہم تھکے ہوئے گھر واپس گئے۔" },
+        { "de": "Ich erinnere mich gut an diesen Tag.", "en": "I remember that day well.", "ur": "مجھے وہ دن اچھی طرح یاد ہے۔" }
+      ]
+    },
+    {
+      "id": "verbinden", "title": "Verbinden & begründen", "title_en": "Linking & giving reasons", "title_ur": "جملے جوڑنا اور وجہ بتانا",
+      "tip_en": "Linking words turn A1 sentences into A2 talk. Use at least three in every answer.",
+      "phrases": [
+        { "de": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.", "en": "I'm learning German because I want to work in Germany.", "ur": "میں جرمن سیکھ رہا ہوں کیونکہ میں جرمنی میں کام کرنا چاہتا ہوں۔" },
+        { "de": "Ich hatte keine Zeit, deshalb bin ich zu Hause geblieben.", "en": "I had no time, so I stayed at home.", "ur": "میرے پاس وقت نہیں تھا، اس لیے میں گھر پر رہا۔" },
+        { "de": "Das Wetter war schlecht. Trotzdem sind wir spazieren gegangen.", "en": "The weather was bad. We still went for a walk.", "ur": "موسم خراب تھا۔ پھر بھی ہم سیر کو گئے۔" },
+        { "de": "Außerdem ist das Essen dort sehr gut.", "en": "Besides, the food there is very good.", "ur": "اس کے علاوہ وہاں کا کھانا بہت اچھا ہے۔" },
+        { "de": "Wenn ich Zeit habe, lese ich gern.", "en": "When I have time, I like to read.", "ur": "جب میرے پاس وقت ہوتا ہے تو مجھے پڑھنا اچھا لگتا ہے۔" },
+        { "de": "Ich weiß, dass das nicht einfach ist.", "en": "I know that it isn't easy.", "ur": "مجھے معلوم ہے کہ یہ آسان نہیں ہے۔" },
+        { "de": "Zum Beispiel spiele ich gern Cricket.", "en": "For example, I like playing cricket.", "ur": "مثال کے طور پر، مجھے کرکٹ کھیلنا پسند ہے۔" },
+        { "de": "Ich bin müde, denn ich habe schlecht geschlafen.", "en": "I'm tired, because I slept badly.", "ur": "میں تھکا ہوا ہوں، کیونکہ میری نیند اچھی نہیں ہوئی۔" }
+      ]
+    },
+    {
+      "id": "vergleichen", "title": "Vergleichen", "title_en": "Comparing (then/now, Pakistan/Germany)", "title_ur": "موازنہ کرنا",
+      "tip_en": "Every topic gets longer with a comparison: früher / heute, bei uns / in Deutschland.",
+      "phrases": [
+        { "de": "Früher habe ich viel Fußball gespielt, heute habe ich wenig Zeit.", "en": "I used to play a lot of football, today I have little time.", "ur": "پہلے میں بہت فٹبال کھیلتا تھا، آج کل میرے پاس کم وقت ہے۔" },
+        { "de": "In Pakistan ist das anders als in Deutschland.", "en": "In Pakistan that's different from Germany.", "ur": "پاکستان میں یہ جرمنی سے مختلف ہے۔" },
+        { "de": "Bei uns in Pakistan isst man später zu Abend.", "en": "Back home in Pakistan people eat dinner later.", "ur": "ہمارے ہاں پاکستان میں رات کا کھانا دیر سے کھایا جاتا ہے۔" },
+        { "de": "Das Leben in der Stadt ist teurer als auf dem Land.", "en": "Life in the city is more expensive than in the countryside.", "ur": "شہر کی زندگی دیہات سے مہنگی ہے۔" },
+        { "de": "Tee gefällt mir besser als Kaffee.", "en": "I like tea better than coffee.", "ur": "مجھے کافی سے زیادہ چائے پسند ہے۔" },
+        { "de": "Am wichtigsten ist für mich die Gesundheit.", "en": "The most important thing for me is health.", "ur": "میرے لیے سب سے اہم چیز صحت ہے۔" },
+        { "de": "Das ist genauso wie bei uns.", "en": "That's just like back home.", "ur": "یہ بالکل ہمارے ہاں جیسا ہے۔" }
+      ]
+    },
+    {
+      "id": "reagieren", "title": "Reagieren", "title_en": "Reacting", "title_ur": "ردِعمل دینا",
+      "tip_en": "Short reactions make you sound like a real person, not a textbook.",
+      "phrases": [
+        { "de": "Echt? Das wusste ich nicht.", "en": "Really? I didn't know that.", "ur": "واقعی؟ مجھے یہ معلوم نہیں تھا۔" },
+        { "de": "Das klingt toll!", "en": "That sounds great!", "ur": "یہ تو زبردست لگ رہا ہے!" },
+        { "de": "Oh, das tut mir leid.", "en": "Oh, I'm sorry.", "ur": "اوہ، مجھے افسوس ہوا۔" },
+        { "de": "Schade!", "en": "What a pity!", "ur": "افسوس کی بات ہے!" },
+        { "de": "Kein Problem.", "en": "No problem.", "ur": "کوئی مسئلہ نہیں۔" },
+        { "de": "Das ist mir egal.", "en": "I don't mind.", "ur": "مجھے کوئی فرق نہیں پڑتا۔" },
+        { "de": "Keine Ahnung.", "en": "No idea.", "ur": "کوئی اندازہ نہیں۔" },
+        { "de": "Gute Besserung!", "en": "Get well soon!", "ur": "جلدی ٹھیک ہو جاؤ!" }
+      ]
+    },
+    {
+      "id": "planen", "title": "Gemeinsam planen", "title_en": "Making plans together (A2 Teil 3)", "title_ur": "مل کر منصوبہ بنانا",
+      "tip_en": "Suggest → react → agree on time, place and who brings what.",
+      "phrases": [
+        { "de": "Wollen wir am Samstag zusammen ins Kino gehen?", "en": "Shall we go to the cinema together on Saturday?", "ur": "کیا ہم ہفتے کو اکٹھے سینما چلیں؟" },
+        { "de": "Hast du am Freitag Zeit?", "en": "Do you have time on Friday?", "ur": "کیا تمہارے پاس جمعے کو وقت ہے؟" },
+        { "de": "Wie wäre es mit Sonntag um drei?", "en": "How about Sunday at three?", "ur": "اتوار کو تین بجے کیسا رہے گا؟" },
+        { "de": "Ja, gute Idee! Das passt mir.", "en": "Yes, good idea! That suits me.", "ur": "ہاں، اچھا خیال ہے! یہ میرے لیے ٹھیک ہے۔" },
+        { "de": "Leider kann ich da nicht, da muss ich arbeiten.", "en": "Unfortunately I can't then, I have to work.", "ur": "افسوس، میں تب نہیں آ سکتا، مجھے کام کرنا ہے۔" },
+        { "de": "Was hältst du davon?", "en": "What do you think of that?", "ur": "اس بارے میں تمہارا کیا خیال ہے؟" },
+        { "de": "Ich bringe den Kuchen mit.", "en": "I'll bring the cake.", "ur": "میں کیک لے آؤں گا۔" },
+        { "de": "Gut, dann treffen wir uns um zehn am Bahnhof.", "en": "Good, then let's meet at ten at the station.", "ur": "ٹھیک ہے، پھر ہم دس بجے اسٹیشن پر ملتے ہیں۔" }
+      ]
+    },
+    {
+      "id": "abschluss", "title": "Abschließen", "title_en": "Finishing", "title_ur": "بات ختم کرنا",
+      "tip_en": "End clearly. Don't just stop talking.",
+      "phrases": [
+        { "de": "Insgesamt bin ich sehr zufrieden.", "en": "Overall I'm very happy.", "ur": "مجموعی طور پر میں بہت مطمئن ہوں۔" },
+        { "de": "Kurz gesagt: Ich mag meine Stadt.", "en": "In short: I like my city.", "ur": "مختصر یہ کہ مجھے اپنا شہر پسند ہے۔" },
+        { "de": "Das war's von mir.", "en": "That's all from me.", "ur": "میری طرف سے بس اتنا ہی۔" },
+        { "de": "Mehr kann ich dazu nicht sagen.", "en": "That's all I can say about it.", "ur": "اس بارے میں میں اس سے زیادہ نہیں کہہ سکتا۔" },
+        { "de": "Danke fürs Zuhören!", "en": "Thanks for listening!", "ur": "سننے کا شکریہ!" },
+        { "de": "Hast du noch Fragen?", "en": "Do you have any more questions?", "ur": "کیا تمہارے کچھ اور سوال ہیں؟" }
+      ]
+    }
+  ],
+
+  "themen": [
+    {
+      "id": "alltag", "emoji": "☀️", "title": "Mein Alltag", "title_en": "My daily routine", "title_ur": "میرا روزمرہ",
+      "questions": [
+        { "de": "Wann stehst du normalerweise auf?", "en": "When do you usually get up?", "ur": "تم عام طور پر کب اٹھتے ہو؟" },
+        { "de": "Was machst du am Vormittag?", "en": "What do you do in the morning?", "ur": "تم صبح کے وقت کیا کرتے ہو؟" },
+        { "de": "Wie kommst du zur Arbeit oder zur Uni?", "en": "How do you get to work or university?", "ur": "تم کام یا یونیورسٹی کیسے جاتے ہو؟" },
+        { "de": "Was isst du zu Mittag?", "en": "What do you eat for lunch?", "ur": "تم دوپہر کو کیا کھاتے ہو؟" },
+        { "de": "Was machst du abends?", "en": "What do you do in the evening?", "ur": "تم شام کو کیا کرتے ہو؟" },
+        { "de": "Wie ist dein Wochenende anders als die Woche?", "en": "How is your weekend different from the week?", "ur": "تمہارا ہفتے کا آخر باقی دنوں سے کیسے مختلف ہے؟" }
+      ],
+      "words": [
+        { "de": "aufstehen", "en": "to get up", "ur": "اٹھنا" },
+        { "de": "frühstücken", "en": "to have breakfast", "ur": "ناشتہ کرنا" },
+        { "de": "der Wecker", "en": "alarm clock", "ur": "الارم گھڑی" },
+        { "de": "duschen", "en": "to shower", "ur": "نہانا" },
+        { "de": "sich anziehen", "en": "to get dressed", "ur": "کپڑے پہننا" },
+        { "de": "der Feierabend", "en": "end of the working day", "ur": "کام کے بعد کا وقت" },
+        { "de": "der Haushalt", "en": "housework", "ur": "گھر کا کام" },
+        { "de": "aufräumen", "en": "to tidy up", "ur": "چیزیں سمیٹنا" },
+        { "de": "müde", "en": "tired", "ur": "تھکا ہوا" },
+        { "de": "normalerweise", "en": "usually", "ur": "عام طور پر" },
+        { "de": "meistens", "en": "mostly", "ur": "زیادہ تر" },
+        { "de": "ab und zu", "en": "now and then", "ur": "کبھی کبھار" }
+      ],
+      "sentences": [
+        { "de": "Normalerweise stehe ich um sieben Uhr auf.", "en": "I usually get up at seven.", "ur": "میں عام طور پر سات بجے اٹھتا ہوں۔" },
+        { "de": "Ich bin kein Morgenmensch.", "en": "I'm not a morning person.", "ur": "مجھے صبح جلدی اٹھنا اچھا نہیں لگتا۔" },
+        { "de": "Nach dem Frühstück fahre ich mit dem Bus zur Arbeit.", "en": "After breakfast I take the bus to work.", "ur": "ناشتے کے بعد میں بس سے کام پر جاتا ہوں۔" },
+        { "de": "Mittags habe ich eine Stunde Pause.", "en": "At midday I have an hour's break.", "ur": "دوپہر کو میرا ایک گھنٹے کا وقفہ ہوتا ہے۔" },
+        { "de": "Nach dem Feierabend bin ich oft müde.", "en": "After work I'm often tired.", "ur": "کام کے بعد میں اکثر تھکا ہوا ہوتا ہوں۔" },
+        { "de": "Abends koche ich und telefoniere mit meiner Familie.", "en": "In the evening I cook and phone my family.", "ur": "شام کو میں کھانا پکاتا ہوں اور گھر والوں سے فون پر بات کرتا ہوں۔" },
+        { "de": "Am Wochenende schlafe ich lange.", "en": "At the weekend I sleep in.", "ur": "ہفتے کے آخر میں میں دیر تک سوتا ہوں۔" },
+        { "de": "Meistens gehe ich gegen elf ins Bett.", "en": "I mostly go to bed around eleven.", "ur": "میں زیادہ تر گیارہ بجے کے قریب سو جاتا ہوں۔" }
+      ],
+      "model": {
+        "de": "Ich erzähle heute über meinen Alltag. Von Montag bis Freitag stehe ich um halb sieben auf. Ehrlich gesagt bin ich kein Morgenmensch, deshalb trinke ich zuerst einen Tee. Dann dusche ich, ziehe mich an und frühstücke. Um acht fahre ich mit dem Bus zur Arbeit. Die Fahrt dauert ungefähr zwanzig Minuten. Mittags habe ich eine Stunde Pause und esse mit meinen Kollegen. Um fünf habe ich Feierabend. Danach gehe ich manchmal einkaufen. Abends koche ich, und dann telefoniere ich mit meiner Familie in Pakistan. Das ist für mich sehr wichtig. Am Wochenende ist alles anders: Ich schlafe lange, räume die Wohnung auf und treffe Freunde. Insgesamt ist mein Alltag ziemlich normal, aber ich bin zufrieden.",
+        "en": "Today I'll talk about my daily routine. From Monday to Friday I get up at half past six. Honestly, I'm not a morning person, so first I drink a tea. Then I shower, get dressed and have breakfast. At eight I take the bus to work. The ride takes about twenty minutes. At midday I have an hour's break and eat with my colleagues. At five I finish work. After that I sometimes go shopping. In the evening I cook, and then I phone my family in Pakistan. That is very important to me. At the weekend everything is different: I sleep in, tidy the flat and meet friends. All in all my daily life is fairly normal, but I'm happy."
+      }
+    },
+    {
+      "id": "familie", "emoji": "👨‍👩‍👧", "title": "Familie & Freunde", "title_en": "Family & friends", "title_ur": "خاندان اور دوست",
+      "questions": [
+        { "de": "Wie groß ist deine Familie?", "en": "How big is your family?", "ur": "تمہارا خاندان کتنا بڑا ہے؟" },
+        { "de": "Wer wohnt mit dir zusammen?", "en": "Who lives with you?", "ur": "تمہارے ساتھ کون رہتا ہے؟" },
+        { "de": "Was machen deine Eltern und Geschwister?", "en": "What do your parents and siblings do?", "ur": "تمہارے والدین اور بہن بھائی کیا کرتے ہیں؟" },
+        { "de": "Wie oft siehst du deine Familie?", "en": "How often do you see your family?", "ur": "تم اپنے گھر والوں سے کتنی بار ملتے ہو؟" },
+        { "de": "Wer ist dein bester Freund oder deine beste Freundin?", "en": "Who is your best friend?", "ur": "تمہارا سب سے اچھا دوست کون ہے؟" },
+        { "de": "Was macht ihr zusammen?", "en": "What do you do together?", "ur": "تم لوگ مل کر کیا کرتے ہو؟" }
+      ],
+      "words": [
+        { "de": "die Eltern", "en": "parents", "ur": "والدین" },
+        { "de": "die Geschwister", "en": "siblings", "ur": "بہن بھائی" },
+        { "de": "der Onkel", "en": "uncle", "ur": "چچا / ماموں" },
+        { "de": "die Tante", "en": "aunt", "ur": "خالہ / پھوپھی" },
+        { "de": "der Cousin", "en": "cousin (male)", "ur": "کزن" },
+        { "de": "die Großeltern", "en": "grandparents", "ur": "دادا دادی / نانا نانی" },
+        { "de": "verheiratet", "en": "married", "ur": "شادی شدہ" },
+        { "de": "ledig", "en": "single", "ur": "غیر شادی شدہ" },
+        { "de": "sich verstehen mit", "en": "to get on with", "ur": "کسی سے اچھی بننا" },
+        { "de": "sich kümmern um", "en": "to take care of", "ur": "خیال رکھنا" },
+        { "de": "zusammen", "en": "together", "ur": "اکٹھے" },
+        { "de": "der Kontakt", "en": "contact", "ur": "رابطہ" }
+      ],
+      "sentences": [
+        { "de": "Ich habe zwei Brüder und eine Schwester.", "en": "I have two brothers and a sister.", "ur": "میرے دو بھائی اور ایک بہن ہے۔" },
+        { "de": "Mein älterer Bruder ist verheiratet und hat zwei Kinder.", "en": "My older brother is married and has two children.", "ur": "میرا بڑا بھائی شادی شدہ ہے اور اس کے دو بچے ہیں۔" },
+        { "de": "Ich verstehe mich sehr gut mit meiner Schwester.", "en": "I get on very well with my sister.", "ur": "میری اپنی بہن سے بہت اچھی بنتی ہے۔" },
+        { "de": "In Pakistan wohnen oft drei Generationen zusammen.", "en": "In Pakistan three generations often live together.", "ur": "پاکستان میں اکثر تین نسلیں اکٹھی رہتی ہیں۔" },
+        { "de": "Ich sehe meine Eltern leider nur einmal im Jahr.", "en": "Unfortunately I only see my parents once a year.", "ur": "افسوس کہ میں اپنے والدین سے سال میں صرف ایک بار ملتا ہوں۔" },
+        { "de": "Wir telefonieren fast jeden Tag per Video.", "en": "We video-call almost every day.", "ur": "ہم تقریباً ہر روز ویڈیو کال کرتے ہیں۔" },
+        { "de": "Meinen besten Freund kenne ich seit der Schule.", "en": "I've known my best friend since school.", "ur": "میں اپنے سب سے اچھے دوست کو اسکول کے زمانے سے جانتا ہوں۔" },
+        { "de": "Auf meine Freunde kann ich mich immer verlassen.", "en": "I can always rely on my friends.", "ur": "میں ہمیشہ اپنے دوستوں پر بھروسہ کر سکتا ہوں۔" }
+      ],
+      "model": {
+        "de": "Meine Familie ist ziemlich groß. Ich habe zwei Brüder und eine Schwester. Mein älterer Bruder ist verheiratet und hat zwei kleine Kinder. Meine Schwester studiert Medizin in Lahore. Mein Vater ist Lehrer, und meine Mutter kümmert sich um das Haus. In Pakistan wohnen oft drei Generationen zusammen, auch bei uns: Meine Großmutter wohnt bei meinen Eltern. Ich finde das schön, weil man nie allein ist. Leider sehe ich meine Familie nicht so oft. Aber wir telefonieren fast jeden Tag per Video. Mein bester Freund heißt Ali. Ich kenne ihn seit der Schule. Wir gehen zusammen essen, spielen Cricket oder reden einfach stundenlang. Für mich sind Familie und Freunde das Wichtigste im Leben.",
+        "en": "My family is quite big. I have two brothers and a sister. My older brother is married and has two small children. My sister studies medicine in Lahore. My father is a teacher, and my mother looks after the house. In Pakistan three generations often live together, and so do we: my grandmother lives with my parents. I think that's nice because you're never alone. Unfortunately I don't see my family very often. But we video-call almost every day. My best friend is called Ali. I've known him since school. We go out to eat together, play cricket or just talk for hours. For me family and friends are the most important thing in life."
+      }
+    },
+    {
+      "id": "wohnen", "emoji": "🏠", "title": "Wohnen", "title_en": "Where I live", "title_ur": "رہائش",
+      "questions": [
+        { "de": "Wohnst du in einem Haus oder in einer Wohnung?", "en": "Do you live in a house or a flat?", "ur": "تم گھر میں رہتے ہو یا فلیٹ میں؟" },
+        { "de": "Wie viele Zimmer hat deine Wohnung?", "en": "How many rooms does your flat have?", "ur": "تمہارے فلیٹ میں کتنے کمرے ہیں؟" },
+        { "de": "Was gefällt dir an deiner Wohnung, was nicht?", "en": "What do you like and dislike about your flat?", "ur": "تمہیں اپنے فلیٹ میں کیا پسند ہے اور کیا نہیں؟" },
+        { "de": "Wie sind deine Nachbarn?", "en": "What are your neighbours like?", "ur": "تمہارے پڑوسی کیسے ہیں؟" },
+        { "de": "Was gibt es in deiner Nähe?", "en": "What is there near you?", "ur": "تمہارے آس پاس کیا کیا ہے؟" },
+        { "de": "Wie möchtest du in Zukunft wohnen?", "en": "How would you like to live in the future?", "ur": "تم مستقبل میں کیسے رہنا چاہتے ہو؟" }
+      ],
+      "words": [
+        { "de": "die Wohnung", "en": "flat", "ur": "فلیٹ" },
+        { "de": "die Miete", "en": "rent", "ur": "کرایہ" },
+        { "de": "der Vermieter", "en": "landlord", "ur": "مالک مکان" },
+        { "de": "der Nachbar", "en": "neighbour", "ur": "پڑوسی" },
+        { "de": "der Stock", "en": "floor (storey)", "ur": "منزل" },
+        { "de": "der Balkon", "en": "balcony", "ur": "بالکونی" },
+        { "de": "hell", "en": "bright", "ur": "روشن" },
+        { "de": "ruhig", "en": "quiet", "ur": "پُرسکون" },
+        { "de": "umziehen", "en": "to move house", "ur": "گھر بدلنا" },
+        { "de": "die WG", "en": "shared flat", "ur": "مشترکہ فلیٹ" },
+        { "de": "die Nebenkosten", "en": "bills on top of rent", "ur": "بجلی پانی وغیرہ کا خرچ" },
+        { "de": "in der Nähe", "en": "nearby", "ur": "قریب" }
+      ],
+      "sentences": [
+        { "de": "Ich wohne in einer kleinen Wohnung im dritten Stock.", "en": "I live in a small flat on the third floor.", "ur": "میں تیسری منزل پر ایک چھوٹے فلیٹ میں رہتا ہوں۔" },
+        { "de": "Die Wohnung hat zwei Zimmer, eine Küche und ein Bad.", "en": "The flat has two rooms, a kitchen and a bathroom.", "ur": "فلیٹ میں دو کمرے، ایک باورچی خانہ اور ایک غسل خانہ ہے۔" },
+        { "de": "Mir gefällt, dass die Wohnung hell und ruhig ist.", "en": "I like that the flat is bright and quiet.", "ur": "مجھے پسند ہے کہ فلیٹ روشن اور پُرسکون ہے۔" },
+        { "de": "Leider ist die Miete ziemlich hoch.", "en": "Unfortunately the rent is quite high.", "ur": "افسوس کہ کرایہ کافی زیادہ ہے۔" },
+        { "de": "Der Supermarkt ist nur fünf Minuten zu Fuß entfernt.", "en": "The supermarket is only five minutes' walk away.", "ur": "سپر مارکیٹ پیدل صرف پانچ منٹ کے فاصلے پر ہے۔" },
+        { "de": "Meine Nachbarn sind nett, aber wir sehen uns selten.", "en": "My neighbours are nice, but we rarely see each other.", "ur": "میرے پڑوسی اچھے ہیں، لیکن ہم کم ہی ملتے ہیں۔" },
+        { "de": "In Pakistan haben wir ein großes Haus mit Garten.", "en": "In Pakistan we have a big house with a garden.", "ur": "پاکستان میں ہمارا باغ والا بڑا گھر ہے۔" },
+        { "de": "Später möchte ich gern eine Wohnung mit Balkon haben.", "en": "Later I'd like to have a flat with a balcony.", "ur": "بعد میں میں بالکونی والا فلیٹ لینا چاہوں گا۔" }
+      ],
+      "model": {
+        "de": "Zurzeit wohne ich in einer kleinen Wohnung in der Stadt. Sie liegt im dritten Stock und hat zwei Zimmer, eine Küche und ein Bad. Mir gefällt, dass die Wohnung hell ist und dass es in der Nähe alles gibt: Der Supermarkt ist nur fünf Minuten entfernt, und die Bushaltestelle ist direkt vor dem Haus. Leider ist die Miete ziemlich hoch, und es gibt keinen Balkon. Meine Nachbarn sind freundlich. Wir sagen immer „Hallo“, aber wir sehen uns selten. In Pakistan ist das anders: Dort wohnt meine Familie in einem großen Haus mit Garten, und die Nachbarn besuchen sich oft. In Zukunft möchte ich gern eine größere Wohnung mit Balkon haben, vielleicht ein bisschen außerhalb der Stadt, wo es ruhiger ist.",
+        "en": "At the moment I live in a small flat in town. It's on the third floor and has two rooms, a kitchen and a bathroom. I like that the flat is bright and that everything is nearby: the supermarket is only five minutes away, and the bus stop is right in front of the house. Unfortunately the rent is quite high and there's no balcony. My neighbours are friendly. We always say hello, but we rarely see each other. In Pakistan it's different: there my family lives in a big house with a garden, and neighbours often visit each other. In the future I'd like a bigger flat with a balcony, maybe a bit outside the city where it's quieter."
+      }
+    },
+    {
+      "id": "arbeit", "emoji": "💼", "title": "Arbeit & Studium", "title_en": "Work & studies", "title_ur": "کام اور پڑھائی",
+      "questions": [
+        { "de": "Was bist du von Beruf, oder was studierst du?", "en": "What is your job, or what do you study?", "ur": "تمہارا پیشہ کیا ہے، یا تم کیا پڑھ رہے ہو؟" },
+        { "de": "Wo arbeitest du und seit wann?", "en": "Where do you work and since when?", "ur": "تم کہاں کام کرتے ہو اور کب سے؟" },
+        { "de": "Was machst du bei der Arbeit genau?", "en": "What exactly do you do at work?", "ur": "تم کام پر بالکل کیا کرتے ہو؟" },
+        { "de": "Was gefällt dir an deiner Arbeit?", "en": "What do you like about your work?", "ur": "تمہیں اپنے کام میں کیا پسند ہے؟" },
+        { "de": "Wie sind deine Kollegen?", "en": "What are your colleagues like?", "ur": "تمہارے ساتھی کیسے ہیں؟" },
+        { "de": "Was ist dein Traumberuf?", "en": "What is your dream job?", "ur": "تمہارا خوابوں کا پیشہ کون سا ہے؟" }
+      ],
+      "words": [
+        { "de": "der Beruf", "en": "profession", "ur": "پیشہ" },
+        { "de": "die Firma", "en": "company", "ur": "کمپنی" },
+        { "de": "der Kollege", "en": "colleague", "ur": "ساتھی کارکن" },
+        { "de": "der Chef", "en": "boss", "ur": "باس" },
+        { "de": "das Gehalt", "en": "salary", "ur": "تنخواہ" },
+        { "de": "die Erfahrung", "en": "experience", "ur": "تجربہ" },
+        { "de": "die Bewerbung", "en": "job application", "ur": "ملازمت کی درخواست" },
+        { "de": "das Vorstellungsgespräch", "en": "job interview", "ur": "انٹرویو" },
+        { "de": "die Ausbildung", "en": "vocational training", "ur": "پیشہ ورانہ تربیت" },
+        { "de": "die Überstunden", "en": "overtime", "ur": "اوور ٹائم" },
+        { "de": "verdienen", "en": "to earn", "ur": "کمانا" },
+        { "de": "anstrengend", "en": "tiring", "ur": "تھکا دینے والا" }
+      ],
+      "sentences": [
+        { "de": "Ich arbeite seit drei Jahren als Softwareentwickler.", "en": "I've been working as a software developer for three years.", "ur": "میں تین سال سے سافٹ ویئر ڈویلپر کے طور پر کام کر رہا ہوں۔" },
+        { "de": "Ich arbeite Vollzeit, von neun bis fünf.", "en": "I work full-time, from nine to five.", "ur": "میں کل وقتی کام کرتا ہوں، نو سے پانچ بجے تک۔" },
+        { "de": "Meine Arbeit ist interessant, aber manchmal anstrengend.", "en": "My work is interesting but sometimes tiring.", "ur": "میرا کام دلچسپ ہے، لیکن کبھی کبھی تھکا دیتا ہے۔" },
+        { "de": "Am meisten gefällt mir, dass ich viel Neues lerne.", "en": "What I like most is that I learn a lot of new things.", "ur": "مجھے سب سے زیادہ یہ پسند ہے کہ میں بہت کچھ نیا سیکھتا ہوں۔" },
+        { "de": "Mit meinen Kollegen verstehe ich mich gut.", "en": "I get on well with my colleagues.", "ur": "میری اپنے ساتھیوں سے اچھی بنتی ہے۔" },
+        { "de": "Ich muss oft Überstunden machen.", "en": "I often have to work overtime.", "ur": "مجھے اکثر اوور ٹائم کرنا پڑتا ہے۔" },
+        { "de": "Ich habe mich bei einer Firma in Deutschland beworben.", "en": "I've applied to a company in Germany.", "ur": "میں نے جرمنی کی ایک کمپنی میں درخواست دی ہے۔" },
+        { "de": "Mein Traum ist es, später eine eigene Firma zu haben.", "en": "My dream is to have my own company later.", "ur": "میرا خواب ہے کہ بعد میں میری اپنی کمپنی ہو۔" }
+      ],
+      "model": {
+        "de": "Ich arbeite seit drei Jahren als Softwareentwickler in einer Firma in Lahore. Ich arbeite Vollzeit, normalerweise von neun bis fünf. Bei der Arbeit schreibe ich Programme, teste Apps und spreche viel mit Kunden. Meine Arbeit ist interessant, weil ich jeden Tag etwas Neues lerne. Manchmal ist sie aber auch anstrengend, besonders wenn wir Überstunden machen müssen. Mit meinen Kollegen verstehe ich mich sehr gut. Mittags essen wir oft zusammen und machen Witze. Mein Chef ist streng, aber fair. Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte. Ich habe mich schon bei zwei Firmen beworben. Mein Traum ist es, später vielleicht eine eigene Firma zu haben.",
+        "en": "I've been working as a software developer at a company in Lahore for three years. I work full-time, usually from nine to five. At work I write programs, test apps and talk a lot with customers. My work is interesting because I learn something new every day. But sometimes it's tiring too, especially when we have to work overtime. I get on very well with my colleagues. We often eat lunch together and joke around. My boss is strict but fair. I'm learning German because I want to work in Germany. I've already applied to two companies. My dream is maybe to have my own company later."
+      }
+    },
+    {
+      "id": "freizeit", "emoji": "⚽", "title": "Freizeit & Hobbys", "title_en": "Free time & hobbies", "title_ur": "فارغ وقت اور مشاغل",
+      "questions": [
+        { "de": "Was machst du gern in deiner Freizeit?", "en": "What do you like doing in your free time?", "ur": "تم فارغ وقت میں کیا کرنا پسند کرتے ہو؟" },
+        { "de": "Wie oft machst du Sport?", "en": "How often do you do sport?", "ur": "تم کتنی بار ورزش کرتے ہو؟" },
+        { "de": "Seit wann hast du dieses Hobby?", "en": "Since when have you had this hobby?", "ur": "یہ شوق تمہیں کب سے ہے؟" },
+        { "de": "Was hast du letztes Wochenende gemacht?", "en": "What did you do last weekend?", "ur": "تم نے پچھلے ہفتے کے آخر میں کیا کیا؟" },
+        { "de": "Machst du deine Hobbys allein oder mit anderen?", "en": "Do you do your hobbies alone or with others?", "ur": "تم اپنے مشاغل اکیلے کرتے ہو یا دوسروں کے ساتھ؟" },
+        { "de": "Welches Hobby möchtest du noch lernen?", "en": "Which hobby would you still like to learn?", "ur": "تم کون سا نیا شوق سیکھنا چاہتے ہو؟" }
+      ],
+      "words": [
+        { "de": "das Hobby", "en": "hobby", "ur": "شوق" },
+        { "de": "die Freizeit", "en": "free time", "ur": "فارغ وقت" },
+        { "de": "spazieren gehen", "en": "to go for a walk", "ur": "سیر کرنا" },
+        { "de": "joggen", "en": "to jog", "ur": "دوڑ لگانا" },
+        { "de": "das Fitnessstudio", "en": "gym", "ur": "جم" },
+        { "de": "der Verein", "en": "club", "ur": "کلب" },
+        { "de": "die Mannschaft", "en": "team", "ur": "ٹیم" },
+        { "de": "zeichnen", "en": "to draw", "ur": "ڈرائنگ کرنا" },
+        { "de": "sich treffen", "en": "to meet up", "ur": "ملنا" },
+        { "de": "sich ausruhen", "en": "to relax, rest", "ur": "آرام کرنا" },
+        { "de": "Spaß machen", "en": "to be fun", "ur": "مزہ آنا" },
+        { "de": "grillen", "en": "to have a barbecue", "ur": "باربی کیو کرنا" }
+      ],
+      "sentences": [
+        { "de": "In meiner Freizeit spiele ich gern Cricket.", "en": "In my free time I like playing cricket.", "ur": "فارغ وقت میں مجھے کرکٹ کھیلنا پسند ہے۔" },
+        { "de": "Ich gehe zweimal pro Woche ins Fitnessstudio.", "en": "I go to the gym twice a week.", "ur": "میں ہفتے میں دو بار جم جاتا ہوں۔" },
+        { "de": "Das Hobby habe ich schon als Kind angefangen.", "en": "I started this hobby as a child.", "ur": "یہ شوق میں نے بچپن میں ہی شروع کیا تھا۔" },
+        { "de": "Am Wochenende treffe ich mich oft mit Freunden.", "en": "At the weekend I often meet friends.", "ur": "ہفتے کے آخر میں میں اکثر دوستوں سے ملتا ہوں۔" },
+        { "de": "Letzten Sonntag waren wir im Park und haben gegrillt.", "en": "Last Sunday we were in the park and had a barbecue.", "ur": "پچھلے اتوار ہم پارک میں تھے اور ہم نے باربی کیو کیا۔" },
+        { "de": "Sport macht mir Spaß, und danach fühle ich mich gut.", "en": "Sport is fun, and afterwards I feel good.", "ur": "مجھے کھیل میں مزہ آتا ہے، اور اس کے بعد میں اچھا محسوس کرتا ہوں۔" },
+        { "de": "Leider habe ich unter der Woche wenig Zeit für Hobbys.", "en": "Unfortunately I have little time for hobbies during the week.", "ur": "افسوس کہ ہفتے کے دنوں میں میرے پاس مشاغل کے لیے کم وقت ہوتا ہے۔" },
+        { "de": "Ich möchte unbedingt schwimmen lernen.", "en": "I really want to learn to swim.", "ur": "میں ہر صورت تیرنا سیکھنا چاہتا ہوں۔" }
+      ],
+      "model": {
+        "de": "In meiner Freizeit mache ich gern Sport. Mein Lieblingssport ist Cricket. Das habe ich schon als Kind mit meinen Cousins auf der Straße gespielt. Heute spiele ich am Wochenende mit Freunden im Park. Außerdem gehe ich zweimal pro Woche ins Fitnessstudio, weil ich unter der Woche viel sitze. Wenn ich müde bin, höre ich Musik oder schaue einen Film. Letztes Wochenende war das Wetter schön. Wir sind in den Park gegangen, haben Cricket gespielt und danach zusammen gegrillt. Das hat viel Spaß gemacht! Leider habe ich unter der Woche wenig Zeit für meine Hobbys. Ich möchte unbedingt noch schwimmen lernen, denn ich kann es bis heute nicht. Vielleicht mache ich im Sommer einen Kurs.",
+        "en": "In my free time I like doing sport. My favourite sport is cricket. I already played it as a child with my cousins in the street. Today I play with friends in the park at the weekend. I also go to the gym twice a week because I sit a lot during the week. When I'm tired I listen to music or watch a film. Last weekend the weather was nice. We went to the park, played cricket and then had a barbecue together. That was a lot of fun! Unfortunately I have little time for my hobbies during the week. I really want to learn to swim, because I still can't. Maybe I'll take a course in the summer."
+      }
+    },
+    {
+      "id": "essen", "emoji": "🍛", "title": "Essen & Trinken", "title_en": "Food & drink", "title_ur": "کھانا پینا",
+      "questions": [
+        { "de": "Was ist dein Lieblingsessen?", "en": "What is your favourite food?", "ur": "تمہارا پسندیدہ کھانا کون سا ہے؟" },
+        { "de": "Kochst du selbst? Was kochst du?", "en": "Do you cook yourself? What do you cook?", "ur": "کیا تم خود کھانا پکاتے ہو؟ کیا پکاتے ہو؟" },
+        { "de": "Was isst man in deinem Land zum Frühstück?", "en": "What do people eat for breakfast in your country?", "ur": "تمہارے ملک میں ناشتے میں کیا کھایا جاتا ہے؟" },
+        { "de": "Gehst du oft ins Restaurant?", "en": "Do you often go to restaurants?", "ur": "کیا تم اکثر ریستوران جاتے ہو؟" },
+        { "de": "Was isst du nicht gern?", "en": "What don't you like eating?", "ur": "تمہیں کیا کھانا پسند نہیں؟" },
+        { "de": "Ist das Essen in Deutschland anders als bei dir zu Hause?", "en": "Is food in Germany different from home?", "ur": "کیا جرمنی کا کھانا تمہارے گھر کے کھانے سے مختلف ہے؟" }
+      ],
+      "words": [
+        { "de": "das Gericht", "en": "dish", "ur": "کھانے کی ڈش" },
+        { "de": "scharf", "en": "spicy (hot)", "ur": "تیز مرچ والا" },
+        { "de": "lecker", "en": "tasty", "ur": "مزیدار" },
+        { "de": "salzig", "en": "salty", "ur": "نمکین" },
+        { "de": "das Rezept", "en": "recipe", "ur": "ترکیب" },
+        { "de": "die Zutat", "en": "ingredient", "ur": "جزو (سامان)" },
+        { "de": "das Gewürz", "en": "spice", "ur": "مسالہ" },
+        { "de": "braten", "en": "to fry", "ur": "تلنا" },
+        { "de": "probieren", "en": "to try (taste)", "ur": "چکھنا" },
+        { "de": "satt", "en": "full (not hungry)", "ur": "پیٹ بھرا ہوا" },
+        { "de": "schmecken", "en": "to taste (good)", "ur": "ذائقہ اچھا لگنا" },
+        { "de": "das Schweinefleisch", "en": "pork", "ur": "سور کا گوشت" }
+      ],
+      "sentences": [
+        { "de": "Mein Lieblingsessen ist Biryani mit Raita.", "en": "My favourite food is biryani with raita.", "ur": "میرا پسندیدہ کھانا رائتے کے ساتھ بریانی ہے۔" },
+        { "de": "Ich koche fast jeden Abend selbst.", "en": "I cook myself almost every evening.", "ur": "میں تقریباً ہر شام خود کھانا پکاتا ہوں۔" },
+        { "de": "Das Rezept habe ich von meiner Mutter gelernt.", "en": "I learned the recipe from my mother.", "ur": "یہ ترکیب میں نے اپنی امی سے سیکھی ہے۔" },
+        { "de": "Bei uns isst man sehr scharf.", "en": "We eat very spicy food back home.", "ur": "ہمارے ہاں بہت مرچ والا کھانا کھایا جاتا ہے۔" },
+        { "de": "Für mich ist das deutsche Essen nicht scharf genug.", "en": "For me German food isn't spicy enough.", "ur": "میرے لیے جرمن کھانے میں مرچ کافی نہیں ہوتی۔" },
+        { "de": "Ich esse kein Schweinefleisch, deshalb frage ich immer nach.", "en": "I don't eat pork, so I always ask.", "ur": "میں سور کا گوشت نہیں کھاتا، اس لیے میں ہمیشہ پوچھ لیتا ہوں۔" },
+        { "de": "Am Wochenende frühstücken wir lange mit der ganzen Familie.", "en": "At the weekend we have a long breakfast with the whole family.", "ur": "ہفتے کے آخر میں ہم پورے خاندان کے ساتھ آرام سے ناشتہ کرتے ہیں۔" },
+        { "de": "Das schmeckt sehr lecker! Kannst du mir das Rezept geben?", "en": "That's delicious! Can you give me the recipe?", "ur": "یہ بہت مزیدار ہے! کیا تم مجھے اس کی ترکیب دے سکتے ہو؟" }
+      ],
+      "model": {
+        "de": "Essen ist für mich ein wichtiges Thema. Mein Lieblingsessen ist Biryani. Das Rezept habe ich von meiner Mutter gelernt, und ich koche es oft für meine Freunde. In Pakistan isst man sehr scharf und mit vielen Gewürzen. Zum Frühstück gibt es bei uns oft Paratha, Eier und natürlich Tee mit Milch. Am Wochenende frühstücken wir lange mit der ganzen Familie. Unter der Woche koche ich fast jeden Abend selbst, weil das billiger und gesünder ist. Ins Restaurant gehe ich nur ab und zu, zum Beispiel an einem Geburtstag. Ich esse kein Schweinefleisch, deshalb lese ich im Supermarkt immer die Zutaten. Das deutsche Essen schmeckt mir gut, besonders das Brot. Aber ehrlich gesagt ist es für mich oft nicht scharf genug!",
+        "en": "Food is an important topic for me. My favourite food is biryani. I learned the recipe from my mother, and I often cook it for my friends. In Pakistan people eat very spicy food with lots of spices. For breakfast we often have paratha, eggs and of course tea with milk. At the weekend we have a long breakfast with the whole family. During the week I cook almost every evening myself, because it's cheaper and healthier. I only go to restaurants now and then, for example on a birthday. I don't eat pork, so I always read the ingredients in the supermarket. I like German food, especially the bread. But honestly, it's often not spicy enough for me!"
+      }
+    },
+    {
+      "id": "einkaufen", "emoji": "🛍️", "title": "Einkaufen & Kleidung", "title_en": "Shopping & clothes", "title_ur": "خریداری اور کپڑے",
+      "questions": [
+        { "de": "Wo kaufst du normalerweise ein?", "en": "Where do you usually shop?", "ur": "تم عام طور پر کہاں سے خریداری کرتے ہو؟" },
+        { "de": "Kaufst du lieber im Geschäft oder online?", "en": "Do you prefer buying in shops or online?", "ur": "تم دکان سے خریدنا پسند کرتے ہو یا آن لائن؟" },
+        { "de": "Was hast du zuletzt gekauft?", "en": "What did you buy last?", "ur": "تم نے آخری بار کیا خریدا؟" },
+        { "de": "Was trägst du gern?", "en": "What do you like to wear?", "ur": "تمہیں کیا پہننا پسند ہے؟" },
+        { "de": "Wie viel Geld gibst du für Kleidung aus?", "en": "How much money do you spend on clothes?", "ur": "تم کپڑوں پر کتنے پیسے خرچ کرتے ہو؟" },
+        { "de": "Wie ist Einkaufen in Pakistan im Vergleich zu Deutschland?", "en": "How is shopping in Pakistan compared to Germany?", "ur": "پاکستان میں خریداری جرمنی کے مقابلے میں کیسی ہے؟" }
+      ],
+      "words": [
+        { "de": "das Geschäft", "en": "shop", "ur": "دکان" },
+        { "de": "das Angebot", "en": "special offer", "ur": "رعایتی پیشکش" },
+        { "de": "günstig", "en": "good value, cheap", "ur": "سستا" },
+        { "de": "teuer", "en": "expensive", "ur": "مہنگا" },
+        { "de": "die Größe", "en": "size", "ur": "سائز" },
+        { "de": "anprobieren", "en": "to try on", "ur": "پہن کر دیکھنا" },
+        { "de": "passen", "en": "to fit", "ur": "پورا آنا" },
+        { "de": "umtauschen", "en": "to exchange", "ur": "بدلوانا" },
+        { "de": "die Kasse", "en": "checkout", "ur": "کاؤنٹر" },
+        { "de": "bar bezahlen", "en": "to pay cash", "ur": "نقد ادا کرنا" },
+        { "de": "ausgeben", "en": "to spend (money)", "ur": "خرچ کرنا" },
+        { "de": "handeln", "en": "to bargain", "ur": "مول تول کرنا" }
+      ],
+      "sentences": [
+        { "de": "Lebensmittel kaufe ich meistens im Supermarkt.", "en": "I mostly buy groceries at the supermarket.", "ur": "کھانے پینے کی چیزیں میں زیادہ تر سپر مارکیٹ سے خریدتا ہوں۔" },
+        { "de": "Kleidung kaufe ich lieber online, weil es bequemer ist.", "en": "I prefer buying clothes online because it's easier.", "ur": "کپڑے میں آن لائن خریدنا پسند کرتا ہوں کیونکہ یہ زیادہ آسان ہے۔" },
+        { "de": "Haben Sie die Jacke auch in Größe M?", "en": "Do you have the jacket in size M too?", "ur": "کیا آپ کے پاس یہ جیکٹ سائز ایم میں بھی ہے؟" },
+        { "de": "Kann ich die Hose anprobieren?", "en": "Can I try on the trousers?", "ur": "کیا میں یہ پتلون پہن کر دیکھ سکتا ہوں؟" },
+        { "de": "Die Schuhe passen leider nicht. Kann ich sie umtauschen?", "en": "The shoes don't fit. Can I exchange them?", "ur": "جوتے پورے نہیں آئے۔ کیا میں انہیں بدلوا سکتا ہوں؟" },
+        { "de": "Letzte Woche habe ich eine warme Jacke für den Winter gekauft.", "en": "Last week I bought a warm jacket for winter.", "ur": "پچھلے ہفتے میں نے سردیوں کے لیے ایک گرم جیکٹ خریدی۔" },
+        { "de": "In Pakistan kann man auf dem Markt handeln, in Deutschland nicht.", "en": "In Pakistan you can bargain at the market, in Germany you can't.", "ur": "پاکستان میں بازار میں مول تول ہو سکتا ہے، جرمنی میں نہیں۔" },
+        { "de": "Im Alltag trage ich gern bequeme Sachen, zum Beispiel Jeans und T-Shirt.", "en": "Day to day I like wearing comfortable things, e.g. jeans and a T-shirt.", "ur": "روزمرہ میں مجھے آرام دہ کپڑے پہننا پسند ہے، مثلاً جینز اور ٹی شرٹ۔" }
+      ],
+      "model": {
+        "de": "Lebensmittel kaufe ich meistens einmal pro Woche im Supermarkt, am liebsten am Samstagmorgen, weil es dann noch nicht so voll ist. Ich achte immer auf Angebote, denn alles ist ziemlich teuer geworden. Kleidung kaufe ich lieber online. Das ist bequemer, aber manchmal passt die Größe nicht, und dann muss ich die Sachen zurückschicken. Letzte Woche habe ich eine warme Jacke für den Winter gekauft. Die war im Angebot, nur fünfzig Euro! Im Alltag trage ich gern bequeme Sachen, zum Beispiel Jeans und T-Shirt. An Festen wie Eid trage ich aber Shalwar Kamiz. In Pakistan ist Einkaufen ganz anders: Auf dem Markt ist es laut und bunt, und man kann handeln. Das vermisse ich manchmal.",
+        "en": "I mostly buy groceries once a week at the supermarket, ideally on Saturday morning, because it isn't so full then. I always look for special offers, because everything has become quite expensive. I prefer buying clothes online. It's more convenient, but sometimes the size doesn't fit and then I have to send things back. Last week I bought a warm jacket for winter. It was on offer, only fifty euros! Day to day I like wearing comfortable things, for example jeans and a T-shirt. But at festivals like Eid I wear shalwar kameez. In Pakistan shopping is completely different: the market is loud and colourful, and you can bargain. I sometimes miss that."
+      }
+    },
+    {
+      "id": "gesundheit", "emoji": "🩺", "title": "Gesundheit", "title_en": "Health", "title_ur": "صحت",
+      "questions": [
+        { "de": "Was machst du für deine Gesundheit?", "en": "What do you do for your health?", "ur": "تم اپنی صحت کے لیے کیا کرتے ہو؟" },
+        { "de": "Wann warst du das letzte Mal krank?", "en": "When were you last ill?", "ur": "تم آخری بار کب بیمار ہوئے تھے؟" },
+        { "de": "Was machst du, wenn du erkältet bist?", "en": "What do you do when you have a cold?", "ur": "جب تمہیں زکام ہوتا ہے تو تم کیا کرتے ہو؟" },
+        { "de": "Gehst du oft zum Arzt?", "en": "Do you often go to the doctor?", "ur": "کیا تم اکثر ڈاکٹر کے پاس جاتے ہو؟" },
+        { "de": "Schläfst du genug?", "en": "Do you sleep enough?", "ur": "کیا تم پوری نیند لیتے ہو؟" },
+        { "de": "Was ist ungesund, aber du machst es trotzdem?", "en": "What is unhealthy, but you do it anyway?", "ur": "کون سی چیز صحت کے لیے بری ہے لیکن تم پھر بھی کرتے ہو؟" }
+      ],
+      "words": [
+        { "de": "gesund", "en": "healthy", "ur": "صحت مند" },
+        { "de": "krank", "en": "ill", "ur": "بیمار" },
+        { "de": "erkältet sein", "en": "to have a cold", "ur": "زکام ہونا" },
+        { "de": "das Fieber", "en": "fever", "ur": "بخار" },
+        { "de": "der Husten", "en": "cough", "ur": "کھانسی" },
+        { "de": "die Kopfschmerzen", "en": "headache", "ur": "سر درد" },
+        { "de": "der Termin", "en": "appointment", "ur": "ملاقات کا وقت" },
+        { "de": "die Praxis", "en": "doctor's surgery", "ur": "کلینک" },
+        { "de": "das Rezept", "en": "prescription", "ur": "نسخہ" },
+        { "de": "die Apotheke", "en": "pharmacy", "ur": "دوا کی دکان" },
+        { "de": "die Tablette", "en": "tablet", "ur": "گولی" },
+        { "de": "der Stress", "en": "stress", "ur": "ذہنی دباؤ" }
+      ],
+      "sentences": [
+        { "de": "Ich versuche, jeden Tag eine halbe Stunde spazieren zu gehen.", "en": "I try to go for a walk for half an hour every day.", "ur": "میں کوشش کرتا ہوں کہ روز آدھا گھنٹہ سیر کروں۔" },
+        { "de": "Letzten Monat war ich eine Woche krank.", "en": "Last month I was ill for a week.", "ur": "پچھلے مہینے میں ایک ہفتہ بیمار رہا۔" },
+        { "de": "Ich hatte Fieber und starke Kopfschmerzen.", "en": "I had a fever and a bad headache.", "ur": "مجھے بخار اور شدید سر درد تھا۔" },
+        { "de": "Ich möchte einen Termin beim Arzt machen.", "en": "I'd like to make a doctor's appointment.", "ur": "میں ڈاکٹر سے ملاقات کا وقت لینا چاہتا ہوں۔" },
+        { "de": "Wenn ich erkältet bin, trinke ich viel Tee mit Ingwer und Honig.", "en": "When I have a cold, I drink lots of tea with ginger and honey.", "ur": "جب مجھے زکام ہوتا ہے تو میں ادرک اور شہد والی چائے بہت پیتا ہوں۔" },
+        { "de": "Der Arzt hat gesagt, ich soll mich ausruhen.", "en": "The doctor said I should rest.", "ur": "ڈاکٹر نے کہا کہ مجھے آرام کرنا چاہیے۔" },
+        { "de": "Ich schlafe leider zu wenig, weil ich abends lange am Handy bin.", "en": "Unfortunately I sleep too little because I'm on my phone late.", "ur": "افسوس کہ میں کم سوتا ہوں کیونکہ میں رات دیر تک موبائل پر رہتا ہوں۔" },
+        { "de": "Ich weiß, dass Süßigkeiten ungesund sind, aber ich esse sie trotzdem.", "en": "I know sweets are unhealthy, but I eat them anyway.", "ur": "مجھے معلوم ہے کہ مٹھائیاں صحت کے لیے بری ہیں، لیکن میں پھر بھی کھاتا ہوں۔" }
+      ],
+      "model": {
+        "de": "Gesundheit ist sehr wichtig, aber ehrlich gesagt lebe ich nicht immer gesund. Ich versuche, jeden Tag eine halbe Stunde spazieren zu gehen, und am Wochenende spiele ich Cricket. Ich esse viel Obst und Gemüse, aber ich liebe auch Süßigkeiten. Ich weiß, dass das ungesund ist, aber ich esse sie trotzdem! Letzten Winter war ich eine Woche krank. Ich hatte Fieber, Husten und starke Kopfschmerzen. Ich habe einen Termin beim Arzt gemacht. Der Arzt hat gesagt, ich soll viel trinken und mich ausruhen. Er hat mir auch ein Rezept gegeben, und ich habe die Tabletten in der Apotheke geholt. Wenn ich nur erkältet bin, gehe ich nicht zum Arzt. Dann trinke ich Tee mit Ingwer und Honig, wie meine Mutter es immer macht. Mein größtes Problem ist: Ich schlafe zu wenig, weil ich abends zu lange am Handy bin.",
+        "en": "Health is very important, but honestly I don't always live healthily. I try to go for a walk for half an hour every day, and at the weekend I play cricket. I eat lots of fruit and vegetables, but I also love sweets. I know that's unhealthy, but I eat them anyway! Last winter I was ill for a week. I had a fever, a cough and a bad headache. I made an appointment with the doctor. The doctor said I should drink a lot and rest. He also gave me a prescription, and I got the tablets at the pharmacy. When I only have a cold, I don't go to the doctor. Then I drink tea with ginger and honey, like my mother always does. My biggest problem is that I sleep too little because I'm on my phone too long in the evening."
+      }
+    },
+    {
+      "id": "reisen", "emoji": "✈️", "title": "Reisen & Urlaub", "title_en": "Travel & holidays", "title_ur": "سفر اور چھٹیاں",
+      "questions": [
+        { "de": "Wohin reist du gern?", "en": "Where do you like to travel?", "ur": "تمہیں کہاں سفر کرنا پسند ہے؟" },
+        { "de": "Wo warst du im letzten Urlaub?", "en": "Where were you on your last holiday?", "ur": "تم پچھلی چھٹیوں میں کہاں گئے تھے؟" },
+        { "de": "Wie bist du dorthin gekommen?", "en": "How did you get there?", "ur": "تم وہاں کیسے گئے؟" },
+        { "de": "Was hast du dort gemacht und gesehen?", "en": "What did you do and see there?", "ur": "تم نے وہاں کیا کیا اور کیا دیکھا؟" },
+        { "de": "Reist du lieber allein oder mit anderen?", "en": "Do you prefer travelling alone or with others?", "ur": "تم اکیلے سفر کرنا پسند کرتے ہو یا دوسروں کے ساتھ؟" },
+        { "de": "Wohin möchtest du unbedingt einmal reisen?", "en": "Where do you really want to travel one day?", "ur": "تم ایک بار ضرور کہاں جانا چاہتے ہو؟" }
+      ],
+      "words": [
+        { "de": "der Urlaub", "en": "holiday", "ur": "چھٹیاں" },
+        { "de": "die Reise", "en": "trip", "ur": "سفر" },
+        { "de": "der Flug", "en": "flight", "ur": "پرواز" },
+        { "de": "der Koffer", "en": "suitcase", "ur": "سوٹ کیس" },
+        { "de": "das Gepäck", "en": "luggage", "ur": "سامان" },
+        { "de": "die Unterkunft", "en": "accommodation", "ur": "ٹھہرنے کی جگہ" },
+        { "de": "buchen", "en": "to book", "ur": "بک کرنا" },
+        { "de": "die Sehenswürdigkeit", "en": "sight, attraction", "ur": "دیکھنے کی جگہ" },
+        { "de": "übernachten", "en": "to stay the night", "ur": "رات گزارنا" },
+        { "de": "die Landschaft", "en": "landscape", "ur": "قدرتی نظارہ" },
+        { "de": "unterwegs", "en": "on the way", "ur": "راستے میں" },
+        { "de": "sich erholen", "en": "to relax, recover", "ur": "تازہ دم ہونا" }
+      ],
+      "sentences": [
+        { "de": "Ich reise am liebsten in die Berge.", "en": "I like travelling to the mountains best.", "ur": "مجھے سب سے زیادہ پہاڑوں کا سفر پسند ہے۔" },
+        { "de": "Letzten Sommer war ich mit meinen Freunden im Hunza-Tal.", "en": "Last summer I was in the Hunza valley with my friends.", "ur": "پچھلی گرمیوں میں میں اپنے دوستوں کے ساتھ وادی ہنزہ گیا تھا۔" },
+        { "de": "Wir sind mit dem Auto gefahren, die Fahrt hat zwei Tage gedauert.", "en": "We went by car; the journey took two days.", "ur": "ہم گاڑی سے گئے، سفر میں دو دن لگے۔" },
+        { "de": "Wir haben in einem kleinen Hotel übernachtet.", "en": "We stayed in a small hotel.", "ur": "ہم ایک چھوٹے ہوٹل میں ٹھہرے۔" },
+        { "de": "Die Landschaft war wunderschön.", "en": "The landscape was beautiful.", "ur": "نظارے بہت خوبصورت تھے۔" },
+        { "de": "Im Urlaub möchte ich mich vor allem erholen.", "en": "On holiday I mainly want to relax.", "ur": "چھٹیوں میں میں سب سے بڑھ کر آرام کرنا چاہتا ہوں۔" },
+        { "de": "Den Flug buche ich immer früh, dann ist er billiger.", "en": "I always book the flight early, then it's cheaper.", "ur": "میں پرواز ہمیشہ جلدی بک کرتا ہوں، تب یہ سستی ہوتی ہے۔" },
+        { "de": "Ich möchte unbedingt einmal nach Berlin fahren.", "en": "I really want to go to Berlin one day.", "ur": "میں ایک بار ضرور برلن جانا چاہتا ہوں۔" }
+      ],
+      "model": {
+        "de": "Ich reise sehr gern, am liebsten in die Berge. Letzten Sommer war ich mit drei Freunden im Hunza-Tal im Norden von Pakistan. Wir sind mit dem Auto gefahren, und die Fahrt hat fast zwei Tage gedauert. Unterwegs haben wir oft angehalten, Tee getrunken und Fotos gemacht. Wir haben in einem kleinen Hotel übernachtet. Von unserem Zimmer konnten wir die Berge sehen. Die Landschaft war wunderschön, und die Leute waren sehr freundlich. Wir sind viel gewandert und haben einen See besucht. Nur das Wetter war manchmal kalt, aber das war kein Problem. Ich reise lieber mit Freunden als allein, weil es lustiger ist. Mein Traum ist, einmal durch Deutschland zu reisen. Ich möchte unbedingt Berlin und die Alpen sehen.",
+        "en": "I love travelling, most of all to the mountains. Last summer I was in the Hunza valley in the north of Pakistan with three friends. We went by car, and the drive took almost two days. On the way we often stopped, drank tea and took photos. We stayed in a small hotel. From our room we could see the mountains. The landscape was beautiful and the people were very friendly. We hiked a lot and visited a lake. Only the weather was sometimes cold, but that was no problem. I prefer travelling with friends to travelling alone, because it's more fun. My dream is to travel through Germany one day. I really want to see Berlin and the Alps."
+      }
+    },
+    {
+      "id": "wetter", "emoji": "🌦️", "title": "Wetter & Jahreszeiten", "title_en": "Weather & seasons", "title_ur": "موسم",
+      "questions": [
+        { "de": "Wie ist das Wetter heute?", "en": "What's the weather like today?", "ur": "آج موسم کیسا ہے؟" },
+        { "de": "Welche Jahreszeit magst du am liebsten? Warum?", "en": "Which season do you like best? Why?", "ur": "تمہیں کون سا موسم سب سے زیادہ پسند ہے؟ کیوں؟" },
+        { "de": "Wie ist das Wetter in deiner Heimat?", "en": "What's the weather like back home?", "ur": "تمہارے وطن میں موسم کیسا ہوتا ہے؟" },
+        { "de": "Was machst du bei schlechtem Wetter?", "en": "What do you do in bad weather?", "ur": "خراب موسم میں تم کیا کرتے ہو؟" },
+        { "de": "Was machst du gern im Sommer und was im Winter?", "en": "What do you like doing in summer and in winter?", "ur": "تم گرمیوں میں کیا کرنا پسند کرتے ہو اور سردیوں میں کیا؟" },
+        { "de": "Wie findest du das Wetter in Deutschland?", "en": "What do you think of the weather in Germany?", "ur": "تمہیں جرمنی کا موسم کیسا لگتا ہے؟" }
+      ],
+      "words": [
+        { "de": "die Jahreszeit", "en": "season", "ur": "موسم (سال کا حصہ)" },
+        { "de": "der Frühling", "en": "spring", "ur": "بہار" },
+        { "de": "der Herbst", "en": "autumn", "ur": "خزاں" },
+        { "de": "Die Sonne scheint.", "en": "The sun is shining.", "ur": "دھوپ نکلی ہوئی ہے۔" },
+        { "de": "Es regnet.", "en": "It's raining.", "ur": "بارش ہو رہی ہے۔" },
+        { "de": "Es schneit.", "en": "It's snowing.", "ur": "برف پڑ رہی ہے۔" },
+        { "de": "bewölkt", "en": "cloudy", "ur": "ابر آلود" },
+        { "de": "der Wind", "en": "wind", "ur": "ہوا" },
+        { "de": "die Hitze", "en": "heat", "ur": "سخت گرمی" },
+        { "de": "feucht", "en": "humid", "ur": "مرطوب" },
+        { "de": "der Monsun", "en": "monsoon", "ur": "برسات" },
+        { "de": "der Regenschirm", "en": "umbrella", "ur": "چھتری" }
+      ],
+      "sentences": [
+        { "de": "Heute ist es bewölkt und ein bisschen kalt.", "en": "Today it's cloudy and a bit cold.", "ur": "آج بادل ہیں اور تھوڑی سردی ہے۔" },
+        { "de": "Am liebsten mag ich den Frühling, weil alles grün wird.", "en": "I like spring best because everything turns green.", "ur": "مجھے بہار سب سے زیادہ پسند ہے کیونکہ ہر چیز ہری بھری ہو جاتی ہے۔" },
+        { "de": "Im Sommer sind es in Lahore oft über vierzig Grad.", "en": "In summer it's often over forty degrees in Lahore.", "ur": "گرمیوں میں لاہور میں اکثر چالیس ڈگری سے زیادہ ہوتا ہے۔" },
+        { "de": "Im Juli und August kommt der Monsun, dann regnet es sehr viel.", "en": "In July and August the monsoon comes, then it rains a lot.", "ur": "جولائی اور اگست میں برسات آتی ہے، تب بہت بارش ہوتی ہے۔" },
+        { "de": "Bei schlechtem Wetter bleibe ich zu Hause und schaue Filme.", "en": "In bad weather I stay home and watch films.", "ur": "خراب موسم میں میں گھر پر رہتا ہوں اور فلمیں دیکھتا ہوں۔" },
+        { "de": "Ich habe noch nie Schnee gesehen.", "en": "I've never seen snow.", "ur": "میں نے کبھی برف نہیں دیکھی۔" },
+        { "de": "Das Wetter in Deutschland ändert sich so schnell!", "en": "The weather in Germany changes so fast!", "ur": "جرمنی میں موسم بہت جلدی بدل جاتا ہے!" },
+        { "de": "Im Winter trinke ich gern heißen Tee und esse Erdnüsse.", "en": "In winter I like drinking hot tea and eating peanuts.", "ur": "سردیوں میں مجھے گرم چائے پینا اور مونگ پھلی کھانا پسند ہے۔" }
+      ],
+      "model": {
+        "de": "Heute ist das Wetter nicht so schön: Es ist bewölkt, und vielleicht regnet es später. In Pakistan ist das Wetter ganz anders als in Deutschland. Im Sommer ist es in Lahore sehr heiß, oft über vierzig Grad. Im Juli und August kommt der Monsun, und dann regnet es sehr viel. Manchmal stehen die Straßen unter Wasser. Meine Lieblingsjahreszeit ist der Winter in Pakistan, weil es nicht zu kalt ist. Dann trinken wir abends heißen Tee und essen Erdnüsse. Das ist eine schöne Tradition. Der Frühling gefällt mir auch, weil alles grün wird und es überall Blumen gibt. Bei schlechtem Wetter bleibe ich lieber zu Hause und schaue einen Film. Über das Wetter in Deutschland habe ich gehört, dass es sich sehr schnell ändert. Deshalb sagt man: Nimm immer einen Regenschirm mit!",
+        "en": "Today the weather isn't so nice: it's cloudy, and maybe it will rain later. In Pakistan the weather is completely different from Germany. In summer it's very hot in Lahore, often over forty degrees. In July and August the monsoon comes, and then it rains a lot. Sometimes the streets are under water. My favourite season is winter in Pakistan, because it isn't too cold. Then in the evenings we drink hot tea and eat peanuts. That's a nice tradition. I like spring too, because everything turns green and there are flowers everywhere. In bad weather I'd rather stay at home and watch a film. About the weather in Germany I've heard that it changes very quickly. That's why they say: always take an umbrella!"
+      }
+    },
+    {
+      "id": "feste", "emoji": "🎉", "title": "Feste & Feiern", "title_en": "Festivals & celebrations", "title_ur": "تہوار اور تقریبات",
+      "questions": [
+        { "de": "Welche Feste feiert man in deinem Land?", "en": "Which festivals are celebrated in your country?", "ur": "تمہارے ملک میں کون سے تہوار منائے جاتے ہیں؟" },
+        { "de": "Was ist dein Lieblingsfest? Warum?", "en": "What is your favourite festival? Why?", "ur": "تمہارا پسندیدہ تہوار کون سا ہے؟ کیوں؟" },
+        { "de": "Wie feierst du dieses Fest?", "en": "How do you celebrate it?", "ur": "تم یہ تہوار کیسے مناتے ہو؟" },
+        { "de": "Wie feierst du deinen Geburtstag?", "en": "How do you celebrate your birthday?", "ur": "تم اپنی سالگرہ کیسے مناتے ہو؟" },
+        { "de": "Warst du schon einmal auf einer Hochzeit? Erzähl!", "en": "Have you been to a wedding? Tell me about it!", "ur": "کیا تم کبھی کسی شادی میں گئے ہو؟ بتاؤ!" },
+        { "de": "Welche deutschen Feste kennst du?", "en": "Which German festivals do you know?", "ur": "تم کون سے جرمن تہوار جانتے ہو؟" }
+      ],
+      "words": [
+        { "de": "das Fest", "en": "festival, party", "ur": "تہوار" },
+        { "de": "feiern", "en": "to celebrate", "ur": "منانا" },
+        { "de": "die Hochzeit", "en": "wedding", "ur": "شادی" },
+        { "de": "das Geschenk", "en": "present", "ur": "تحفہ" },
+        { "de": "einladen", "en": "to invite", "ur": "دعوت دینا" },
+        { "de": "die Einladung", "en": "invitation", "ur": "دعوت نامہ" },
+        { "de": "der Gast", "en": "guest", "ur": "مہمان" },
+        { "de": "die Verwandten", "en": "relatives", "ur": "رشتہ دار" },
+        { "de": "gratulieren", "en": "to congratulate", "ur": "مبارک باد دینا" },
+        { "de": "der Feiertag", "en": "public holiday", "ur": "عام تعطیل" },
+        { "de": "die Tradition", "en": "tradition", "ur": "روایت" },
+        { "de": "Herzlichen Glückwunsch!", "en": "Congratulations!", "ur": "بہت بہت مبارک ہو!" }
+      ],
+      "sentences": [
+        { "de": "Mein Lieblingsfest ist Eid, weil die ganze Familie zusammenkommt.", "en": "My favourite festival is Eid because the whole family gets together.", "ur": "میرا پسندیدہ تہوار عید ہے کیونکہ پورا خاندان اکٹھا ہوتا ہے۔" },
+        { "de": "An Eid ziehen wir neue Kleider an und besuchen Verwandte.", "en": "On Eid we put on new clothes and visit relatives.", "ur": "عید پر ہم نئے کپڑے پہنتے ہیں اور رشتہ داروں سے ملنے جاتے ہیں۔" },
+        { "de": "Die Kinder bekommen Geld, das heißt bei uns „Eidi“.", "en": "The children get money; we call it Eidi.", "ur": "بچوں کو پیسے ملتے ہیں، ہمارے ہاں اسے عیدی کہتے ہیں۔" },
+        { "de": "Eine pakistanische Hochzeit dauert oft drei Tage.", "en": "A Pakistani wedding often lasts three days.", "ur": "پاکستانی شادی اکثر تین دن چلتی ہے۔" },
+        { "de": "Zu meinem Geburtstag lade ich ein paar Freunde zum Essen ein.", "en": "For my birthday I invite a few friends for a meal.", "ur": "اپنی سالگرہ پر میں کچھ دوستوں کو کھانے پر بلاتا ہوں۔" },
+        { "de": "Vielen Dank für die Einladung! Ich komme gern.", "en": "Thanks for the invitation! I'd love to come.", "ur": "دعوت کا بہت شکریہ! میں ضرور آؤں گا۔" },
+        { "de": "Was kann ich mitbringen?", "en": "What can I bring?", "ur": "میں کیا لے کر آؤں؟" },
+        { "de": "In Deutschland feiert man im Dezember Weihnachten.", "en": "In Germany people celebrate Christmas in December.", "ur": "جرمنی میں دسمبر میں کرسمس منایا جاتا ہے۔" }
+      ],
+      "model": {
+        "de": "Mein Lieblingsfest ist Eid. An Eid steht die ganze Familie früh auf, und die Männer gehen zum Gebet in die Moschee. Danach ziehen alle neue Kleider an, und wir besuchen unsere Verwandten. Es gibt viel leckeres Essen, zum Beispiel Sheer Khurma, eine süße Speise mit Milch. Die Kinder freuen sich besonders, denn sie bekommen Geld. Das heißt bei uns „Eidi“. Ich mag Eid, weil die ganze Familie zusammenkommt. Letztes Jahr war ich auch auf der Hochzeit von meinem Cousin. Eine pakistanische Hochzeit dauert oft drei Tage, mit Musik, Tanz und vielen Gästen. Das war anstrengend, aber sehr schön! Meinen Geburtstag feiere ich nicht so groß. Ich lade ein paar Freunde zum Essen ein. Von den deutschen Festen kenne ich Weihnachten und Silvester.",
+        "en": "My favourite festival is Eid. On Eid the whole family gets up early, and the men go to the mosque to pray. After that everyone puts on new clothes and we visit our relatives. There's lots of delicious food, for example sheer khurma, a sweet dish with milk. The children are especially happy because they get money. We call it Eidi. I like Eid because the whole family gets together. Last year I also went to my cousin's wedding. A Pakistani wedding often lasts three days, with music, dancing and lots of guests. It was tiring but very nice! I don't celebrate my birthday in a big way. I invite a few friends for a meal. Of the German festivals I know Christmas and New Year's Eve."
+      }
+    },
+    {
+      "id": "stadt", "emoji": "🚌", "title": "Stadt & Verkehr", "title_en": "Town & transport", "title_ur": "شہر اور آمد و رفت",
+      "questions": [
+        { "de": "Wohnst du lieber in der Stadt oder auf dem Land?", "en": "Do you prefer living in the city or the countryside?", "ur": "تم شہر میں رہنا پسند کرتے ہو یا دیہات میں؟" },
+        { "de": "Wie heißt deine Stadt und was gibt es dort?", "en": "What's your town called and what is there?", "ur": "تمہارے شہر کا نام کیا ہے اور وہاں کیا کیا ہے؟" },
+        { "de": "Welches Verkehrsmittel benutzt du am meisten?", "en": "Which transport do you use most?", "ur": "تم سب سے زیادہ کون سی سواری استعمال کرتے ہو؟" },
+        { "de": "Was gefällt dir in deiner Stadt nicht?", "en": "What don't you like about your town?", "ur": "تمہیں اپنے شہر میں کیا پسند نہیں؟" },
+        { "de": "Was kann ein Tourist in deiner Stadt machen?", "en": "What can a tourist do in your town?", "ur": "ایک سیاح تمہارے شہر میں کیا کر سکتا ہے؟" },
+        { "de": "Wie erklärst du jemandem den Weg zum Bahnhof?", "en": "How would you explain the way to the station?", "ur": "تم کسی کو اسٹیشن کا راستہ کیسے بتاؤ گے؟" }
+      ],
+      "words": [
+        { "de": "die Großstadt", "en": "big city", "ur": "بڑا شہر" },
+        { "de": "das Dorf", "en": "village", "ur": "گاؤں" },
+        { "de": "der Verkehr", "en": "traffic", "ur": "ٹریفک" },
+        { "de": "der Stau", "en": "traffic jam", "ur": "ٹریفک جام" },
+        { "de": "die Haltestelle", "en": "stop (bus/tram)", "ur": "اسٹاپ" },
+        { "de": "umsteigen", "en": "to change (trains/buses)", "ur": "سواری بدلنا" },
+        { "de": "die Fahrkarte", "en": "ticket", "ur": "ٹکٹ" },
+        { "de": "geradeaus", "en": "straight on", "ur": "سیدھا" },
+        { "de": "abbiegen", "en": "to turn", "ur": "مڑنا" },
+        { "de": "die Ampel", "en": "traffic lights", "ur": "ٹریفک سگنل" },
+        { "de": "die Altstadt", "en": "old town", "ur": "پرانا شہر" },
+        { "de": "die Luft", "en": "air", "ur": "ہوا" }
+      ],
+      "sentences": [
+        { "de": "Ich komme aus Lahore, das ist eine Großstadt mit über zehn Millionen Menschen.", "en": "I'm from Lahore, a big city with over ten million people.", "ur": "میں لاہور سے ہوں، یہ ایک کروڑ سے زیادہ آبادی والا بڑا شہر ہے۔" },
+        { "de": "In der Altstadt gibt es alte Moscheen und viele kleine Märkte.", "en": "In the old town there are old mosques and many small markets.", "ur": "پرانے شہر میں پرانی مسجدیں اور بہت سے چھوٹے بازار ہیں۔" },
+        { "de": "Ich fahre meistens mit dem Bus, manchmal mit dem Motorrad.", "en": "I mostly go by bus, sometimes by motorbike.", "ur": "میں زیادہ تر بس سے جاتا ہوں، کبھی کبھی موٹر سائیکل سے۔" },
+        { "de": "Morgens gibt es immer Stau.", "en": "There's always a traffic jam in the morning.", "ur": "صبح کے وقت ہمیشہ ٹریفک جام ہوتا ہے۔" },
+        { "de": "Mir gefällt nicht, dass die Luft so schlecht ist.", "en": "I don't like that the air is so bad.", "ur": "مجھے یہ پسند نہیں کہ ہوا اتنی خراب ہے۔" },
+        { "de": "Gehen Sie hier geradeaus und dann an der Ampel links.", "en": "Go straight on here and then left at the lights.", "ur": "یہاں سے سیدھے جائیں اور پھر سگنل سے بائیں مڑیں۔" },
+        { "de": "Sie müssen am Hauptbahnhof umsteigen.", "en": "You have to change at the main station.", "ur": "آپ کو مرکزی اسٹیشن پر گاڑی بدلنی ہوگی۔" },
+        { "de": "Auf dem Land ist es ruhiger, aber man braucht ein Auto.", "en": "In the countryside it's quieter, but you need a car.", "ur": "دیہات میں سکون زیادہ ہے، لیکن گاڑی کی ضرورت پڑتی ہے۔" }
+      ],
+      "model": {
+        "de": "Ich komme aus Lahore. Das ist eine Großstadt im Osten von Pakistan mit über zehn Millionen Menschen. Lahore ist bekannt für sein Essen und seine Geschichte. In der Altstadt gibt es alte Moscheen, zum Beispiel die Badshahi-Moschee, und viele kleine Märkte. Ein Tourist kann dort einen ganzen Tag verbringen. Was mir nicht gefällt, ist der Verkehr. Morgens gibt es immer Stau, und die Luft ist im Winter oft sehr schlecht. Ich fahre meistens mit dem Bus, manchmal auch mit dem Motorrad von meinem Bruder. In Deutschland finde ich die öffentlichen Verkehrsmittel sehr praktisch, aber die Fahrkarten sind teuer. Ich wohne lieber in der Stadt, weil es dort mehr Möglichkeiten gibt. Aber später möchte ich vielleicht auf dem Land wohnen, wo es ruhig ist.",
+        "en": "I'm from Lahore. It's a big city in the east of Pakistan with over ten million people. Lahore is known for its food and its history. In the old town there are old mosques, for example the Badshahi Mosque, and many small markets. A tourist can spend a whole day there. What I don't like is the traffic. There's always a jam in the morning, and in winter the air is often very bad. I mostly go by bus, sometimes on my brother's motorbike. In Germany I find public transport very practical, but tickets are expensive. I prefer living in the city because there are more opportunities. But later I might like to live in the countryside where it's quiet."
+      }
+    },
+    {
+      "id": "kindheit", "emoji": "🧒", "title": "Kindheit & Schule", "title_en": "Childhood & school", "title_ur": "بچپن اور اسکول",
+      "questions": [
+        { "de": "Wo bist du aufgewachsen?", "en": "Where did you grow up?", "ur": "تم کہاں پلے بڑھے؟" },
+        { "de": "Was hast du als Kind gern gespielt?", "en": "What did you like to play as a child?", "ur": "بچپن میں تم کیا کھیلنا پسند کرتے تھے؟" },
+        { "de": "Wie war deine Schule?", "en": "What was your school like?", "ur": "تمہارا اسکول کیسا تھا؟" },
+        { "de": "Was war dein Lieblingsfach?", "en": "What was your favourite subject?", "ur": "تمہارا پسندیدہ مضمون کون سا تھا؟" },
+        { "de": "Was wolltest du als Kind werden?", "en": "What did you want to be as a child?", "ur": "بچپن میں تم کیا بننا چاہتے تھے؟" },
+        { "de": "Was ist heute anders als in deiner Kindheit?", "en": "What is different today from your childhood?", "ur": "آج کیا چیز تمہارے بچپن سے مختلف ہے؟" }
+      ],
+      "words": [
+        { "de": "die Kindheit", "en": "childhood", "ur": "بچپن" },
+        { "de": "aufwachsen", "en": "to grow up", "ur": "پلنا بڑھنا" },
+        { "de": "das Lieblingsfach", "en": "favourite subject", "ur": "پسندیدہ مضمون" },
+        { "de": "die Note", "en": "mark, grade", "ur": "نمبر" },
+        { "de": "die Prüfung", "en": "exam", "ur": "امتحان" },
+        { "de": "streng", "en": "strict", "ur": "سخت" },
+        { "de": "die Hausaufgaben", "en": "homework", "ur": "گھر کا کام" },
+        { "de": "die Ferien", "en": "school holidays", "ur": "اسکول کی چھٹیاں" },
+        { "de": "damals", "en": "back then", "ur": "اُس وقت" },
+        { "de": "früher", "en": "in the past", "ur": "پہلے" },
+        { "de": "sich erinnern an", "en": "to remember", "ur": "یاد کرنا" },
+        { "de": "frech", "en": "cheeky", "ur": "شرارتی" }
+      ],
+      "sentences": [
+        { "de": "Ich bin in einem kleinen Dorf bei Multan aufgewachsen.", "en": "I grew up in a small village near Multan.", "ur": "میں ملتان کے قریب ایک چھوٹے گاؤں میں پلا بڑھا۔" },
+        { "de": "Als Kind habe ich jeden Tag mit meinen Cousins draußen gespielt.", "en": "As a child I played outside with my cousins every day.", "ur": "بچپن میں میں روز اپنے کزنز کے ساتھ باہر کھیلتا تھا۔" },
+        { "de": "Damals hatten wir kein Handy und keinen Computer.", "en": "Back then we had no mobile and no computer.", "ur": "اُس وقت ہمارے پاس نہ موبائل تھا نہ کمپیوٹر۔" },
+        { "de": "Mein Lieblingsfach war Mathe, aber Englisch fand ich schwer.", "en": "My favourite subject was maths, but I found English hard.", "ur": "میرا پسندیدہ مضمون ریاضی تھا، لیکن انگریزی مجھے مشکل لگتی تھی۔" },
+        { "de": "Unsere Lehrer waren sehr streng.", "en": "Our teachers were very strict.", "ur": "ہمارے استاد بہت سخت تھے۔" },
+        { "de": "Als Kind wollte ich Pilot werden.", "en": "As a child I wanted to be a pilot.", "ur": "بچپن میں میں پائلٹ بننا چاہتا تھا۔" },
+        { "de": "Ich erinnere mich gern an die Sommerferien bei meiner Oma.", "en": "I love remembering the summer holidays at my grandma's.", "ur": "مجھے نانی کے ہاں گزاری گرمیوں کی چھٹیاں یاد کر کے اچھا لگتا ہے۔" },
+        { "de": "Heute spielen die Kinder mehr am Handy als draußen.", "en": "Today children play more on their phones than outside.", "ur": "آج کل بچے باہر سے زیادہ موبائل پر کھیلتے ہیں۔" }
+      ],
+      "model": {
+        "de": "Ich bin in einem kleinen Dorf bei Multan aufgewachsen. Meine Kindheit war sehr schön und einfach. Damals hatten wir kein Handy und keinen Computer, deshalb haben wir jeden Tag draußen gespielt, meistens Cricket oder Verstecken. In den Sommerferien war ich immer bei meiner Oma. Daran erinnere ich mich sehr gern. Meine Schule war nicht groß, und die Lehrer waren ziemlich streng. Wir hatten viele Hausaufgaben und viele Prüfungen. Mein Lieblingsfach war Mathe, weil ich gern mit Zahlen arbeite. Englisch fand ich am Anfang schwer. Als Kind wollte ich Pilot werden, denn ich fand Flugzeuge toll. Heute ist vieles anders: Die Kinder spielen mehr am Handy als draußen. Das finde ich ein bisschen schade.",
+        "en": "I grew up in a small village near Multan. My childhood was very nice and simple. Back then we had no mobile and no computer, so we played outside every day, mostly cricket or hide-and-seek. In the summer holidays I was always at my grandma's. I love remembering that. My school wasn't big, and the teachers were quite strict. We had lots of homework and lots of exams. My favourite subject was maths because I like working with numbers. At first I found English hard. As a child I wanted to be a pilot, because I thought planes were great. Today a lot is different: children play more on their phones than outside. I find that a bit sad."
+      }
+    },
+    {
+      "id": "medien", "emoji": "📱", "title": "Handy & Internet", "title_en": "Phone & internet", "title_ur": "موبائل اور انٹرنیٹ",
+      "questions": [
+        { "de": "Wie lange bist du jeden Tag am Handy?", "en": "How long are you on your phone every day?", "ur": "تم روزانہ کتنی دیر موبائل پر رہتے ہو؟" },
+        { "de": "Wofür benutzt du das Internet?", "en": "What do you use the internet for?", "ur": "تم انٹرنیٹ کس کام کے لیے استعمال کرتے ہو؟" },
+        { "de": "Welche Apps benutzt du am meisten?", "en": "Which apps do you use most?", "ur": "تم کون سی ایپس سب سے زیادہ استعمال کرتے ہو؟" },
+        { "de": "Liest du lieber Bücher oder schaust du lieber Videos?", "en": "Do you prefer reading books or watching videos?", "ur": "تم کتابیں پڑھنا پسند کرتے ہو یا ویڈیوز دیکھنا؟" },
+        { "de": "Was ist gut und was ist schlecht an sozialen Medien?", "en": "What's good and bad about social media?", "ur": "سوشل میڈیا میں کیا اچھا ہے اور کیا برا؟" },
+        { "de": "Kannst du einen Tag ohne Handy leben?", "en": "Could you live a day without your phone?", "ur": "کیا تم ایک دن موبائل کے بغیر رہ سکتے ہو؟" }
+      ],
+      "words": [
+        { "de": "die Nachricht", "en": "message; news", "ur": "پیغام / خبر" },
+        { "de": "schicken", "en": "to send", "ur": "بھیجنا" },
+        { "de": "herunterladen", "en": "to download", "ur": "ڈاؤن لوڈ کرنا" },
+        { "de": "im Internet surfen", "en": "to surf the internet", "ur": "انٹرنیٹ چلانا" },
+        { "de": "die sozialen Medien", "en": "social media", "ur": "سوشل میڈیا" },
+        { "de": "das Passwort", "en": "password", "ur": "پاس ورڈ" },
+        { "de": "der Akku", "en": "battery", "ur": "بیٹری" },
+        { "de": "aufladen", "en": "to charge", "ur": "چارج کرنا" },
+        { "de": "abhängig", "en": "dependent, addicted", "ur": "عادی" },
+        { "de": "die Werbung", "en": "advertising", "ur": "اشتہار" },
+        { "de": "kostenlos", "en": "free (no cost)", "ur": "مفت" },
+        { "de": "ausmachen", "en": "to switch off", "ur": "بند کرنا" }
+      ],
+      "sentences": [
+        { "de": "Ich bin jeden Tag mindestens drei Stunden am Handy.", "en": "I'm on my phone at least three hours a day.", "ur": "میں روزانہ کم از کم تین گھنٹے موبائل پر ہوتا ہوں۔" },
+        { "de": "Mit WhatsApp schreibe ich meiner Familie.", "en": "I message my family on WhatsApp.", "ur": "میں واٹس ایپ پر اپنے گھر والوں کو پیغام بھیجتا ہوں۔" },
+        { "de": "Im Internet suche ich oft Rezepte oder lerne Deutsch mit Videos.", "en": "Online I often look up recipes or learn German with videos.", "ur": "انٹرنیٹ پر میں اکثر ترکیبیں ڈھونڈتا ہوں یا ویڈیوز سے جرمن سیکھتا ہوں۔" },
+        { "de": "Das Gute ist, dass man schnell Informationen findet.", "en": "The good thing is that you find information quickly.", "ur": "اچھی بات یہ ہے کہ معلومات جلدی مل جاتی ہیں۔" },
+        { "de": "Das Problem ist, dass man zu viel Zeit verliert.", "en": "The problem is that you waste too much time.", "ur": "مسئلہ یہ ہے کہ بہت زیادہ وقت ضائع ہوتا ہے۔" },
+        { "de": "Mein Akku ist fast leer. Kann ich mein Handy hier aufladen?", "en": "My battery's almost dead. Can I charge my phone here?", "ur": "میری بیٹری تقریباً ختم ہے۔ کیا میں یہاں اپنا موبائل چارج کر سکتا ہوں؟" },
+        { "de": "Ich glaube, ich bin ein bisschen abhängig vom Handy.", "en": "I think I'm a bit addicted to my phone.", "ur": "میرا خیال ہے میں تھوڑا سا موبائل کا عادی ہوں۔" },
+        { "de": "Am Wochenende mache ich das Handy manchmal einen Abend lang aus.", "en": "At weekends I sometimes switch my phone off for an evening.", "ur": "ہفتے کے آخر میں میں کبھی کبھی ایک شام کے لیے موبائل بند کر دیتا ہوں۔" }
+      ],
+      "model": {
+        "de": "Ehrlich gesagt bin ich jeden Tag mindestens drei Stunden am Handy. Morgens lese ich zuerst die Nachrichten, und dann schreibe ich meiner Familie auf WhatsApp. Für mich ist das Handy sehr praktisch: Ich bezahle damit, ich höre Musik, und ich lerne Deutsch mit Apps und Videos. Das Gute am Internet ist, dass man schnell Informationen findet. Außerdem kann ich jeden Tag kostenlos mit meinen Eltern in Pakistan sprechen. Das war früher nicht möglich. Aber es gibt auch Probleme. Man verliert zu viel Zeit, besonders mit sozialen Medien. Manchmal will ich nur fünf Minuten Videos schauen, und dann ist eine Stunde weg! Ich glaube, ich bin ein bisschen abhängig. Deshalb mache ich am Wochenende das Handy manchmal einen Abend lang aus und lese ein Buch.",
+        "en": "Honestly, I'm on my phone for at least three hours every day. In the morning I first read the news, and then I message my family on WhatsApp. For me the phone is very practical: I pay with it, I listen to music, and I learn German with apps and videos. The good thing about the internet is that you find information quickly. Also, I can talk to my parents in Pakistan for free every day. That wasn't possible before. But there are problems too. You waste too much time, especially on social media. Sometimes I only want to watch videos for five minutes, and then an hour is gone! I think I'm a bit addicted. That's why at weekends I sometimes switch my phone off for an evening and read a book."
+      }
+    },
+    {
+      "id": "deutschlernen", "emoji": "🇩🇪", "title": "Deutsch lernen & Zukunft", "title_en": "Learning German & the future", "title_ur": "جرمن سیکھنا اور مستقبل",
+      "questions": [
+        { "de": "Warum lernst du Deutsch?", "en": "Why are you learning German?", "ur": "تم جرمن کیوں سیکھ رہے ہو؟" },
+        { "de": "Seit wann lernst du Deutsch?", "en": "Since when have you been learning German?", "ur": "تم کب سے جرمن سیکھ رہے ہو؟" },
+        { "de": "Was ist für dich leicht und was ist schwer?", "en": "What is easy and what is hard for you?", "ur": "تمہارے لیے کیا آسان ہے اور کیا مشکل؟" },
+        { "de": "Wie lernst du neue Wörter?", "en": "How do you learn new words?", "ur": "تم نئے الفاظ کیسے سیکھتے ہو؟" },
+        { "de": "Welche Pläne hast du für die Zukunft?", "en": "What plans do you have for the future?", "ur": "مستقبل کے لیے تمہارے کیا منصوبے ہیں؟" },
+        { "de": "Was möchtest du in Deutschland machen?", "en": "What would you like to do in Germany?", "ur": "تم جرمنی میں کیا کرنا چاہتے ہو؟" }
+      ],
+      "words": [
+        { "de": "der Sprachkurs", "en": "language course", "ur": "زبان کا کورس" },
+        { "de": "die Aussprache", "en": "pronunciation", "ur": "تلفظ" },
+        { "de": "die Grammatik", "en": "grammar", "ur": "گرامر" },
+        { "de": "der Wortschatz", "en": "vocabulary", "ur": "ذخیرۂ الفاظ" },
+        { "de": "wiederholen", "en": "to revise, repeat", "ur": "دہرانا" },
+        { "de": "üben", "en": "to practise", "ur": "مشق کرنا" },
+        { "de": "bestehen", "en": "to pass (an exam)", "ur": "پاس کرنا" },
+        { "de": "das Zertifikat", "en": "certificate", "ur": "سرٹیفکیٹ" },
+        { "de": "das Visum", "en": "visa", "ur": "ویزا" },
+        { "de": "die Zukunft", "en": "future", "ur": "مستقبل" },
+        { "de": "die Karteikarte", "en": "flashcard", "ur": "یادداشت کارڈ" },
+        { "de": "nervös", "en": "nervous", "ur": "گھبرایا ہوا" }
+      ],
+      "sentences": [
+        { "de": "Ich lerne seit ungefähr einem Jahr Deutsch.", "en": "I've been learning German for about a year.", "ur": "میں تقریباً ایک سال سے جرمن سیکھ رہا ہوں۔" },
+        { "de": "Ich habe die A1-Prüfung bestanden und lerne jetzt für A2.", "en": "I passed the A1 exam and am now studying for A2.", "ur": "میں نے اے ون کا امتحان پاس کر لیا ہے اور اب اے ٹو کی تیاری کر رہا ہوں۔" },
+        { "de": "Die Artikel der, die, das finde ich am schwierigsten.", "en": "I find the articles der, die, das the hardest.", "ur": "مجھے der، die، das والے آرٹیکل سب سے مشکل لگتے ہیں۔" },
+        { "de": "Sprechen ist für mich schwerer als Lesen.", "en": "Speaking is harder for me than reading.", "ur": "میرے لیے بولنا پڑھنے سے زیادہ مشکل ہے۔" },
+        { "de": "Neue Wörter schreibe ich auf Karteikarten und wiederhole sie jeden Tag.", "en": "I write new words on flashcards and revise them every day.", "ur": "نئے الفاظ میں کارڈز پر لکھتا ہوں اور روز دہراتا ہوں۔" },
+        { "de": "Beim Sprechen bin ich oft nervös.", "en": "When I speak I'm often nervous.", "ur": "بولتے وقت میں اکثر گھبرا جاتا ہوں۔" },
+        { "de": "Nach dem B1-Kurs möchte ich in Deutschland eine Ausbildung machen.", "en": "After the B1 course I want to do vocational training in Germany.", "ur": "بی ون کورس کے بعد میں جرمنی میں پیشہ ورانہ تربیت کرنا چاہتا ہوں۔" },
+        { "de": "Ich hoffe, dass ich bald ein Visum bekomme.", "en": "I hope I'll get a visa soon.", "ur": "مجھے امید ہے کہ مجھے جلد ویزا مل جائے گا۔" }
+      ],
+      "model": {
+        "de": "Ich lerne seit ungefähr einem Jahr Deutsch. Vor kurzem habe ich die A1-Prüfung bestanden, und jetzt lerne ich für A2. Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte. Am Anfang war es sehr schwer, besonders die Aussprache. Heute finde ich die Artikel der, die, das am schwierigsten, weil es keine einfachen Regeln gibt. Lesen ist für mich leichter als Sprechen. Beim Sprechen bin ich oft nervös und vergesse die Wörter. Deshalb übe ich jetzt jeden Tag laut. Neue Wörter schreibe ich auf Karteikarten und wiederhole sie im Bus. Außerdem schaue ich deutsche Videos mit Untertiteln. Nach dem B1-Kurs möchte ich in Deutschland eine Ausbildung oder einen Master machen. Ich hoffe, dass ich bald ein Visum bekomme. Das ist mein großer Traum.",
+        "en": "I've been learning German for about a year. I recently passed the A1 exam, and now I'm studying for A2. I'm learning German because I want to work in Germany. At first it was very hard, especially the pronunciation. Today I find the articles der, die, das the hardest, because there are no simple rules. Reading is easier for me than speaking. When I speak I'm often nervous and forget the words. That's why I now practise out loud every day. I write new words on flashcards and revise them on the bus. I also watch German videos with subtitles. After the B1 course I'd like to do vocational training or a master's in Germany. I hope I'll get a visa soon. That's my big dream."
+      }
+    },
+    {
+      "id": "heimat", "emoji": "🇵🇰", "title": "Meine Heimat", "title_en": "My home country", "title_ur": "میرا وطن",
+      "questions": [
+        { "de": "Woher kommst du genau?", "en": "Where exactly are you from?", "ur": "تم اصل میں کہاں سے ہو؟" },
+        { "de": "Was ist typisch für dein Land?", "en": "What is typical of your country?", "ur": "تمہارے ملک کی کیا خاص بات ہے؟" },
+        { "de": "Was sollte ein Besucher unbedingt sehen oder essen?", "en": "What should a visitor definitely see or eat?", "ur": "ایک مہمان کو ضرور کیا دیکھنا یا کھانا چاہیے؟" },
+        { "de": "Welche Sprachen spricht man in deinem Land?", "en": "Which languages are spoken in your country?", "ur": "تمہارے ملک میں کون سی زبانیں بولی جاتی ہیں؟" },
+        { "de": "Was ist in Deutschland anders als in Pakistan?", "en": "What is different in Germany from Pakistan?", "ur": "جرمنی میں کیا چیز پاکستان سے مختلف ہے؟" },
+        { "de": "Was vermisst du, wenn du nicht zu Hause bist?", "en": "What do you miss when you're away from home?", "ur": "جب تم گھر سے دور ہوتے ہو تو تمہیں کیا یاد آتا ہے؟" }
+      ],
+      "words": [
+        { "de": "die Heimat", "en": "home country", "ur": "وطن" },
+        { "de": "die Hauptstadt", "en": "capital", "ur": "دارالحکومت" },
+        { "de": "der Einwohner", "en": "inhabitant", "ur": "باشندہ" },
+        { "de": "die Muttersprache", "en": "mother tongue", "ur": "مادری زبان" },
+        { "de": "die Landessprache", "en": "national language", "ur": "قومی زبان" },
+        { "de": "typisch", "en": "typical", "ur": "روایتی، خاص" },
+        { "de": "gastfreundlich", "en": "hospitable", "ur": "مہمان نواز" },
+        { "de": "die Kultur", "en": "culture", "ur": "ثقافت" },
+        { "de": "pünktlich", "en": "punctual", "ur": "وقت کا پابند" },
+        { "de": "vermissen", "en": "to miss", "ur": "یاد آنا" },
+        { "de": "der Unterschied", "en": "difference", "ur": "فرق" },
+        { "de": "stolz sein auf", "en": "to be proud of", "ur": "فخر ہونا" }
+      ],
+      "sentences": [
+        { "de": "Ich komme aus Pakistan, genauer gesagt aus Lahore.", "en": "I'm from Pakistan, from Lahore to be exact.", "ur": "میں پاکستان سے ہوں، بلکہ لاہور سے۔" },
+        { "de": "Die Hauptstadt von Pakistan ist Islamabad.", "en": "The capital of Pakistan is Islamabad.", "ur": "پاکستان کا دارالحکومت اسلام آباد ہے۔" },
+        { "de": "Meine Muttersprache ist Punjabi, aber ich spreche auch Urdu und Englisch.", "en": "My mother tongue is Punjabi, but I also speak Urdu and English.", "ur": "میری مادری زبان پنجابی ہے، لیکن میں اردو اور انگریزی بھی بولتا ہوں۔" },
+        { "de": "Die Menschen in Pakistan sind sehr gastfreundlich.", "en": "People in Pakistan are very hospitable.", "ur": "پاکستان کے لوگ بہت مہمان نواز ہیں۔" },
+        { "de": "Ein Besucher muss unbedingt die Berge im Norden sehen.", "en": "A visitor really has to see the mountains in the north.", "ur": "ایک مہمان کو شمال کے پہاڑ ضرور دیکھنے چاہئیں۔" },
+        { "de": "In Deutschland sind die Leute pünktlicher als bei uns.", "en": "In Germany people are more punctual than back home.", "ur": "جرمنی میں لوگ ہم سے زیادہ وقت کے پابند ہیں۔" },
+        { "de": "Ich vermisse das Essen von meiner Mutter.", "en": "I miss my mother's cooking.", "ur": "مجھے اپنی امی کے کھانے کی یاد آتی ہے۔" },
+        { "de": "Ich bin stolz auf meine Heimat.", "en": "I'm proud of my home country.", "ur": "مجھے اپنے وطن پر فخر ہے۔" }
+      ],
+      "model": {
+        "de": "Ich komme aus Pakistan, genauer gesagt aus Lahore. Pakistan ist ein großes Land mit über zweihundert Millionen Einwohnern. Die Hauptstadt ist Islamabad. Die Landessprache ist Urdu, aber viele Menschen sprechen auch Punjabi, Sindhi oder Paschtu. Meine Muttersprache ist Punjabi. Typisch für Pakistan sind das scharfe Essen, Cricket und die vielen Feste. Die Menschen sind sehr gastfreundlich: Wenn man Gäste hat, kocht man das beste Essen. Ein Besucher muss unbedingt die Berge im Norden sehen, zum Beispiel das Hunza-Tal. Und er muss natürlich Biryani probieren! In Deutschland ist vieles anders. Die Leute sind pünktlicher, und alles ist sehr gut organisiert. Wenn ich nicht zu Hause bin, vermisse ich meine Familie und das Essen von meiner Mutter. Ich bin stolz auf meine Heimat.",
+        "en": "I'm from Pakistan, from Lahore to be exact. Pakistan is a big country with over two hundred million inhabitants. The capital is Islamabad. The national language is Urdu, but many people also speak Punjabi, Sindhi or Pashto. My mother tongue is Punjabi. Typical of Pakistan are the spicy food, cricket and the many festivals. People are very hospitable: when you have guests, you cook the best food. A visitor really has to see the mountains in the north, for example the Hunza valley. And of course they have to try biryani! In Germany a lot is different. People are more punctual and everything is very well organised. When I'm away from home I miss my family and my mother's cooking. I'm proud of my home country."
+      }
+    }
+  ]
+}

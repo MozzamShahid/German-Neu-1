@@ -139,6 +139,12 @@ export default function Setup({
         >
           📚 Wörter – all words with 🔊
         </a>
+        <a
+          href="/a2"
+          className="ml-2 mt-3 inline-flex items-center gap-2 rounded-full bg-rose-500 px-4 py-1.5 text-sm font-semibold text-white hover:bg-rose-600"
+        >
+          🗣️ A2 Sprechen – talk for 2–5 min
+        </a>
       </header>
 
       <div className="space-y-5">

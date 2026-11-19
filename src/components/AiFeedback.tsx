@@ -20,6 +20,8 @@ export type AiResult = {
   // sprechen
   result?: string;
   covered?: string[];
+  // A2: the same idea said in a more natural way
+  upgrades?: { yours: string; better: string; why_en?: string; why_ur?: string }[];
 };
 
 export async function aiCheck(body: Record<string, unknown>): Promise<AiResult> {
@@ -102,6 +104,25 @@ export default function AiFeedback({ r, pointLabels }: { r: AiResult; pointLabel
             </li>
           ))}
         </ul>
+      )}
+
+      {!!r.upgrades?.length && (
+        <div>
+          <div className="mb-1 text-xs font-semibold uppercase text-indigo-700">⬆️ Say it better (A2)</div>
+          <ul className="space-y-1.5">
+            {r.upgrades.map((u, i) => (
+              <li key={i} className="rounded-lg bg-white px-3 py-1.5">
+                <div className="text-slate-500">{u.yours}</div>
+                <div className="flex items-start gap-2 font-semibold text-indigo-800">
+                  <span className="flex-1">→ {u.better}</span>
+                  <SpeakButton text={u.better} className="h-6 w-6 text-xs" />
+                </div>
+                {u.why_en && <div className="text-slate-600">{u.why_en}</div>}
+                {u.why_ur && <Urdu className="text-[14px] text-slate-600">{u.why_ur}</Urdu>}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       {r.feedback_en && <div className="text-slate-700">💡 {r.feedback_en}</div>}

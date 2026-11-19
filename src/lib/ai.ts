@@ -27,17 +27,19 @@ function provider() {
 
 export const aiConfigured = () => provider() !== null;
 
-export async function aiJson<T>(system: string, user: string): Promise<T> {
+type Options = { maxTokens?: number; timeoutMs?: number };
+
+export async function aiJson<T>(system: string, user: string, opts: Options = {}): Promise<T> {
   try {
-    return await callOnce<T>(system, user);
+    return await callOnce<T>(system, user, opts);
   } catch (e) {
     // one retry: a slow or broken provider is usually fine on the second try
     if ((e as Error).message === "AI not configured") throw e;
-    return await callOnce<T>(system, user);
+    return await callOnce<T>(system, user, opts);
   }
 }
 
-async function callOnce<T>(system: string, user: string): Promise<T> {
+async function callOnce<T>(system: string, user: string, { maxTokens = 1200, timeoutMs = 50_000 }: Options): Promise<T> {
   const p = provider();
   if (!p) throw new Error("AI not configured");
   const res = await fetch(p.url, {
@@ -47,14 +49,14 @@ async function callOnce<T>(system: string, user: string): Promise<T> {
       model: p.model,
       ...p.extra,
       temperature: 0.2,
-      max_tokens: 1200,
+      max_tokens: maxTokens,
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: system },
         { role: "user", content: user },
       ],
     }),
-    signal: AbortSignal.timeout(50_000),
+    signal: AbortSignal.timeout(timeoutMs),
   });
   if (!res.ok) throw new Error(`AI error ${res.status}: ${(await res.text()).slice(0, 200)}`);
   const data = await res.json();

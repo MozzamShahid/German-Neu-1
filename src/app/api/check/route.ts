@@ -1,6 +1,7 @@
 import { aiConfigured, aiJson } from "@/lib/ai";
 import schreiben from "@/data/schreiben.json";
 import sprechen from "@/data/sprechen.json";
+import a2 from "@/data/a2-sprechen.json";
 
 type Mistake = { wrong: string; right: string; why_en: string; why_ur: string };
 type Level = "full" | "partial" | "missing" | "wrong";
@@ -33,7 +34,7 @@ export async function POST(request: Request) {
     return Response.json({ configured: false, reason: "AI check is not set up (DEEPSEEK_API_KEY or OPENROUTER_API_KEY missing)." });
 
   const b = await request.json().catch(() => null);
-  const text = clip(b?.text, 1500);
+  const text = clip(b?.text, b?.kind === "a2talk" ? 6000 : 1500);
   if (!b || !text) return Response.json({ error: "Empty answer" }, { status: 400 });
 
   try {
@@ -72,6 +73,79 @@ Return JSON:
       const content = points.reduce((s, p) => s + levelScore(p.covered, 3), 0);
       const form = (r.greeting_ok ? 0.5 : 0) + (r.register_ok ? 0.5 : 0);
       return Response.json({ configured: true, ...r, points, score: content + form, max: 10 });
+    }
+
+    // ---------- A2: free talk about a topic (1, 2 or 5 minutes) ----------
+    if (b.kind === "a2talk" || b.kind === "a2question") {
+      const A2_SYSTEM = `You are a friendly, honest German teacher preparing a learner for the A2 speaking exam (Goethe A2 / telc A2).
+The learner is from Pakistan and speaks Urdu and English. Judge by A2 standards: simple but connected sentences, Perfekt for the past,
+linking words (weil, dass, wenn, deshalb, trotzdem, aber, denn), everyday vocabulary. Be encouraging but point out real mistakes.
+The text comes from speech recognition, so ignore punctuation, capital letters and small recognition errors.
+"why_ur" and "feedback_ur" must be in Urdu script (not Roman Urdu). Return ONLY a JSON object, no markdown.`;
+      const UPGRADES = `"upgrades": [{"yours": "a simple / A1-style sentence the learner said", "better": "the same idea said in a more natural A2 way", "why_en": "short", "why_ur": "مختصر"}] (max 4)`;
+
+      if (b.kind === "a2question") {
+        const question = clip(b.question, 300);
+        const r = await aiJson<{ result: Level; corrected: string; mistakes: Mistake[]; upgrades: unknown[]; feedback_en: string; feedback_ur: string }>(
+          A2_SYSTEM,
+          `Question: "${question}"
+Learner answered (spoken):
+"""${text}"""
+A good A2 answer has 2–4 connected sentences and a reason or example. Return JSON:
+{"result": "full" (answers the question, understandable, 2+ sentences, small mistakes ok) | "partial" (answers but very short or clear mistakes) | "wrong" (does not answer / not understandable),
+ "corrected": "the learner's answer in correct natural German, keep their ideas, one or two sentences longer if it was very short",
+ ${MISTAKES_SPEC}, ${UPGRADES},
+ "feedback_en": "1-2 short sentences", "feedback_ur": "ایک دو مختصر جملے"}`,
+        );
+        return Response.json({ configured: true, ...r, score: levelScore(r.result, 1), max: 1 });
+      }
+
+      const thema = a2.themen.find((t) => t.id === b.themaId);
+      if (!thema) return Response.json({ error: "Unknown topic" }, { status: 400 });
+      const seconds = Math.max(10, Math.min(900, Number(b.seconds) || 60));
+      const words = text.split(/\s+/).filter(Boolean).length;
+      const r = await aiJson<{
+        answered: number[];
+        content: number;
+        range: number;
+        accuracy: number;
+        corrected: string;
+        mistakes: Mistake[];
+        upgrades: { yours: string; better: string; why_en: string; why_ur: string }[];
+        good: string[];
+        next_time: string[];
+        feedback_en: string;
+        feedback_ur: string;
+      }>(
+        A2_SYSTEM,
+        `Topic: "${thema.title}" (${thema.title_en}). The learner talked for about ${Math.round(seconds / 60 * 10) / 10} minutes (${words} words).
+Guiding questions (index: question):
+${thema.questions.map((q, i) => `${i}: ${q.de}`).join("\n")}
+
+Learner's talk:
+"""${text}"""
+
+Rate:
+- "answered": indices of the guiding questions the learner really talked about
+- "content" 0-4: how much they said about the topic (details, examples, reasons, past/future). A 1-minute talk with 8+ good sentences can get 4.
+- "range" 0-3: variety of words and linking words, sentences longer than subject-verb-object, Perfekt / Modalverben / Nebensätze
+- "accuracy" 0-3: verb position (verb 2nd, verb at the end after weil/dass/wenn), verb forms, articles/cases. Many small errors but understandable = 1.5–2.
+Return JSON:
+{"answered": [0, 2], "content": 0-4, "range": 0-3, "accuracy": 0-3,
+ "corrected": "the learner's talk with the mistakes fixed, keep their ideas and words; if it is longer than about 150 words, give only the 8 most important sentences, corrected, one per line",
+ ${MISTAKES_SPEC},
+ ${UPGRADES},
+ "good": ["up to 4 phrases the learner used well, copied from the talk"],
+ "next_time": ["2-3 concrete German sentences the learner could add next time about questions they skipped"],
+ "feedback_en": "2-3 short sentences", "feedback_ur": "دو تین مختصر جملے"}`,
+        { maxTokens: 2600, timeoutMs: 90_000 },
+      );
+      const n = (v: unknown, max: number) => Math.max(0, Math.min(max, Math.round(Number(v) * 2) / 2 || 0));
+      const content = n(r.content, 4);
+      const range = n(r.range, 3);
+      const accuracy = n(r.accuracy, 3);
+      const answered = (r.answered ?? []).filter((i) => Number.isInteger(i) && i >= 0 && i < thema.questions.length);
+      return Response.json({ configured: true, ...r, answered, content, range, accuracy, score: content + range + accuracy, max: 10, words });
     }
 
     // ---------- Sprechen ----------

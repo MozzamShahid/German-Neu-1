@@ -47,7 +47,7 @@ async function openrouter(file: Blob, keyterms: string[]) {
       model: process.env.STT_MODEL || "google/gemini-2.5-flash-lite",
       provider: { sort: "latency" },
       temperature: 0,
-      max_tokens: 400,
+      max_tokens: 700,
       messages: [
         {
           role: "user",
@@ -55,7 +55,7 @@ async function openrouter(file: Blob, keyterms: string[]) {
             {
               type: "text",
               text:
-                "Transcribe exactly what the speaker says. The speaker is a beginner learning German (A1), so write the words as spoken: " +
+                "Transcribe exactly what the speaker says. The speaker is a beginner learning German (A1–A2), so write the words as spoken: " +
                 "do NOT correct grammar or mistakes and do NOT translate. Return only the transcript, no quotes, no comments. " +
                 "If there is no speech, return an empty string." +
                 (keyterms.length ? ` Words that may occur: ${keyterms.join(", ")}.` : ""),

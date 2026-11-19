@@ -9,3 +9,4 @@ export const Hoeren = dynamic(() => import("./HoerenTest"), { ssr: false, loadin
 export const Lesen = dynamic(() => import("./LesenTest"), { ssr: false, loading });
 export const Schreiben = dynamic(() => import("./SchreibenTest"), { ssr: false, loading });
 export const Sprechen = dynamic(() => import("./SprechenTest"), { ssr: false, loading });
+export const A2 = dynamic(() => import("./A2Sprechen"), { ssr: false, loading });
